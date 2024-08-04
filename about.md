@@ -4,12 +4,18 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+<img src="https://avatars.githubusercontent.com/u/27096200?v=4" width="200">
+Software Developer | Author | Publisher
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+I'm a software developer, veracious learner, and author, with a background in publishing. I thrive on solving puzzles and delivering cost effective solutions to end users.
 
-### Contact me
+My mission is to accelerate the adoption of AI by democratizing access to 5+ Billion global citizens with internet access, by combining my unique skillset of writing and software development.
 
-[email@domain.com](mailto:email@domain.com)
+I'm open to joining a team who's mission is to solve Roko's ...
+and are aligned with the principle of harnessing the AI revolution to increase the baseline condition for all beyond subsistence.
+
+### Contact
+
+[pbrazeale@gmail.com](mailto:pbrazeale@gmail.com)
