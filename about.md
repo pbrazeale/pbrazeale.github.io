@@ -5,6 +5,7 @@ permalink: /about/
 ---
 
 <img src="https://avatars.githubusercontent.com/u/27096200?v=4" width="200">
+
 Software Developer | Author | Publisher
 
 ### More Information
