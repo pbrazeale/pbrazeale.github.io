@@ -119,7 +119,7 @@ img {
 
 .date {
   font-style: italic;
-  color: $gray;
+  color: #BAC0E4;
 }
 
 // Specify the color of the selection
@@ -158,7 +158,7 @@ img {
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid $Green;
 
   @include mobile {
     text-align: center;
