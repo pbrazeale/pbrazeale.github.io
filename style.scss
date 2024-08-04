@@ -18,9 +18,9 @@ html {
 }
 
 body {
-	background: $white;
+	background: #1B1B25;
   font: 18px/1.4 $helvetica;
-  color: $darkGray;
+  color: #BAC0E4;
 }
 
 .container {
@@ -32,7 +32,6 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
-  color: $darkerGray;
   font-weight: bold;
 
   line-height: 1.7;
@@ -46,6 +45,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 30px;
+  color: #E67E7D;
   a {
     color: inherit;
   }
@@ -53,15 +53,17 @@ h1 {
 
 h2 {
   font-size: 24px;
+  color: #DBB177;
 }
 
 h3 {
   font-size: 20px;
+  color: #9DBF73;
 }
 
 h4 {
   font-size: 18px;
-  color: $gray;
+  color: #93D0FF;
 }
 
 p {
@@ -69,11 +71,11 @@ p {
 }
 
 a {
-  color: $blue;
+  color: #B8A3F0;
   text-decoration: none;
 	cursor: pointer;
   &:hover, &:active {
-    color: $blue;
+    color: #9DBF73;
   }
 }
 
