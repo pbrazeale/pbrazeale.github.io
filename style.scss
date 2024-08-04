@@ -132,17 +132,6 @@ img {
   background: $lightGray;
 }
 
-// Nicolas Gallagher's micro clearfix hack
-// http://nicolasgallagher.com/micro-clearfix-hack/
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-}
 
 /*********************/
 /* LAYOUT / SECTIONS */
@@ -159,7 +148,7 @@ img {
 .masthead {
   padding: 20px 0;
   //border-bottom: 1px solid $Green;
-
+  
   @include mobile {
     text-align: center;
   }
@@ -170,13 +159,13 @@ img {
   width: 70px;
   height: 70px;
   margin-right: 15px;
-
+  
   @include mobile {
     float: none;
     display: block;
     margin: 0 auto;
   }
-
+  
   img {
     border-radius: 5px;
   }
@@ -184,7 +173,7 @@ img {
 
 .site-info {
   float: left;
-
+  
   @include mobile {
     float: none;
     display: block;
@@ -206,7 +195,7 @@ img {
   color: #E67E7D;
   margin: -5px 0 0 0;
   font-size: 16px;
-
+  
   @include mobile {
     margin: 3px 0;
   }
@@ -217,14 +206,14 @@ nav {
   margin-top: 23px; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
   font-size: 18px;
-
+  
   @include mobile {
     float: none;
     margin-top: 9px;
     display: block;
     font-size: 16px;
   }
-
+  
   a {
     margin-left: 20px;
     color: #B8A3F0;
@@ -235,7 +224,7 @@ nav {
     &:hover, &:active {
       color: #9DBF73;
     }
-
+    
     @include mobile {
       margin: 0 10px;
       color: $blue;
@@ -266,11 +255,11 @@ nav {
     font-size: 22px;
     font-style: italic;
   }
-
+  
   .comments {
     margin-top: 10px;
   }
-
+  
   .read-more {
     text-transform: uppercase;
     font-size: 15px;
@@ -280,8 +269,8 @@ nav {
 .wrapper-footer {
   background-color: #16171C;
   margin-top: 50px;
-//  border-top: 1px solid #ddd;
-//  border-bottom: 1px solid #ddd;
+  //  border-top: 1px solid #ddd;
+  //  border-bottom: 1px solid #ddd;
 }
 
 footer {
@@ -293,3 +282,16 @@ footer {
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
 @import "svg-icons";
+
+
+// Nicolas Gallagher's micro clearfix hack
+// http://nicolasgallagher.com/micro-clearfix-hack/
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
