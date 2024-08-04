@@ -8,7 +8,7 @@ permalink: /about/
 
 Software Developer | Author | Publisher
 
-### More Information
+## More Information
 
 I'm a software developer, veracious learner, and author, with a background in publishing. I thrive on solving puzzles and delivering cost effective solutions to end users.
 
@@ -17,6 +17,6 @@ My mission is to accelerate the adoption of AI by democratizing access to 5+ Bil
 I'm open to joining a team who's mission is to solve Roko's ...
 and are aligned with the principle of harnessing the AI revolution to increase the baseline condition for all beyond subsistence.
 
-### Contact
+## Contact
 
 [pbrazeale@gmail.com](mailto:pbrazeale@gmail.com)
