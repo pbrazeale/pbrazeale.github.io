@@ -1,6 +1,6 @@
-[data structures]
-[Data Science]
-[CS50]
+[data structures](./data-structures)
+[Data Science](./data-science)
+[CS50](./cs50)
 
 ## Queues
 
@@ -9,7 +9,7 @@
 First In First Out
 enqueue
 dequeue
-[Push]
+[Push](./push)
 Arrays store the data structure
 
 ### Stacks
@@ -17,11 +17,11 @@ Arrays store the data structure
 #### LIFO
 
 last in first out
-[Pop]
+[Pop](./pop)
 
-## [Array]
+## Array
 
-Moving an array by copy pasting, will result in O N+1 as it grows.
+Moving an [array](./array) by copy pasting, will result in O N+1 as it grows.
 
 ### Memory Allocation
 
@@ -29,7 +29,7 @@ Moving an array by copy pasting, will result in O N+1 as it grows.
 Malloc allocates memory, and I can treat it as an array.
 
 Dynamically allocate more memory.
-increase the [magic number]
+increase the [magic number](./magic-number)
 free(list); [memory leak] avoidance.
 
 ## Data Structure
