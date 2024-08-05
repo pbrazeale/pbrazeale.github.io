@@ -10,7 +10,7 @@ Filters took me several hours to wrap my mind around the process of navigating t
 
 Recover was going well, but when I googled an error I ran into while compiling a reddit post shared a "hint" by displaying the entire code solution \-\_\- so it took the wind out of me that day. Obviously I can't unread it, so it spoiled the learning curve for myself.
 
-Moving forward I'll have to force myself to re-watch lectures and take better notes, to avoid online support. If I wanted to solve the problems as fast as possible, I'd use Chat GPT (_I'm suing Harvard's hosted VS Code for my IDE_)
+Moving forward I'll have to force myself to re-watch lectures and take better notes, to avoid online support. If I wanted to solve the problems as fast as possible, I'd use Chat GPT (_I'm using Harvard's hosted VS Code for my IDE_)
 
 **RANT OVER**
 
