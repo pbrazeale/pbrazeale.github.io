@@ -209,7 +209,9 @@ maps to link list of the names starting with the letter.
 O(n) is worst case but best case O(1)
 can increase the array by taking more starter letters. increasing chance of O(1)
 
-`node *table[26]`
+{% highlight c linenos %}
+node \*table[26]
+{% endhighlight %}
 
 [const] is best practice when passing a string you don't want to allow adjusting on.
 
