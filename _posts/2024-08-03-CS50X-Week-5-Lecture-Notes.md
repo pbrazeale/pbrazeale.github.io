@@ -1,7 +1,6 @@
-<class="tag">data structures</class>
-<class="tag">Data Science</class>
-<class="tag">CS50</class>
-<class="tag"></class>
+[[data structures]]
+[[Data Science]]
+[[CS50]]
 
 ## Queues
 
@@ -10,7 +9,7 @@
 First In First Out
 enqueue
 dequeue
-[Push](./push)
+[[Push]]
 Arrays store the data structure
 
 ### Stacks
@@ -18,11 +17,11 @@ Arrays store the data structure
 #### LIFO
 
 last in first out
-[Pop](./pop)
+[[Pop]]
 
 ## Array
 
-Moving an [array](./array) by copy pasting, will result in O N+1 as it grows.
+Moving an [[array]] by copy pasting, will result in O N+1 as it grows.
 
 ### Memory Allocation
 
@@ -30,8 +29,8 @@ Moving an [array](./array) by copy pasting, will result in O N+1 as it grows.
 Malloc allocates memory, and I can treat it as an array.
 
 Dynamically allocate more memory.
-increase the [magic number](./magic-number)
-free(list); [memory leak] avoidance.
+increase the [[magic number]]
+free(list); [[memory leak]] avoidance.
 
 ## Data Structure
 
@@ -167,7 +166,7 @@ break;
 ### Trees
 
 data branching
-[Binary Search Tree]
+[[Binary Search Tree]]
 Offers the best balance of storage speed and searching speed at the cost of tripling the data by requiring the left and right node pointer.
 O(log n)
 
@@ -200,8 +199,8 @@ store Keys with Values
 takes infinite inputs and maps to a finite
 Cards break into 4 buckets of suites
 
-[Hash Function]
-[Hash Table]
+[[Hash Function]]
+[[Hash Table]]
 
 For Contacts
 Array 0 - 25 for A - Z
