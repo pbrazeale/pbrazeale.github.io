@@ -1,5 +1,3 @@
-[Developer Week 001](https://pbrazeale.github.io/Developer-Week-001/)
-
 ## CS50P
 
 ### Week 5 (progress 60%)
@@ -29,3 +27,5 @@ Thankfully, calmer minds prevailed and I only lost 6 hours down that rabbit hole
 ### VS Code
 
 Don't get me wrong. The moment I accomplish my primary task of building the formatting software, my step will be to explore maximizing my development environment. However, until I'm prepare to wipe my laptop and go full Ubuntu and Neovim, I'll stick with my VS Code and Windows 11.
+
+[Developer Week 001](https://pbrazeale.github.io/Developer-Week-001/)

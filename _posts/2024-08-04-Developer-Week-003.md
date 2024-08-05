@@ -1,5 +1,3 @@
-[Developer Week 002]()
-
 ## CS50X
 
 ### Week 4 (progress 36%)
@@ -45,3 +43,5 @@ Of course I was thrilled and flattered. I'd heard "Apply Early" when it comes to
 Long story short, I turned down the slot because it was a payment up front, despite being advertised as no payment upfront but only after the guaranteed job position.
 
 Excellent experience, and I'm grateful I put myself out there. I even hope to work with the instructor in the future. However, the bait and switch rubbed me the wrong way and cost me a productive evening.
+
+[Developer Week 002]()
