@@ -1,7 +1,5 @@
 
 .highlight {
-  background-color: #1B1B25;
-  color: #BAC0E4;
   padding: 7px 7px 7px 10px;
   border: 1px solid #ddd;
   -moz-box-shadow: 3px 3px rgba(0,0,0,0.1);
@@ -11,6 +9,7 @@
   overflow: scroll;
 }
 
+pre,
 code {
   font-family:'Bitstream Vera Sans Mono','Courier', monospace;
   background: #1B1B25;
