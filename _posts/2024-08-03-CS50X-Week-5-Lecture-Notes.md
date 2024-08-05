@@ -52,26 +52,29 @@ linking requires a 2nd space to point to the next.
 or 0x0 as the NULL end of the linked list.
 Plus one extra pointer to start the list just like the array starter.
 
-`typedef struct node
+```c
+typedef struct node
 {
 	int number;
 	struct node *next;
 } node;`
 
-`node *list == NULL;`
+node *list == NULL;
+```
+
 Begins the linked list
 
-``
+```c
 node \*n = malloc(sizeof(node));
 
 (n).number = 1;
 n->next = NULL;
 
-``
+```
 
 Order of operation means updating the next node field before pointing the list
 
-``
+```c
 #incldue <stdio.h>
 #include <stdlib.h>
 
@@ -113,11 +116,12 @@ node *list = NULL;
 
 }
 
-``
+```
 
 Appending to the list will place at end O(n) time.
 
-`//If list has numbers
+```c
+//If list has numbers
 else
 {
 	//Iterate over nodes in list
@@ -131,11 +135,12 @@ else
 			break;
 		}
 	}
-}`
+}
+```
 
 Append into list to create sorted by default
 
-``
+```c
 for (node \*ptr = lsit; ptr != NULL; ptr = ptr->next)
 {
 //if at end of list
@@ -155,7 +160,7 @@ break;
     	}
     }
 
-``
+```
 
 ### Trees
 
@@ -164,7 +169,8 @@ data branching
 Offers the best balance of storage speed and searching speed at the cost of tripling the data by requiring the left and right node pointer.
 O(log n)
 
-`bool serach(node #tree, int number)
+```c
+bool serach(node #tree, int number)
 	if (tree == NULL)
 	{
 		return false;
@@ -180,7 +186,8 @@ O(log n)
 	else
 	{
 		return true;
-	}`
+	}
+```
 
 ### Dictionaries
 
@@ -210,3 +217,8 @@ can increase the array by taking more starter letters. increasing chance of O(1)
 is a tree of arrays
 O(1)
 Major downside is the memory due to unused array nodes
+
+## Sepcial Thanks To: frankindev.com
+
+[https://frankindev.com/2017/03/18/syntax-highlight-with-rouge-in-jekyll/](https://frankindev.com/2017/03/18/syntax-highlight-with-rouge-in-jekyll/)
+This really helped me fix my code block issues I had uploading these notes from Obsidian.
