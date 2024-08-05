@@ -1,6 +1,6 @@
-[data structures](./data-structures)
-[Data Science](./data-science)
-[CS50](./cs50)
+<tag>data structures
+Data Science
+CS50</tag>
 
 ## Queues
 
