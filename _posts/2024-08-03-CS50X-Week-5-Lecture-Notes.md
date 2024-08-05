@@ -52,29 +52,29 @@ linking requires a 2nd space to point to the next.
 or 0x0 as the NULL end of the linked list.
 Plus one extra pointer to start the list just like the array starter.
 
-```c
+{% highlight c linenos %}
 typedef struct node
 {
-	int number;
-	struct node *next;
+int number;
+struct node \*next;
 } node;`
 
-node *list == NULL;
-```
+node \*list == NULL;
+{% endhighlight %}
 
 Begins the linked list
 
-```c
+{% highlight c linenos %}
 node \*n = malloc(sizeof(node));
 
 (n).number = 1;
 n->next = NULL;
 
-```
+{% endhighlight %}
 
 Order of operation means updating the next node field before pointing the list
 
-```c
+{% highlight c linenos %}
 #incldue <stdio.h>
 #include <stdlib.h>
 
@@ -116,31 +116,31 @@ node *list = NULL;
 
 }
 
-```
+{% endhighlight %}
 
 Appending to the list will place at end O(n) time.
 
-```c
+{% highlight c linenos %}
 //If list has numbers
 else
 {
-	//Iterate over nodes in list
-	for (node *ptr = lsit; ptr != NULL; ptr = ptr->next)
-	{
-		//if at end of list
-		if (ptr->next == NULL)
-		{
-			//Append node
-			ptr->next = n;
-			break;
-		}
-	}
+//Iterate over nodes in list
+for (node \*ptr = lsit; ptr != NULL; ptr = ptr->next)
+{
+//if at end of list
+if (ptr->next == NULL)
+{
+//Append node
+ptr->next = n;
+break;
 }
-```
+}
+}
+{% endhighlight %}
 
 Append into list to create sorted by default
 
-```c
+{% highlight c linenos %}
 for (node \*ptr = lsit; ptr != NULL; ptr = ptr->next)
 {
 //if at end of list
@@ -160,7 +160,7 @@ break;
     	}
     }
 
-```
+{% endhighlight %}
 
 ### Trees
 
@@ -169,25 +169,25 @@ data branching
 Offers the best balance of storage speed and searching speed at the cost of tripling the data by requiring the left and right node pointer.
 O(log n)
 
-```c
+{% highlight c linenos %}
 bool serach(node #tree, int number)
-	if (tree == NULL)
-	{
-		return false;
-	}
-	else if (number < tree->number)
-	{
-		return search(tree->left, number);
-	}
-	else if (number > tree->right, number);
-	{
-		return serach(tree->right, number);
-	}
-	else
-	{
-		return true;
-	}
-```
+if (tree == NULL)
+{
+return false;
+}
+else if (number < tree->number)
+{
+return search(tree->left, number);
+}
+else if (number > tree->right, number);
+{
+return serach(tree->right, number);
+}
+else
+{
+return true;
+}
+{% endhighlight %}
 
 ### Dictionaries
 
