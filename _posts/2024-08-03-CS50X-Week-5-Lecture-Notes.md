@@ -36,13 +36,13 @@ free(list); [memory leak] avoidance.
 
 Solution to the array issue of memory allocation
 
-``
+{% highlight c linenos %}
 struct
 .
 
 - -> is . \* used together.
 
-``
+{% endhighlight %}
 
 ### Linked List
 
