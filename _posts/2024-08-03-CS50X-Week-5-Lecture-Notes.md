@@ -1,6 +1,6 @@
-[[data structures]]
-[[Data Science]]
-[[CS50]]
+[data structures]
+[Data Science]
+[CS50]
 
 ## Queues
 
@@ -9,7 +9,7 @@
 First In First Out
 enqueue
 dequeue
-[[Push]]
+[Push]
 Arrays store the data structure
 
 ### Stacks
@@ -17,9 +17,9 @@ Arrays store the data structure
 #### LIFO
 
 last in first out
-[[Pop]]
+[Pop]
 
-## [[Array]]
+## [Array]
 
 Moving an array by copy pasting, will result in O N+1 as it grows.
 
@@ -29,8 +29,8 @@ Moving an array by copy pasting, will result in O N+1 as it grows.
 Malloc allocates memory, and I can treat it as an array.
 
 Dynamically allocate more memory.
-increase the [[magic number]]
-free(list); [[memory leak]] avoidance.
+increase the [magic number]
+free(list); [memory leak] avoidance.
 
 ## Data Structure
 
@@ -163,7 +163,7 @@ Append into list to create sorted by default
 ### Trees
 
 data branching
-[[Binary Search Tree]]
+[Binary Search Tree]
 Offers the best balance of storage speed and searching speed at the cost of tripling the data by requiring the left and right node pointer.
 O(log n)
 
@@ -196,8 +196,8 @@ store Keys with Values
 takes infinite inputs and maps to a finite
 Cards break into 4 buckets of suites
 
-[[Hash Function]]
-[[Hash Table]]
+[Hash Function]
+[Hash Table]
 
 For Contacts
 Array 0 - 25 for A - Z
@@ -208,7 +208,7 @@ can increase the array by taking more starter letters. increasing chance of O(1)
 
 `node *table[26]`
 
-[[const]] is best practice when passing a string you don't want to allow adjusting on.
+[const] is best practice when passing a string you don't want to allow adjusting on.
 
 ### Tries
 
