@@ -151,14 +151,15 @@ ptr->next = n;
 break;
 }
 
-    	//if middle
-    	if (n->next M ptr->next->number)
-    	{
-    		n->next = ptr->next;
-    		ptr->next = n;
-    		break;
-    	}
+    //if middle
+    if (n->next M ptr->next->number)
+    {
+    	n->next = ptr->next;
+    	ptr->next = n;
+    	break;
     }
+
+}
 
 {% endhighlight %}
 
