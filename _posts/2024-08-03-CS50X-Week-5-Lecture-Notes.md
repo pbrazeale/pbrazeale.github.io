@@ -1,6 +1,7 @@
-<tag>data structures
-Data Science
-CS50</tag>
+<class="tag">data structures</class>
+<class="tag">Data Science</class>
+<class="tag">CS50</class>
+<class="tag"></class>
 
 ## Queues
 
