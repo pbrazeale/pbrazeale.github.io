@@ -156,13 +156,13 @@ Popular database option for smaller programs.
 
 `sqlite>`
 
-{% highlight sqlite linenos %}
+{% highlight sql linenos %}
 .mdoe csv
 .import favorites.csv favorites
 .quit
 {% endhighlight %}
 
-{% highlight sqlite linenos %}
+{% highlight sql linenos %}
 #shows the database information
 .schema
 # '*' is a whildcard (meaning it stands in for the column key)
@@ -183,17 +183,17 @@ SELECT language FROM favorites LIMIT 10;
 - ...
 
 returns the number of rows
-{% highlight sqlite linenos %}
+{% highlight sql linenos %}
 SELECT COUNT(*) FROM favorites;
 {% endhighlight %}
 
 returns every value in column languages
-{% highlight sqlite linenos %}
+{% highlight sql linenos %}
 SELECT DISTINCT(language) FROM favorites;
 {% endhighlight %}
 
 returns the number of DISTINCT values in column languages
-{% highlight sqlite linenos %}
+{% highlight sql linenos %}
 SELECT COUNT(DISTINCT(language)) FROM favorites;
 {% endhighlight %}
 
@@ -205,37 +205,37 @@ SELECT COUNT(DISTINCT(language)) FROM favorites;
 - GROUP BY
 
 returns the count of only C within coloumn language
-{% highlight sqlite linenos %}
+{% highlight sql linenos %}
 SELECT COUNT(*) FROM favorites WHERE language = 'C';
 {% endhighlight %}
 
 returns the count of only C within coloumn language AND also match Hello, World within coloumn problem
-{% highlight sqlite linenos %}
+{% highlight sql linenos %}
 SELECT COUNT(*) FROM favorites WHERE language = 'C' AND problem = 'Hello, World';
 {% endhighlight %}
 
 returns a table of languages and their associated count
-{% highlight sqlite linenos %}
+{% highlight sql linenos %}
 SELECT language, COUNT(*) FROM favorites GROUP BY language;
 {% endhighlight %}
 
 returns a table of languages and their associated count; now ordered by accending order.
-{% highlight sqlite linenos %}
+{% highlight sql linenos %}
 SELECT language, COUNT(*) FROM favorites GROUP BY language ORDER BY COUNT(*);
 {% endhighlight %}
 
 returns a table of languages and their associated count; now ordered by descending order.
-{% highlight sqlite linenos %}
+{% highlight sql linenos %}
 SELECT language, COUNT(*) FROM favorites GROUP BY language ORDER BY COUNT(*) DESC;
 {% endhighlight %}
 
 Can name a condition to save repeats
-{% highlight sqlite linenos %}
+{% highlight sql linenos %}
 SELECT language, COUNT(*) AS n FROM favorites GROUP BY language ORDER BY n DESC;
 {% endhighlight %}
 
 Add data into the database
-{% highlight sqlite linenos %}
+{% highlight sql linenos %}
 INSERT INTO table (column, ...) VALUES(value, ...);
 {% endhighlight %}
 
@@ -262,14 +262,14 @@ PRIMARY KEY = unique id
 FOREIGN KEY = use of PRIMARY KEY in a new database table.
 
 Search data matched between two tables
-{% highlight sqlite linenos %}
+{% highlight sql linenos %}
 SELECT * FROM shows WHERE id IN 
 	(SELECT show_id FROM ratings WHERE rating >= 6.0);
 {% endhighlight %}
 
 #### JOIN
 This will combine the two tables by defining the shared value "shows.id" and then outputs the first 10 options with a rating >= 6.0, and only show the title and rating.
-{% highlight sqlite linenos %}
+{% highlight sql linenos %}
 SELECT title, rating FROM shows JOIN ratings ON shows.id = ratings.show.id WHERE rating >= 6.0 LIMIT 10;
 {% endhighlight %}
 
@@ -279,7 +279,7 @@ requires a 3rd table to link the unique data tables "Person" "Shows"
 #### INDEX
 INDEX will create a B-Tree; and while it takes time to process the table the first time; there after it will result in far faster searches between tables.
 
-{% highlight sqlite linenos %}
+{% highlight sql linenos %}
 CREATE INDEX person_index on stars (person_id);
 {% endhighlight %}
 
