@@ -1,9 +1,9 @@
 ## CS50X (Progress 64%)
 ### Week 5 Data Structures
 #### Problem - Speller
-{% highlight MD %}
+```
 "For this problem, you’ll implement a program that spell-checks a file, a la the below, using a hash table."
-{% endhighlight %}
+```
 
 This kicked my ass! The lecture was excellent, but I struggled to wrap my head around pointers and hash tables.
 
@@ -30,7 +30,7 @@ Python documentation saved me so much time!
 [Python CSV](https://docs.python.org/3/library/csv.html)
 
 Total time to complete this week was quite low. I blew through the problem set until the DNA problem.
-{% highlight MD %}
+
 ## [Specification](https://cs50.harvard.edu/x/2024/psets/6/dna/#specification)
 
 - The program should require as its first command-line argument the name of a CSV file containing the STR counts for a list of individuals and should require as its second command-line argument the name of a text file containing the DNA sequence to identify.
@@ -42,7 +42,7 @@ Total time to complete this week was quite low. I blew through the problem set u
 - If the STR counts match exactly with any of the individuals in the CSV file, your program should print out the name of the matching individual.
     - You may assume that the STR counts will not match more than one individual.
     - If the STR counts do not match exactly with any of the individuals in the CSV file, your program should print `No match`.
-{% endhighlight %}
+
 
 It took me over four hours to complete; most of which was reading the documentation and printing each variable to make sure I passed in the data correctly. Once I recalled how to access a dictionary, it went by easy.
 
