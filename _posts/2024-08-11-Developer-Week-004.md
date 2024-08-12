@@ -1,9 +1,8 @@
 ## CS50X (Progress 64%)
 ### Week 5 Data Structures
 #### Problem - Speller
-```
 "For this problem, you’ll implement a program that spell-checks a file, a la the below, using a hash table."
-```
+
 
 This kicked my ass! The lecture was excellent, but I struggled to wrap my head around pointers and hash tables.
 
