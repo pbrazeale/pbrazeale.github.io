@@ -105,13 +105,13 @@ Use Jinja to create an .html template. (*Could have used this last week instead 
         <title>hello</title>
     </head>
     <body>
-        {% block body %}{% endblock %}
+        {% raw %} {% block body %}{% endblock %}{% endraw %}
     </body>
 </html>
 ```
 
 ```html
-{% extends "layout.html" %}
+{% raw %}{% extends "layout.html" %}
 
 {% block body %}
 
@@ -120,12 +120,12 @@ Use Jinja to create an .html template. (*Could have used this last week instead 
         <button type="submit">Greet</button>
     </form>
 
-{% endblock %}
+{% endblock %}{% endraw %}
 ```
 
 ### Post
 ```html
-{% extends "layout.html" %}
+{% raw %}{% extends "layout.html" %}
 
 {% block body %}
 
@@ -134,7 +134,7 @@ Use Jinja to create an .html template. (*Could have used this last week instead 
         <button type="submit">Greet</button>
     </form>
 
-{% endblock %}
+{% endblock %}{% endraw %}
 ```
 Hides the special requests sent in the URL
 
@@ -211,7 +211,7 @@ def registrants():
 
 ```html
 #INDEX
-{% extends "layout.html" %}
+{% raw %}{% extends "layout.html" %}
 
 {% block body %}
     <h1>Register</h1>
@@ -222,12 +222,12 @@ def registrants():
         {% endfor %}
         <button type="submit">Register</button>
     </form>
-{% endblock %}
+{% endblock %}{% endraw %}
 ```
 
 ```HTML
 #REGISTRANTS
-{% extends "layout.html" %}
+{% raw %}{% extends "layout.html" %}
 
 {% block body %}
     <h1>Registrants</h1>
@@ -254,7 +254,7 @@ def registrants():
             {% endfor %}
         </tbody>
     </table>
-{% endblock %}
+{% endblock %}{% endraw %}
 ```
 
 ## Sessions
