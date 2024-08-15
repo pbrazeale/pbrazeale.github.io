@@ -1,4 +1,7 @@
---- --- //
+---
+---
+
+//
 // IMPORTS
 //
 
@@ -15,24 +18,19 @@ html {
 }
 
 body {
-  background: #1B1B25;
+	background: #1B1B25;
   font: 18px/1.4 $helvetica;
   color: #BAC0E4;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 740px;
   padding: 0 10px;
   width: 100%;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
   font-weight: bold;
 
@@ -48,7 +46,6 @@ h6 {
 h1 {
   font-size: 30px;
   color: #E67E7D;
-
   a {
     color: inherit;
   }
@@ -76,16 +73,13 @@ p {
 a {
   color: #B8A3F0;
   text-decoration: none;
-  cursor: pointer;
-
-  &:hover,
-  &:active {
+	cursor: pointer;
+  &:hover, &:active {
     color: #9DBF73;
   }
 }
 
-ul,
-ol {
+ul, ol {
   margin: 15px 0;
   padding-left: 30px;
 }
@@ -98,25 +92,19 @@ ol {
   list-style-type: decimal;
 }
 
-ol ul,
-ul ol,
-ul ul,
-ol ol {
+ol ul, ul ol, ul ul, ol ol {
   margin: 0;
 }
 
-ul ul,
-ol ul {
+ul ul, ol ul {
   list-style-type: circle;
 }
 
-em,
-i {
+em, i {
   font-style: italic;
 }
 
-strong,
-b {
+strong, b {
   font-weight: bold;
 }
 
@@ -139,7 +127,6 @@ img {
   color: $black;
   background: $lightGray;
 }
-
 ::selection {
   color: $black;
   background: $lightGray;
@@ -161,7 +148,7 @@ img {
 .masthead {
   padding: 20px 0;
   //border-bottom: 1px solid $Green;
-
+  
   @include mobile {
     text-align: center;
   }
@@ -172,13 +159,13 @@ img {
   width: 70px;
   height: 70px;
   margin-right: 15px;
-
+  
   @include mobile {
     float: none;
     display: block;
     margin: 0 auto;
   }
-
+  
   img {
     border-radius: 5px;
   }
@@ -186,7 +173,7 @@ img {
 
 .site-info {
   float: left;
-
+  
   @include mobile {
     float: none;
     display: block;
@@ -208,7 +195,7 @@ img {
   color: #DBB177;
   margin: -5px 0 0 0;
   font-size: 16px;
-
+  
   @include mobile {
     margin: 3px 0;
   }
@@ -219,26 +206,25 @@ nav {
   margin-top: 23px; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
   font-size: 18px;
-
+  
   @include mobile {
     float: none;
     margin-top: 9px;
     display: block;
     font-size: 16px;
   }
-
+  
   a {
     margin-left: 20px;
     color: #B8A3F0;
     text-align: right;
     font-weight: 300;
     letter-spacing: 1px;
-
-    &:hover,
-    &:active {
+    
+    &:hover, &:active {
       color: #9DBF73;
     }
-
+    
     @include mobile {
       margin: 0 10px;
       color: #B8A3F0;
@@ -250,12 +236,12 @@ nav {
 // .main
 //
 
-.posts>.post {
+.posts > .post {
   padding-bottom: 2em;
   border-bottom: 1px solid $lightGray;
 }
 
-.posts>.post:last-child {
+.posts > .post:last-child {
   padding-bottom: 1em;
   border-bottom: none;
 }
@@ -269,11 +255,11 @@ nav {
     font-size: 22px;
     font-style: italic;
   }
-
+  
   .comments {
     margin-top: 10px;
   }
-
+  
   .read-more {
     text-transform: uppercase;
     font-size: 15px;
@@ -301,10 +287,10 @@ footer {
 // http://nicolasgallagher.com/micro-clearfix-hack/
 .clearfix:before,
 .clearfix:after {
-  content: " ";
-  display: table;
+    content: " ";
+    display: table;
 }
 
 .clearfix:after {
-  clear: both;
+    clear: both;
 }
