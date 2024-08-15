@@ -2,7 +2,7 @@
 3rd party Python library.
 [Flask Documentation](https://flask.palletsprojects.com/en/2.2.x/api/?highlight=session#flask.session)
 
-```python
+{% highlight python linenos %}
 from flask import Flask, render_template, request
 
 app = Flask(__name__)
@@ -13,9 +13,9 @@ def index():
 	name = request.args["name"]
 	return render_template("index.html")
 	
-```
+{% endhighlight %}
 
-```html
+{% highlight HTML linenos %}
 <!DOCTYPE html>
 
 <html lang="en">
@@ -27,13 +27,13 @@ def index():
         hello, {{ name }}
     </body>
 </html>
-```
+{% endhighlight %}
 
 ### Jinja
 a language for Flask to use placeholders in html pages.
 [Jinja Documentation](https://jinja.palletsprojects.com/en/3.1.x/)
 
-```python
+{% highlight python linenos %}
 from flask import Flask, render_template, request
 
 app = Flask(__name__)
@@ -44,9 +44,9 @@ def index():
 	name = request.args["name"]
 	return render_template("index.html", placeholder=name)
 	
-```
+{% endhighlight %}
 
-```html
+{% highlight HTML linenos %}
 <!DOCTYPE html>
 
 <html lang="en">
@@ -58,10 +58,10 @@ def index():
         hello, {{ placeholder }}
     </body>
 </html>
-```
+{% endhighlight %}
 
 a list can cause of problem, so use .get
-```python
+{% highlight python linenos %}
 from flask import Flask, render_template, request
 
 app = Flask(__name__)
@@ -73,11 +73,11 @@ def index():
 	name = request.args.get("name", "world")
 	return render_template("index.html", placeholder=name)
 	
-```
+{% endhighlight %}
 
 Using a form is more standard.
 
-```html
+{% highlight HTML linenos %}
 <!DOCTYPE html>
 
 <html lang="en">
@@ -92,11 +92,11 @@ Using a form is more standard.
 		</form>
     </body>
 </html>
-```
+{% endhighlight %}
 
 Use Jinja to create an .html template. (*Could have used this last week instead of jQuery*)
 
-```html
+{% highlight HTML linenos %}
 <!DOCTYPE html>
 
 <html lang="en">
@@ -108,9 +108,9 @@ Use Jinja to create an .html template. (*Could have used this last week instead 
         {% raw %} {% block body %}{% endblock %}{% endraw %}
     </body>
 </html>
-```
+{% endhighlight %}
 
-```html
+{% highlight HTML linenos %}
 {% raw %}{% extends "layout.html" %}
 
 {% block body %}
@@ -121,10 +121,10 @@ Use Jinja to create an .html template. (*Could have used this last week instead 
     </form>
 
 {% endblock %}{% endraw %}
-```
+{% endhighlight %}
 
 ### Post
-```html
+{% highlight HTML linenos %}
 {% raw %}{% extends "layout.html" %}
 
 {% block body %}
@@ -135,10 +135,10 @@ Use Jinja to create an .html template. (*Could have used this last week instead 
     </form>
 
 {% endblock %}{% endraw %}
-```
+{% endhighlight %}
 Hides the special requests sent in the URL
 
-```python
+{% highlight python linenos %}
 # Uses a single route
 
 from flask import Flask, render_template, request
@@ -151,11 +151,11 @@ def index():
     if request.method == "POST":
         return render_template("greet.html", name=request.form.get("name", "world"))
     return render_template("index.html")
-```
+{% endhighlight %}
 
 
 ### SQL integration
-```python
+{% highlight python linenos %}
 # Implements a registration form, storing registrants in a SQLite database, with support for deregistration
 
 from cs50 import SQL
@@ -207,9 +207,9 @@ def register():
 def registrants():
     registrants = db.execute("SELECT * FROM registrants")
     return render_template("registrants.html", registrants=registrants)
-```
+{% endhighlight %}
 
-```html
+{% highlight HTML linenos %}
 #INDEX
 {% raw %}{% extends "layout.html" %}
 
@@ -223,9 +223,9 @@ def registrants():
         <button type="submit">Register</button>
     </form>
 {% endblock %}{% endraw %}
-```
+{% endhighlight %}
 
-```HTML
+{% highlight HTML linenos %}
 #REGISTRANTS
 {% raw %}{% extends "layout.html" %}
 
@@ -255,16 +255,16 @@ def registrants():
         </tbody>
     </table>
 {% endblock %}{% endraw %}
-```
+{% endhighlight %}
 
 ## Sessions
-```HTML
+{% highlight HTML linenos %}
 Set-Cookie: session=value
 
 Cookie: session=value
-```
+{% endhighlight %}
 
-```python
+{% highlight python linenos %}
 from flask import Flask, redirect, render_template, request, session
 from flask_session import Session
 
@@ -294,10 +294,10 @@ def login():
 def logout():
     session.clear()
     return redirect("/")
-```
+{% endhighlight %}
 
 ### Shopping Cart
-```python
+{% highlight python linenos %}
 from cs50 import SQL
 from flask import Flask, redirect, render_template, request, session
 from flask_session import Session
@@ -337,10 +337,10 @@ def cart():
     # GET (?) gets from []
     books = db.execute("SELECT * FROM books WHERE id IN (?)", session["cart"])
     return render_template("cart.html", books=books)
-```
+{% endhighlight %}
 
 ### Shows / SQL searching
-```python
+{% highlight python linenos %}
 # Searches for shows using LIKE
 
 from cs50 import SQL
@@ -360,7 +360,7 @@ def index():
 def search():
     shows = db.execute("SELECT * FROM shows WHERE title LIKE ?", "%" + request.args.get("q") + "%")
     return render_template("search.html", shows=shows)
-```
+{% endhighlight %}
 
 ## Ajax
 asynchronies query and response to create responsive searching from the database as the user types.
