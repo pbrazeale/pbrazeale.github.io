@@ -44,3 +44,5 @@ After figuring out how to revert the offending commit I also learned, it's best 
 Alongside reading this, I'm going to take, [HarvardX: Data Science: Productivity Tools](https://www.edx.org/course/data-science-productivity-tools) before I begin my final project, just to ensure I can use Git properly, and brushing up on Linux can't hurt. It'll also be a good excuse to finalize my T430's conversion.
 
 - Enrolled; course starts on October, 16th.
+
+[Developer Week 004](https://pbrazeale.github.io/Developer-Week-004/)
