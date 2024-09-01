@@ -3,7 +3,7 @@
 
 "An Omakase Developer Setup for Ubuntu 24.04 by DHH"
 
-https://omakub.org/
+[https://omakub.org/](https://omakub.org/)
 
 Took the plunge and setup Omakub on my T430. Took three attempts because of dependency glitches, but after a couple of restarts it installed without error and worked fine. Not sure I'm ready to jump into NeoVIM, but thus far I prefer the GUI compared to vanilla Ubuntu.
 
