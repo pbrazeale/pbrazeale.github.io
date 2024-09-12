@@ -41,7 +41,7 @@ else:
 {% endhighlight %}
 
 Validation characters
-{% highlight %}
+```
 .   any character except a new line
 *   0 or more repetitions
 +   1 or more repetitions
@@ -65,8 +65,7 @@ $   matches the end of the string or just before the newline at the end of the s
 A|B     either A or B
 (...)   a group
 (?:...) non-capturing version
-
-{% endhighlight %}
+```
 
 r can be used to create a raw string
 {% highlight python linenos %}
