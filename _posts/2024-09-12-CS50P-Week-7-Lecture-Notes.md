@@ -65,6 +65,7 @@ $   matches the end of the string or just before the newline at the end of the s
 A|B     either A or B
 (...)   a group
 (?:...) non-capturing version
+
 {% endhighlight %}
 
 r can be used to create a raw string
