@@ -11,4 +11,4 @@ Completed NUMB3RS, and Watch on YouTube problem sets. RE is an interesting modul
 
 Only thing left to learn for the Final Project is how to create interactive visual charts to display data analysis. I suspect I'll import CSV files and create a SQL database to store the data and then use SQL queries to format the data relations. 
 
-[Developer Week 007](https://pbrazeale.github.io/Developer-Week-007/)
+[Developer Week 007][https://pbrazeale.github.io/Developer-Week-007/]
