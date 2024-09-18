@@ -1,6 +1,7 @@
 ## OOP (Object-Oriented Programming)
 ### Step 1 of creating an OOP
-{% highlight python %}
+
+{% highlight python linenos %}
 def main():
     name = get_name()
     house = get_house()
@@ -18,11 +19,13 @@ def get_house():
 if __name__ == "__main__":
     main()
 {% endhighlight %}
+
 Where the name and house variables are now defined by using separate functions, and those functions could be used again in the future. 
 
 ### Tuple
 *"A tuple is a sequences of values. Unlike a list, a tuple can’t be modified. In spirit, we are returning two values."*
-{% highlight python %}
+
+{% highlight python linenos %}
 def main():
     student = get_student()
     print(f"{student[0]} from {student[1]}")
@@ -40,7 +43,8 @@ if __name__ == "__main__":
 
 ### List
 For when you want to allow yourself to change the values.
-{% highlight python %}
+
+{% highlight python linenos %}
 def main():
     student = get_student()
     if student[0] == "Padma":
@@ -60,7 +64,8 @@ if __name__ == "__main__":
 
 ### Dictionary
 Has a key value pair.
-{% highlight python %}
+
+{% highlight python linenos %}
 def main():
     student = get_student()
     if student["name"] == "Padma":
@@ -82,7 +87,8 @@ if __name__ == "__main__":
 *"Classes are a way by which, in object-oriented programming, we can create our own type of data and give them names.
 A class is like a mold for a type of data – where we can invent our own data type and give them a name.
 We can modify our code as follows to implement our own class called Student:"*
-{% highlight python %}
+
+{% highlight python linenos %}
 class Student:
     ...
 
@@ -108,7 +114,8 @@ Convention is to make custom classes Uppercase.
 Classes create an Object.
 
 ### Better way to use the Student class
-{% highlight python %}
+
+{% highlight python linenos %}
 class Student:
     def __init__(self, name, house):
         self.name = name
@@ -133,7 +140,8 @@ if __name__ == "__main__":
 
 ### Raise
 *"Object-oriented program encourages you to encapusulate all the functionality of a class within the class definition. What if something goes wrong? What if someone tries to type in something random? What if someone tries to create a student without a name? Modify your code as follows:"*
-{% highlight python %}
+
+{% highlight python linenos %}
 class Student:
     def __init__(self, name, house):
         if not name:
@@ -161,7 +169,8 @@ if __name__ == "__main__":
 
 ### str
 *"`__str__` is a built-in method that comes with Python classes. It just so happens that we can create our own methods for a class as well! Modify your code as follows:"*
-{% highlight python %}
+
+{% highlight python linenos %}
 class Student:
     def __init__(self, name, house, patronus=None):
         if not name:
@@ -209,7 +218,8 @@ if __name__ == "__main__":
 ### Properties
 @poperty
 #### Decorators
-{% highlight python %}
+
+{% highlight python linenos %}
     # Getter for house
     @property
     def house(self):
@@ -223,6 +233,7 @@ if __name__ == "__main__":
         self._house = house
 
 {% endhighlight %}
+
 *"Notice how we’ve written `@property` above a function called `house`. Doing so defines `house` as a property of our class. With `house` as a property, we gain the ability to define how some attribute of our class, `_house`, should be set and retrieved. Indeed, we can now define a function called a “setter”, via `@house.setter`, which will be called whenever the house property is set—for example, with `student.house = "Gryffindor"`. Here, we’ve made our setter validate values of `house` for us. Notice how we raise a `ValueError` if the value of `house` is not any of the Harry Potter houses, otherwise, we’ll use `house` to update the value of `_house`. Why `_house` and not `house`? `house` is a property of our class, with functions via which a user attempts to set our class attribute. `_house` is that class attribute itself. The leading underscore, `_`, indicates to users they need not (and indeed, shouldn’t!) modify this value directly. `_house` should _only_ be set through the `house` setter. Notice how the `house` property simply returns that value of `_house`, our class attribute that has presumably been validated using our `house` setter. When a user calls `student.house`, they’re getting the value of `_house` through our `house` “getter”."*
 
 Python has no private variables, which is why `_variable` is used by convention to express not to touch it, and `__variable` means for real, under no circumstance, should you touch/change the variable.
@@ -231,7 +242,8 @@ Python has no private variables, which is why `_variable` is used by convention 
 - *Inheritance is, perhaps, the most powerful feature of object-oriented programming.*
 - *"t just so happens that you can create a class that “inherits” methods, variables, and attributes from another class.*
 - *In the terminal, execute `code wizard.py`. Code as follows:*
-{% highlight python %}
+
+{% highlight python linenos %}
 # by creating the wizard class, we can control inheritance being passed into Student and Professor.
 class Wizard:
     def __init__(self, name):
@@ -273,7 +285,7 @@ professor = Professor("Severus", "Defense Against the Dark Arts")
 - *While we have just introduced inheritance, we have been using this all along during our use of exceptions.*
 - *It just so happens that exceptions come in a heirarchy, where there are children, parent, and grandparent classes. These are illustrated below:*
 
-{% highlight %}
+{% highlight python %}
 BaseException
  +-- KeyboardInterrupt
  +-- Exception
@@ -297,7 +309,7 @@ BaseException
 
 ### Operator Overloading
 *Some operators such as + and - can be “overloaded” such that they can have more abilities beyond simple arithmetic.*
-{% highlight python %}
+{% highlight python linenos %}
 class Vault:
     def __init__(self, galleons=0, sickles=0, knuts=0):
         self.galleons = galleons
