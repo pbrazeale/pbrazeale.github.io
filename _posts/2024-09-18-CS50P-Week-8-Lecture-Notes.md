@@ -1,6 +1,6 @@
 ## OOP (Object-Oriented Programming)
 ### Step 1 of creating an OOP
-{% highlight python linenos %}
+{% highlight python %}
 def main():
     name = get_name()
     house = get_house()
@@ -22,7 +22,7 @@ Where the name and house variables are now defined by using separate functions, 
 
 ### Tuple
 *"A tuple is a sequences of values. Unlike a list, a tuple can’t be modified. In spirit, we are returning two values."*
-{% highlight python linenos %}
+{% highlight python %}
 def main():
     student = get_student()
     print(f"{student[0]} from {student[1]}")
@@ -40,7 +40,7 @@ if __name__ == "__main__":
 
 ### List
 For when you want to allow yourself to change the values.
-{% highlight python linenos %}
+{% highlight python %}
 def main():
     student = get_student()
     if student[0] == "Padma":
@@ -60,7 +60,7 @@ if __name__ == "__main__":
 
 ### Dictionary
 Has a key value pair.
-{% highlight python linenos %}
+{% highlight python %}
 def main():
     student = get_student()
     if student["name"] == "Padma":
@@ -82,7 +82,7 @@ if __name__ == "__main__":
 *"Classes are a way by which, in object-oriented programming, we can create our own type of data and give them names.
 A class is like a mold for a type of data – where we can invent our own data type and give them a name.
 We can modify our code as follows to implement our own class called Student:"*
-{% highlight python linenos %}
+{% highlight python %}
 class Student:
     ...
 
@@ -108,7 +108,7 @@ Convention is to make custom classes Uppercase.
 Classes create an Object.
 
 ### Better way to use the Student class
-{% highlight python linenos %}
+{% highlight python %}
 class Student:
     def __init__(self, name, house):
         self.name = name
@@ -133,7 +133,7 @@ if __name__ == "__main__":
 
 ### Raise
 *"Object-oriented program encourages you to encapusulate all the functionality of a class within the class definition. What if something goes wrong? What if someone tries to type in something random? What if someone tries to create a student without a name? Modify your code as follows:"*
-{% highlight python linenos %}
+{% highlight python %}
 class Student:
     def __init__(self, name, house):
         if not name:
@@ -161,7 +161,7 @@ if __name__ == "__main__":
 
 ### str
 *"`__str__` is a built-in method that comes with Python classes. It just so happens that we can create our own methods for a class as well! Modify your code as follows:"*
-{% highlight python linenos %}
+{% highlight python %}
 class Student:
     def __init__(self, name, house, patronus=None):
         if not name:
@@ -209,7 +209,7 @@ if __name__ == "__main__":
 ### Properties
 @poperty
 #### Decorators
-{% highlight python linenos %}
+{% highlight python %}
     # Getter for house
     @property
     def house(self):
@@ -231,7 +231,7 @@ Python has no private variables, which is why `_variable` is used by convention 
 - *Inheritance is, perhaps, the most powerful feature of object-oriented programming.*
 - *"t just so happens that you can create a class that “inherits” methods, variables, and attributes from another class.*
 - *In the terminal, execute `code wizard.py`. Code as follows:*
-{% highlight python linenos %}
+{% highlight python %}
 # by creating the wizard class, we can control inheritance being passed into Student and Professor.
 class Wizard:
     def __init__(self, name):
@@ -297,7 +297,7 @@ BaseException
 
 ### Operator Overloading
 *Some operators such as + and - can be “overloaded” such that they can have more abilities beyond simple arithmetic.*
-{% highlight python linenos %}
+{% highlight python %}
 class Vault:
     def __init__(self, galleons=0, sickles=0, knuts=0):
         self.galleons = galleons
