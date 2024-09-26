@@ -11,10 +11,10 @@ Having built my first "real" piece of software taught me so much, and I already 
 
 This certificate marks the first of many to come, but the first achievement is always the hardest.
 
-{% highlight %}
+```
 “First, have a definite, clear practical ideal; a goal, an objective. Second, have the necessary means to achieve your ends; wisdom, money, materials, and methods. Third, adjust all your means to that end.”
 ― Aristotle
 
 “success is simple. First, you decide what you want specifically; and second, you decide you’re willing to pay the price to make it happen—and then pay that price.”
 ― Anthony Robbins, Unlimited Power: The New Science Of Personal Achievement
-{% endhighlight %}
+```
