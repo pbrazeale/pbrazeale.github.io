@@ -1,4 +1,6 @@
-<img src="https://github.com/pbrazeale/pbrazeale.github.io/blob/master/images/20240926_CS50P_Certificate.png?raw=true" alt="CS50P Certificate" style="width:30%;height:30%;">
+## Harvard Online CS50 Python
+
+<a link="https://github.com/pbrazeale/pbrazeale.github.io/blob/master/images/20240926_CS50P_Certificate.png?raw=true"><img src="https://github.com/pbrazeale/pbrazeale.github.io/blob/master/images/20240926_CS50P_Certificate.png?raw=true" alt="CS50P Certificate" style="width:30%;height:30%;"></a>
 
 ## Takeaways
 

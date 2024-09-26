@@ -20,3 +20,9 @@ and are aligned with the principle of harnessing the AI revolution to increase t
 ## Contact
 
 [pbrazeale@gmail.com](mailto:pbrazeale@gmail.com)
+
+## Qualifications
+
+### Harvard Online CS50 Python
+
+<a link="https://github.com/pbrazeale/pbrazeale.github.io/blob/master/images/20240926_CS50P_Certificate.png?raw=true"><img src="https://github.com/pbrazeale/pbrazeale.github.io/blob/master/images/20240926_CS50P_Certificate.png?raw=true" alt="CS50P Certificate" style="width:30%;height:30%;"></a>
