@@ -1,4 +1,4 @@
-<img src="https://github.com/pbrazeale/pbrazeale.github.io/blob/master/_posts/20240926_CS50P_Certificate.png?raw=true" alt="CS50P Certificate" style="width:30%;height:30%;">
+<img src="https://github.com/pbrazeale/pbrazeale.github.io/blob/master/images/20240926_CS50P_Certificate.png?raw=true" alt="CS50P Certificate" style="width:30%;height:30%;">
 
 ## Takeaways
 
