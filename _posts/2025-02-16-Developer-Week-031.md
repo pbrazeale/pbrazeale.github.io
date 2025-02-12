@@ -1,4 +1,4 @@
-## NeetCode SQL for Beginners (50/75)
+## NeetCode SQL for Beginners (55/75)
 
 
 ## Projects
