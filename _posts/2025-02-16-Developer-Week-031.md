@@ -1,4 +1,4 @@
-## NeetCode SQL for Beginners (55/75)
+## NeetCode SQL for Beginners (58/75)
 
 
 ## Projects
@@ -17,5 +17,6 @@ https://github.com/pbrazeale/100-Days-of-Code/blob/main/Day_005_Password_Generat
 #### Day 006
 Solved the maze problem with code, using the follow right path algorithm. Gave me flashbacks to the early 2000s and watching the maze screen saver for Windows XP. I need to spend a little time thinking through edge cases. I failed to consider what happens when the robot reached an empty square space, because I didn't encounter it when I tested my code. "Works on my machine" is not an acceptable mindset.
 
+#### Day 009
+Built a CLI for blind auctions. It was a simple solution using a nested list inside a dictionary. Didn't need the video to solve the problem which I'm proud of.
 
-## IT Specialist Position
