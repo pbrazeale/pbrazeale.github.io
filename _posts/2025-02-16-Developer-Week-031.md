@@ -20,3 +20,8 @@ Solved the maze problem with code, using the follow right path algorithm. Gave m
 #### Day 009
 Built a CLI for blind auctions. It was a simple solution using a nested list inside a dictionary. Didn't need the video to solve the problem which I'm proud of.
 
+#### Day 011
+Built a CLI Blackjack game. This was a capstone project, so I watched the intro to understand the application requirements and then built the game without any reference to the course, nor outside google searches.
+https://github.com/pbrazeale/100-Days-of-Code/blob/main/Day_011_Blackjack/blackjack.py
+
+Not sure if it's optimal, but I used `random` to shuffle my deck list and then delt by indexing into the deck. It's a total of 101 lines of code, which seems suboptimal, but I was able to build it in about an hour, so that was fun. Ran into the odd syntax error, and had to add in conditional check for dealer having 21 before entering the "hit()" phase of the game for the player, but otherwise everything worked as planned.
