@@ -1,5 +1,5 @@
 ## NeetCode SQL for Beginners (59/75)
-
+Should be wrapping this us this week, and then next week I'll need to find a project database to practice more "real-world" style quires integrated with python to graph and display useable insights. 
 
 ## Projects
 ### 100 Days of Code: The Complete Python Pro Bootcamp (7/100)
