@@ -2,7 +2,7 @@
 Should be wrapping this us this week, and then next week I'll need to find a project database to practice more "real-world" style quires integrated with python to graph and display useable insights. 
 
 ## Projects
-### 100 Days of Code: The Complete Python Pro Bootcamp (7/100)
+### 100 Days of Code: The Complete Python Pro Bootcamp (14/100)
 https://www.udemy.com/course/100-days-of-code/
 
 This came across my feed as a recommendation when I was looking for Python books, and I was able to snag it on sale, so it seemed a no brainer. The simple act of dedicated focus and building projects publicly should prove well worth the price of admission.
