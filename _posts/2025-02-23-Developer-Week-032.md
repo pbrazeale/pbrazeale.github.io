@@ -45,9 +45,14 @@ See gif of the game here: https://x.com/pbrazeale/status/1892655075270484043
 ### NeetCode SQL for Beginners (59/75)
 
 
+### Linux Journey Grasshopper (2/8)
+https://linuxjourney.com/
+
+*I run Mint by the way.*
+
 ### Books
-**The Linux Command Line** by William Shotts (113/594)
+**The Linux Command Line** by William Shotts (144/594)
 
-**How Linux Works** by Brian Ward (45/366)
+**How Linux Works** by Brian Ward (50/366)
 
-LPIC-1 Exam 101 (11/554)
+**LPIC-1 Exam 101** (11/554)
