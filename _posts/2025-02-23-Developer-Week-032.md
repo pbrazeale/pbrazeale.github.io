@@ -1,5 +1,5 @@
 ## Projects
-### 100 Days of Code: The Complete Python Pro Bootcamp (21/100)
+### 100 Days of Code: The Complete Python Pro Bootcamp (22/100)
 #### Day 15
 Built CLI coffee machine logic.
 https://github.com/pbrazeale/100-Days-of-Code/blob/main/Day_015_Coffee_Machine/main.py
@@ -41,18 +41,20 @@ Followed the instructions to change my `grow()` method.
 
 See gif of the game here: https://x.com/pbrazeale/status/1892655075270484043
 
+#### Day 023 Turtle Crossing (frogger clone)
+Built a capstone Turtle game.
 
-### NeetCode SQL for Beginners (59/75)
+A simplistic frogger clone, but an excellent learning tool to solidify the concepts around OOP and separation of methods.
+
+### NeetCode SQL for Beginners (60/75)
 
 
 ### Linux Journey Grasshopper (2/8)
 https://linuxjourney.com/
 
-*I run Mint by the way.*
-
 ### Books
 **The Linux Command Line** by William Shotts (144/594)
 
-**How Linux Works** by Brian Ward (50/366)
+**How Linux Works** by Brian Ward (95/366)
 
 **LPIC-1 Exam 101** (11/554)
