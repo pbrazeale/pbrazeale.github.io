@@ -25,9 +25,9 @@ Built a password generator with Tkinter, random, and pyperclip.
 ##### Git Restore Deleted File
 Accidentally deleted `day_029_password_manager/main.py` thankfully stack overflow saved me: https://stackoverflow.com/questions/953481/how-do-i-find-and-restore-a-deleted-file-in-a-git-repository
 
->`git log --diff-filter=D --summary` log, difference filtered by D (delete), summary for short.
+`git log --diff-filter=D --summary` log, difference filtered by D (delete), summary for short.
 
->`git checkout e4e6d4d5e5c59c69f3bd7be2~1 path/to/file.ext` ~1 step back one hash from where the file was deleted and pull the file path. 
+`git checkout e4e6d4d5e5c59c69f3bd7be2~1 path/to/file.ext` ~1 step back one hash from where the file was deleted and pull the file path. 
 
 #### Day 033 ISS Overhead Notifier
 https://github.com/pbrazeale/100-Days-of-Code/tree/main/day_033_iss_overhead_notifier
