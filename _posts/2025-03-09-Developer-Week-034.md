@@ -21,7 +21,7 @@ This was fun and far easier than I thought it would be at first glance. Was able
 #### Day 029 & 030 Password Generator
 [https://github.com/pbrazeale/100-Days-of-Code/tree/main/day_029_password_manager](https://github.com/pbrazeale/100-Days-of-Code/tree/main/day_029_password_manager)
 Built a password generator with Tkinter, random, and pyperclip.
-!["images\password_generator.gif"]
+![Password Generator](images\password_generator.gif)
 ##### Git Restore Deleted File
 Accidentally deleted `day_029_password_manager/main.py` thankfully stack overflow saved me: [https://stackoverflow.com/questions/953481/how-do-i-find-and-restore-a-deleted-file-in-a-git-repository](https://stackoverflow.com/questions/953481/how-do-i-find-and-restore-a-deleted-file-in-a-git-repository)
 
