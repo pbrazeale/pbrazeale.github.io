@@ -13,7 +13,7 @@ As a general rule, to add directories to your PATH or define additional environm
 
 Let's fire up nano and edit the .bashrc file. But before we do that, let's practice some “safe computing.” Whenever we edit an important configuration file, it is always a good idea to create a backup copy of the file first. This protects us in case we mess up the file while editing. To create a backup of the .bashrc file, do this:
 
-{% highlight console %}
+{% highlight shell %}
 $ cp .bashrc .bashrc.bak
 {% endhighlight %}
 

@@ -113,11 +113,11 @@ I/O redirection allows us to redefine where standard output goes. To redirect st
 
 ### Group Commands
 Let’s imagine a situation where we want to execute a series of commands and send the results to a log file. With we know already, we could do this:
-{% highlight console %}
+{% highlight shell %}
 [me@linuxbox ~]$ command1 > logfile.txt
 [me@linuxbox ~]$ command2 >> logfile.txt
 [me@linuxbox ~]$ command3 >> logfile.txt
-{% endhighlight %}
+{% endhighlight shell %}
 
 The first command in this sequence creates/truncates a file named logfile.txt and each subsequent command appends its output to that file. This technique will work but there is a lot of redundant typing. There must be a better way.
 As we saw in the previous chapter, we can put multiple commands on a single line like this:
@@ -188,7 +188,7 @@ Sometimes we don't want all the output from a command. We may only want the firs
 
 ### tee – Read from Stdin and Output to Stdout and Files
 In keeping with our plumbing metaphor, Linux provides a command called tee which creates a “tee” fitting on our pipe. The tee program reads standard input and copies it to both standard output (allowing the data to continue down the pipeline) and to one or more files. This is useful for capturing a pipeline's contents at an intermediate stage of processing. Here we repeat one of our earlier examples, this time including tee to capture the entire directory listing to the file ls.txt before grep filters the pipeline's contents:
-{% highlight console %}
+{% highlight shell %}
 [me@linuxbox ~]$ ls /usr/bin | tee ls.txt | grep 
 bunzip2
 bzip2
@@ -201,7 +201,7 @@ zipgrep
 zipinfo
 zipnote
 zipsplit
-{% endhighlight %}
+{% endhighlight shell %}
 
 
 ## 07 Seeing the World as the Shell Sees It
@@ -228,7 +228,7 @@ history – Display the contents of the history list
 #### Cursor Movement
 The following table lists the keys used to move the cursor:
 
-{% highlight %}
+{% highlight shell%}
 Ctrl-a
 Move cursor to the beginning of the line.
 Ctrl-e
@@ -243,10 +243,10 @@ Alt-b
 Move cursor backward one word.
 Ctrl-l
 Clear the screen and move the cursor to the top-left corner. The clear command does the same thing.
-{% endhighlight %}
+{% endhighlight shell %}
 
 #### Modifying Text
-{% highlight %}
+{% highlight shell%}
 Ctrl-d
 Delete the character at the cursor location.
 Ctrl-t
@@ -257,12 +257,12 @@ Alt-l
 Convert the characters from the cursor location to the end of the word to lowercase.
 Alt-u
 Convert the characters from the cursor location to the end of the word to uppercase.
-{% endhighlight %}
+{% endhighlight shell %}
 
 #### Cutting and Pasting (Killing and Yanking) Text
 The Readline documentation uses the terms killing and yanking to refer to what we would commonly call cutting and pasting. Items that are cut are stored in a buffer (a temporary storage area in memory) called the kill-ring.
 
-{% highlight %}
+{% highlight shell%}
 Ctrl-k
 Kill text from the cursor location to the end of line.
 Ctrl-u
@@ -273,7 +273,7 @@ Alt-Backspace
 Kill text from the cursor location to the beginning of the current word. If the cursor is at the beginning of a word, kill the previous word.
 Ctrl-y
 Yank text from the kill-ring and insert it at the cursor location.
-{% endhighlight %}
+{% endhighlight shell %}
 
 #### The Meta Key
 If you venture into the Readline documentation, which can be found in the “READLINE” section of the bash man page, you will encounter the term meta key. On modern keyboards this maps to the Alt key but it wasn't always so.
@@ -290,7 +290,7 @@ and see if you can find them. Not all distributions include them by default.
 This list of commands is kept in our home directory in a file called `.bash_history`. The history facility is a useful resource for reducing the amount of typing we have to do, especially when combined with command line editing.
 
 #### History Commands
-{% highlight %}
+{% highlight shell%}
 Ctrl-p
 Move to the previous history entry. This is the same action as the up arrow.
 Ctrl-n
@@ -307,10 +307,10 @@ Alt-n
 Forward search, nonincremental.
 Ctrl-o
 Execute the current item in the history list and advance to the next
-{% endhighlight %}
+{% endhighlight shell %}
 
 #### History Expansion Commands
-{% highlight %}
+{% highlight shell %}
 !!
 Repeat the last command. It is probably easier to press up arrow and enter.
 !number
@@ -319,7 +319,7 @@ Repeat history list item number.
 Repeat last history list item starting with string.
 !?string
 Repeat last history list item containing string.
-{% endhighlight %}
+{% endhighlight shell %}
 
 #### script
 In addition to the command history feature in bash, most Linux distributions include a program called script that can be used to record an entire shell session and store it in a file. The basic syntax of the command is as follows:
@@ -339,7 +339,7 @@ User accounts are defined in the /etc/passwd file and groups are defined in the 
 
 ### Reading, Writing, and Executing
 #### File Types
-{% highlight %}
+{% highlight shell %}
 -
 A regular file.
 d
@@ -350,10 +350,10 @@ c
 A character special file. This file type refers to a device that handles data as a stream of bytes, such as a terminal or /dev/null.
 b
 A block special file. This file type refers to a device that handles data in blocks, such as a hard disk or DVD drive.
-{% endhighlight %}
+{% endhighlight shell %}
 
 #### Permission Attributes
-{% highlight %}
+{% highlight shell %}
 r
 Allows a file to be opened and read.
 Allows a directory's contents to be listed, but no file information is available unless the execute attribute is also set.
@@ -363,10 +363,10 @@ Allows files within a directory to be created, deleted, and renamed if the execu
 x
 Allows a file to be treated as a program and executed. Program files written in scripting languages must also be set as readable to be executed.
 Allows a directory to be entered (i.e., cd directory) and directory metadata (i.e, ls -l directory) to be accessed. File operations such cp, rm, and mv require this access to the directory.
-{% endhighlight %}
+{% endhighlight shell %}
 
 ##### Permission Attribute Examples
-{% highlight %}
+{% highlight shell %}
 -rwx------
 A regular file that is readable, writable, and executable by the file's owner. No one else has any access.
 -rw-------
@@ -383,10 +383,10 @@ drwxrwx---
 A directory. The owner and the members of the owner group may enter the directory and create, rename and remove files within the directory.
 drwxr-x---
 A directory. The owner may enter the directory and create, rename, and delete files within the directory. Members of the owner group may enter the directory but cannot create, delete, or rename files.
-{% endhighlight %}
+{% endhighlight shell %}
 
 #### chmod – Change File Mode
-{% highlight %}
+{% highlight shell %}
 0
 000
 ---
@@ -418,10 +418,10 @@ rw-
 7
 111
 rwx
-{% endhighlight %}
+{% endhighlight shell %}
 
 #### chmod Symbolic Notation
-{% highlight %}
+{% highlight shell %}
 u
 Short for “user” i.e. the file or directory’s owner.
 g
@@ -430,10 +430,10 @@ o
 Short for others.
 a
 Short for “all.” This is the combination of “u”, “g”, and “o”.
-{% endhighlight %}
+{% endhighlight shell %}
 
 ##### chmod Symbolic Notation Examples
-{% highlight %}
+{% highlight shell %}
 u+x
 Add execute permission for the owner.
 u-x
@@ -446,7 +446,7 @@ go=rw
 Set the group owner and anyone besides the user to have read and write permission. If either the group owner or others previously had execute permission, it is removed.
 u+x,go=rx
 Add execute permission for the user and set the permissions for the group and others to read and execute. Multiple specifications may be separated by commas.
-{% endhighlight %}
+{% endhighlight shell %}
 
 #### umask – Set Default Permissions
 The umask command controls the default permissions given to a file when it is created. It uses octal notation to express a mask of bits to be removed from a file's mode attributes.
@@ -479,7 +479,7 @@ To set or change a password, the passwd command is used.
 The passwd, addgroup, and usermod commands are part of a suite of commands in the shadow-utils package
 
 #### shadow-utils Commands
-{% highlight %}
+{% highlight shell %}
 lastlog
 Reports the most recent login of all users or of a given user.
 useradd
@@ -494,7 +494,7 @@ groupdel
 Delete a group.
 groupmod
 .Modify a group definition on the system.
-{% endhighlight %}
+{% endhighlight shell %}
 
 
 ## 10 Processes
@@ -521,7 +521,7 @@ The fact that a program can launch other programs is expressed in the process sc
 The most commonly used tool to view processes (there are several) is the ps command.
 
 #### Process States
-{% highlight %}
+{% highlight shell %}
 R
 Running. This means that the process is running or ready to run.
 S
@@ -536,7 +536,7 @@ A defunct or “zombie” process. This is a child process that has terminated b
 A high-priority process. It's possible to grant more importance to a process, giving it more time on the CPU. This property of a process is called niceness. A process with high priority is said to be less nice because it's taking more of the CPU's time, which leaves less for everybody else.
 N
 A low-priority process. A process with low priority (a “nice” process) will get processor time only after other processes with higher priority have been serviced.
-{% endhighlight %}
+{% endhighlight shell %}
 
 #### Viewing Processes Dynamically with top
 While the ps command can reveal a lot about what the machine is doing, it provides only a snapshot of the machine's state at the moment the ps command is executed. To see a more dynamic view of the machine's activity, we use the `top` command:
