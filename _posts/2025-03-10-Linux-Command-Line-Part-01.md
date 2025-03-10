@@ -113,7 +113,7 @@ I/O redirection allows us to redefine where standard output goes. To redirect st
 
 ### Group Commands
 Let’s imagine a situation where we want to execute a series of commands and send the results to a log file. With we know already, we could do this:
-{% highlight bash %}
+{% highlight console %}
 [me@linuxbox ~]$ command1 > logfile.txt
 [me@linuxbox ~]$ command2 >> logfile.txt
 [me@linuxbox ~]$ command3 >> logfile.txt
@@ -188,7 +188,7 @@ Sometimes we don't want all the output from a command. We may only want the firs
 
 ### tee – Read from Stdin and Output to Stdout and Files
 In keeping with our plumbing metaphor, Linux provides a command called tee which creates a “tee” fitting on our pipe. The tee program reads standard input and copies it to both standard output (allowing the data to continue down the pipeline) and to one or more files. This is useful for capturing a pipeline's contents at an intermediate stage of processing. Here we repeat one of our earlier examples, this time including tee to capture the entire directory listing to the file ls.txt before grep filters the pipeline's contents:
-{% highlight bash linenos %}
+{% highlight console %}
 [me@linuxbox ~]$ ls /usr/bin | tee ls.txt | grep 
 bunzip2
 bzip2
