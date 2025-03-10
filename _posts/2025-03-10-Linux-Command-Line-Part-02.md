@@ -1,4 +1,4 @@
-#Configuration and the Environment
+# Configuration and the Environment
 ## 11 - The Environment
 
 This shows an important rule regarding child processes: a child process cannot alter the environment of its parent.

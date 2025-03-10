@@ -5,14 +5,14 @@ Terminal Emulators
 When using a graphical user interface (GUI), we need another program called a terminal emulator to interact with the shell. If we look through our desktop menus, we will probably find one. KDE uses konsole and GNOME uses gnome-terminal, though it's likely called simply “terminal” on our menu. A number of other terminal emulators are available for Linux, but they all basically do the same thing; give us access to the shell. You will probably develop a preference for one or another terminal emulator based on the number of bells and whistles it has.
 
 ## 02 Navigation
-- pwd – Print name of current working directory
-- cd – Change directory
-- ls – List directory contents
+- `pwd` – Print name of current working directory
+- `cd` – Change directory
+- `ls` – List directory contents
 
 ## 03 Exploring the System
-- ls – List directory contents
-- file – Determine file type
-- less – View file contents
+- `ls` – List directory contents
+- `file` – Determine file type
+- `less` – View file contents
 
 Options and Arguments
 
@@ -21,11 +21,11 @@ This brings us to a very important point about how most commands work. Commands 
 `command -options arguments`
 
 ## 04 Manipulating Files and Directories
-- cp – Copy files and directories
-- mv – Move/rename files and directories
-- mkdir – Create directories
-- rm – Remove files and directories
-- ln – Create hard and symbolic links
+- `cp` – Copy files and directories
+- `mv` – Move/rename files and directories
+- `mkdir` – Create directories
+- `rm` – Remove files and directories
+- `ln` – Create hard and symbolic links
 
 ### Wildcards
 `cp -u *.html destination`
@@ -62,14 +62,14 @@ The mv command performs both file moving and file renaming, depending on how it 
 `mv item1 item2`
 
 ## 05 Working with Commands
-- type – Indicate how a command name is interpreted
-- which – Display which executable program will be executed
-- help – Get help for shell builtins
-- man – Display a command's manual page
-- apropos – Display a list of appropriate commands
-- info – Display a command's info entry
-- whatis – Display one-line manual page descriptions
-- alias – Create an alias for a command
+- `type` – Indicate how a command name is interpreted
+- `which` – Display which executable program will be executed
+- `help` – Get help for shell builtins
+- `man` – Display a command's manual page
+- `apropos` – Display a list of appropriate commands
+- `info` – Display a command's info entry
+- `whatis` – Display one-line manual page descriptions
+- `alias` – Create an alias for a command
 
 ### What Exactly Are Commands?
 A command can be one of four different things:
@@ -97,14 +97,14 @@ Many software packages installed on our system have documentation files residing
 
 ## 06 Redirection
 In this lesson we are going to unleash what may be the coolest feature of the command line. It's called I/O redirection. The “I/O” stands for input/output and with this facility we can redirect the input and output of commands to and from files, as well as connect multiple commands together into powerful command pipelines. To show off this facility, we will introduce the following commands:
-- cat – Concatenate files
-- sort – Sort lines of text
-- uniq – Report or omit repeated lines
-- grep – Print lines matching a pattern
-- wc – Print newline, word, and byte counts for each file
-- head – Output the first part of a file
-- tail – Output the last part of a file
-- tee – Read from standard input and write to standard output and files
+- `cat` Concatenate files
+- `sort` Sort lines of text
+- `uniq` Report or omit repeated lines
+- `grep` Print lines matching a pattern
+- `wc` Print newline, word, and byte counts for each file
+- `head` Output the first part of a file
+- `tail` Output the last part of a file
+- `tee` Read from standard input and write to standard output and files
 
 ### Redirecting Standard Output
 I/O redirection allows us to redefine where standard output goes. To redirect standard output to another file instead of the screen, we use the > redirection operator followed by the name of the file. Why would we want to do this? It's often useful to store the output of a command in a file. For example, we could tell the shell to send the output of the ls command to the file ls-output.txt instead of the screen:
@@ -178,10 +178,10 @@ grep is a powerful program used to find text patterns within files. It's used li
 When grep encounters a “pattern” in the file, it prints out the lines containing it. The patterns that grep can match can be very complex, but for now we will concentrate on simple text matches. We'll cover the advanced patterns, called regular expressions in Chapter 19.
 
 Here are a few handy options for grep:
-- -i, causes grep to ignore case when performing the search (normally searches are case sensitive)
-- -l, causes grep to only output the names of the files containing text that matches the pattern.
-- -v, causes grep to print only those lines that do not match the pattern.
-- -w, causes grep to only match whole words.
+- `-i` causes grep to ignore case when performing the search (normally searches are case sensitive)
+- `-l` causes grep to only output the names of the files containing text that matches the pattern.
+- `-v` causes grep to print only those lines that do not match the pattern.
+- `-w` causes grep to only match whole words.
 
 ### head / tail – Print First / Last Part of Files
 Sometimes we don't want all the output from a command. We may only want the first few lines or the last few lines. The head command prints the first ten lines of a file, and the tail command prints the last ten lines. While both commands print ten lines of text by default, this can be adjusted with the -n option.
@@ -227,53 +227,29 @@ history – Display the contents of the history list
 
 #### Cursor Movement
 The following table lists the keys used to move the cursor:
-
-{% highlight shell%}
-Ctrl-a
-Move cursor to the beginning of the line.
-Ctrl-e
-Move cursor to the end of the line.
-Ctrl-f
-Move cursor forward one character; same as the right arrow key.
-Ctrl-b
-Move cursor backward one character; same as the left arrow key.
-Alt-f
-Move cursor forward one word.
-Alt-b
-Move cursor backward one word.
-Ctrl-l
-Clear the screen and move the cursor to the top-left corner. The clear command does the same thing.
-{% endhighlight shell %}
+- `Ctrl-a` Move cursor to the beginning of the line.
+- `Ctrl-e` Move cursor to the end of the line.
+- `Ctrl-f` Move cursor forward one character; same as the right arrow key.
+- `Ctrl-b` Move cursor backward one character; same as the left arrow key.
+- `Alt-f` Move cursor forward one word.
+- `Alt-b` Move cursor backward one word.
+- `Ctrl-l` Clear the screen and move the cursor to the top-left corner. The clear command does the same thing.
 
 #### Modifying Text
-{% highlight shell%}
-Ctrl-d
-Delete the character at the cursor location.
-Ctrl-t
-Transpose (exchange) the character at the cursor location with the one preceding it.
-Alt-t
-Transpose the word at the cursor location with the one preceding it.
-Alt-l
-Convert the characters from the cursor location to the end of the word to lowercase.
-Alt-u
-Convert the characters from the cursor location to the end of the word to uppercase.
-{% endhighlight shell %}
+- `Ctrl-d` Delete the character at the cursor location.
+- `Ctrl-t` Transpose (exchange) the character at the cursor location with the one preceding it.
+- `Alt-t` Transpose the word at the cursor location with the one preceding it.
+- `Alt-l` Convert the characters from the cursor location to the end of the word to lowercase.
+- `Alt-u` Convert the characters from the cursor location to the end of the word to uppercase.
 
 #### Cutting and Pasting (Killing and Yanking) Text
 The Readline documentation uses the terms killing and yanking to refer to what we would commonly call cutting and pasting. Items that are cut are stored in a buffer (a temporary storage area in memory) called the kill-ring.
 
-{% highlight shell%}
-Ctrl-k
-Kill text from the cursor location to the end of line.
-Ctrl-u
-Kill text from the cursor location to the beginning of the line.
-Alt-d
-Kill text from the cursor location to the end of the current word.
-Alt-Backspace
-Kill text from the cursor location to the beginning of the current word. If the cursor is at the beginning of a word, kill the previous word.
-Ctrl-y
-Yank text from the kill-ring and insert it at the cursor location.
-{% endhighlight shell %}
+- `Ctrl-k` Kill text from the cursor location to the end of line.
+- `Ctrl-u` Kill text from the cursor location to the beginning of the line.
+- `Alt-d` Kill text from the cursor location to the end of the current word.
+- `Alt-Backspace` Kill text from the cursor location to the beginning of the current word. If the cursor is at the beginning of a word, kill the previous word.
+- `Ctrl-y` Yank text from the kill-ring and insert it at the cursor location.
 
 #### The Meta Key
 If you venture into the Readline documentation, which can be found in the “READLINE” section of the bash man page, you will encounter the term meta key. On modern keyboards this maps to the Alt key but it wasn't always so.
@@ -290,36 +266,20 @@ and see if you can find them. Not all distributions include them by default.
 This list of commands is kept in our home directory in a file called `.bash_history`. The history facility is a useful resource for reducing the amount of typing we have to do, especially when combined with command line editing.
 
 #### History Commands
-{% highlight shell%}
-Ctrl-p
-Move to the previous history entry. This is the same action as the up arrow.
-Ctrl-n
-Move to the next history entry. This is the same action as the down arrow.
-Alt-<
-Move to the beginning (top) of the history list.
-Alt->
-Move to the end (bottom) of the history list, i.e., the current command line.
-Ctrl-r
-Reverse incremental search. This searches incrementally from the current command line up the history list.
-Alt-p
-Reverse search, nonincremental. With this key, type in the search string and press enter before the search is performed.
-Alt-n
-Forward search, nonincremental.
-Ctrl-o
-Execute the current item in the history list and advance to the next
-{% endhighlight shell %}
+- `Ctrl-p` Move to the previous history entry. This is the same action as the up arrow.
+- `Ctrl-n` Move to the next history entry. This is the same action as the down arrow.
+- `Alt-<` Move to the beginning (top) of the history list.
+- `Alt->` Move to the end (bottom) of the history list, i.e., the current command line.
+- `Ctrl-r` Reverse incremental search. This searches incrementally from the current command line up the history list.
+- `Alt-p` Reverse search, nonincremental. With this key, type in the search string and press enter before the search is performed.
+- `Alt-n` Forward search, nonincremental.
+- `Ctrl-o` Execute the current item in the history list and advance to the next
 
 #### History Expansion Commands
-{% highlight shell %}
-!!
-Repeat the last command. It is probably easier to press up arrow and enter.
-!number
-Repeat history list item number.
-!string
-Repeat last history list item starting with string.
-!?string
-Repeat last history list item containing string.
-{% endhighlight shell %}
+- `!!` Repeat the last command. It is probably easier to press up arrow and enter.
+- `!number` Repeat history list item number.
+- `!string` Repeat last history list item starting with string.
+- `!?string` Repeat last history list item containing string.
 
 #### script
 In addition to the command history feature in bash, most Linux distributions include a program called script that can be used to record an entire shell session and store it in a file. The basic syntax of the command is as follows:
@@ -339,54 +299,29 @@ User accounts are defined in the /etc/passwd file and groups are defined in the 
 
 ### Reading, Writing, and Executing
 #### File Types
-{% highlight shell %}
--
-A regular file.
-d
-A directory.
-l
-A symbolic link. Notice that with symbolic links, the remaining file attributes are always “rwxrwxrwx” and are dummy values. The real file attributes are those of the file the symbolic link points to.
-c
-A character special file. This file type refers to a device that handles data as a stream of bytes, such as a terminal or /dev/null.
-b
-A block special file. This file type refers to a device that handles data in blocks, such as a hard disk or DVD drive.
-{% endhighlight shell %}
+- `-` A regular file.
+- `d` A directory.
+- `l` A symbolic link. Notice that with symbolic links, the remaining file attributes are always “rwxrwxrwx” and are dummy values. The real file 
+attributes are those of the file the symbolic link points to.
+- `c` A character special file. This file type refers to a device that handles data as a stream of bytes, such as a terminal or /dev/null.
+- `b` A block special file. This file type refers to a device that handles data in blocks, such as a hard disk or DVD drive.
 
 #### Permission Attributes
-{% highlight shell %}
-r
-Allows a file to be opened and read.
-Allows a directory's contents to be listed, but no file information is available unless the execute attribute is also set.
-w
-Allows a file to be written to or truncated, however this attribute does not allow files to be renamed or deleted. The ability to delete or rename files is determined by directory attributes.
-Allows files within a directory to be created, deleted, and renamed if the execute attribute is also set.
-x
-Allows a file to be treated as a program and executed. Program files written in scripting languages must also be set as readable to be executed.
-Allows a directory to be entered (i.e., cd directory) and directory metadata (i.e, ls -l directory) to be accessed. File operations such cp, rm, and mv require this access to the directory.
-{% endhighlight shell %}
+- `r` Allows a file to be opened and read. Allows a directory's contents to be listed, but no file information is available unless the execute attribute is also set.
+- `w` Allows a file to be written to or truncated, however this attribute does not allow files to be renamed or deleted. The ability to delete or rename files is determined by directory attributes. Allows files within a directory to be created, deleted, and renamed if the execute attribute is also set.
+- `x` Allows a file to be treated as a program and executed. Program files written in scripting languages must also be set as readable to be executed. Allows a directory to be entered (i.e., cd directory) and directory metadata (i.e, ls -l directory) to be accessed. File operations such cp, rm, and mv require this access to the directory.
 
 ##### Permission Attribute Examples
-{% highlight shell %}
--rwx------
-A regular file that is readable, writable, and executable by the file's owner. No one else has any access.
--rw-------
-A regular file that is readable and writable by the file's owner. No one else has any access.
--rw-r--r--
-A regular file that is readable and writable by the file's owner. Members of the file's owner group may read the file. The file is readable by others.
--rwxr-xr-x
-A regular file that is readable, writable, and executable by the file's owner. The file may be read and executed by everybody else.
--rw-rw----
-A regular file that is readable and writable by the file's owner and members of the file's group owner only.
-lrwxrwxrwx
-A symbolic link. All symbolic links have “dummy” permissions. The real permissions are kept with the actual file pointed to by the symbolic link.
-drwxrwx---
-A directory. The owner and the members of the owner group may enter the directory and create, rename and remove files within the directory.
-drwxr-x---
-A directory. The owner may enter the directory and create, rename, and delete files within the directory. Members of the owner group may enter the directory but cannot create, delete, or rename files.
-{% endhighlight shell %}
+- `-rwx------` A regular file that is readable, writable, and executable by the file's owner. No one else has any access.
+- `-rw-------` A regular file that is readable and writable by the file's owner. No one else has any access.
+- `-rw-r--r--` A regular file that is readable and writable by the file's owner. Members of the file's owner group may read the file. The file is readable by others.
+- `-rwxr-xr-x` A regular file that is readable, writable, and executable by the file's owner. The file may be read and executed by everybody else.
+- `-rw-rw----` A regular file that is readable and writable by the file's owner and members of the file's group owner only.
+- `lrwxrwxrwx` A symbolic link. All symbolic links have “dummy” permissions. The real permissions are kept with the actual file pointed to by the symbolic link.
+- `drwxrwx---` A directory. The owner and the members of the owner group may enter the directory and create, rename and remove files within the directory.
+- `drwxr-x---` A directory. The owner may enter the directory and create, rename, and delete files within the directory. Members of the owner group may enter the directory but cannot create, delete, or rename files.
 
 #### chmod – Change File Mode
-{% highlight shell %}
 0
 000
 ---
@@ -418,35 +353,20 @@ rw-
 7
 111
 rwx
-{% endhighlight shell %}
 
 #### chmod Symbolic Notation
-{% highlight shell %}
-u
-Short for “user” i.e. the file or directory’s owner.
-g
-Group owner.
-o
-Short for others.
-a
-Short for “all.” This is the combination of “u”, “g”, and “o”.
-{% endhighlight shell %}
+- `u` Short for “user” i.e. the file or directory’s owner.
+- `g` Group owner.
+- `o` Short for others.
+- `a` Short for “all.” This is the combination of “u”, “g”, and “o”.
 
 ##### chmod Symbolic Notation Examples
-{% highlight shell %}
-u+x
-Add execute permission for the owner.
-u-x
-Remove execute permission from the owner.
-+x
-Add execute permission for the user, group, and others. This is equivalent to a+x.
-o-rw
-Remove the read and write permissions from anyone besides the user and group owner.
-go=rw
-Set the group owner and anyone besides the user to have read and write permission. If either the group owner or others previously had execute permission, it is removed.
-u+x,go=rx
-Add execute permission for the user and set the permissions for the group and others to read and execute. Multiple specifications may be separated by commas.
-{% endhighlight shell %}
+- `u+x` Add execute permission for the owner.
+- `u-x` Remove execute permission from the owner.
+- `+x` Add execute permission for the user, group, and others. This is equivalent to a+x.
+- `o-rw` Remove the read and write permissions from anyone besides the user and group owner.
+- `go=rw` Set the group owner and anyone besides the user to have read and write permission. If either the group owner or others previously had execute permission, it is removed.
+- `u+x,go=rx` Add execute permission for the user and set the permissions for the group and others to read and execute. Multiple specifications may be separated by commas.
 
 #### umask – Set Default Permissions
 The umask command controls the default permissions given to a file when it is created. It uses octal notation to express a mask of bits to be removed from a file's mode attributes.
@@ -479,38 +399,29 @@ To set or change a password, the passwd command is used.
 The passwd, addgroup, and usermod commands are part of a suite of commands in the shadow-utils package
 
 #### shadow-utils Commands
-{% highlight shell %}
-lastlog
-Reports the most recent login of all users or of a given user.
-useradd
-Create a new user or update default new user information.
-userdel
-Delete a user account and related files.
-usermod
-Modify a user account.
-groupadd
-Create a new group.
-groupdel
-Delete a group.
-groupmod
-.Modify a group definition on the system.
-{% endhighlight shell %}
+- `lastlog` Reports the most recent login of all users or of a given user.
+- `useradd` Create a new user or update default new user information.
+- `userdel` Delete a user account and related files.
+- `usermod` Modify a user account.
+- `groupadd` Create a new group.
+- `groupdel` Delete a group.
+- `groupmod` .Modify a group definition on the system.
 
 
 ## 10 Processes
 Modern operating systems are usually multitasking, meaning they create the illusion of doing more than one thing at once by rapidly switching from one executing program to another. The Linux kernel manages this through the use of processes. Processes are how Linux organizes the different programs waiting for their turn at the CPU.
-- ps – Report a snapshot of current processes
-- top – Display tasks
-- jobs – List active jobs
-- bg – Place a job in the background
-- fg – Place a job in the foreground
-- kill – Send a signal to a process
-- killall – Kill processes by name
-- nice - Run a program with modified scheduling priority
-- renice - Alter priority of running processes
-- nohup - Run a command immune to hangups
-- halt/poweroff/reboot - Halt, power-off, or reboot the system
-- shutdown – Shutdown or reboot the system
+- `ps` – Report a snapshot of current processes
+- `top` – Display tasks
+- `jobs` – List active jobs
+- `bg` – Place a job in the background
+- `fg` – Place a job in the foreground
+- `kill` – Send a signal to a process
+- `killall` – Kill processes by name
+- `nice` - Run a program with modified scheduling priority
+- `renice` - Alter priority of running processes
+- `nohup` - Run a command immune to hangups
+- `halt/poweroff/reboot` - Halt, power-off, or reboot the system
+- `shutdown` – Shutdown or reboot the system
 
 ### How a Process Works
 When a system starts up, the kernel initiates a few of its own activities as processes and launches a program called init. init, in turn, starts systemd which starts all the system services. In older Linux distributions init runs a series of shell scripts (located in `/etc`) called init scripts to perform a similar function. Many system services are implemented as daemon programs, programs that just sit in the background and do their thing without having any user interface. So, even if we are not logged in, the system is at least a little busy performing routine stuff.
@@ -521,22 +432,13 @@ The fact that a program can launch other programs is expressed in the process sc
 The most commonly used tool to view processes (there are several) is the ps command.
 
 #### Process States
-{% highlight shell %}
-R
-Running. This means that the process is running or ready to run.
-S
-Sleeping. The process is not running; rather, it is waiting for an event, such as a keystroke or network packet.
-D
-Uninterruptible sleep. The process is waiting for I/O such as a disk drive.
-T
-Stopped. The process has been instructed to stop. More on this later in the chapter.
-Z
-A defunct or “zombie” process. This is a child process that has terminated but has not been cleaned up by its parent.
-<
-A high-priority process. It's possible to grant more importance to a process, giving it more time on the CPU. This property of a process is called niceness. A process with high priority is said to be less nice because it's taking more of the CPU's time, which leaves less for everybody else.
-N
-A low-priority process. A process with low priority (a “nice” process) will get processor time only after other processes with higher priority have been serviced.
-{% endhighlight shell %}
+- `R` Running. This means that the process is running or ready to run.
+- `S` Sleeping. The process is not running; rather, it is waiting for an event, such as a keystroke or network packet.
+- `D` Uninterruptible sleep. The process is waiting for I/O such as a disk drive.
+- `T` Stopped. The process has been instructed to stop. More on this later in the chapter.
+- `Z` A defunct or “zombie” process. This is a child process that has terminated but has not been cleaned up by its parent.
+- `<` A high-priority process. It's possible to grant more importance to a process, giving it more time on the CPU. This property of a process is called niceness. A process with high priority is said to be less nice because it's taking more of the CPU's time, which leaves less for everybody else.
+- `N` A low-priority process. A process with low priority (a “nice” process) will get processor time only after other processes with higher priority have been serviced.
 
 #### Viewing Processes Dynamically with top
 While the ps command can reveal a lot about what the machine is doing, it provides only a snapshot of the machine's state at the moment the ps command is executed. To see a more dynamic view of the machine's activity, we use the `top` command:
