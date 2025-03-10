@@ -228,7 +228,7 @@ history – Display the contents of the history list
 #### Cursor Movement
 The following table lists the keys used to move the cursor:
 
-{% highlight bash linenos %}
+{% highlight %}
 Ctrl-a
 Move cursor to the beginning of the line.
 Ctrl-e
@@ -246,7 +246,7 @@ Clear the screen and move the cursor to the top-left corner. The clear command d
 {% endhighlight %}
 
 #### Modifying Text
-{% highlight bash linenos %}
+{% highlight %}
 Ctrl-d
 Delete the character at the cursor location.
 Ctrl-t
@@ -262,7 +262,7 @@ Convert the characters from the cursor location to the end of the word to upperc
 #### Cutting and Pasting (Killing and Yanking) Text
 The Readline documentation uses the terms killing and yanking to refer to what we would commonly call cutting and pasting. Items that are cut are stored in a buffer (a temporary storage area in memory) called the kill-ring.
 
-{% highlight bash linenos %}
+{% highlight %}
 Ctrl-k
 Kill text from the cursor location to the end of line.
 Ctrl-u
