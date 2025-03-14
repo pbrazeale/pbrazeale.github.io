@@ -7,6 +7,7 @@
 - [Reddit Post](https://www.reddit.com/r/CompTIA/comments/wm7r8k/about_what_percent_of_questions_do_i_have_to/?rdt=45208)
 	- "Percentages have very little meaning when it comes to CompTIA exams. CompTIA has never revealed the point value of the questions or of the performance-based questions. Since they appear to be significantly different, there is no easy way to apply percentage as a meaningful metric."
 	- "I got a report from a gent the other day who had one performance-based question and 81 multiple choice. I have also heard reports of seven performance-based questions with multiple choice question counts in the 50s and 60s."
+
 #### Domains
 1. General Security Concepts **12%**
 2. Threats, Vulnerabilities, and Mitigations **22%**
