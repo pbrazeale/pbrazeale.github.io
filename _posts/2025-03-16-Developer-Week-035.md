@@ -1,20 +1,20 @@
+## Certification Progress
+### [CompTIA Security+](https://www.comptia.org/certifications/security) (12.54%)
+- [Security+ Study Guide Introduction](https://pbrazeale.github.io/Security+-Study-Guide-Introduction/)
+- [Security+ Study Guide 01 Today's Security Professional](https://pbrazeale.github.io/Security+-Study-Guide-01-Today's-Security-Professional/)
+- [Security+ Study Guide 02 Cybersecurity Threat Landscape](https://pbrazeale.github.io/Security+-Study-Guide-02-Cybersecurity-Threat-Landscape/)
+
+
 ## Projects
-### 100 Days of Code: The Complete Python Pro Bootcamp (34/100)
+### 100 Days of Code: The Complete Python Pro Bootcamp (37/100)
+Fun projects, but because the course is several years old at this point, some of the APIs don't allow for students to use them the same way they did when the course was created. Regardless, the lessons are still informative and good practice. 
 
 
 ## Courses
 ### CompTIA Security+ SY0-701 (1.4/5.6) **~12%**
-Professor Messer's lecture series: https://www.youtube.com/watch?v=KiEptGbnEBc&list=PLG49S3nxzAnl4QDVqK-hOnoqcSKEIDDuv
+[Professor Messer's lecture series:](https://www.youtube.com/watch?v=KiEptGbnEBc&list=PLG49S3nxzAnl4QDVqK-hOnoqcSKEIDDuv)
+
 ### Boot.Dev Learn Linux (6.6 /6.6) **Completed**
-
-
-## Certification Progress
-### CompTIA Security+ (6%)
-https://www.comptia.org/certifications/security
-### LPIC-1 101-500 (50%)
-https://www.lpi.org/our-certifications/exam-101-102-objectives/
-### LPIC-1 102-500 (25%)
-https://www.lpi.org/our-certifications/exam-101-102-objectives/
 
 
 ## Books
@@ -22,6 +22,4 @@ https://www.lpi.org/our-certifications/exam-101-102-objectives/
 
 **How Linux Works by Brian Ward** (204/366) **~56%**
 
-[**CompTIA Security+ Study Guide**](https://www.amazon.com/dp/1394211414) (0/704)
-
-[**LPIC-1 Linux Professional Institute Certification Study Guide**](https://www.amazon.com/dp/1119582121) (0/688)
+[**CompTIA Security+ Study Guide**](https://www.amazon.com/dp/1394211414) (87/595) **~15%**
