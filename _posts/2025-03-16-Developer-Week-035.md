@@ -18,8 +18,8 @@ Fun projects, but because the course is several years old at this point, some of
 
 
 ## Books
-**The Linux Command Line** (355/594) **~60%**
+[**The Linux Command Line**](https://archive.org/details/tlcl-19.01) (355/594) **~60%**
 
-**How Linux Works by Brian Ward** (204/366) **~56%**
+[**How Linux Works by Brian Ward**](https://www.amazon.com/How-Linux-Works-Brian-Ward/dp/1718500408) (204/366) **~56%**
 
-[**CompTIA Security+ Study Guide**](https://www.amazon.com/dp/1394211414) (87/595) **~15%**
+[**CompTIA Security+ Study Guide**](https://www.amazon.com/dp/1394211414) (20/590) **~3%**
