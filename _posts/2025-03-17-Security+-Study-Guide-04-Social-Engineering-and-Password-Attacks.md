@@ -68,3 +68,4 @@ Waited two day on this test likewise, but obviously did far better. If there is 
 1
 
 - 1, I over fixated on the typo rather than the method of messaging. The funny part is when I marked typosquatting later in the test, I figured something was wrong. *I'm unsure if I'll have time to review questions during the test, so I'm moving forward with zero review.*
+
