@@ -235,6 +235,6 @@ Studied last night, and took this test during the afternoon without review. 85% 
 ### Incorrect
 1, 13, 15
 
-- 1. need to review threat ratings
-- 13. not sure why I chose source-code over API keys.
-- 15. guessed RFC, likely from question 12, instead of IoC. Need to study my Acronym list/cards. [Security+ Acronym List](https://pbrazeale.github.io/Security+-6.0-Acronym-List/)
+- 1, need to review threat ratings
+- 13, not sure why I chose source-code over API keys.
+- 15, guessed RFC, likely from question 12, instead of IoC. Need to study my Acronym list/cards. [Security+ Acronym List](https://pbrazeale.github.io/Security+-6.0-Acronym-List/)
