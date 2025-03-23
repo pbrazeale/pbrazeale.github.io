@@ -3,6 +3,10 @@ languageCode = 'en-us'
 title = 'Philip Brazeale'
 theme = 'm10c'
 
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
 [pagination]
 pagerSize = 8
 
