@@ -177,6 +177,7 @@ Since the list is sent to standard output, we can pipe the list into other progr
 - Adding the test -type d limited the search to directories.
 
 #### find File Types
+<div class="datatable-begin"></div>
 |File Type|Description|
 |-|-|
 |b|Block special device file|
@@ -184,6 +185,7 @@ Since the list is sent to standard output, we can pipe the list into other progr
 |d|Directory|
 |f|Regular file|
 |l|Symbolic link|
+<div class="datatable-end"></div>
 
 We can also search by file size and filename by adding some additional tests. Let’s look for all the regular files that match the wildcard pattern `*.JPG` and are larger than one megabyte. 
 
