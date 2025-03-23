@@ -177,15 +177,13 @@ Since the list is sent to standard output, we can pipe the list into other progr
 - Adding the test -type d limited the search to directories.
 
 #### find File Types
-<div class="datatable-begin"></div>
-|File Type|Description|
-|-|-|
-|b|Block special device file|
-|c|Character special device file|
-|d|Directory|
-|f|Regular file|
-|l|Symbolic link|
-<div class="datatable-end"></div>
+| File Type | Description |
+| ---- | ----- |
+| b | Block special device file |
+| c | Character special device file |
+| d | Directory |
+| f | Regular file |
+| l | Symbolic link |
 
 We can also search by file size and filename by adding some additional tests. Let’s look for all the regular files that match the wildcard pattern `*.JPG` and are larger than one megabyte. 
 
@@ -194,14 +192,14 @@ We can also search by file size and filename by adding some additional tests. Le
 {% endhighlight %}
 
 #### find Size Units
-|Character|Unit|
-|-|-|
-|b|512-byte blocks. This is the default if no unit is specified.|
-|c|Bytes.|
-|w|2-byte words.|
-|k|Kilobytes (units of 1024 bytes).|
-|M|Megabytes (units of 1048576 bytes).|
-|G|Gigabytes (units of 1073741824 bytes).|
+| Character | Unit |
+| ----- | ----- |
+| b | 512-byte blocks. This is the default if no unit is specified. |
+| c | Bytes. |
+| w | 2-byte words. |
+| k | Kilobytes (units of 1024 bytes). |
+| M | Megabytes (units of 1048576 bytes). |
+| G | Gigabytes (units of 1073741824 bytes). |
 
 #### Dealing with Funny Filenames
 Unix-like systems allow embedded spaces (and even newlines!) in filenames. This causes problems for programs like xargs that construct argument lists for other programs. An embedded space will be treated as a delimiter, and the resulting command will interpret each space-separated word as a separate argument. To overcome this, find and xargs allow the optional use of a null character as an argument separator. A null character is defined in ASCII as the character represented by the number zero (as opposed to, for example, the space character, which is defined in ASCII as the character represented by the number 32). The find command provides the action -print0, which produces null-separated output, and the **xargs** command has the `--null (or -0)` option, which accepts null separated input. Here’s an example:
