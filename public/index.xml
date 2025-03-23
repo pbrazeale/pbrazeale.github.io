@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Philip Brazeale</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Philip Brazeale</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 23 Mar 2025 06:34:07 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Developer Week 036</title>
+      <link>http://localhost:1313/posts/dev_week_036/</link>
+      <pubDate>Sun, 23 Mar 2025 06:34:07 +0100</pubDate>
+      <guid>http://localhost:1313/posts/dev_week_036/</guid>
+      <description>&lt;h2 id=&#34;certification-progress&#34;&gt;Certification Progress&lt;/h2&gt;&#xA;&lt;h3 id=&#34;comptia-security-1914&#34;&gt;CompTIA Security+ (19.14%)&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.comptia.org/certifications/security&#34;&gt;CompTIA Security+ SY0-701&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;microsoft-certified-azure-fundamentals-1364&#34;&gt;Microsoft Certified: Azure Fundamentals (13.64%)&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/?practice-assessment-type=certification&#34;&gt;AZ-900 Azure Fundamentals&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;&#xA;&lt;h3 id=&#34;100-days-of-code-the-complete-python-pro-bootcamp-38100&#34;&gt;100 Days of Code: The Complete Python Pro Bootcamp (38/100)&lt;/h3&gt;&#xA;&lt;p&gt;Used Git Branching and GitHub PR&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git switch -c my_new_branch&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;gh pr create --title &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Update ...&amp;#34;&lt;/span&gt; --body &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;message&amp;#34;&lt;/span&gt; --label &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;enhancement&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Used GitHub web interface to review and approve PR. Will need to do further research to see if I can review and approve via the CLI, or if web is best/only option.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Developer Week 001</title>
+      <link>http://localhost:1313/posts/dev_week_001/</link>
+      <pubDate>Sun, 21 Jul 2024 16:34:07 +0100</pubDate>
+      <guid>http://localhost:1313/posts/dev_week_001/</guid>
+      <description>&lt;h2 id=&#34;identify-the-problem&#34;&gt;Identify The Problem&lt;/h2&gt;&#xA;&lt;p&gt;Indie Authors, are forced to wear multiple hats.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Content Creator&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Novels&lt;/li&gt;&#xA;&lt;li&gt;Other media where applicable&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Marketing Director&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Either direct sales via advertising&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Meta&lt;/li&gt;&#xA;&lt;li&gt;Bookbub&lt;/li&gt;&#xA;&lt;li&gt;Amazon&lt;/li&gt;&#xA;&lt;li&gt;Multitude of eBook newsletter sites&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;And/or social media influence&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Product Designer&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Design and implementation of eBooks with .epub&lt;/li&gt;&#xA;&lt;li&gt;Design and implementation of print books with .pdf&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;There&amp;rsquo;s more, but it&amp;rsquo;s this last pain point that most authors struggle with. Cover design is a known aspect that&amp;rsquo;s outsourced to a graphic design expert, but for most authors outsourcing the eBook and print book layout is not a viable expense.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Developer Week 001</title>
+      <link>http://localhost:1313/posts/dev_week_002/</link>
+      <pubDate>Sun, 21 Jul 2024 16:34:07 +0100</pubDate>
+      <guid>http://localhost:1313/posts/dev_week_002/</guid>
+      <description>&lt;h2 id=&#34;identify-the-problem&#34;&gt;Identify The Problem&lt;/h2&gt;&#xA;&lt;p&gt;Indie Authors, are forced to wear multiple hats.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Content Creator&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Novels&lt;/li&gt;&#xA;&lt;li&gt;Other media where applicable&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Marketing Director&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Either direct sales via advertising&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Meta&lt;/li&gt;&#xA;&lt;li&gt;Bookbub&lt;/li&gt;&#xA;&lt;li&gt;Amazon&lt;/li&gt;&#xA;&lt;li&gt;Multitude of eBook newsletter sites&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;And/or social media influence&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;Product Designer&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Design and implementation of eBooks with .epub&lt;/li&gt;&#xA;&lt;li&gt;Design and implementation of print books with .pdf&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;There&amp;rsquo;s more, but it&amp;rsquo;s this last pain point that most authors struggle with. Cover design is a known aspect that&amp;rsquo;s outsourced to a graphic design expert, but for most authors outsourcing the eBook and print book layout is not a viable expense.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

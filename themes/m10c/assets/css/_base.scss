@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.6;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: $dark-color;
+  color: $text-color;
+}
+
+h1 {
+  color: #ff757f;
+}
+
+h2 {
+  color: #e09f4a;
+}
+
+h3 {
+  color: #9ece6a;
+}
+
+h4 {
+  color: #36abf8;
+}
+
+h5 {
+  color: #ae89ff;
+}
+ 
+h6 {
+  color: #779ff7;
+}
+
+a {
+  color: $primary-color;
+  transition: color 0.35s;
+  text-decoration: none;
+
+  &:hover {
+    color: $lightest-color;
+  }
+}
+
+// Browsers seem to use a smaller default font-size with monospaced code
+// blocks (like 80% of the size of normal text) and that looks pretty bad with
+// small inline code-blocks in the middle of normal text (mainly because of
+// the very noticeable difference in x-height). This CSS corrects that problem.
+code {
+  font-family: monospace, monospace;
+  font-size: 1em;
+  color: rgba($text-color, 1);
+
+  // Fixes iOS font sizing anomaly
+  text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+pre {
+  font-size: 1rem;
+  line-height: 1.2em;
+  margin: 0;
+  overflow: auto;
+
+
+  // A larger monospaced block of text (that isn't mixed with normal text)
+  // generally looks heavier than normal text with the same font size. For this
+  // reason using a smaller monospaced font size makes sense in this situation.
+  code {
+    font-size: 1em;
+  }
+}
+
+::selection {
+  background: rgba($primary-color, .25);
+}
+
+::-moz-selection {
+  background: rgba($primary-color, .25);
+}
+
+.highlight pre {
+  background-color: $darkest-color !important;
+}
