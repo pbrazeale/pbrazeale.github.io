@@ -1,7 +1,7 @@
 +++
+tags = ['Developer Log', 'CompTIA', 'Azure', 'Python', 'Linux', 'Security+', 'shell']
 title = 'Developer Week 036'
 date = 2025-03-23T06:34:07+01:00
-draft = true
 +++
 
 ## Certification Progress
