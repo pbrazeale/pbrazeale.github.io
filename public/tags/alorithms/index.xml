@@ -29,5 +29,19 @@
       <guid>http://localhost:1313/posts/dev-week-028/</guid>
       <description>&lt;h2 id=&#34;neetcode-algorithms-and-data-structures-for-beginners-progress-2535&#34;&gt;NeetCode Algorithms and Data Structures for Beginners (progress 25/35)&lt;/h2&gt;&#xA;&lt;p&gt;Progress has been slow and steady, but I&amp;rsquo;m back at it full time and will push forward with gusto. The first few days returning were rough, but I quickly fell back into the groove and realized how much I&amp;rsquo;ve missed the puzzle solving aspect of programming.&lt;/p&gt;&#xA;&lt;h3 id=&#34;neetcode-150-progress-21150&#34;&gt;NeetCode 150 (progress 21/150)&lt;/h3&gt;&#xA;&lt;p&gt;Generally I can solve the easy problems on my own, and the occasional medium. However, my solution is often far from the optimal. More than once I&amp;rsquo;ve managed a &amp;ldquo;working&amp;rdquo; solution only for it to time out because my big O is off. It&amp;rsquo;s a tad discouraging, but I&amp;rsquo;m reassuring myself that with time, dedication, and practice it&amp;rsquo;ll work itself out.&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>Developer Week 012</title>
+      <link>http://localhost:1313/posts/dev-week-012/</link>
+      <pubDate>Sun, 06 Oct 2024 16:34:07 +0100</pubDate>
+      <guid>http://localhost:1313/posts/dev-week-012/</guid>
+      <description>&lt;h2 id=&#34;neetcode-150-progress-6150&#34;&gt;NeetCode 150 (progress 6/150)&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;m following the &lt;a href=&#34;https://neetcode.io/roadmap&#34;&gt;NeetCode&lt;/a&gt; 150 Raodmap, starting with the easies and working my through to prepare for leetcode and in turn interviews.&lt;/p&gt;&#xA;&lt;h3 id=&#34;data-structures--algorithms&#34;&gt;Data Structures &amp;amp; Algorithms&lt;/h3&gt;&#xA;&lt;p&gt;I&amp;rsquo;m enrolling in &lt;a href=&#34;https://www.edx.org/learn/data-structures/the-university-of-california-san-diego-data-structures-fundamentals&#34;&gt;UCSanDiegoX: Data Structures Fundamentals&lt;/a&gt; and &lt;a href=&#34;https://www.edx.org/learn/algorithms/the-university-of-california-san-diego-algorithmic-design-and-techniques&#34;&gt;UCSanDiegoX: Algorithmic Design and Techniques&lt;/a&gt; likewise to assist further.&lt;/p&gt;&#xA;&lt;h2 id=&#34;algs200x-progress-&#34;&gt;ALGS200X (progress )&lt;/h2&gt;&#xA;&lt;h3 id=&#34;algorithmic-design-and-techniques&#34;&gt;Algorithmic Design and Techniques&lt;/h3&gt;&#xA;&lt;p&gt;ETA: 6 weeks (8–10 hours per week)&lt;/p&gt;&#xA;&lt;p&gt;Made it through the first week, but the link to the textbook was broken. Realized that NeetCode offers a subscription to courses, first of which is Data Structures &amp;amp; Algorithms. Going to pay for it and work my through it instead.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Developer Week 012</title>
+      <link>http://localhost:1313/posts/dev-week-013/</link>
+      <pubDate>Sun, 06 Oct 2024 16:34:07 +0100</pubDate>
+      <guid>http://localhost:1313/posts/dev-week-013/</guid>
+      <description>&lt;h2 id=&#34;day-job&#34;&gt;Day Job&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;m up against deadlines and have to focus on them as my priority before returning to courses.&lt;/p&gt;&#xA;&lt;p&gt;Data Science: Productivity Tools (PH125.5X) starts on the 16th, and I&amp;rsquo;ll need to jump straight into it. Likewise I still need to finalize the rebuilt of my KDP tracking software using Electron to submit for the CS50X final project.&lt;/p&gt;&#xA;&lt;h2 id=&#34;leetcode-progress-103313&#34;&gt;LeetCode (progress 10/3313)&lt;/h2&gt;&#xA;&lt;h3 id=&#34;leetcode-347&#34;&gt;LeetCode 347&lt;/h3&gt;&#xA;&lt;p&gt;Used NeetCode video to solve, and then studied the solution, and solved on LeetCode with one reference to fix &lt;code&gt;freq = [[] for i in range(len(nums) + 1)]&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

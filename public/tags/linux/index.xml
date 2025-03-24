@@ -107,6 +107,13 @@
       <description>&lt;h2 id=&#34;01-what-is-the-shell&#34;&gt;01 What is the Shell&lt;/h2&gt;&#xA;&lt;p&gt;Terminal Emulators&lt;/p&gt;&#xA;&lt;p&gt;When using a graphical user interface (GUI), we need another program called a terminal emulator to interact with the shell. If we look through our desktop menus, we will probably find one. KDE uses konsole and GNOME uses gnome-terminal, though it&amp;rsquo;s likely called simply “terminal” on our menu. A number of other terminal emulators are available for Linux, but they all basically do the same thing; give us access to the shell. You will probably develop a preference for one or another terminal emulator based on the number of bells and whistles it has.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Developer Week 009</title>
+      <link>http://localhost:1313/posts/dev-week-009/</link>
+      <pubDate>Sun, 15 Sep 2024 16:34:07 +0100</pubDate>
+      <guid>http://localhost:1313/posts/dev-week-009/</guid>
+      <description>&lt;h2 id=&#34;cs50p-progress-70&#34;&gt;CS50P (Progress 70%)&lt;/h2&gt;&#xA;&lt;h3 id=&#34;week-6-file-io&#34;&gt;Week 6 File I/O&lt;/h3&gt;&#xA;&lt;p&gt;This was easy but a bit tedious; especially when it came to Shirt and Scourgify to hit the format requirements with zero actional feedback. Took far too long troubleshooting the output to line up with the desired requirements which lacked specifics as to why the output was failing.&lt;/p&gt;&#xA;&lt;p&gt;Thankfully it&amp;rsquo;s done, and only took about 8 hours for this week&amp;rsquo;s lecture and assignment.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Developer Week 007</title>
       <link>http://localhost:1313/posts/dev-week-007/</link>
       <pubDate>Sun, 01 Sep 2024 16:34:07 +0100</pubDate>

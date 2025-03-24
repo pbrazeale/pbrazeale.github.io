@@ -37,6 +37,13 @@
       <description>&lt;h2 id=&#34;neetcode-algorithms-and-data-structures-for-beginners-progress-2835&#34;&gt;NeetCode Algorithms and Data Structures for Beginners (progress 28/35)&lt;/h2&gt;&#xA;&lt;h3 id=&#34;neetcode-150-progress-26150&#34;&gt;NeetCode 150 (progress 26/150)&lt;/h3&gt;&#xA;&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=ehD6tdxmjDU&#34;&gt;I Learned Python By Building These Projects - Tutorial for Beginners&lt;/a&gt; followed along with these and tried to stay one step ahead whilst going through it to see just how well I understood python. Project 1, learned to use &lt;code&gt;for idx, quesiton in enumerate(selected_questions):&lt;/code&gt; as a way to step through the dictionary which if far more elegant than my loop approach.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Developer Week 011</title>
+      <link>http://localhost:1313/posts/dev-week-011/</link>
+      <pubDate>Sun, 29 Sep 2024 16:34:07 +0100</pubDate>
+      <guid>http://localhost:1313/posts/dev-week-011/</guid>
+      <description>&lt;h2 id=&#34;cs50p-final-project-progress-100&#34;&gt;CS50P Final Project (Progress 100%)&lt;/h2&gt;&#xA;&lt;p&gt;It&amp;rsquo;s hard to place an exact progress report as there&amp;rsquo;s no clear cut milestones toward the final product. Likewise, the final product I plan to release to the public will be a bit more polished than what I turn in as my course project. I&amp;rsquo;ll use this as my beta MVP and then tweak based on feedback.&lt;/p&gt;&#xA;&lt;h3 id=&#34;python-desktop-app-with-pyqt&#34;&gt;Python Desktop App with PyQt&lt;/h3&gt;&#xA;&lt;p&gt;Thanks to &lt;a href=&#34;https://www.youtube.com/watch?v=4y9BWBkj9Bo&#34;&gt;Code With Josh&lt;/a&gt; I was able to learn the basics of how to make the desktop application I envisioned to track and display book royalties using a SQL database.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>CS50P Final Project</title>
       <link>http://localhost:1313/posts/cs50p-final-project/</link>
       <pubDate>Wed, 25 Sep 2024 10:34:07 +0100</pubDate>
