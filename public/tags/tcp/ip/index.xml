@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TCP/IP on Philip Brazeale</title>
+    <link>http://localhost:1313/tags/tcp/ip/</link>
+    <description>Recent content in TCP/IP on Philip Brazeale</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 13 Aug 2024 06:34:07 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/tcp/ip/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CS50X Week 08 Lecture Notes</title>
+      <link>http://localhost:1313/posts/cs50x-week-08/</link>
+      <pubDate>Tue, 13 Aug 2024 06:34:07 +0100</pubDate>
+      <guid>http://localhost:1313/posts/cs50x-week-08/</guid>
+      <description>&lt;h2 id=&#34;tcpip&#34;&gt;TCP/IP&lt;/h2&gt;&#xA;&lt;h3 id=&#34;ip&#34;&gt;IP&lt;/h3&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://cs50.harvard.edu/college/2024/spring/notes/8/cs50Week8Slide014.png&#34; alt=&#34;Example Internet Datagram Header&#34;&gt;&#xA;&lt;a href=&#34;https://cs50.harvard.edu/college/2024/spring/notes/8/&#34;&gt;SOURCE: CS50 Lecture 8 notes&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;tcp&#34;&gt;TCP&lt;/h3&gt;&#xA;&lt;p&gt;port: 80 HTTP 443 HTTPS&#xA;Sequence Number: identifies order to rebuild&lt;/p&gt;&#xA;&lt;h3 id=&#34;dns&#34;&gt;DNS&lt;/h3&gt;&#xA;&lt;p&gt;Server to redirect name (google.com) to IP (142.250.113.102)&lt;/p&gt;&#xA;&lt;p&gt;DNS Server: 1.1.1.1&lt;/p&gt;&#xA;&lt;h3 id=&#34;dhcp&#34;&gt;DHCP&lt;/h3&gt;&#xA;&lt;p&gt;Dynamic Host Configuration Protocol&#xA;This sets up the IPs you should use for device and router and DNS.&lt;/p&gt;&#xA;&lt;h2 id=&#34;http&#34;&gt;HTTP&lt;/h2&gt;&#xA;&lt;p&gt;Protocol for sending website data.&#xA;&lt;strong&gt;HTTPS&lt;/strong&gt; encrypted version.&lt;/p&gt;&#xA;&lt;p&gt;GET - get info&#xA;POST - send info&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

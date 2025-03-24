@@ -22,5 +22,12 @@
       <guid>http://localhost:1313/posts/dev-week-028/</guid>
       <description>&lt;h2 id=&#34;neetcode-algorithms-and-data-structures-for-beginners-progress-2535&#34;&gt;NeetCode Algorithms and Data Structures for Beginners (progress 25/35)&lt;/h2&gt;&#xA;&lt;p&gt;Progress has been slow and steady, but I&amp;rsquo;m back at it full time and will push forward with gusto. The first few days returning were rough, but I quickly fell back into the groove and realized how much I&amp;rsquo;ve missed the puzzle solving aspect of programming.&lt;/p&gt;&#xA;&lt;h3 id=&#34;neetcode-150-progress-21150&#34;&gt;NeetCode 150 (progress 21/150)&lt;/h3&gt;&#xA;&lt;p&gt;Generally I can solve the easy problems on my own, and the occasional medium. However, my solution is often far from the optimal. More than once I&amp;rsquo;ve managed a &amp;ldquo;working&amp;rdquo; solution only for it to time out because my big O is off. It&amp;rsquo;s a tad discouraging, but I&amp;rsquo;m reassuring myself that with time, dedication, and practice it&amp;rsquo;ll work itself out.&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>CS50X Week 08 Lecture Notes</title>
+      <link>http://localhost:1313/posts/cs50x-week-08/</link>
+      <pubDate>Tue, 13 Aug 2024 06:34:07 +0100</pubDate>
+      <guid>http://localhost:1313/posts/cs50x-week-08/</guid>
+      <description>&lt;h2 id=&#34;tcpip&#34;&gt;TCP/IP&lt;/h2&gt;&#xA;&lt;h3 id=&#34;ip&#34;&gt;IP&lt;/h3&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://cs50.harvard.edu/college/2024/spring/notes/8/cs50Week8Slide014.png&#34; alt=&#34;Example Internet Datagram Header&#34;&gt;&#xA;&lt;a href=&#34;https://cs50.harvard.edu/college/2024/spring/notes/8/&#34;&gt;SOURCE: CS50 Lecture 8 notes&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;tcp&#34;&gt;TCP&lt;/h3&gt;&#xA;&lt;p&gt;port: 80 HTTP 443 HTTPS&#xA;Sequence Number: identifies order to rebuild&lt;/p&gt;&#xA;&lt;h3 id=&#34;dns&#34;&gt;DNS&lt;/h3&gt;&#xA;&lt;p&gt;Server to redirect name (google.com) to IP (142.250.113.102)&lt;/p&gt;&#xA;&lt;p&gt;DNS Server: 1.1.1.1&lt;/p&gt;&#xA;&lt;h3 id=&#34;dhcp&#34;&gt;DHCP&lt;/h3&gt;&#xA;&lt;p&gt;Dynamic Host Configuration Protocol&#xA;This sets up the IPs you should use for device and router and DNS.&lt;/p&gt;&#xA;&lt;h2 id=&#34;http&#34;&gt;HTTP&lt;/h2&gt;&#xA;&lt;p&gt;Protocol for sending website data.&#xA;&lt;strong&gt;HTTPS&lt;/strong&gt; encrypted version.&lt;/p&gt;&#xA;&lt;p&gt;GET - get info&#xA;POST - send info&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

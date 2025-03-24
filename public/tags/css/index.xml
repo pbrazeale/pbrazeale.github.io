@@ -22,5 +22,12 @@
       <guid>http://localhost:1313/posts/dev-week-005/</guid>
       <description>&lt;h2 id=&#34;cs50x-progress-86&#34;&gt;CS50X (Progress 86%)&lt;/h2&gt;&#xA;&lt;h3 id=&#34;week-7-sql&#34;&gt;Week 7 SQL&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://pbrazeale.github.io/CS50X-Week-7-Lecture-Notes/&#34;&gt;CS50X Week 7 Lecture Notes&lt;/a&gt;&#xA;These are by far my most detailed notes I&amp;rsquo;ve taken in the course thus far. Instantly when I reached this lecture I felt &lt;strong&gt;jazzed up&lt;/strong&gt; and ready to go!&lt;/p&gt;&#xA;&lt;p&gt;I know data, and databases aren&amp;rsquo;t the flashiest part of programing and software development, but the moment David began to talk about IMDB I knew this was &lt;strong&gt;vital&lt;/strong&gt; information I needed. Extrapolating out, I think this week&amp;rsquo;s lecture and course work might have taught me enough to implement my own data management for the software I&amp;rsquo;m planning. &lt;a href=&#34;https://pbrazeale.github.io/dev-week-001/&#34;&gt;Developer Week 001&lt;/a&gt;&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>CS50X Week 08 Lecture Notes</title>
+      <link>http://localhost:1313/posts/cs50x-week-08/</link>
+      <pubDate>Tue, 13 Aug 2024 06:34:07 +0100</pubDate>
+      <guid>http://localhost:1313/posts/cs50x-week-08/</guid>
+      <description>&lt;h2 id=&#34;tcpip&#34;&gt;TCP/IP&lt;/h2&gt;&#xA;&lt;h3 id=&#34;ip&#34;&gt;IP&lt;/h3&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://cs50.harvard.edu/college/2024/spring/notes/8/cs50Week8Slide014.png&#34; alt=&#34;Example Internet Datagram Header&#34;&gt;&#xA;&lt;a href=&#34;https://cs50.harvard.edu/college/2024/spring/notes/8/&#34;&gt;SOURCE: CS50 Lecture 8 notes&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;tcp&#34;&gt;TCP&lt;/h3&gt;&#xA;&lt;p&gt;port: 80 HTTP 443 HTTPS&#xA;Sequence Number: identifies order to rebuild&lt;/p&gt;&#xA;&lt;h3 id=&#34;dns&#34;&gt;DNS&lt;/h3&gt;&#xA;&lt;p&gt;Server to redirect name (google.com) to IP (142.250.113.102)&lt;/p&gt;&#xA;&lt;p&gt;DNS Server: 1.1.1.1&lt;/p&gt;&#xA;&lt;h3 id=&#34;dhcp&#34;&gt;DHCP&lt;/h3&gt;&#xA;&lt;p&gt;Dynamic Host Configuration Protocol&#xA;This sets up the IPs you should use for device and router and DNS.&lt;/p&gt;&#xA;&lt;h2 id=&#34;http&#34;&gt;HTTP&lt;/h2&gt;&#xA;&lt;p&gt;Protocol for sending website data.&#xA;&lt;strong&gt;HTTPS&lt;/strong&gt; encrypted version.&lt;/p&gt;&#xA;&lt;p&gt;GET - get info&#xA;POST - send info&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

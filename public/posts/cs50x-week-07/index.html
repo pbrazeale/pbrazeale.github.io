@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>CS50X Week 07 Lecture Notes // Philip Brazeale</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.145.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Philip Brazeale" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/css/main.min.7ad30054107c532dea0e1b008d736261f1d1e8635b780068c8bf058d7448e498.css" />
+    
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="CS50X Week 07 Lecture Notes">
+  <meta name="twitter:description" content="SQL Database-centric language.
+flat-file database CSV
+Language Poll of Class import csv #&#39;r&#39; is default for open #using &#39;with&#39; will automatically close the file. with open(&#34;favorites.csv&#34;, &#34;r&#34;) as file: reader = csv.reader(file) #next will skip the header next(reader) for row in reader: print(row[1]) Continue with DictReader
+import csv #&#39;r&#39; is default for open #using &#39;with&#39; will automatically close the file. with open(&#34;favorites.csv&#34;, &#34;r&#34;) as file: reader = csv.DcitReader(file) for row in reader: #this now prevents issues if columns move #favorite = row[&#34;language&#34;] More elegant way to iterate">
+
+    <meta property="og:url" content="http://localhost:1313/posts/cs50x-week-07/">
+  <meta property="og:site_name" content="Philip Brazeale">
+  <meta property="og:title" content="CS50X Week 07 Lecture Notes">
+  <meta property="og:description" content="SQL Database-centric language.
+flat-file database CSV
+Language Poll of Class import csv #&#39;r&#39; is default for open #using &#39;with&#39; will automatically close the file. with open(&#34;favorites.csv&#34;, &#34;r&#34;) as file: reader = csv.reader(file) #next will skip the header next(reader) for row in reader: print(row[1]) Continue with DictReader
+import csv #&#39;r&#39; is default for open #using &#39;with&#39; will automatically close the file. with open(&#34;favorites.csv&#34;, &#34;r&#34;) as file: reader = csv.DcitReader(file) for row in reader: #this now prevents issues if columns move #favorite = row[&#34;language&#34;] More elegant way to iterate">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2024-08-10T06:34:07+01:00">
+    <meta property="article:modified_time" content="2024-08-10T06:34:07+01:00">
+    <meta property="article:tag" content="CS50">
+    <meta property="article:tag" content="Python">
+    <meta property="article:tag" content="SQL">
+    <meta property="article:tag" content="Data Structures">
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="/"><img class="app-header-avatar" src="/avatar.jpg" alt="Philip Brazeale" /></a>
+      <span class="app-header-title">Philip Brazeale</span>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/">✉️ Posts </a>
+              
+          
+          <a class="app-header-menu-item" href="/tags/">🏷️ Tags </a>
+              
+          
+          <a class="app-header-menu-item" href="/about/">🧙‍♂️ About</a>
+      </nav>
+      <p>Developer | Author | Publisher</p>
+      <div class="app-header-social">
+        
+          <a href="https://www.linkedin.com/in/pbrazeale/" target="_blank" rel="noreferrer noopener me">
+            <svg class="icon icon-brand-linkedin" viewBox="0 0 24 24" fill="currentColor"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+        
+          <a href="https://github.com/pbrazeale" target="_blank" rel="noreferrer noopener me">
+            <svg class="icon icon-brand-github" viewBox="0 0 24 24" fill="currentColor"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </a>
+        
+          <a href="https://twitter.com/pbrazeale" target="_blank" rel="noreferrer noopener me">
+            <svg class="icon icon-brand-x" viewBox="0 0 24 24" fill="currentColor"><title>X</title><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+          </a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">CS50X Week 07 Lecture Notes</h1>
+      <div class="post-meta">
+        <div>
+          <svg class="icon icon-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>calendar</title><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          Aug 10, 2024
+        </div>
+        <div>
+          <svg class="icon icon-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>clock</title><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          5 min read
+        </div>
+        <div>
+          <svg class="icon icon-tag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>tag</title><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
+              <a class="tag" href="/tags/cs50/">CS50</a>
+              <a class="tag" href="/tags/python/">Python</a>
+              <a class="tag" href="/tags/sql/">SQL</a>
+              <a class="tag" href="/tags/data-structures/">Data Structures</a>
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <h2 id="sql">SQL</h2>
+<p>Database-centric language.</p>
+<h2 id="flat-file-database">flat-file database</h2>
+<p>CSV</p>
+<h3 id="language-poll-of-class">Language Poll of Class</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> csv
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&#39;r&#39; is default for open</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#using &#39;with&#39; will automatically close the file.</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#34;favorites.csv&#34;</span>, <span style="color:#e6db74">&#34;r&#34;</span>) <span style="color:#66d9ef">as</span> file:
+</span></span><span style="display:flex;"><span>	reader <span style="color:#f92672">=</span> csv<span style="color:#f92672">.</span>reader(file)
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">#next will skip the header</span>
+</span></span><span style="display:flex;"><span>	next(reader)
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span> row <span style="color:#f92672">in</span> reader:
+</span></span><span style="display:flex;"><span>		print(row[<span style="color:#ae81ff">1</span>])
+</span></span></code></pre></div><p>Continue with DictReader</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> csv
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#&#39;r&#39; is default for open</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#using &#39;with&#39; will automatically close the file.</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#34;favorites.csv&#34;</span>, <span style="color:#e6db74">&#34;r&#34;</span>) <span style="color:#66d9ef">as</span> file:
+</span></span><span style="display:flex;"><span>	reader <span style="color:#f92672">=</span> csv<span style="color:#f92672">.</span>DcitReader(file)
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span> row <span style="color:#f92672">in</span> reader:
+</span></span><span style="display:flex;"><span>		<span style="color:#75715e">#this now prevents issues if columns move</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#75715e">#favorite = row[&#34;language&#34;]</span>
+</span></span></code></pre></div><p>More elegant way to iterate</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> csv
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#34;favorites.csv&#34;</span>) <span style="color:#66d9ef">as</span> file:
+</span></span><span style="display:flex;"><span>	reader <span style="color:#f92672">=</span> csv<span style="color:#f92672">.</span>DcitReader(file)
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">#naming the variables, setting the counters</span>
+</span></span><span style="display:flex;"><span>	scratch, c, python <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span> row <span style="color:#f92672">in</span> reader:
+</span></span><span style="display:flex;"><span>		<span style="color:#75715e">#serach by key</span>
+</span></span><span style="display:flex;"><span>		favorite <span style="color:#f92672">=</span> row[<span style="color:#e6db74">&#34;language&#34;</span>]
+</span></span><span style="display:flex;"><span>		<span style="color:#75715e">#check key value</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span> favorite <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;Scratch&#34;</span>:
+</span></span><span style="display:flex;"><span>			scratch <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">elif</span> favorite <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;C&#34;</span>:
+</span></span><span style="display:flex;"><span>			c <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">elif</span> favorite <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;Python&#34;</span>:
+</span></span><span style="display:flex;"><span>			python <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Scratch: </span><span style="color:#e6db74">{</span>scratch<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;C: </span><span style="color:#e6db74">{</span>c<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Python: </span><span style="color:#e6db74">{</span>python<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span></code></pre></div><p>Refactored to be more pythonic</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> csv
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#34;favorites.csv&#34;</span>) <span style="color:#66d9ef">as</span> file:
+</span></span><span style="display:flex;"><span>	reader <span style="color:#f92672">=</span> csv<span style="color:#f92672">.</span>DcitReader(file)
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">#empty dic created</span>
+</span></span><span style="display:flex;"><span>	counts <span style="color:#f92672">=</span> {}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">#smae loop</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span> row <span style="color:#f92672">in</span> reader:
+</span></span><span style="display:flex;"><span>		favorite <span style="color:#f92672">=</span> row[<span style="color:#e6db74">&#34;language&#34;</span>]
+</span></span><span style="display:flex;"><span>		<span style="color:#75715e">#catch expceted condition and add to count</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">if</span> favorite <span style="color:#f92672">in</span> counts:
+</span></span><span style="display:flex;"><span>			counts[favorite] <span style="color:#f92672">=+</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#75715e">#create count to begin</span>
+</span></span><span style="display:flex;"><span>		<span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>			counts[favorite] <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> favorite <span style="color:#f92672">in</span> counts:
+</span></span><span style="display:flex;"><span>	print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>favorite<span style="color:#e6db74">}</span><span style="color:#e6db74">: </span><span style="color:#e6db74">{</span>counts[favorite]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span></code></pre></div><p>You can sort the dictionary easily with sorted()</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> favorite <span style="color:#f92672">in</span> sorted(counts):
+</span></span><span style="display:flex;"><span>	print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>favorite<span style="color:#e6db74">}</span><span style="color:#e6db74">: </span><span style="color:#e6db74">{</span>counts[favorite]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span></code></pre></div><p>Sort by key&rsquo;s value <em>in this case numerically</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> favorite <span style="color:#f92672">in</span> sorted(counts, key<span style="color:#f92672">=</span>counts<span style="color:#f92672">.</span>get):
+</span></span><span style="display:flex;"><span>	print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>favorite<span style="color:#e6db74">}</span><span style="color:#e6db74">: </span><span style="color:#e6db74">{</span>counts[favorite]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span></code></pre></div><p>To change it to descending order use reverse</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> favorite <span style="color:#f92672">in</span> sorted(counts, key<span style="color:#f92672">=</span>counts<span style="color:#f92672">.</span>get, reverse<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>):
+</span></span><span style="display:flex;"><span>	print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>favorite<span style="color:#e6db74">}</span><span style="color:#e6db74">: </span><span style="color:#e6db74">{</span>counts[favorite]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span></code></pre></div><h3 id="collections-library">Collections Library</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> csv
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> collections <span style="color:#f92672">import</span> Counter
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#34;favorites.csv&#34;</span>) <span style="color:#66d9ef">as</span> file:
+</span></span><span style="display:flex;"><span>	reader <span style="color:#f92672">=</span> csv<span style="color:#f92672">.</span>DcitReader(file)
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">#objcet with built in counting functionality</span>
+</span></span><span style="display:flex;"><span>	counts <span style="color:#f92672">=</span> Counter()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span> row <span style="color:#f92672">in</span> reader:
+</span></span><span style="display:flex;"><span>		favorite <span style="color:#f92672">=</span> row[<span style="color:#e6db74">&#34;language&#34;</span>]
+</span></span><span style="display:flex;"><span>		counts[favorite] <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#comes with built in ability to return pairs key value</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> favorite, count <span style="color:#f92672">in</span> counts<span style="color:#f92672">.</span>most_common():
+</span></span><span style="display:flex;"><span>	print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>favorite<span style="color:#e6db74">}</span><span style="color:#e6db74">: </span><span style="color:#e6db74">{</span>counts<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span></code></pre></div><p>can change to &ldquo;problem&rdquo; easily</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> csv
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> collections <span style="color:#f92672">import</span> Counter
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">with</span> open(<span style="color:#e6db74">&#34;favorites.csv&#34;</span>) <span style="color:#66d9ef">as</span> file:
+</span></span><span style="display:flex;"><span>	reader <span style="color:#f92672">=</span> csv<span style="color:#f92672">.</span>DcitReader(file)
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">#objcet with built in counting functionality</span>
+</span></span><span style="display:flex;"><span>	counts <span style="color:#f92672">=</span> Counter()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">for</span> row <span style="color:#f92672">in</span> reader:
+</span></span><span style="display:flex;"><span>		<span style="color:#75715e">#this is all that changes since the program is written so modularly.</span>
+</span></span><span style="display:flex;"><span>		favorite <span style="color:#f92672">=</span> row[<span style="color:#e6db74">&#34;problem&#34;</span>]
+</span></span><span style="display:flex;"><span>		counts[favorite] <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#comes with built in ability to return pairs key value</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> favorite, count <span style="color:#f92672">in</span> counts<span style="color:#f92672">.</span>most_common():
+</span></span><span style="display:flex;"><span>	print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{</span>favorite<span style="color:#e6db74">}</span><span style="color:#e6db74">: </span><span style="color:#e6db74">{</span>counts<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span></code></pre></div><h2 id="relational-database">Relational Database</h2>
+<h3 id="crud">C.R.U.D.</h3>
+<ul>
+<li>Create, insert</li>
+<li>Select</li>
+<li>Update</li>
+<li>Delete, drop</li>
+</ul>
+<p>CREATE TABLE table (column type, &hellip;);</p>
+<h3 id="sqlite3">Sqlite3</h3>
+<p>Popular database option for smaller programs.</p>
+<p><code>$ sqllite3 favorites.db</code></p>
+<p><code>sqlite&gt;</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SQL" data-lang="SQL"><span style="display:flex;"><span>.mdoe csv
+</span></span><span style="display:flex;"><span>.import favorites.csv favorites
+</span></span><span style="display:flex;"><span>.quit
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SQL" data-lang="SQL"><span style="display:flex;"><span><span style="color:#f92672">#</span>shows the <span style="color:#66d9ef">database</span> information
+</span></span><span style="display:flex;"><span>.<span style="color:#66d9ef">schema</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">#</span> <span style="color:#e6db74">&#39;*&#39;</span> <span style="color:#66d9ef">is</span> a whildcard (meaning it stands <span style="color:#66d9ef">in</span> <span style="color:#66d9ef">for</span> the <span style="color:#66d9ef">column</span> <span style="color:#66d9ef">key</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#f92672">*</span> <span style="color:#66d9ef">FROM</span> favorites;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">#</span>makes sure that <span style="color:#66d9ef">only</span> <span style="color:#ae81ff">10</span> resutls come back.
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#66d9ef">language</span> <span style="color:#66d9ef">FROM</span> favorites <span style="color:#66d9ef">LIMIT</span> <span style="color:#ae81ff">10</span>;
+</span></span></code></pre></div><h4 id="built-in-phrases">Built in phrases</h4>
+<ul>
+<li>AVG</li>
+<li>COUNT</li>
+<li>DISTINCT</li>
+<li>LOWER</li>
+<li>MAX</li>
+<li>MIN</li>
+<li>UPPER</li>
+<li>&hellip;</li>
+</ul>
+<p>returns the number of rows</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SQL" data-lang="SQL"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#66d9ef">COUNT</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#f92672">*</span>) <span style="color:#66d9ef">FROM</span> favorites;
+</span></span></code></pre></div><p>returns every value in column languages</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SQL" data-lang="SQL"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#66d9ef">DISTINCT</span>(<span style="color:#66d9ef">language</span>) <span style="color:#66d9ef">FROM</span> favorites;
+</span></span></code></pre></div><p>returns the number of DISTINCT values in column languages</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SQL" data-lang="SQL"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#66d9ef">COUNT</span>(<span style="color:#66d9ef">DISTINCT</span>(<span style="color:#66d9ef">language</span>)) <span style="color:#66d9ef">FROM</span> favorites;
+</span></span></code></pre></div><h4 id="more-keywords">More keywords</h4>
+<ul>
+<li>WHERE</li>
+<li>LIKE</li>
+<li>ORDER BY</li>
+<li>LIMIT</li>
+<li>GROUP BY</li>
+</ul>
+<p>returns the count of only C within coloumn language</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SQL" data-lang="SQL"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#66d9ef">COUNT</span>(<span style="color:#f92672">*</span>) <span style="color:#66d9ef">FROM</span> favorites <span style="color:#66d9ef">WHERE</span> <span style="color:#66d9ef">language</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;C&#39;</span>;
+</span></span></code></pre></div><p>returns the count of only C within coloumn language AND also match Hello, World within coloumn problem</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SQL" data-lang="SQL"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#66d9ef">COUNT</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#f92672">*</span>) <span style="color:#66d9ef">FROM</span> favorites <span style="color:#66d9ef">WHERE</span> <span style="color:#66d9ef">language</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;C&#39;</span> <span style="color:#66d9ef">AND</span> problem <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Hello, World&#39;</span>;
+</span></span></code></pre></div><p>returns a table of languages and their associated count</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SQL" data-lang="SQL"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#66d9ef">language</span>, <span style="color:#66d9ef">COUNT</span>(<span style="color:#f92672">*</span>) <span style="color:#66d9ef">FROM</span> favorites <span style="color:#66d9ef">GROUP</span> <span style="color:#66d9ef">BY</span> <span style="color:#66d9ef">language</span>;
+</span></span></code></pre></div><p>returns a table of languages and their associated count; now ordered by accending order.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SQL" data-lang="SQL"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#66d9ef">language</span>, <span style="color:#66d9ef">COUNT</span>(_) <span style="color:#66d9ef">FROM</span> favorites <span style="color:#66d9ef">GROUP</span> <span style="color:#66d9ef">BY</span> <span style="color:#66d9ef">language</span> <span style="color:#66d9ef">ORDER</span> <span style="color:#66d9ef">BY</span> <span style="color:#66d9ef">COUNT</span>(_);
+</span></span></code></pre></div><p>returns a table of languages and their associated count; now ordered by descending order.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SQL" data-lang="SQL"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#66d9ef">language</span>, <span style="color:#66d9ef">COUNT</span>(<span style="color:#f92672">*</span>) <span style="color:#66d9ef">FROM</span> favorites <span style="color:#66d9ef">GROUP</span> <span style="color:#66d9ef">BY</span> <span style="color:#66d9ef">language</span> <span style="color:#66d9ef">ORDER</span> <span style="color:#66d9ef">BY</span> <span style="color:#66d9ef">COUNT</span>(<span style="color:#f92672">*</span>) <span style="color:#66d9ef">DESC</span>;
+</span></span></code></pre></div><p>Can name a condition to save repeats</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SQL" data-lang="SQL"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#66d9ef">language</span>, <span style="color:#66d9ef">COUNT</span>(<span style="color:#960050;background-color:#1e0010">\</span><span style="color:#f92672">*</span>) <span style="color:#66d9ef">AS</span> n <span style="color:#66d9ef">FROM</span> favorites <span style="color:#66d9ef">GROUP</span> <span style="color:#66d9ef">BY</span> <span style="color:#66d9ef">language</span> <span style="color:#66d9ef">ORDER</span> <span style="color:#66d9ef">BY</span> n <span style="color:#66d9ef">DESC</span>;
+</span></span></code></pre></div><p>Add data into the database</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SQL" data-lang="SQL"><span style="display:flex;"><span><span style="color:#66d9ef">INSERT</span> <span style="color:#66d9ef">INTO</span> <span style="color:#66d9ef">table</span> (<span style="color:#66d9ef">column</span>, ...) <span style="color:#66d9ef">VALUES</span>(value, ...);
+</span></span></code></pre></div><p>NULL == lack of data for field.</p>
+<h3 id="imdb">IMDb</h3>
+<p>Movie/TV Show database with a GUI as the website</p>
+<h4 id="best-practice">Best Practice</h4>
+<p>when storing data associate a string <em>header</em> with an id number. That way ids can be associated across multiple pieces of data and not risk a string being misspelled.</p>
+<h3 id="data-types">Data Types</h3>
+<ul>
+<li>BLOB
+<ul>
+<li>Binary Large Object</li>
+</ul>
+</li>
+<li>INTEGER</li>
+<li>NUMBERIC
+<ul>
+<li>dates and times</li>
+</ul>
+</li>
+<li>REAL
+<ul>
+<li>floats or decimal points</li>
+</ul>
+</li>
+<li>TEXT
+<ul>
+<li>strings</li>
+</ul>
+</li>
+</ul>
+<p>PRIMARY KEY = unique id
+FOREIGN KEY = use of PRIMARY KEY in a new database table.</p>
+<p>Search data matched between two tables</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SQL" data-lang="SQL"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> <span style="color:#960050;background-color:#1e0010">\</span><span style="color:#f92672">*</span> <span style="color:#66d9ef">FROM</span> shows <span style="color:#66d9ef">WHERE</span> id <span style="color:#66d9ef">IN</span>
+</span></span><span style="display:flex;"><span>(<span style="color:#66d9ef">SELECT</span> show_id <span style="color:#66d9ef">FROM</span> ratings <span style="color:#66d9ef">WHERE</span> rating <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">6</span>.<span style="color:#ae81ff">0</span>);
+</span></span></code></pre></div><h4 id="join">JOIN</h4>
+<p>This will combine the two tables by defining the shared value &ldquo;shows.id&rdquo; and then outputs the first 10 options with a rating &gt;= 6.0, and only show the title and rating.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SQL" data-lang="SQL"><span style="display:flex;"><span><span style="color:#66d9ef">SELECT</span> title, rating <span style="color:#66d9ef">FROM</span> shows <span style="color:#66d9ef">JOIN</span> ratings <span style="color:#66d9ef">ON</span> shows.id <span style="color:#f92672">=</span> ratings.<span style="color:#66d9ef">show</span>.id <span style="color:#66d9ef">WHERE</span> rating <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">6</span>.<span style="color:#ae81ff">0</span> <span style="color:#66d9ef">LIMIT</span> <span style="color:#ae81ff">10</span>;
+</span></span></code></pre></div><h4 id="many-to-many">Many to Many</h4>
+<p>requires a 3rd table to link the unique data tables &ldquo;Person&rdquo; &ldquo;Shows&rdquo;</p>
+<h4 id="index">INDEX</h4>
+<p>INDEX will create a B-Tree; and while it takes time to process the table the first time; there after it will result in far faster searches between tables.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-SQL" data-lang="SQL"><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">INDEX</span> person_index <span style="color:#66d9ef">on</span> stars (person_id);
+</span></span></code></pre></div><p><strong>Tradeoffs:</strong> will cost more memory, and has to be updated anytime the table is modified.</p>
+<h3 id="python-to-use-sql">Python to use SQL</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>form cs50 <span style="color:#f92672">import</span> SQL
+</span></span><span style="display:flex;"><span>db <span style="color:#f92672">=</span> SQL(<span style="color:#e6db74">&#34;sqlite:///favorites.db&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>favorite <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;Favorite: &#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>rows <span style="color:#f92672">=</span> db<span style="color:#f92672">.</span>execute(<span style="color:#e6db74">&#34;SELECT COUNT(*) AS n FROM favorites WHERE problem = ?&#34;</span>, favorite)
+</span></span><span style="display:flex;"><span>row <span style="color:#f92672">=</span> rows[<span style="color:#ae81ff">0</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(row[<span style="color:#e6db74">&#34;n&#34;</span>])
+</span></span></code></pre></div><h4 id="race-conditions">Race Conditions</h4>
+<p>where you attempt to update a database multiple times within a short period of time, and there is a conflict.</p>
+<ul>
+<li>BEGIN TRANSACTION</li>
+<li>COMMIT</li>
+<li>ROLLBACK</li>
+</ul>
+<p>These help control and prevent conflicts where race conditions are a known possibility.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>db<span style="color:#f92672">.</span>execute(<span style="color:#e6db74">&#34;BEGIN TRANSACTION&#34;</span>)
+</span></span><span style="display:flex;"><span>rows <span style="color:#f92672">=</span> db<span style="color:#f92672">.</span>execute(<span style="color:#e6db74">&#34;SELECT likes FROM posts WHERE id = ?&#34;</span>, id);
+</span></span><span style="display:flex;"><span>likes <span style="color:#f92672">=</span> rows[<span style="color:#ae81ff">0</span>][<span style="color:#e6db74">&#34;likes&#34;</span>]
+</span></span><span style="display:flex;"><span>db<span style="color:#f92672">.</span>execute(<span style="color:#e6db74">&#34;UPDATE posts SET likes = ? WHERE id = ?&#34;</span>, likes <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>, id);
+</span></span><span style="display:flex;"><span>db<span style="color:#f92672">.</span>execute(<span style="color:#e6db74">&#34;COMMIT&#34;</span>)
+</span></span></code></pre></div><h3 id="sql-injection-attack">SQL Injection ATTACK</h3>
+<p>Safe solution is to use &lsquo;?&rsquo; as a placeholder when a variable needs to be entered.</p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>Boot.dev Learn Linux 05 Input Output // Philip Brazeale</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.145.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Philip Brazeale" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/css/main.min.7ad30054107c532dea0e1b008d736261f1d1e8635b780068c8bf058d7448e498.css" />
+    
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Boot.dev Learn Linux 05 Input Output">
+  <meta name="twitter:description" content="5.3 Flags Conventions Whether or not a command takes flags, and what those flags are, is up to the developer of the command. That said there are some common conventions:
+Single-character flags are prefixed with a single dash (.e.g -a) Multi-character flags are prefixed with two dashes (e.g. --help) Sometimes the same flag can be used with a single dash or two dashes (e.g. -h or --help) 5.6 Exit Codes Exit codes (sometimes called “return codes” or “status codes”) are how programs communicate back whether they ran successfully or not.">
+
+    <meta property="og:url" content="http://localhost:1313/posts/boot.dev-linux-05-input-output/">
+  <meta property="og:site_name" content="Philip Brazeale">
+  <meta property="og:title" content="Boot.dev Learn Linux 05 Input Output">
+  <meta property="og:description" content="5.3 Flags Conventions Whether or not a command takes flags, and what those flags are, is up to the developer of the command. That said there are some common conventions:
+Single-character flags are prefixed with a single dash (.e.g -a) Multi-character flags are prefixed with two dashes (e.g. --help) Sometimes the same flag can be used with a single dash or two dashes (e.g. -h or --help) 5.6 Exit Codes Exit codes (sometimes called “return codes” or “status codes”) are how programs communicate back whether they ran successfully or not.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-03-12T16:34:07+01:00">
+    <meta property="article:modified_time" content="2025-03-12T16:34:07+01:00">
+    <meta property="article:tag" content="Linux">
+    <meta property="article:tag" content="Bash">
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="/"><img class="app-header-avatar" src="/avatar.jpg" alt="Philip Brazeale" /></a>
+      <span class="app-header-title">Philip Brazeale</span>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/">✉️ Posts </a>
+              
+          
+          <a class="app-header-menu-item" href="/tags/">🏷️ Tags </a>
+              
+          
+          <a class="app-header-menu-item" href="/about/">🧙‍♂️ About</a>
+      </nav>
+      <p>Developer | Author | Publisher</p>
+      <div class="app-header-social">
+        
+          <a href="https://www.linkedin.com/in/pbrazeale/" target="_blank" rel="noreferrer noopener me">
+            <svg class="icon icon-brand-linkedin" viewBox="0 0 24 24" fill="currentColor"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+        
+          <a href="https://github.com/pbrazeale" target="_blank" rel="noreferrer noopener me">
+            <svg class="icon icon-brand-github" viewBox="0 0 24 24" fill="currentColor"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </a>
+        
+          <a href="https://twitter.com/pbrazeale" target="_blank" rel="noreferrer noopener me">
+            <svg class="icon icon-brand-x" viewBox="0 0 24 24" fill="currentColor"><title>X</title><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+          </a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Boot.dev Learn Linux 05 Input Output</h1>
+      <div class="post-meta">
+        <div>
+          <svg class="icon icon-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>calendar</title><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          Mar 12, 2025
+        </div>
+        <div>
+          <svg class="icon icon-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>clock</title><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          4 min read
+        </div>
+        <div>
+          <svg class="icon icon-tag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>tag</title><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
+              <a class="tag" href="/tags/linux/">Linux</a>
+              <a class="tag" href="/tags/bash/">Bash</a>
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <h2 id="53-flags">5.3 Flags</h2>
+<h3 id="conventions">Conventions</h3>
+<p>Whether or not a command takes flags, and what those flags are, is up to the developer of the command. That said there are some common conventions:</p>
+<ul>
+<li>Single-character flags are prefixed with a single dash (.e.g <code>-a</code>)</li>
+<li>Multi-character flags are prefixed with two dashes (e.g. <code>--help</code>)</li>
+<li>Sometimes the same flag can be used with a single dash or two dashes (e.g. <code>-h</code> or <code>--help</code>)</li>
+</ul>
+<h2 id="56-exit-codes">5.6 Exit Codes</h2>
+<p><a href="https://en.wikipedia.org/wiki/Exit_status">Exit codes</a> (sometimes called &ldquo;return codes&rdquo; or &ldquo;status codes&rdquo;) are how programs communicate back whether they ran successfully or not.</p>
+<p><strong><code>0</code> is the exit code for success. Any other exit code is an error</strong>. 9 times out of 10, if a non-zero exit code is returned (meaning an error) it will be <code>1</code>, which is the &ldquo;catch-all&rdquo; error code.</p>
+<p>Programs that call other programs use error codes to figure out if execution was successful. For example, if the Boot.dev server program exits with a non-zero exit code, we have another program that will automatically restart it and log the error.</p>
+<p>In a shell, you can access the exit code of the last program you ran with the question mark variable (<code>$?</code>). For example, if you run a program that exits with a non-zero exit code, you can see what it was with the <code>echo</code> command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls ~
+</span></span><span style="display:flex;"><span>echo $?
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 0</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls /does/not/exist
+</span></span><span style="display:flex;"><span>echo $?
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 1</span>
+</span></span></code></pre></div><h2 id="57-standard-output">5.7 Standard Output</h2>
+<p><a href="https://en.wikipedia.org/wiki/Standard_streams#Standard_output_%28stdout%29">&ldquo;Standard Output&rdquo;</a>, usually called &ldquo;standard out&rdquo; or &ldquo;stdout&rdquo;, is the default place where programs print their output. It&rsquo;s just a stream of data that prints to your terminal, but we&rsquo;ll talk later about how it can be redirected to other places.</p>
+<p>All programming languages have a simple way to print to stdout. In Python, it&rsquo;s the <code>print</code> function:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Hello world&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Hello world</span>
+</span></span></code></pre></div><p>In a shell, it&rsquo;s the <code>echo</code> command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Hello world&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Hello world</span>
+</span></span></code></pre></div><h2 id="58-standard-error">5.8 Standard Error</h2>
+<p><a href="https://en.wikipedia.org/wiki/Standard_streams#Standard_error_%28stderr%29">&ldquo;Standard Error&rdquo;</a>, usually called &ldquo;stderr&rdquo;, is a data stream just like standard output, but is intended to be used for <em>error</em> messages.</p>
+<p>It&rsquo;s a separate stream so that you can redirect it to a different place if need be, but by default, it prints to your terminal just like stdout.</p>
+<h3 id="redirecting-streams">Redirecting Streams</h3>
+<p>You can redirect stdout and stderr to different places using the <code>&gt;</code> and <code>2&gt;</code> operators. <code>&gt;</code> redirects stdout, and <code>2&gt;</code> redirects stderr.</p>
+<h4 id="redirect-stdout-to-a-file">Redirect stdout to a File</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Hello world&#34;</span> &gt; hello.txt
+</span></span><span style="display:flex;"><span>cat hello.txt
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Hello world</span>
+</span></span></code></pre></div><h4 id="redirect-stderr-to-a-file">Redirect stderr to a File</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cat doesnotexist.txt 2&gt; error.txt
+</span></span><span style="display:flex;"><span>cat error.txt
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># cat: doesnotexist.txt: No such file or directory</span>
+</span></span></code></pre></div><h2 id="59-standard-in">5.9 Standard In</h2>
+<p><a href="https://en.wikipedia.org/wiki/Standard_streams#Standard_input_%28stdin%29">&ldquo;Standard Input&rdquo;</a>, usually called &ldquo;standard in&rdquo; or &ldquo;stdin&rdquo;, is the default place where programs <em>read</em> their input. It&rsquo;s just a stream of data that programs can read from as they run.</p>
+<p>All major programming languages provide a simple way to read from stdin. In Python, it&rsquo;s the <code>input</code> function:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># execution stops until the user types</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># something (in this case &#34;Lane&#34;) and presses enter</span>
+</span></span><span style="display:flex;"><span>name <span style="color:#f92672">=</span> input(<span style="color:#e6db74">&#34;What is your name? &#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Hello,&#34;</span>, name)
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Hello, Lane!</span>
+</span></span></code></pre></div><h2 id="513-unix-philosophy">5.13 Unix Philosophy</h2>
+<p>The <a href="https://en.wikipedia.org/wiki/Unix_philosophy">Unix Philosophy</a> is a simple set of principles that have guided the development of Unix-like operating systems for decades. It can be summarized as:</p>
+<ol>
+<li>Write programs that do one thing and do it well.</li>
+<li>Write programs to work together.</li>
+<li>Write programs to handle text streams, because that is a universal interface.</li>
+</ol>
+<h3 id="1-write-programs-that-do-one-thing-and-do-it-well">1. Write Programs That Do One Thing and Do It Well</h3>
+<p>This is why programs like <code>ls</code>, <code>grep</code>, and <code>less</code> exist. They do one thing, and they do it well. They don&rsquo;t try to do too much.</p>
+<ul>
+<li><code>ls</code> lists files and directories</li>
+<li><code>grep</code> searches for text</li>
+<li><code>less</code> displays text</li>
+</ul>
+<h3 id="2-write-programs-to-work-together">2. Write Programs to Work Together</h3>
+<p>Because, at least according to the Unix Philosophy, programs should do one thing and do it well, it&rsquo;s easy to write programs that work together. For example, you can use <code>grep</code> to search for text in a file, and then pipe the output of <code>grep</code> into <code>less</code> to display the results interactively:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>grep <span style="color:#e6db74">&#34;hello&#34;</span> some_file.txt | less
+</span></span></code></pre></div><h3 id="3-write-programs-to-handle-text-streams-because-that-is-a-universal-interface">3. Write Programs to Handle Text Streams, Because That Is a Universal Interface</h3>
+<p>This point is more the &ldquo;how&rdquo; of the previous point. Programs work together easily when they all use the same interface: text streams. A text stream is just a sequence of characters that can be read or written sequentially. In other words, a text stream is just text.</p>
+<p>This hearkens back to the point we talked about at the beginning of this course: the shell is a command-line (text) interface. Text-based interfaces are much more powerful and extensible than graphical interfaces. That&rsquo;s why developers have been using them for decades, and why what we can do with them looks like magic to the uninitiated.</p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

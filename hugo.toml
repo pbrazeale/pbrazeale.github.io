@@ -44,6 +44,18 @@ icon = "brand-x"
 name = "X"
 url = "https://twitter.com/pbrazeale"
 
+# [tags]
+# [[tags.main]]
+# identifier = "python"
+# name = "💻 Python "
+# url = "/tags/python/"
+# weight = 10
+# [[tags.main]]
+# identifier = "cybersecurity"
+# name = "🛜 Cybersecurity "
+# url = "/tags/cybersecurity/"
+# weight = 11
+
 
 # Obsidian Theme
 [params.style]

@@ -6,8 +6,22 @@
     <description>Recent content in Tags on Philip Brazeale</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 23 Mar 2025 06:34:07 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 23 Mar 2025 16:34:07 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bash</title>
+      <link>http://localhost:1313/tags/bash/</link>
+      <pubDate>Sun, 23 Mar 2025 16:34:07 +0100</pubDate>
+      <guid>http://localhost:1313/tags/bash/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux</title>
+      <link>http://localhost:1313/tags/linux/</link>
+      <pubDate>Sun, 23 Mar 2025 16:34:07 +0100</pubDate>
+      <guid>http://localhost:1313/tags/linux/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Azure</title>
       <link>http://localhost:1313/tags/azure/</link>
@@ -27,13 +41,6 @@
       <link>http://localhost:1313/tags/developer-log/</link>
       <pubDate>Sun, 23 Mar 2025 06:34:07 +0100</pubDate>
       <guid>http://localhost:1313/tags/developer-log/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Linux</title>
-      <link>http://localhost:1313/tags/linux/</link>
-      <pubDate>Sun, 23 Mar 2025 06:34:07 +0100</pubDate>
-      <guid>http://localhost:1313/tags/linux/</guid>
       <description></description>
     </item>
     <item>
@@ -58,17 +65,17 @@
       <description></description>
     </item>
     <item>
+      <title>Cybersecurity</title>
+      <link>http://localhost:1313/tags/cybersecurity/</link>
+      <pubDate>Mon, 17 Mar 2025 06:34:07 +0100</pubDate>
+      <guid>http://localhost:1313/tags/cybersecurity/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Networking</title>
       <link>http://localhost:1313/tags/networking/</link>
       <pubDate>Mon, 17 Mar 2025 06:34:07 +0100</pubDate>
       <guid>http://localhost:1313/tags/networking/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Bash</title>
-      <link>http://localhost:1313/tags/bash/</link>
-      <pubDate>Mon, 10 Mar 2025 18:34:07 +0100</pubDate>
-      <guid>http://localhost:1313/tags/bash/</guid>
       <description></description>
     </item>
     <item>
@@ -174,6 +181,27 @@
       <link>http://localhost:1313/tags/programing/</link>
       <pubDate>Fri, 16 Aug 2024 16:34:07 +0100</pubDate>
       <guid>http://localhost:1313/tags/programing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>TCP/IP</title>
+      <link>http://localhost:1313/tags/tcp/ip/</link>
+      <pubDate>Tue, 13 Aug 2024 06:34:07 +0100</pubDate>
+      <guid>http://localhost:1313/tags/tcp/ip/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Data Structures</title>
+      <link>http://localhost:1313/tags/data-structures/</link>
+      <pubDate>Sat, 10 Aug 2024 06:34:07 +0100</pubDate>
+      <guid>http://localhost:1313/tags/data-structures/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>C</title>
+      <link>http://localhost:1313/tags/c/</link>
+      <pubDate>Fri, 09 Aug 2024 04:34:07 +0100</pubDate>
+      <guid>http://localhost:1313/tags/c/</guid>
       <description></description>
     </item>
     <item>
