@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AI on Philip Brazeale</title>
+    <link>http://localhost:1313/tags/ai/</link>
+    <description>Recent content in AI on Philip Brazeale</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 18 Feb 2024 16:34:07 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/ai/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ChatGPT Technical Tutor</title>
+      <link>http://localhost:1313/posts/chatgpt-technical-tutor/</link>
+      <pubDate>Sun, 18 Feb 2024 16:34:07 +0100</pubDate>
+      <guid>http://localhost:1313/posts/chatgpt-technical-tutor/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been slowly figuring out the best way to approach learning with ChatGPT that&amp;rsquo;s not just give code, get back fixed code.&lt;/p&gt;&#xA;&lt;p&gt;While that no doubt is quick and efficient, it does little toward helping me progress my own knowledge base. However, finding a way to get back sourced information&amp;ndash;that I don&amp;rsquo;t have to skim the documentation for myself&amp;ndash;is a win!&lt;/p&gt;&#xA;&lt;p&gt;Over the past week, I&amp;rsquo;ve noticed a massive improvement in the quality of feedback. Not sure if it&amp;rsquo;s model upgrades on the server side, better prompting on my part, or a mixture of both.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

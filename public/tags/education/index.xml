@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Education on Philip Brazeale</title>
+    <link>http://localhost:1313/tags/education/</link>
+    <description>Recent content in Education on Philip Brazeale</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 26 Sep 2024 10:34:07 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/education/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CS50P Certificate</title>
+      <link>http://localhost:1313/posts/cs50p-certificate/</link>
+      <pubDate>Thu, 26 Sep 2024 10:34:07 +0100</pubDate>
+      <guid>http://localhost:1313/posts/cs50p-certificate/</guid>
+      <description>&lt;h2 id=&#34;harvard-online-cs50-python&#34;&gt;Harvard Online CS50 Python&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://pbrazeale.github.io/images/20240926_CS50P_Certificate.png&#34; alt=&#34;CS50P Certificate&#34;&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;takeaways&#34;&gt;Takeaways&lt;/h2&gt;&#xA;&lt;p&gt;I&amp;rsquo;m exceptionally grateful to Harvard for allowing the course to be offered for free online, to David J. Malan for his excellent lecturing skills, to&#xA;Carter Zenke for the supplementary videos for the lectures, and to everyone else involved in the production and distribution of the course.&lt;/p&gt;&#xA;&lt;p&gt;While I know there is still much to learn and many more milestones on the road to competency; I am confident that this course has prepared me to build real world software to solve tangible problems. My final project being a prime example. Though it may be rough, it does solve the underlining issue of gathering the KDP Reports data into a centralized database and displaying an accurate Sales/Earnings chart.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>The Value of Learning and Skill Acquisition</title>
+      <link>http://localhost:1313/posts/the-value-of-learning-and-skill-acquisition/</link>
+      <pubDate>Tue, 20 Feb 2024 16:34:07 +0100</pubDate>
+      <guid>http://localhost:1313/posts/the-value-of-learning-and-skill-acquisition/</guid>
+      <description>&lt;h2 id=&#34;assumptions&#34;&gt;Assumptions:&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;You work on average 2,000 hours/year.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;You make $70,000/year.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Or $35/hour.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;A new skill requires 500 hours to acquire.&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;And that skill will increase your earnings by a 25%:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;$8.75/hour&lt;/li&gt;&#xA;&lt;li&gt;$17,500/year&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;This skill will remain valid for 10 years.&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;It&amp;rsquo;s all or nothing.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Meaning 499 hours = 0% increase in earnings.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;em&gt;There are 168 hours in a week&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;50 hours go toward work&lt;/li&gt;&#xA;&lt;li&gt;56 hours go toward sleep/rest&lt;/li&gt;&#xA;&lt;li&gt;62 hours for you to allocate&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;argument&#34;&gt;Argument:&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;The skill value is $175,000 over ten years.&#xA;&lt;ul&gt;&#xA;&lt;li&gt;$175,000 / 500 hours and you get expected value of $350/hour.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;Or put another way, you&amp;rsquo;ll earn 10X per hour invested in the skill (&lt;em&gt;assuming you finish&lt;/em&gt;) compared to your work hour.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

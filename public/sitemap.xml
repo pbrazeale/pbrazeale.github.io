@@ -119,6 +119,9 @@
     <loc>http://localhost:1313/posts/cs50p-certificate/</loc>
     <lastmod>2024-09-26T10:34:07+01:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/education/</loc>
+    <lastmod>2024-09-26T10:34:07+01:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/posts/cs50p-final-project/</loc>
     <lastmod>2024-09-25T10:34:07+01:00</lastmod>
   </url><url>
@@ -190,6 +193,21 @@
   </url><url>
     <loc>http://localhost:1313/posts/dev-week-001/</loc>
     <lastmod>2024-07-14T16:34:07+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/security-acronym-list/</loc>
+    <lastmod>2024-03-05T16:34:07+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/the-value-of-learning-and-skill-acquisition/</loc>
+    <lastmod>2024-02-20T16:34:07+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/ai/</loc>
+    <lastmod>2024-02-18T16:34:07+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/chatgpt-technical-tutor/</loc>
+    <lastmod>2024-02-18T16:34:07+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/llm/</loc>
+    <lastmod>2024-02-18T16:34:07+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>

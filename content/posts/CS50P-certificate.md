@@ -1,5 +1,5 @@
 +++
-tags = ['CS50', 'Python']
+tags = ['CS50', 'Python', 'Education']
 title = 'CS50P Certificate'
 date = 2024-09-26T10:34:07+01:00
 draft = false

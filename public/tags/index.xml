@@ -107,6 +107,13 @@
       <description></description>
     </item>
     <item>
+      <title>Education</title>
+      <link>http://localhost:1313/tags/education/</link>
+      <pubDate>Thu, 26 Sep 2024 10:34:07 +0100</pubDate>
+      <guid>http://localhost:1313/tags/education/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>PyQt</title>
       <link>http://localhost:1313/tags/pyqt/</link>
       <pubDate>Wed, 25 Sep 2024 10:34:07 +0100</pubDate>
@@ -167,6 +174,20 @@
       <link>http://localhost:1313/tags/programing/</link>
       <pubDate>Fri, 16 Aug 2024 16:34:07 +0100</pubDate>
       <guid>http://localhost:1313/tags/programing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>AI</title>
+      <link>http://localhost:1313/tags/ai/</link>
+      <pubDate>Sun, 18 Feb 2024 16:34:07 +0100</pubDate>
+      <guid>http://localhost:1313/tags/ai/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>LLM</title>
+      <link>http://localhost:1313/tags/llm/</link>
+      <pubDate>Sun, 18 Feb 2024 16:34:07 +0100</pubDate>
+      <guid>http://localhost:1313/tags/llm/</guid>
       <description></description>
     </item>
   </channel>
