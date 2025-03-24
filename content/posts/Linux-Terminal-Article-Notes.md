@@ -15,7 +15,7 @@ A shell is a **program** that acts as command-line interpreter. It **processe
 
 The CLI is the interface in which we enter commands for the computer to process. In plain English once again, it's the space in which you enter the commands the computer will process.
 
-![cli](https://www.freecodecamp.org/news/content/images/2022/03/cli.png)
+![cli](https://cdn-media-0.freecodecamp.org/2022/03/cli.png)
 
 This is practically the same as the terminal and in my opinion these terms can be used interchangeably.
 
