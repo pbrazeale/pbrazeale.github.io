@@ -1,7 +1,7 @@
 +++
 tags = ['CS50', 'Data Structures', 'C']
 title = 'CS50X Week 05 Lecture Notes 02'
-date = 2025-08-09T04:34:07+01:00
+date = 2024-08-09T04:34:07+01:00
 draft = false
 +++
 

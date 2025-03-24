@@ -6,8 +6,15 @@
     <description>Recent content in Linux on Philip Brazeale</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 23 Mar 2025 06:34:07 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 23 Mar 2025 16:34:07 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Use the Terminal Like a Pro</title>
+      <link>http://localhost:1313/posts/linux-terminal-article-notes/</link>
+      <pubDate>Sun, 23 Mar 2025 16:34:07 +0100</pubDate>
+      <guid>http://localhost:1313/posts/linux-terminal-article-notes/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Source:&lt;/strong&gt; &lt;a href=&#34;https://www.freecodecamp.org/news/command-line-for-beginners/&#34;&gt;Command Line For Beginners&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;shell&#34;&gt;Shell:&lt;/h2&gt;&#xA;&lt;p&gt;A shell is a &lt;strong&gt;program&lt;/strong&gt; that acts as command-line interpreter. It &lt;strong&gt;processes commands&lt;/strong&gt; and &lt;strong&gt;outputs the results&lt;/strong&gt;. It interprets and processes the commands entered by the user.&lt;/p&gt;&#xA;&lt;h2 id=&#34;command-line-or-cli-command-line-interface&#34;&gt;Command line or CLI (command line interface):&lt;/h2&gt;&#xA;&lt;p&gt;The CLI is the interface in which we enter commands for the computer to process. In plain English once again, it&amp;rsquo;s the space in which you enter the commands the computer will process.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Developer Week 036</title>
       <link>http://localhost:1313/posts/dev-week-036/</link>

@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>How to Use the Terminal Like a Pro // Philip Brazeale</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.145.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Philip Brazeale" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/css/main.min.7ad30054107c532dea0e1b008d736261f1d1e8635b780068c8bf058d7448e498.css" />
+    
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="How to Use the Terminal Like a Pro">
+  <meta name="twitter:description" content="Source: Command Line For Beginners
+Shell: A shell is a program that acts as command-line interpreter. It processes commands and outputs the results. It interprets and processes the commands entered by the user.
+Command line or CLI (command line interface): The CLI is the interface in which we enter commands for the computer to process. In plain English once again, it’s the space in which you enter the commands the computer will process.">
+
+    <meta property="og:url" content="http://localhost:1313/posts/linux-terminal-article-notes/">
+  <meta property="og:site_name" content="Philip Brazeale">
+  <meta property="og:title" content="How to Use the Terminal Like a Pro">
+  <meta property="og:description" content="Source: Command Line For Beginners
+Shell: A shell is a program that acts as command-line interpreter. It processes commands and outputs the results. It interprets and processes the commands entered by the user.
+Command line or CLI (command line interface): The CLI is the interface in which we enter commands for the computer to process. In plain English once again, it’s the space in which you enter the commands the computer will process.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-03-23T16:34:07+01:00">
+    <meta property="article:modified_time" content="2025-03-23T16:34:07+01:00">
+    <meta property="article:tag" content="Linux">
+    <meta property="article:tag" content="Bash">
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="/"><img class="app-header-avatar" src="/avatar.jpg" alt="Philip Brazeale" /></a>
+      <span class="app-header-title">Philip Brazeale</span>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/">✉️ Posts </a>
+              
+          
+          <a class="app-header-menu-item" href="/tags/">🏷️ Tags </a>
+              
+          
+          <a class="app-header-menu-item" href="/about/">🧙‍♂️ About</a>
+      </nav>
+      <p>Developer | Author | Publisher</p>
+      <div class="app-header-social">
+        
+          <a href="https://www.linkedin.com/in/pbrazeale/" target="_blank" rel="noreferrer noopener me">
+            <svg class="icon icon-brand-linkedin" viewBox="0 0 24 24" fill="currentColor"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+        
+          <a href="https://github.com/pbrazeale" target="_blank" rel="noreferrer noopener me">
+            <svg class="icon icon-brand-github" viewBox="0 0 24 24" fill="currentColor"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </a>
+        
+          <a href="https://twitter.com/pbrazeale" target="_blank" rel="noreferrer noopener me">
+            <svg class="icon icon-brand-x" viewBox="0 0 24 24" fill="currentColor"><title>X</title><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+          </a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">How to Use the Terminal Like a Pro</h1>
+      <div class="post-meta">
+        <div>
+          <svg class="icon icon-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>calendar</title><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          Mar 23, 2025
+        </div>
+        <div>
+          <svg class="icon icon-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>clock</title><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          3 min read
+        </div>
+        <div>
+          <svg class="icon icon-tag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>tag</title><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
+              <a class="tag" href="/tags/linux/">Linux</a>
+              <a class="tag" href="/tags/bash/">Bash</a>
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <p><strong>Source:</strong> <a href="https://www.freecodecamp.org/news/command-line-for-beginners/">Command Line For Beginners</a></p>
+<h2 id="shell">Shell:</h2>
+<p>A shell is a <strong>program</strong> that acts as command-line interpreter. It <strong>processes commands</strong> and <strong>outputs the results</strong>. It interprets and processes the commands entered by the user.</p>
+<h2 id="command-line-or-cli-command-line-interface">Command line or CLI (command line interface):</h2>
+<p>The CLI is the interface in which we enter commands for the computer to process. In plain English once again, it&rsquo;s the space in which you enter the commands the computer will process.</p>
+<p><img src="https://www.freecodecamp.org/news/content/images/2022/03/cli.png" alt="cli"></p>
+<p>This is practically the same as the terminal and in my opinion these terms can be used interchangeably.</p>
+<h2 id="why-should-i-even-care-about-using-the-terminal">Why should I even care about using the terminal?</h2>
+<p>The first reason is that for many tasks, it&rsquo;s just <strong>more efficient</strong>.</p>
+<p>The second reason is that by using commands you can easily <strong>automate tasks</strong>.</p>
+<p>The third reason is that sometimes the CLI will be the <strong>only way</strong> in which we&rsquo;ll be able to interact with a computer.</p>
+<h2 id="our-first-script">Our first script</h2>
+<ul>
+<li>First thing to do is create a <code>.sh</code> file. You can put it wherever want. I called mine <code>newGhRepo.sh</code>.</li>
+<li>Then open it on your text/code editor of choice.</li>
+<li>On our first line, we&rsquo;ll write the following: <code>#! /bin/sh</code></li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#! /bin/bash
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>repoName<span style="color:#f92672">=</span>$1
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> <span style="color:#f92672">[</span> -z <span style="color:#e6db74">&#34;</span>$repoName<span style="color:#e6db74">&#34;</span> <span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>   echo <span style="color:#e6db74">&#39;Provide a repository name&#39;</span>
+</span></span><span style="display:flex;"><span>   read -r -p <span style="color:#e6db74">$&#39;Repository name:&#39;</span> repoName
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">done</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;# </span>$repoName<span style="color:#e6db74">&#34;</span> &gt;&gt; README.md
+</span></span><span style="display:flex;"><span>git init
+</span></span><span style="display:flex;"><span>git add .
+</span></span><span style="display:flex;"><span>git commit -m <span style="color:#e6db74">&#34;First commit&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>curl -u coccagerman https://api.github.com/user/repos -d <span style="color:#e6db74">&#39;{&#34;name&#34;: &#34;&#39;</span><span style="color:#e6db74">&#34;</span>$repoName<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">&#39;&#34;, &#34;private&#34;:false}&#39;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>GIT_URL<span style="color:#f92672">=</span><span style="color:#66d9ef">$(</span>curl -H <span style="color:#e6db74">&#34;Accept: application/vnd.github.v3+json&#34;</span> https://api.github.com/repos/coccagerman/<span style="color:#e6db74">&#34;</span>$repoName<span style="color:#e6db74">&#34;</span> | jq -r <span style="color:#e6db74">&#39;.clone_url&#39;</span><span style="color:#66d9ef">)</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>git branch -M main
+</span></span><span style="display:flex;"><span>git remote add origin $GIT_URL
+</span></span><span style="display:flex;"><span>git push -u origin main
+</span></span></code></pre></div><ul>
+<li><code>repoName=$1</code> declaring a <strong>variable</strong> called repoName, and assigning it to the value of the first parameter the script receives.</li>
+<li>While loop is a <strong>conditional</strong> that keeps asking the user to enter the repo name until that parameter is received.
+<ul>
+<li>While the repoName variable is not assigned (while [ -z &ldquo;$repoName&rdquo; ])</li>
+<li>Write to the console this message (echo &lsquo;Provide a repository name&rsquo;)</li>
+<li>Then read whatever input the user provides and assign the input to the repoName variable (read -r -p $&lsquo;Repository name:&rsquo; repoName)</li>
+</ul>
+</li>
+<li>Titling a md file, init, add, commit.</li>
+<li><strong>curl</strong> is a command to transfer data from or to a server, using one of the many supported protocols.
+<ul>
+<li>And last we&rsquo;re using the -d flag to pass parameters to this command. In this case we&rsquo;re indicating the repository name (for which we&rsquo;re using our repoName variable) and setting private option to false, since we want our repo to be puiblic.</li>
+<li>Lots of other config options are available in the API, so <a href="https://docs.github.com/en/rest/reference/repos#create-a-repository-for-the-authenticated-user">check the docs</a> for more info.</li>
+</ul>
+</li>
+<li>curl the Git_URL repository</li>
+<li>Finally, set main, set repository, sync</li>
+</ul>
+<h3 id="running-scripts">Running Scripts</h3>
+<p>One option is to enter the shell name and pass the file as parameter, like: <code>dash ../ger/code/projects/scripts/newGhRepo.sh</code>.</p>
+<p>And the other is to make the file <strong>executable</strong> by running <code>chmod u+x ../ger/code/projects/scripts/newGhRepo.sh</code>.</p>
+<p>Then you can just execute the file directly by running <code>../ger/code/projects/scripts/newGhRepo.sh</code>.</p>
+<h4 id="bash-aliases">bash aliases</h4>
+<p>To create a new alias, we need to edit the bash configuration files in our system. This files are normally located in the home directory. Aliases can be defined in different files (mainly .bashrc or .bash_aliases).</p>
+<p><code>alias newghrepo=&quot;dash /home/German/Desktop/ger/code/projects/scripts/newGhRepo.sh&quot;</code></p>
+<ul>
+<li>This maps <code>newghreop</code> to the .sh script</li>
+</ul>
+<p>To find absolute path run: <code>readlink -f newGhRepo.sh</code></p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>
