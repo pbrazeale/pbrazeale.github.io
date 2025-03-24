@@ -1,5 +1,5 @@
 +++
-tags = ['Linux', 'Bash']
+tags = ['Linux', 'Bash', 'Networking']
 title = 'Linux Command Line: Part 3 Common Tasks and Essential Tools'
 date = 2025-03-10T18:34:07+01:00
 draft = false

@@ -1,5 +1,5 @@
 +++
-tags = ['CompTIA', 'Security+','Bash']
+tags = ['CompTIA', 'Security+','Bash', 'Cybersecurity']
 title = 'Professor Messer CompTIA Security+ 1.0 General Security Concepts'
 date = 2025-03-08T16:34:07+01:00
 draft = false

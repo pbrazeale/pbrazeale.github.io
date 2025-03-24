@@ -1,5 +1,5 @@
 +++
-tags = ['CompTIA', 'Security+', 'Linux', 'Networking']
+tags = ['CompTIA', 'Security+', 'Linux', 'Networking', 'Cybersecurity']
 title = "Security+ Study Guide: Ch01 Today's Security Professional"
 date = 2025-03-14T07:34:07+01:00
 draft = false
