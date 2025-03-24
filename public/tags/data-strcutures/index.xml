@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data Strcutures on Philip Brazeale</title>
+    <link>http://localhost:1313/tags/data-strcutures/</link>
+    <description>Recent content in Data Strcutures on Philip Brazeale</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 09 Feb 2025 06:34:07 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/data-strcutures/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Developer Week 030</title>
+      <link>http://localhost:1313/posts/dev-week-030/</link>
+      <pubDate>Sun, 09 Feb 2025 06:34:07 +0100</pubDate>
+      <guid>http://localhost:1313/posts/dev-week-030/</guid>
+      <description>&lt;h2 id=&#34;neetcode-algorithms-and-data-structures-for-beginners-progress-2835&#34;&gt;NeetCode Algorithms and Data Structures for Beginners (progress 28/35)&lt;/h2&gt;&#xA;&lt;h3 id=&#34;neetcode-150-progress-26150&#34;&gt;NeetCode 150 (progress 26/150)&lt;/h3&gt;&#xA;&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=ehD6tdxmjDU&#34;&gt;I Learned Python By Building These Projects - Tutorial for Beginners&lt;/a&gt; followed along with these and tried to stay one step ahead whilst going through it to see just how well I understood python. Project 1, learned to use &lt;code&gt;for idx, quesiton in enumerate(selected_questions):&lt;/code&gt; as a way to step through the dictionary which if far more elegant than my loop approach.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Developer Week 029</title>
+      <link>http://localhost:1313/posts/dev-week-029/</link>
+      <pubDate>Sun, 02 Feb 2025 06:34:07 +0100</pubDate>
+      <guid>http://localhost:1313/posts/dev-week-029/</guid>
+      <description>&lt;h2 id=&#34;neetcode-algorithms-and-data-structures-for-beginners-progress-2835&#34;&gt;NeetCode Algorithms and Data Structures for Beginners (progress 28/35)&lt;/h2&gt;&#xA;&lt;p&gt;Based on the course, it sounds that hashing will be a vital data structure to understand deeply. I&amp;rsquo;ll need to seek out 10 more LeetCode problems based around hashing.&lt;/p&gt;&#xA;&lt;h3 id=&#34;neetcode-150-progress-26150&#34;&gt;NeetCode 150 (progress 26/150)&lt;/h3&gt;&#xA;&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;&#xA;&lt;p&gt;Built a simple todo list following &lt;a href=&#34;https://www.youtube.com/watch?v=vOEy18r1OuA&#34;&gt;Build a Node &amp;amp; Electron Todo App in JUST 15 Minutes!&lt;/a&gt; and made it my own by modifying the color scheme and integrating &lt;a href=&#34;https://github.com/catdad/canvas-confetti&#34;&gt;canvas-confetti&lt;/a&gt; to go off when all tasks are complete. It was a fun and easy way to explore an Electron project start to finish.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Developer Week 028</title>
+      <link>http://localhost:1313/posts/dev-week-028/</link>
+      <pubDate>Sun, 26 Jan 2025 06:34:07 +0100</pubDate>
+      <guid>http://localhost:1313/posts/dev-week-028/</guid>
+      <description>&lt;h2 id=&#34;neetcode-algorithms-and-data-structures-for-beginners-progress-2535&#34;&gt;NeetCode Algorithms and Data Structures for Beginners (progress 25/35)&lt;/h2&gt;&#xA;&lt;p&gt;Progress has been slow and steady, but I&amp;rsquo;m back at it full time and will push forward with gusto. The first few days returning were rough, but I quickly fell back into the groove and realized how much I&amp;rsquo;ve missed the puzzle solving aspect of programming.&lt;/p&gt;&#xA;&lt;h3 id=&#34;neetcode-150-progress-21150&#34;&gt;NeetCode 150 (progress 21/150)&lt;/h3&gt;&#xA;&lt;p&gt;Generally I can solve the easy problems on my own, and the occasional medium. However, my solution is often far from the optimal. More than once I&amp;rsquo;ve managed a &amp;ldquo;working&amp;rdquo; solution only for it to time out because my big O is off. It&amp;rsquo;s a tad discouraging, but I&amp;rsquo;m reassuring myself that with time, dedication, and practice it&amp;rsquo;ll work itself out.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

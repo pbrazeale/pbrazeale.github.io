@@ -6,8 +6,36 @@
     <description>Recent content in SQL on Philip Brazeale</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Sep 2024 10:34:07 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 02 Mar 2025 06:34:07 +0100</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Developer Week 033</title>
+      <link>http://localhost:1313/posts/dev-week-033/</link>
+      <pubDate>Sun, 02 Mar 2025 06:34:07 +0100</pubDate>
+      <guid>http://localhost:1313/posts/dev-week-033/</guid>
+      <description>&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;&#xA;&lt;h3 id=&#34;100-days-of-code-the-complete-python-pro-bootcamp-27100&#34;&gt;100 Days of Code: The Complete Python Pro Bootcamp (27/100)&lt;/h3&gt;&#xA;&lt;h4 id=&#34;day-024-mail-merge&#34;&gt;Day 024 Mail Merge&lt;/h4&gt;&#xA;&lt;p&gt;Excellent project. I can already see how using this to rename filenames throughout a dir would be helpful.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Major takeaway:&lt;/strong&gt; windows makes reading the files tedious since I have to &lt;code&gt;\\&lt;/code&gt; each provided &lt;code&gt;\&lt;/code&gt; when copying a relative path. I need to finalize my Linux setup and then I can practice git pull and starting fresh on new system on an established codebase.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Developer Week 032</title>
+      <link>http://localhost:1313/posts/dev-week-032/</link>
+      <pubDate>Sun, 23 Feb 2025 06:34:07 +0100</pubDate>
+      <guid>http://localhost:1313/posts/dev-week-032/</guid>
+      <description>&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;&#xA;&lt;h3 id=&#34;100-days-of-code-the-complete-python-pro-bootcamp-22100&#34;&gt;100 Days of Code: The Complete Python Pro Bootcamp (22/100)&lt;/h3&gt;&#xA;&lt;h4 id=&#34;day-15&#34;&gt;Day 15&lt;/h4&gt;&#xA;&lt;p&gt;Built CLI coffee machine logic.&#xA;&lt;a href=&#34;https://github.com/pbrazeale/100-Days-of-Code/blob/main/Day_015_Coffee_Machine/main.py&#34;&gt;https://github.com/pbrazeale/100-Days-of-Code/blob/main/Day_015_Coffee_Machine/main.py&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Managed to build everything but the &amp;ldquo;off&amp;rdquo; function without watching the solution. When she went over that requirement, I &lt;code&gt;import sys&lt;/code&gt; and added a &lt;code&gt;sys.exit()&lt;/code&gt; call for an &amp;ldquo;off&amp;rdquo; request. This was far more engaging than the fist chunk of problems, and I&amp;rsquo;m finally excited to keep going.&lt;/p&gt;&#xA;&lt;h4 id=&#34;day-017&#34;&gt;Day 017&lt;/h4&gt;&#xA;&lt;p&gt;Built a CLI Quiz Game.&#xA;&lt;a href=&#34;https://github.com/pbrazeale/100-Days-of-Code/tree/main/Day_017_Quiz_Game&#34;&gt;https://github.com/pbrazeale/100-Days-of-Code/tree/main/Day_017_Quiz_Game&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Developer Week 031</title>
+      <link>http://localhost:1313/posts/dev-week-031/</link>
+      <pubDate>Sun, 16 Feb 2025 06:34:07 +0100</pubDate>
+      <guid>http://localhost:1313/posts/dev-week-031/</guid>
+      <description>&lt;h2 id=&#34;neetcode-sql-for-beginners-5975&#34;&gt;NeetCode SQL for Beginners (59/75)&lt;/h2&gt;&#xA;&lt;p&gt;Should be wrapping this us this week, and then next week I&amp;rsquo;ll need to find a project database to practice more &amp;ldquo;real-world&amp;rdquo; style quires integrated with python to graph and display useable insights.&lt;/p&gt;&#xA;&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;&#xA;&lt;h3 id=&#34;100-days-of-code-the-complete-python-pro-bootcamp-14100&#34;&gt;100 Days of Code: The Complete Python Pro Bootcamp (14/100)&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.udemy.com/course/100-days-of-code/&#34;&gt;https://www.udemy.com/course/100-days-of-code/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;This came across my feed as a recommendation when I was looking for Python books, and I was able to snag it on sale, so it seemed a no brainer. The simple act of dedicated focus and building projects publicly should prove well worth the price of admission.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Developer Week 030</title>
+      <link>http://localhost:1313/posts/dev-week-030/</link>
+      <pubDate>Sun, 09 Feb 2025 06:34:07 +0100</pubDate>
+      <guid>http://localhost:1313/posts/dev-week-030/</guid>
+      <description>&lt;h2 id=&#34;neetcode-algorithms-and-data-structures-for-beginners-progress-2835&#34;&gt;NeetCode Algorithms and Data Structures for Beginners (progress 28/35)&lt;/h2&gt;&#xA;&lt;h3 id=&#34;neetcode-150-progress-26150&#34;&gt;NeetCode 150 (progress 26/150)&lt;/h3&gt;&#xA;&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=ehD6tdxmjDU&#34;&gt;I Learned Python By Building These Projects - Tutorial for Beginners&lt;/a&gt; followed along with these and tried to stay one step ahead whilst going through it to see just how well I understood python. Project 1, learned to use &lt;code&gt;for idx, quesiton in enumerate(selected_questions):&lt;/code&gt; as a way to step through the dictionary which if far more elegant than my loop approach.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>CS50P Final Project</title>
       <link>http://localhost:1313/posts/cs50p-final-project/</link>

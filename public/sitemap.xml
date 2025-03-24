@@ -2,12 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2025-08-09T04:34:07+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-08-09T04:34:07+01:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/azure/</loc>
     <lastmod>2025-03-23T06:34:07+01:00</lastmod>
   </url><url>
@@ -21,6 +15,12 @@
     <lastmod>2025-03-23T06:34:07+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/linux/</loc>
+    <lastmod>2025-03-23T06:34:07+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-03-23T06:34:07+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
     <lastmod>2025-03-23T06:34:07+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/python/</loc>
@@ -40,6 +40,9 @@
   </url><url>
     <loc>http://localhost:1313/posts/security&#43;-05-security-assessment-and-testing/</loc>
     <lastmod>2025-03-17T06:34:07+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/dev-week-035/</loc>
+    <lastmod>2025-03-16T06:34:07+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/security&#43;-04-social-engineering-and-password-attacks/</loc>
     <lastmod>2025-03-15T08:34:07+01:00</lastmod>
@@ -65,8 +68,41 @@
     <loc>http://localhost:1313/posts/linux-command-line-02/</loc>
     <lastmod>2025-03-10T10:34:07+01:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/posts/dev-week-034/</loc>
+    <lastmod>2025-03-09T06:34:07+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/dev-week-033/</loc>
+    <lastmod>2025-03-02T06:34:07+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/sql/</loc>
+    <lastmod>2025-03-02T06:34:07+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/dev-week-032/</loc>
+    <lastmod>2025-02-23T06:34:07+01:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/posts/linux-command-line-01/</loc>
     <lastmod>2025-02-20T10:34:07+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/dev-week-031/</loc>
+    <lastmod>2025-02-16T06:34:07+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/alorithms/</loc>
+    <lastmod>2025-02-09T06:34:07+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/data-strcutures/</loc>
+    <lastmod>2025-02-09T06:34:07+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/dev-week-030/</loc>
+    <lastmod>2025-02-09T06:34:07+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/dev-week-029/</loc>
+    <lastmod>2025-02-02T06:34:07+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/javascript/</loc>
+    <lastmod>2025-02-02T06:34:07+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/dev-week-028/</loc>
+    <lastmod>2025-01-26T06:34:07+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/cs50/</loc>
     <lastmod>2024-09-26T10:34:07+01:00</lastmod>
@@ -78,9 +114,6 @@
     <lastmod>2024-09-25T10:34:07+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/pyqt/</loc>
-    <lastmod>2024-09-25T10:34:07+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/sql/</loc>
     <lastmod>2024-09-25T10:34:07+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/cs50p-week-09/</loc>
@@ -137,11 +170,11 @@
     <loc>http://localhost:1313/posts/dev-week-003/</loc>
     <lastmod>2024-07-28T16:34:07+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/dev-week-001/</loc>
-    <lastmod>2024-07-21T16:34:07+01:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/dev-week-002/</loc>
     <lastmod>2024-07-21T16:34:07+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/dev-week-001/</loc>
+    <lastmod>2024-07-14T16:34:07+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
