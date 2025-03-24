@@ -1,0 +1,750 @@
+<!doctype html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>Security&#43; Study Guide: Ch05 Security Assessment and Testing // Philip Brazeale</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.145.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Philip Brazeale" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/css/main.min.7ad30054107c532dea0e1b008d736261f1d1e8635b780068c8bf058d7448e498.css" />
+    
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Security&#43; Study Guide: Ch05 Security Assessment and Testing">
+  <meta name="twitter:description" content="“Cybersecurity professionals are responsible for building, operating, and maintaining security controls that protect against these threats. An important component of this maintenance is performing regular security assessment and testing to ensure that controls are operating properly and that the environment contains no exploitable vulnerabilities.”
+Vulnerability Management Vulnerability management programs:
+identify prioritize remediate Use vulnerability scanning to detect vulnerabilities NOTE examples based around Nessus
+Identifying Scan Targets asset inventory a database built via network scans Asset inventory and asset criticality determines: type of scans frequency priority of remediation Determining Scan Frequency “Vulnerability scanning tools allow the automated scheduling of scans to take the burden off administrators.”">
+
+    <meta property="og:url" content="http://localhost:1313/posts/security&#43;-05-security-assessment-and-testing/">
+  <meta property="og:site_name" content="Philip Brazeale">
+  <meta property="og:title" content="Security&#43; Study Guide: Ch05 Security Assessment and Testing">
+  <meta property="og:description" content="“Cybersecurity professionals are responsible for building, operating, and maintaining security controls that protect against these threats. An important component of this maintenance is performing regular security assessment and testing to ensure that controls are operating properly and that the environment contains no exploitable vulnerabilities.”
+Vulnerability Management Vulnerability management programs:
+identify prioritize remediate Use vulnerability scanning to detect vulnerabilities NOTE examples based around Nessus
+Identifying Scan Targets asset inventory a database built via network scans Asset inventory and asset criticality determines: type of scans frequency priority of remediation Determining Scan Frequency “Vulnerability scanning tools allow the automated scheduling of scans to take the burden off administrators.”">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-03-17T06:34:07+01:00">
+    <meta property="article:modified_time" content="2025-03-17T06:34:07+01:00">
+    <meta property="article:tag" content="CompTIA">
+    <meta property="article:tag" content="Security&#43;">
+    <meta property="article:tag" content="Linux">
+    <meta property="article:tag" content="Networking">
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="/"><img class="app-header-avatar" src="/avatar.jpg" alt="Philip Brazeale" /></a>
+      <span class="app-header-title">Philip Brazeale</span>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/">✉️ Posts </a>
+              
+          
+          <a class="app-header-menu-item" href="/tags/">🏷️ Tags </a>
+              
+          
+          <a class="app-header-menu-item" href="/about/">🧙‍♂️ About</a>
+      </nav>
+      <p>Developer | Author | Publisher</p>
+      <div class="app-header-social">
+        
+          <a href="https://www.linkedin.com/in/pbrazeale/" target="_blank" rel="noreferrer noopener me">
+            <svg class="icon icon-brand-linkedin" viewBox="0 0 24 24" fill="currentColor"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+        
+          <a href="https://github.com/pbrazeale" target="_blank" rel="noreferrer noopener me">
+            <svg class="icon icon-brand-github" viewBox="0 0 24 24" fill="currentColor"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </a>
+        
+          <a href="https://twitter.com/pbrazeale" target="_blank" rel="noreferrer noopener me">
+            <svg class="icon icon-brand-x" viewBox="0 0 24 24" fill="currentColor"><title>X</title><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+          </a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Security&#43; Study Guide: Ch05 Security Assessment and Testing</h1>
+      <div class="post-meta">
+        <div>
+          <svg class="icon icon-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>calendar</title><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          Mar 17, 2025
+        </div>
+        <div>
+          <svg class="icon icon-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>clock</title><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          11 min read
+        </div>
+        <div>
+          <svg class="icon icon-tag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>tag</title><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
+              <a class="tag" href="/tags/comptia/">CompTIA</a>
+              <a class="tag" href="/tags/security&#43;/">Security&#43;</a>
+              <a class="tag" href="/tags/linux/">Linux</a>
+              <a class="tag" href="/tags/networking/">Networking</a>
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <p>&ldquo;Cybersecurity professionals are responsible for building, operating, and maintaining security controls that protect against these threats. An important component of this maintenance is performing regular security assessment and testing to ensure that controls are operating properly and that the environment contains no exploitable vulnerabilities.&rdquo;</p>
+<h2 id="vulnerability-management">Vulnerability Management</h2>
+<p><em>Vulnerability management</em> programs:</p>
+<ul>
+<li>identify</li>
+<li>prioritize</li>
+<li>remediate</li>
+<li>Use <em>vulnerability scanning</em> to detect vulnerabilities</li>
+</ul>
+<h5 id="note">NOTE</h5>
+<p>examples based around <strong>Nessus</strong></p>
+<h3 id="identifying-scan-targets">Identifying Scan Targets</h3>
+<ul>
+<li><em>asset inventory</em> a database built via network scans</li>
+<li><em>Asset inventory</em> and <em>asset criticality</em> determines:
+<ul>
+<li>type of scans</li>
+<li>frequency</li>
+<li>priority of remediation</li>
+</ul>
+</li>
+</ul>
+<h3 id="determining-scan-frequency">Determining Scan Frequency</h3>
+<p>&ldquo;Vulnerability scanning tools allow the automated scheduling of scans to take the burden off administrators.&rdquo;</p>
+<ul>
+<li>&ldquo;The organization&rsquo;s <em>risk appetite</em> is its willingness to tolerate risk within the environment.&rdquo;</li>
+<li><em>Regulatory requirements</em>, <em>Payment Card Industry Data Security Standard</em> (<strong>PCI DSS</strong>), <em>Federal Information Security Modernization Act</em> (<strong>FISMA</strong>), dictate scan frequency.</li>
+<li><em>Technical constraints</em> may limit scanning frequency.</li>
+<li><em>Business constraints</em> may limit timeframes
+<ul>
+<li>Retail business during the holiday season</li>
+</ul>
+</li>
+<li><em>Licensing limitations</em> may limit the bandwidth and/or number of scans</li>
+<li>Best practice to start slow and expand scans overtime.</li>
+</ul>
+<h3 id="configuring-vulnerability-scans">Configuring Vulnerability Scans</h3>
+<p>&ldquo;It is important to conduct regular configuration reviews of vulnerability scanners to ensure that scan settings match current requirements.&rdquo;</p>
+<h4 id="scan-sensitivity-levels">Scan Sensitivity Levels</h4>
+<ul>
+<li>Start with a template and adjust according to needs and save as new template.</li>
+<li>Sensitivity control types of scans</li>
+</ul>
+<h5 id="warning">Warning</h5>
+<p>&ldquo;Some plug-ins perform tests that may actually disrupt activity on a production system or, in the worst case, damage content on those systems.&rdquo;</p>
+<ul>
+<li><em>intrusive plug-ins</em> can be turned off</li>
+<li><em>nonintrusive plug-ins</em> should be left on</li>
+<li>Test environments can be used to mimic the real environment, and can then have the <em>intrusive plug-ins</em> ran just in case.</li>
+</ul>
+<h4 id="supplementing-network-scans">Supplementing Network Scans</h4>
+<ul>
+<li>&ldquo;Basic vulnerability scans run over a network, probing a system from a distance.&rdquo;</li>
+<li>May also cause false positives</li>
+<li><strong>supplement with trusted server configurations</strong>
+<ul>
+<li>Scanner can be provided credentials to scan a target server</li>
+</ul>
+</li>
+</ul>
+<h5 id="exam-note">EXAM NOTE</h5>
+<p>&ldquo;understand the differences between credentialed and noncredentialed scanning!&rdquo;</p>
+<ul>
+<li>
+<p>enforce the principle of least privilege</p>
+</li>
+<li>
+<p>provide scanner with read-only access</p>
+</li>
+<li>
+<p><em>agent-based scanning</em> providing an “inside-out” vulnerability scan and reports findings to the vulnerability management platform</p>
+</li>
+</ul>
+<h5 id="tip">TIP</h5>
+<ul>
+<li>beginning with a small pilot deployment</li>
+<li>after review of performance, procced with widespread deployment</li>
+</ul>
+<h4 id="scan-perspective">Scan Perspective</h4>
+<ul>
+<li>Based on where the scan initiates determines what vulnerabilities it&rsquo;ll find.</li>
+<li>Affecting Controls:
+<ul>
+<li>Firewall Settings</li>
+<li>Network Segmentation</li>
+<li><em>Intrusion Detection Systems</em> (<strong>IDS</strong>s)</li>
+<li><em>Intrusion prevention systems</em> (<strong>IPS</strong>s)</li>
+</ul>
+</li>
+</ul>
+<h5 id="note-1">NOTE</h5>
+<ul>
+<li>supplement with scan from a <em>Approved Scanning Vendor</em> (<strong>ASV</strong>)</li>
+</ul>
+<h3 id="scanner-maintenance">Scanner Maintenance</h3>
+<h5 id="tip-1">TIP</h5>
+<ul>
+<li>Scanning system can automatically update</li>
+<li>However, it&rsquo;s still Admin responsibility to manually check on a regular basis.</li>
+</ul>
+<h4 id="scanner-software">Scanner Software</h4>
+<ul>
+<li>even vulnerability scanners can have security issues</li>
+<li><em>Are they rootkits the way anti-cheat software is?</em></li>
+</ul>
+<h4 id="vulnerability-plug-in-feeds">Vulnerability Plug-in Feeds</h4>
+<ul>
+<li>&ldquo;Administrators should configure their scanners to retrieve new plug-ins on a regular basis, preferably daily.&rdquo;</li>
+</ul>
+<h5 id="security-content-automation-protocol-scap">Security Content Automation Protocol (SCAP)</h5>
+<ul>
+<li>standard lead by <em>National Institute of Standards and Technology</em> (<strong>NIST</strong>)
+<ul>
+<li><em>Common Configuration Enumeration</em> (<strong>CCE</strong>) system configuration issues</li>
+<li><em>Common Platform Enumeration</em> (<strong>CPE</strong>) product names and versions</li>
+<li><em>Common Vulnerabilities and Exposures</em> (<strong>CVE</strong>) security-related software flaws</li>
+<li><em>Common Vulnerability Scoring System</em> (<strong>CVSS</strong>) severity ranking of security-related software flaws</li>
+<li><em>Extensible Configuration Checklist Description Format</em> (<strong>XCCDF</strong>) A language for specifying checklists and reporting checklist results</li>
+<li><em>Open Vulnerability and Assessment Language</em> (<strong>OVAL</strong>) A language for specifying low-level testing procedures used by checklists</li>
+<li>see NIST SP 800-126: <a href="http://csrc.nist.gov/projects/security-content-automation-protocol">csrc.nist.gov/projects/security-content-automation-protocol</a></li>
+</ul>
+</li>
+</ul>
+<h5 id="exam-note-1">EXAM NOTE</h5>
+<ul>
+<li>CompTIA uses <strong>CVE</strong> as <em>Common Vulnerability Enumeration</em></li>
+<li>Professionals use <strong>CVE</strong> as <em>Common Vulnerabilities and Exposures</em></li>
+<li>Map <strong>CVE</strong> to the meaning &ldquo;standard naming system for flaws&rdquo;</li>
+</ul>
+<h3 id="vulnerability-scanning-tools">Vulnerability Scanning Tools</h3>
+<ul>
+<li>Toolkit:
+<ul>
+<li>vulnerability scanner</li>
+<li>application scanner</li>
+<li>web application scanner</li>
+</ul>
+</li>
+</ul>
+<h4 id="infrastructure-vulnerability-scanning">Infrastructure Vulnerability Scanning</h4>
+<ul>
+<li>Probes a wide range of network-connected devices for known vulnerabilities</li>
+<li>network vulnerability scanners:
+<ul>
+<li>Nessus: longest established software</li>
+<li>Qualys: newer, and uses SaaS model to test local and in the cloud</li>
+<li>Rapid7&rsquo;s Nexpose: similar to the above</li>
+<li>OpenVAS: is <strong>FOSS</strong> under <strong>GNU GPL</strong>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/OpenVAS">https://en.wikipedia.org/wiki/OpenVAS</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="application-testing">Application Testing</h4>
+<ul>
+<li>analyze custom-developed software</li>
+<li>Three techniques:
+<ol>
+<li><em>Static testing</em> analyzes code without executing it</li>
+<li><em>Dynamic testing</em> executes code as part of the test</li>
+<li><em>Interactive testing</em> combines static and dynamic testing</li>
+</ol>
+</li>
+<li>Should be apart of any software development process.</li>
+</ul>
+<h4 id="web-application-scanning">Web Application Scanning</h4>
+<ul>
+<li>test for web-specific vulnerabilities
+<ul>
+<li><strong>SQL</strong> injection</li>
+<li>cross-site scripting (<strong>XSS</strong>)</li>
+<li>cross-site request forgery (<strong>CSRF</strong>)
+<ul>
+<li><em>Why not XRF then?</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Nikto is <strong>FOSS</strong> under <strong>GNU GPL</strong>
+<ul>
+<li><a href="https://en.wikipedia.org/wiki/Nikto_(vulnerability_scanner)">https://en.wikipedia.org/wiki/Nikto_(vulnerability_scanner)</a></li>
+</ul>
+</li>
+</ul>
+<h3 id="reviewing-and-interpreting-scan-reports">Reviewing and Interpreting Scan Reports</h3>
+<ul>
+<li>These reports offer details that make it easier for admins to understand and repair vulnerabilities.</li>
+<li>Also provides references:
+<ul>
+<li><em>Internet Engineering Task Force</em> (<strong>IETF</strong>) documentation</li>
+</ul>
+</li>
+<li><em>output</em> section provides &ldquo;verbatim output returned by a command&rdquo;</li>
+<li><em>risk information</em> section uses the <em>Common Vulnerability Scoring System</em> (<strong>CVSS</strong>)</li>
+</ul>
+<h4 id="understanding-cvss">Understanding CVSS</h4>
+<h5 id="exam-note-2">EXAM NOTE</h5>
+<ul>
+<li>recall that <strong>CSSS</strong> is part of <strong>SCAP</strong></li>
+<li>rated on 0 - 10 scale</li>
+<li>recall <em>Common Vulnerabilities and Exposures</em> (<strong>CVE</strong>) which lists:
+<ul>
+<li>known vulnerabilities
+<ul>
+<li>contain an ID number</li>
+<li>description</li>
+<li>reference</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="8-metrics-of-a-vulnerability">8 metrics of a vulnerability</h5>
+<h6 id="1-attack-vector-metric">1. Attack Vector Metric</h6>
+<ul>
+<li><em>attack vector metric</em> (<strong>AV</strong>) how an attacker would exploit</li>
+</ul>
+<h6 id="2-attack-complexity-metric">2. Attack Complexity Metric</h6>
+<ul>
+<li><em>attack complexity metric</em> (<strong>AC</strong>) difficulty of exploiting</li>
+</ul>
+<h6 id="3-privileges-required-metric">3. Privileges Required Metric</h6>
+<ul>
+<li><em>privileges required metric</em> (<strong>PR</strong>) type of account access needed</li>
+</ul>
+<h6 id="4-user-interaction-metric">4. User Interaction Metric</h6>
+<ul>
+<li><em>user interaction metric</em> (<strong>UI</strong>) whether the attacker needs another human</li>
+</ul>
+<h6 id="5-confidentiality-metric">5. Confidentiality Metric</h6>
+<ul>
+<li><em>confidentiality metric</em> (<strong>C</strong>) type of information disclosure</li>
+</ul>
+<h6 id="6-integrity-metric">6. Integrity Metric</h6>
+<ul>
+<li><em>integrity metric</em> (<strong>I</strong>) type of information alteration</li>
+</ul>
+<h6 id="7-availability-metric">7. Availability Metric</h6>
+<ul>
+<li><em>availability metric</em> (<strong>A</strong>) type of disruption</li>
+</ul>
+<h6 id="8-scope-metric">8. Scope Metric</h6>
+<p><em>scope metric</em> (<strong>S</strong>) effected system components beyond the initial scope</p>
+<h6 id="note-2">NOTE</h6>
+<ul>
+<li>current CVSS v3.1</li>
+<li>v2.0 used 6 metrics</li>
+</ul>
+<h5 id="interpreting-the-cvss-vector">Interpreting the CVSS Vector</h5>
+<ul>
+<li>CVSS vector uses a single-line format:
+<ul>
+<li><code>CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N</code></li>
+</ul>
+</li>
+</ul>
+<h5 id="summarizing-cvss-scores">Summarizing CVSS Scores</h5>
+<ul>
+<li>analysts can calculate the <em>CVSS base score</em></li>
+</ul>
+<h6 id="calculating-the-impact-sub-score-iss">CALCULATING THE IMPACT SUB-SCORE (ISS)</h6>
+<p><code>ISS = 1 - [(1-Confidentiality)*(1-Integrity)*(1-Availability)]</code></p>
+<h6 id="note-3">NOTE</h6>
+<ul>
+<li>Don&rsquo;t have to calculate CVSS score manually:
+<ul>
+<li><a href="http://www.first.org/cvss/calculator/3.1">www.first.org/cvss/calculator/3.1</a></li>
+</ul>
+</li>
+</ul>
+<h5 id="categorizing-cvss-base-scores">CATEGORIZING CVSS BASE SCORES</h5>
+<p>Scores converted to categories</p>
+<table>
+  <thead>
+      <tr>
+          <th>CVSS Score</th>
+          <th>Rating</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>0.0</td>
+          <td>None</td>
+      </tr>
+      <tr>
+          <td>0.1-3.9</td>
+          <td>Low</td>
+      </tr>
+      <tr>
+          <td>4.0-6.9</td>
+          <td>Medium</td>
+      </tr>
+      <tr>
+          <td>7.0-8.9</td>
+          <td>High</td>
+      </tr>
+      <tr>
+          <td>9.0-10.0</td>
+          <td>Critical</td>
+      </tr>
+  </tbody>
+</table>
+<h6 id="exam-note-3">EXAM NOTE</h6>
+<ul>
+<li><strong>Be familiar with CVSS severity rating scale</strong></li>
+</ul>
+<h3 id="confirmation-of-scan-results">Confirmation of Scan Results</h3>
+<h4 id="false-positives">False Positives</h4>
+<ul>
+<li><em>false positive error</em> nonexistent vulnerability</li>
+<li><em>positive report</em> found vulnerability
+<ul>
+<li><em>true positive</em> accurate</li>
+<li><em>false positive</em> inaccurate</li>
+</ul>
+</li>
+<li><em>negative report</em> no vulnerability found
+<ul>
+<li><em>true negative</em> accurate</li>
+<li><em>false negative</em> inaccurate</li>
+</ul>
+</li>
+</ul>
+<h5 id="exam-note-4">EXAM NOTE</h5>
+<ul>
+<li>focus on <strong>false positives</strong> and <strong>false negatives</strong>
+<ul>
+<li>Must be able to identify them in a scenario.</li>
+</ul>
+</li>
+</ul>
+<h4 id="reconciling-scan-results-with-other-data-sources">Reconciling Scan Results with Other Data Sources</h4>
+<ul>
+<li><em>Log Reviews</em></li>
+<li><em>Security information and event management</em> (<strong>SIEM</strong>) systems</li>
+<li><em>Configuration management systems</em></li>
+</ul>
+<h2 id="vulnerability-classification">Vulnerability Classification</h2>
+<h3 id="patch-management">Patch Management</h3>
+<ul>
+<li>Security patches are vital, but also the first thing to fall to waist side &ldquo;due to a <strong>lack of resources for preventive maintenance</strong>&rdquo;.</li>
+</ul>
+<h3 id="legacy-platforms">Legacy Platforms</h3>
+<ul>
+<li>Software eventually reaches end-of-life and should be discontinued when the security updates end.
+<ul>
+<li>&ldquo;2015 when Microsoft discontinued support for the more than two decades old Windows Server 2003&rdquo;</li>
+<li>Where it&rsquo;s not possible to upgrade, it&rsquo;s best practice to isolate the system from the rest of the network as much as possible.</li>
+</ul>
+</li>
+</ul>
+<h5 id="exam-note-5">EXAM NOTE</h5>
+<ul>
+<li>vulnerability response and remediation practices:
+<ul>
+<li>patching</li>
+<li>insurance</li>
+<li>segmentation</li>
+<li>compensating controls</li>
+<li>exceptions</li>
+<li>exemptions</li>
+</ul>
+</li>
+</ul>
+<h3 id="weak-configurations">Weak Configurations</h3>
+<ul>
+<li>Default settings</li>
+<li>Default credentials
+<ul>
+<li><em>admin, admin anyone?</em></li>
+</ul>
+</li>
+<li>Open service ports that are not necessary</li>
+<li>Open permissions
+<ul>
+<li>violates <strong>least privilege</strong> principle</li>
+</ul>
+</li>
+</ul>
+<h3 id="error-messages">Error Messages</h3>
+<ul>
+<li><em>debug modes</em> give developers crucial information.
+<ul>
+<li>However, debug mode can be used by attackers</li>
+</ul>
+</li>
+<li>&ldquo;software development should always take place in a dedicated development environment&rdquo;
+<ul>
+<li>Private network</li>
+<li>Only environment with debug option</li>
+</ul>
+</li>
+</ul>
+<h3 id="insecure-protocols">Insecure Protocols</h3>
+<ul>
+<li>Telnet
+<ul>
+<li>replaced with SSH</li>
+</ul>
+</li>
+<li>FTP
+<ul>
+<li><em>Secure File Transfer Protocol</em> (<strong>SFTP</strong>)</li>
+<li><em>FTP-Secure</em> (<strong>FTPS</strong>)</li>
+<li><em>Why two?</em></li>
+</ul>
+</li>
+</ul>
+<h3 id="weak-encryption">Weak Encryption</h3>
+<ul>
+<li>see Chapter 7 Cryptography and the PKI</li>
+<li>Two important choices:
+<ol>
+<li>Algorithm to use</li>
+<li>Encryption key</li>
+</ol>
+</li>
+<li><em>Advanced Encryption Standard</em> (<strong>AES</strong>)</li>
+</ul>
+<h2 id="penetration-testing">Penetration Testing</h2>
+<p>The process by which a &ldquo;White Hat&rdquo;/&ldquo;Red Team&rdquo; uses technical tools to test the organizations security policies. Often IT systems, but can also include it&rsquo;s people. see <a href="https://pbrazeale.github.io/Security+-Study-Guide-04-Social-Engineering-and-Password-Attacks/">Social Engineering And Password Attacks</a></p>
+<h3 id="adopting-the-hacker-mindset">Adopting the Hacker Mindset</h3>
+<ul>
+<li>Instead of focusing on the security design overview, find a weakness and exploit it.
+<ul>
+<li>Only needs 1 way to be right</li>
+<li>Where &ldquo;Blue Team&rdquo; must also be right.</li>
+</ul>
+</li>
+</ul>
+<h3 id="reasons-for-penetration-testing">Reasons for Penetration Testing</h3>
+<ul>
+<li><em>security operations centers</em> (<strong>SOC</strong>s)</li>
+<li>It&rsquo;s the only/best method for testing against an attack before it actually happens.
+<ul>
+<li>Same reason we have fire drills. <strong>Just in case</strong></li>
+</ul>
+</li>
+</ul>
+<h3 id="benefits-of-penetration-testing">Benefits of Penetration Testing</h3>
+<ul>
+<li>Provides an assessment of organizations security robustness.
+<ul>
+<li><em>Leading to lower insurance rates?</em></li>
+</ul>
+</li>
+<li>In the case &ldquo;Red Team&rdquo; CTF &ldquo;Blue Team&rdquo; can analyze the steps used, and fix now known security holes.</li>
+<li>Great for testing a new critical system before deployment.
+<ul>
+<li>The internet is vast</li>
+</ul>
+</li>
+</ul>
+<h4 id="threat-hunting">Threat Hunting</h4>
+<ul>
+<li>They search for evidence that a past attack had occurred.</li>
+<li>cybersecurity philosophy known as the “presumption of compromise”</li>
+</ul>
+<h3 id="penetration-test-types">Penetration Test Types</h3>
+<ul>
+<li>4 major categories:
+<ol>
+<li><em>Physical</em> security controls: doors, locks, cameras, etc&hellip;</li>
+<li><em>Offensive</em> tests: networks, systems, and applications</li>
+<li><em>Defensive</em> tests &ldquo;Blue Team&rdquo; active skills</li>
+<li><em>Integrated</em> combines offensive and defensive pentesting</li>
+</ol>
+</li>
+<li>3 types of pentester&rsquo;s knowledge:
+<ol>
+<li><em>Known environment</em> complete scope, beyond a normal attacker
+<ol>
+<li><em>Maybe tests against an insider threat? Former employee.</em></li>
+</ol>
+</li>
+<li><em>Unknown environment</em> replicate attacker&rsquo;s real-world experience.
+<ol>
+<li>Only as valuable as the skillset of the &ldquo;Red Team&rdquo;</li>
+</ol>
+</li>
+<li><em>Partially known environment</em> used to focus the pentesting toward relevant systems, and create a more efficient test, without going fully Known Environment.</li>
+</ol>
+</li>
+</ul>
+<h5 id="exam-note-6">EXAM NOTE</h5>
+<ul>
+<li>Know the 4 pentest categories and 3 pentest types</li>
+</ul>
+<h3 id="rules-of-engagement">Rules of Engagement</h3>
+<ul>
+<li><em>rules of engagement</em> (<strong>RoE</strong>)
+<ul>
+<li><em>timeline</em> window for the attack</li>
+<li><em>locations, systems, applications, potential targets</em> especially where 3rd party services are involved</li>
+<li><em>Data handling</em> NDAs for the data found, and procedures for shredding after</li>
+<li><em>behaviors</em> what defenses the &ldquo;Blue Team&rdquo; will use during the test</li>
+<li><em>resources</em> usually how many man hours will be committed</li>
+<li><em>Legal concerns</em> (<em>physical pentest needs a waver for law enforcement just in case?</em>)</li>
+<li><em>communications</em> when to send updates, and what to do when evidence of breach is found</li>
+</ul>
+</li>
+</ul>
+<h4 id="permission">Permission</h4>
+<ul>
+<li>&ldquo;get our of jail free card&rdquo;</li>
+</ul>
+<h3 id="reconnaissance">Reconnaissance</h3>
+<ul>
+<li><em>Passive reconnaissance</em> was partially covered in <a href="https://pbrazeale.github.io/Security+-Study-Guide-02-Cybersecurity-Threat-Landscape/">Cybersecurity Threat Landscape</a> <strong>OSINT</strong></li>
+<li><em>Active reconnaissance</em>:
+<ul>
+<li>intelligence gathering <a href="https://pbrazeale.github.io/Security+-Study-Guide-04-Social-Engineering-and-Password-Attacks/">Social Engineering And Password Attacks</a></li>
+<li><em>footprinting</em> identify OS and applications</li>
+<li>Port scanning</li>
+<li>Vulnerability scanning</li>
+</ul>
+</li>
+</ul>
+<h5 id="exam-note-7">EXAM NOTE</h5>
+<ul>
+<li>
+<p>Know the difference between passive and active reconnaissance</p>
+</li>
+<li>
+<p><em>war driving</em> using a mobile vehicle with powerful antennas to capture wireless packets</p>
+</li>
+<li>
+<p><em>war flying</em> is above but with UAVs</p>
+</li>
+</ul>
+<h3 id="running-the-test">Running the Test</h3>
+<ul>
+<li>covered more about <em>Cyber Kill Chain</em> in Ch14 Monitoring and Incident Response</li>
+<li>Key phases:
+<ul>
+<li><em>Initial access</em></li>
+<li><em>Privilege escalation</em></li>
+<li><em>Pivoting and lateral movement</em></li>
+<li><em>Persistence</em></li>
+</ul>
+</li>
+<li><em>Exploitation frameworks</em> (<strong>Metasploit</strong>) provide a modular approach</li>
+</ul>
+<h3 id="cleaning-up">Cleaning Up</h3>
+<ul>
+<li>remove all tool installed</li>
+<li>delete all data exfiltrated</li>
+<li>provided report of what was found and how to patch/protect against it</li>
+</ul>
+<h2 id="audits-and-assessments">Audits and Assessments</h2>
+<ul>
+<li>3 major components of a security assessment program
+<ol>
+<li>Security tests</li>
+<li>Security assessments</li>
+<li>Security audits</li>
+</ol>
+</li>
+</ul>
+<h3 id="security-tests">Security Tests</h3>
+<ul>
+<li>verify control is functional</li>
+<li>should occur on a regularly scheduled timeframe</li>
+</ul>
+<h4 id="warning-1">WARNING</h4>
+<p>&ldquo;Experimentation with new tools is fine, but security testing programs should be carefully designed and include rigorous, routine testing of systems using a risk-prioritized approach.&rdquo;</p>
+<h5 id="responsible-disclosure-programs">Responsible Disclosure Programs</h5>
+<p>&ldquo;Bug bounty programs are a type of responsible disclosure program that incentivizes responsible disclosure submissions by offering financial rewards (or “bounties”) to testers who successfully discover vulnerabilities.&rdquo;</p>
+<ul>
+<li><em>Funnel curiosity toward a productive end rather than risk selling to the highest bidder?</em></li>
+</ul>
+<h3 id="security-assessments">Security Assessments</h3>
+<ul>
+<li>Comprehensive reviews of the system and application</li>
+<li>Normally result in a non-technical report to upper management about the risks and possible solutions.</li>
+<li>Often conducted by outside teams</li>
+</ul>
+<h3 id="security-audits">Security Audits</h3>
+<ul>
+<li>Similar to assessments, but <strong>must</strong> be conducted by an independent auditor.</li>
+<li>Assessments are internal benchmarks.</li>
+<li>Audits are meant for reporting to third parties.</li>
+<li>Objective is <em>attestation</em>: the auditor signs off that the controls are &ldquo;adequate to meet the control objectives and working properly&rdquo;</li>
+</ul>
+<h4 id="internal-audits">Internal Audits</h4>
+<ul>
+<li>Report direct to the CEO or sometimes the Chief Audit Executive (<strong>CAE</strong>)</li>
+<li>Often prepare in advance of an external audit</li>
+</ul>
+<h4 id="external-audits">External Audits</h4>
+<ul>
+<li>Big 4 Firms:
+<ul>
+<li>Ernst &amp; Young</li>
+<li>Deloitte</li>
+<li>PricewaterhouseCoopers (PwC)</li>
+<li>KPMG</li>
+</ul>
+</li>
+</ul>
+<h4 id="independent-third-party-audits">Independent Third-Party Audits</h4>
+<ul>
+<li>A regulatory body contracts them out.</li>
+</ul>
+<h5 id="exam-note-8">EXAM NOTE</h5>
+<p>Independent Third-Party Audits are a subcategory of external, and are differentiated based on if the organization requests the audit, or third party (IE regulators)</p>
+<p>&ldquo;The <em>American Institute of Certified Public Accountants</em> (<strong>AICPA</strong>) released a standard designed to alleviate this burden. The <em>Statement on Standards for Attestation Engagements document 18</em> (<strong>SSAE 18</strong>), titled Reporting on Controls, provides a common standard to be used by auditors performing assessments of service organizations with the intent of <strong>allowing the organization to conduct an external assessment</strong> instead of multiple third-party assessments and then sharing the resulting report with customers and potential customers.</p>
+<p>SSAE 18 engagements are commonly referred to as <em>service organization controls</em> <strong>(SOC) audits</strong>.&rdquo;</p>
+<h4 id="auditing-standards">Auditing Standards</h4>
+<ul>
+<li><em>Control Objectives for Information and related Technologies</em> (<strong>COBIT</strong>)
+<ul>
+<li><em>Information Systems Audit and Control Association</em> (<strong>ISACA</strong>)
+<ul>
+<li><em>Certified Information Systems Auditor</em> (<strong>CISA</strong>)</li>
+<li><em>Certified Information Security Manager</em> (<strong>CISM</strong>)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>ISO 27001 security management system</li>
+<li>ISO 27002 information security controls</li>
+</ul>
+<h2 id="vulnerability-life-cycle">Vulnerability Life Cycle</h2>
+<ul>
+<li>LOOP - Identification - Analysis - Response and Remediation - Validation of Remediation - Reporting</li>
+</ul>
+<h2 id="review-questions-1320-65">Review Questions (13/20) 65%</h2>
+<p>4.0 Security Operations is 28% of the exam, 5.0 Security Program Management and Oversight is 20%. With a 65% knowledge coverage, I&rsquo;d fail the certification exam, and rightfully so. Again I second guessed myself during the test, but that&rsquo;s obviously a root issue of not fully knowing the information.</p>
+<p>At this rate I&rsquo;ll not sit the exam next month, and instead need another month to drill this information. Especially the acronyms!</p>
+<h3 id="correct">Correct</h3>
+<p>1, 3, 5, 6, 8, 10, 12, 13, 14, 16, 17, 18, 19</p>
+<h3 id="incorrect">Incorrect</h3>
+<p>2, 4, 7, 9, 11, 15, 20</p>
+<ul>
+<li>2, I should have known better. Obviously &ldquo;read-only&rdquo;</li>
+<li>4, Misread the question, but no excuse</li>
+<li>7, Took a guess based on word recognition</li>
+<li>9, second guessed myself</li>
+<li>11, second guessed myself</li>
+<li>15, second guessed myself, but I really didn&rsquo;t know</li>
+<li>20, second guessed myself, but again need to drill acronyms.</li>
+</ul>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

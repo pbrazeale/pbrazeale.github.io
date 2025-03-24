@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>Security&#43; Study Guide: Ch03 Malicious Code // Philip Brazeale</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.145.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Philip Brazeale" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/css/main.min.7ad30054107c532dea0e1b008d736261f1d1e8635b780068c8bf058d7448e498.css" />
+    
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Security&#43; Study Guide: Ch03 Malicious Code">
+  <meta name="twitter:description" content="Malware:
+ransomware worms spyware viruses keyloggers rootkits allows attackers to retain access to systems once they’ve gained a foothold. Malware “The term malware describes a wide range of software that is intentionally designed to cause harm to systems and devices, networks, or users.”
+Exam Note “you will need to know the distinctive characteristics of each type of malware, and what might help you tell them apart.”
+Ransomware Takes over the computer, and then demands a ransom. crypto malware is popular one that encrypts the system’s data other common variant is blackmailing with data found on the system. Indicators of compromise (IoCs) Command and control (C&amp;C) - connection to known malicious IPs Legitimate tools used unusually Ransom demands Data exfiltration behaviors (large data transfers) Best practice to keep a complete data back offsite that won’t be cross infected. Trojans The Iliad Trojan Horse. Software that looks legit, but is in fact a system backdoor. Indicators of a Trojan: Malware Signatures Command and control system hostnames and IP addresses Data created on target devices Remote Access Trojans (RATs) provide attackers with remote access Sometimes using legitimate tools in malicious ways Endpoint Detection and Response (EDR) Bots, Botnets, and Command and Control “These groups of systems that are under central command are called botnets, and individual systems are called bots.”">
+
+    <meta property="og:url" content="http://localhost:1313/posts/security&#43;-03-malicious-code/">
+  <meta property="og:site_name" content="Philip Brazeale">
+  <meta property="og:title" content="Security&#43; Study Guide: Ch03 Malicious Code">
+  <meta property="og:description" content="Malware:
+ransomware worms spyware viruses keyloggers rootkits allows attackers to retain access to systems once they’ve gained a foothold. Malware “The term malware describes a wide range of software that is intentionally designed to cause harm to systems and devices, networks, or users.”
+Exam Note “you will need to know the distinctive characteristics of each type of malware, and what might help you tell them apart.”
+Ransomware Takes over the computer, and then demands a ransom. crypto malware is popular one that encrypts the system’s data other common variant is blackmailing with data found on the system. Indicators of compromise (IoCs) Command and control (C&amp;C) - connection to known malicious IPs Legitimate tools used unusually Ransom demands Data exfiltration behaviors (large data transfers) Best practice to keep a complete data back offsite that won’t be cross infected. Trojans The Iliad Trojan Horse. Software that looks legit, but is in fact a system backdoor. Indicators of a Trojan: Malware Signatures Command and control system hostnames and IP addresses Data created on target devices Remote Access Trojans (RATs) provide attackers with remote access Sometimes using legitimate tools in malicious ways Endpoint Detection and Response (EDR) Bots, Botnets, and Command and Control “These groups of systems that are under central command are called botnets, and individual systems are called bots.”">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-03-15T06:34:07+01:00">
+    <meta property="article:modified_time" content="2025-03-15T06:34:07+01:00">
+    <meta property="article:tag" content="CompTIA">
+    <meta property="article:tag" content="Security&#43;">
+    <meta property="article:tag" content="Linux">
+    <meta property="article:tag" content="Networking">
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="/"><img class="app-header-avatar" src="/avatar.jpg" alt="Philip Brazeale" /></a>
+      <span class="app-header-title">Philip Brazeale</span>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/">✉️ Posts </a>
+              
+          
+          <a class="app-header-menu-item" href="/tags/">🏷️ Tags </a>
+              
+          
+          <a class="app-header-menu-item" href="/about/">🧙‍♂️ About</a>
+      </nav>
+      <p>Developer | Author | Publisher</p>
+      <div class="app-header-social">
+        
+          <a href="https://www.linkedin.com/in/pbrazeale/" target="_blank" rel="noreferrer noopener me">
+            <svg class="icon icon-brand-linkedin" viewBox="0 0 24 24" fill="currentColor"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+        
+          <a href="https://github.com/pbrazeale" target="_blank" rel="noreferrer noopener me">
+            <svg class="icon icon-brand-github" viewBox="0 0 24 24" fill="currentColor"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </a>
+        
+          <a href="https://twitter.com/pbrazeale" target="_blank" rel="noreferrer noopener me">
+            <svg class="icon icon-brand-x" viewBox="0 0 24 24" fill="currentColor"><title>X</title><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+          </a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Security&#43; Study Guide: Ch03 Malicious Code</h1>
+      <div class="post-meta">
+        <div>
+          <svg class="icon icon-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>calendar</title><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          Mar 15, 2025
+        </div>
+        <div>
+          <svg class="icon icon-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>clock</title><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          5 min read
+        </div>
+        <div>
+          <svg class="icon icon-tag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>tag</title><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
+              <a class="tag" href="/tags/comptia/">CompTIA</a>
+              <a class="tag" href="/tags/security&#43;/">Security&#43;</a>
+              <a class="tag" href="/tags/linux/">Linux</a>
+              <a class="tag" href="/tags/networking/">Networking</a>
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <p><strong>Malware</strong>:</p>
+<ul>
+<li>ransomware</li>
+<li>worms</li>
+<li>spyware</li>
+<li>viruses</li>
+<li>keyloggers</li>
+<li>rootkits
+<ul>
+<li>allows attackers to retain access to systems once they&rsquo;ve gained a foothold.</li>
+</ul>
+</li>
+</ul>
+<h2 id="malware">Malware</h2>
+<p>&ldquo;The term <em>malware</em> describes a wide range of software that is intentionally designed to cause harm to systems and devices, networks, or users.&rdquo;</p>
+<h5 id="exam-note">Exam Note</h5>
+<p>&ldquo;you will need to know the distinctive characteristics of each type of malware, and what might help you tell them apart.&rdquo;</p>
+<h3 id="ransomware">Ransomware</h3>
+<ul>
+<li>Takes over the computer, and then demands a ransom.
+<ul>
+<li>crypto malware is popular one that encrypts the system&rsquo;s data</li>
+<li>other common variant is blackmailing with data found on the system.</li>
+</ul>
+</li>
+<li><em>Indicators of compromise</em> (<strong>IoC</strong>s)
+<ul>
+<li><em>Command and control</em> (<strong>C&amp;C</strong>) - connection to known malicious IPs</li>
+<li>Legitimate tools used unusually</li>
+<li>Ransom demands</li>
+<li>Data exfiltration behaviors (large data transfers)</li>
+</ul>
+</li>
+<li>Best practice to keep a complete data back offsite that won&rsquo;t be cross infected.</li>
+</ul>
+<h3 id="trojans">Trojans</h3>
+<ul>
+<li>The Iliad Trojan Horse.</li>
+<li>Software that looks legit, but is in fact a system backdoor.</li>
+<li>Indicators of a Trojan:
+<ul>
+<li>Malware Signatures</li>
+<li>Command and control system hostnames and IP addresses</li>
+<li>Data created on target devices</li>
+</ul>
+</li>
+<li><em>Remote Access Trojans</em> (<strong>RAT</strong>s)
+<ul>
+<li>provide attackers with remote access
+<ul>
+<li>Sometimes using legitimate tools in malicious ways</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><em>Endpoint Detection and Response</em> (<strong>EDR</strong>)</li>
+</ul>
+<h5 id="bots-botnets-and-command-and-control">Bots, Botnets, and Command and Control</h5>
+<p>&ldquo;These groups of systems that are under central command are called botnets, and individual systems are called bots.&rdquo;</p>
+<h3 id="worms">Worms</h3>
+<ul>
+<li>Worms spread themselves</li>
+<li>Worms also self install</li>
+</ul>
+<h5 id="stuxnet-nation-state-level-worm-attacks">Stuxnet: Nation-State-Level Worm Attacks</h5>
+<p>&ldquo;The 2010 Stuxnet attack is generally recognized as the first implementation of a worm as a cyber weapon.&rdquo;</p>
+<ul>
+<li>
+<p>&ldquo;firewalls and network-level controls remain one of the best ways to mitigate worm attacks.&rdquo;</p>
+</li>
+<li>
+<p>Raspberry Robin, example of modern worm</p>
+<ul>
+<li>Common IoCs:
+<ul>
+<li>Known malicious files</li>
+<li>Downloads of additional components from remote systems</li>
+<li>C&amp;C contact to remote systems</li>
+<li>Malicious behaviors using system commands for injection and other activities, including use of <code>cmd.exe</code>, <code>msiexec.exe</code>, etc&hellip;</li>
+<li>Hands-on-keyboard attacker activity</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>&ldquo;Patching and configuring services to limit attack surfaces is also a best practice for preventing worms.&rdquo;</p>
+</li>
+</ul>
+<h3 id="spyware">Spyware</h3>
+<ul>
+<li>malware designed for reconnaissance</li>
+<li>Similar behavior to above types</li>
+<li>&ldquo;Since spyware is generally perceived as less of a threat than many types of malware, it is commonly categorized separately and may require specific configuration to identify and remove it.&rdquo;</li>
+</ul>
+<h3 id="bloatware">Bloatware</h3>
+<ul>
+<li>Software that comes prepackaged with a device/system.
+<ul>
+<li>Not usually intentionally malicious, but creates an attack surface all the same.</li>
+<li>Also known to use up system resources with no gain for the user.</li>
+</ul>
+</li>
+</ul>
+<h5 id="exam-note-1">Exam Note</h5>
+<p>&ldquo;The Security+ exam outline calls out spyware and bloatware, but they can sometimes be difficult to tell apart since manufacturers who install bloatware often have call-home functionality built into the bloatware.&rdquo;</p>
+<h3 id="viruses">Viruses</h3>
+<ul>
+<li>&ldquo;Computer viruses are malicious programs that self-copy and self-replicate once they are activated.&rdquo;</li>
+<li><em>Trigger</em> what starts it</li>
+<li><em>Payload</em> what it does</li>
+<li>Types:
+<ul>
+<li>Memory-resident viruses, which remain in memory while the system of the device is running.</li>
+<li>Non-memory-resident viruses, which execute, spread, and then shut down.</li>
+<li>Boot sector viruses, which reside inside the boot sector of a drive or storage media.</li>
+<li>Macro viruses, which use macros or code inside word processing software or other tools to spread.</li>
+<li>Email viruses that spread via email either as email attachments or as part of the email itself using flaws inside email clients.</li>
+</ul>
+</li>
+<li><em>Intrusion Prevention Systems</em> (<strong>IPS</strong>s)</li>
+</ul>
+<h5 id="note">NOTE</h5>
+<p>&ldquo;many organizations have a standard practice of wiping the drive of an infected machine and restoring it from a known good backup or reinstalling/reimaging it.&rdquo;</p>
+<h3 id="keyloggers">Keyloggers</h3>
+<ul>
+<li>capture keystrokes from the keyboard
+<ul>
+<li>capture data from the kernel, via APIs or scripts, or directly from memory</li>
+</ul>
+</li>
+<li>use of multifactor authentication can help limit the impact of a keylogger</li>
+</ul>
+<h5 id="note-1">NOTE</h5>
+<p>&ldquo;Hardware keyloggers are also available and inexpensive.&rdquo;</p>
+<h3 id="logic-bombs">Logic Bombs</h3>
+<p>&ldquo;<em>Logic bombs</em>, unlike the other types of malware described here, are not independent malicious programs. Instead, they are functions or code placed inside other programs that will activate when set conditions are met.&rdquo;</p>
+<h3 id="rootkits">Rootkits</h3>
+<p>&ldquo;<em>Rootkits</em> are malware that is specifically designed to allow attackers to access a system through a backdoor. Many modern rootkits also include capabilities that work to conceal the rootkit from detection through any of a variety of techniques, ranging from hooking filesystem drivers to ensure that users cannot see the rootkit files to infecting startup code in the Master Boot Record (MBR) of a disk, allowing attacks against full-disk encryption systems.&rdquo;</p>
+<ul>
+<li>Some are rootkits are intentional:
+<ul>
+<li>DRM</li>
+<li>Anti-cheat software</li>
+</ul>
+</li>
+<li>Secure boot can help protect against persistent rootkits</li>
+<li>Uninstall hard drive and look at it with another machine
+<ul>
+<li>Since the OS is dormant, the tool may be revealed.</li>
+</ul>
+</li>
+</ul>
+<h2 id="review-questions-1520-75">Review Questions (15/20) 75%</h2>
+<h3 id="correct">Correct</h3>
+<p>3, 4, 5, 6, 7, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19</p>
+<h3 id="incorrect">Incorrect</h3>
+<p>1, 2, 8, 9, 20</p>
+<ul>
+<li>1, didn&rsquo;t consider a code review process would be needed since the threat was internal. It&rsquo;s obvious now though that the logic would likely be too novel to be detected.</li>
+<li>2, I second guessed myself. Need to trust my initial instinct.</li>
+<li>8, clearly overthought this one. Partially recalling <a href="https://www.goodreads.com/book/show/62039276-fancy-bear-goes-phishing">Fancy Bear Goes Phishing</a> and the Bulgarian &ldquo;Dark Avenger&rdquo;</li>
+<li>9, didn&rsquo;t consider D because I selected B instantly. <em>Need to read all answers first even when single choice</em></li>
+<li>20, Made assumptions about the question leading toward Trojan, but upon rereading it&rsquo;s clearly Virus.</li>
+</ul>
+<p>Waited two days between reading the chapter and testing. Based on the performance, I&rsquo;m leaning toward needing to review the entire book a second time before testing. <em>I&rsquo;m considering if I should have bought <a href="https://www.amazon.com/CompTIA-Security-Practice-Tests-SY0-701/dp/1394211384">CompTIA Security+ Practice Tests: Exam SY0-701</a> to practice further.</em></p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>
