@@ -116,7 +116,7 @@ int main(int argc, char *argv[])
 }
 ```
 
-Appending to the list will place at end O(n) time.
+Appending to the list will place at end `O(n)` time.
 
 ```c
 //If list has numbers

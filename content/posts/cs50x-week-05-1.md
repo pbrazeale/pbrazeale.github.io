@@ -181,7 +181,7 @@ void printtire(trinode * root)
 }
 ```
 
-### The Trie Data Structure, Part 2 (search, delete)
+### The Trie Data Structure, Part 2(search, delete)
 
 ```c
 bool searchtrie(trienode *root, char #signedtext)
