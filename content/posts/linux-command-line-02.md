@@ -2,6 +2,7 @@
 tags = ['Linux', 'Bash']
 title = 'Linux Command Line: Part 2 Configuration and the Environment'
 date = 2025-03-10T10:34:07+01:00
+draft = false
 +++
 
 ## 11 - The Environment

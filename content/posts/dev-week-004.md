@@ -2,6 +2,7 @@
 tags = ['CS50', 'Python', 'Developer Log']
 title = 'Developer Week 004'
 date = 2024-08-11T16:34:07+01:00
+draft = false
 +++
 
 ## CS50X (Progress 64%)

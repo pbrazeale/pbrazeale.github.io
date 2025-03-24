@@ -2,6 +2,7 @@
 tags = ['CS50', 'Python']
 title = 'CS50P Week 7 Lecture Notes'
 date = 2024-09-12T10:34:07+01:00
+draft = false
 +++
 
 ## Regular Expressions

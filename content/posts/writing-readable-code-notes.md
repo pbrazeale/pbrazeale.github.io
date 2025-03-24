@@ -2,6 +2,7 @@
 tags = ['Go', 'Programing', 'Developer Log']
 title = 'The 3 Laws of Writing Readable Code: NOTES'
 date = 2024-08-16T16:34:07+01:00
+draft = false
 +++
 
 **Source:** [The 3 Laws of Writing Readable Code](https://www.youtube.com/watch?v=-AzSRHiV9Cc)

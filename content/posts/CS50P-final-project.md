@@ -2,6 +2,7 @@
 tags = ['CS50', 'Python', 'PyQt', 'SQL']
 title = 'CS50P Final Project'
 date = 2024-09-25T10:34:07+01:00
+draft = false
 +++
 
 ## KDP Tracker

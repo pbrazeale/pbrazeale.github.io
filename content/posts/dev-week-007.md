@@ -2,6 +2,7 @@
 tags = ['CS50', 'Python', 'Developer Log', 'Ubuntu', 'Linux', 'ThinkPad']
 title = 'Developer Week 007'
 date = 2024-09-01T16:34:07+01:00
+draft = false
 +++
 
 ## Linux

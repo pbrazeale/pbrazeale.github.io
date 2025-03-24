@@ -2,6 +2,7 @@
 tags = ['Linux', 'Bash']
 title = 'Linux Command Line: Part 1 Learning the Shell'
 date = 2025-02-20T10:34:07+01:00
+draft = false
 +++
 
 ## 01 What is the Shell

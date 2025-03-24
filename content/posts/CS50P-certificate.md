@@ -2,6 +2,7 @@
 tags = ['CS50', 'Python']
 title = 'CS50P Certificate'
 date = 2024-09-26T10:34:07+01:00
+draft = false
 +++
 
 ## Harvard Online CS50 Python

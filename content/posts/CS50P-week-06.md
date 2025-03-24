@@ -2,6 +2,7 @@
 tags = ['CS50', 'Python']
 title = 'CS50P Week 6 Lecture Notes'
 date = 2024-09-10T10:34:07+01:00
+draft = false
 +++
 
 ## File I/O
