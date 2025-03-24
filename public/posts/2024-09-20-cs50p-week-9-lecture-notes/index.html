@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title> // Philip Brazeale</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.145.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Philip Brazeale" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/css/main.min.7ad30054107c532dea0e1b008d736261f1d1e8635b780068c8bf058d7448e498.css" />
+    
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Philip Brazeale">
+  <meta name="twitter:description" content="Et Cetera Set {% highlight python linenos %} students = [ {“name”: “Hermione”, “house”: “Gryffindor”}, {“name”: “Harry”, “house”: “Gryffindor”}, {“name”: “Ron”, “house”: “Gryffindor”}, {“name”: “Draco”, “house”: “Slytherin”}, {“name”: “Padma”, “house”: “Ravenclaw”}, ]
+houses = set() for student in students: houses.add(student[“house”])
+for house in sorted(houses): print(house) {% endhighlight %} Use .add instead of .append for set, and it will automatically filter out duplicates.
+Global You can set a variable outside of the main function that allows all functions to modify or use the variable.">
+
+    <meta property="og:url" content="http://localhost:1313/posts/2024-09-20-cs50p-week-9-lecture-notes/">
+  <meta property="og:site_name" content="Philip Brazeale">
+  <meta property="og:title" content="Philip Brazeale">
+  <meta property="og:description" content="Et Cetera Set {% highlight python linenos %} students = [ {“name”: “Hermione”, “house”: “Gryffindor”}, {“name”: “Harry”, “house”: “Gryffindor”}, {“name”: “Ron”, “house”: “Gryffindor”}, {“name”: “Draco”, “house”: “Slytherin”}, {“name”: “Padma”, “house”: “Ravenclaw”}, ]
+houses = set() for student in students: houses.add(student[“house”])
+for house in sorted(houses): print(house) {% endhighlight %} Use .add instead of .append for set, and it will automatically filter out duplicates.
+Global You can set a variable outside of the main function that allows all functions to modify or use the variable.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="/"><img class="app-header-avatar" src="/avatar.jpg" alt="Philip Brazeale" /></a>
+      <span class="app-header-title">Philip Brazeale</span>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/">✉️ Posts </a>
+              
+          
+          <a class="app-header-menu-item" href="/tags/">🏷️ Tags </a>
+              
+          
+          <a class="app-header-menu-item" href="/about/">🧙‍♂️ About</a>
+      </nav>
+      <p>Developer | Author | Publisher</p>
+      <div class="app-header-social">
+        
+          <a href="https://www.linkedin.com/in/pbrazeale/" target="_blank" rel="noreferrer noopener me">
+            <svg class="icon icon-brand-linkedin" viewBox="0 0 24 24" fill="currentColor"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+        
+          <a href="https://github.com/pbrazeale" target="_blank" rel="noreferrer noopener me">
+            <svg class="icon icon-brand-github" viewBox="0 0 24 24" fill="currentColor"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </a>
+        
+          <a href="https://twitter.com/pbrazeale" target="_blank" rel="noreferrer noopener me">
+            <svg class="icon icon-brand-x" viewBox="0 0 24 24" fill="currentColor"><title>X</title><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+          </a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title"></h1>
+      <div class="post-meta">
+        <div>
+          <svg class="icon icon-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>calendar</title><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          Jan 1, 0001
+        </div>
+        <div>
+          <svg class="icon icon-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>clock</title><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          5 min read
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <h2 id="et-cetera">Et Cetera</h2>
+<h3 id="set">Set</h3>
+<p>{% highlight python linenos %}
+students = [
+{&ldquo;name&rdquo;: &ldquo;Hermione&rdquo;, &ldquo;house&rdquo;: &ldquo;Gryffindor&rdquo;},
+{&ldquo;name&rdquo;: &ldquo;Harry&rdquo;, &ldquo;house&rdquo;: &ldquo;Gryffindor&rdquo;},
+{&ldquo;name&rdquo;: &ldquo;Ron&rdquo;, &ldquo;house&rdquo;: &ldquo;Gryffindor&rdquo;},
+{&ldquo;name&rdquo;: &ldquo;Draco&rdquo;, &ldquo;house&rdquo;: &ldquo;Slytherin&rdquo;},
+{&ldquo;name&rdquo;: &ldquo;Padma&rdquo;, &ldquo;house&rdquo;: &ldquo;Ravenclaw&rdquo;},
+]</p>
+<p>houses = set()
+for student in students:
+houses.add(student[&ldquo;house&rdquo;])</p>
+<p>for house in sorted(houses):
+print(house)
+{% endhighlight %}
+Use .add instead of .append for set, and it will automatically filter out duplicates.</p>
+<h3 id="global">Global</h3>
+<p>You can set a variable outside of the main function that allows all functions to modify or use the variable.</p>
+<p>{% highlight python linenos %}
+balance = 0</p>
+<p>def main():
+print(&ldquo;Balance:&rdquo;, balance)
+deposit(100)
+withdraw(50)
+print(&ldquo;Balance:&rdquo;, balance)</p>
+<p>def deposit(n):
+global balance
+balance += n</p>
+<p>def withdraw(n):
+global balance
+balance -= n</p>
+<p>if <strong>name</strong> == &ldquo;<strong>main</strong>&rdquo;:
+main()
+{% endhighlight %}</p>
+<p>This runs into an issue though where the balance becomes a local variable when called and modified inside main. This is where using a class of Account becomes valuable.</p>
+<p>{% highlight python linenos %}
+class Account:
+def <strong>init</strong>(self):
+self._balance = 0</p>
+<pre><code>@property
+def balance(self):
+    return self._balance
+
+def deposit(self, n):
+    self._balance += n
+
+def withdraw(self, n):
+    self._balance -= n
+</code></pre>
+<p>def main():
+account = Account()
+print(&ldquo;Balance:&rdquo;, account.balance)
+account.deposit(100)
+account.withdraw(50)
+print(&ldquo;Balance:&rdquo;, account.balance)</p>
+<p>if <strong>name</strong> == &ldquo;<strong>main</strong>&rdquo;:
+main()
+{% endhighlight %}</p>
+<h3 id="type-hints">Type Hints</h3>
+<h4 id="mypy">mypy</h4>
+<p>{% highlight python linenos %}</p>
+<h1 id="by-using--int-were-creating-a-hint-to-the-funciton-for-what-should-be-passed-in">by using : int, we&rsquo;re creating a hint to the funciton for what should be passed in.</h1>
+<p>def meow(n: int):
+for _ in range(n):
+print(&ldquo;meow&rdquo;)</p>
+<p>number = input(&ldquo;Number: &ldquo;)
+meow(number)
+{% endhighlight %}</p>
+<p><code>mypy meows.py</code>
+<code>meows.py:7: error: Argument 1 to &quot;meow&quot; has incompatible type &quot;str&quot;; expected &quot;int&quot;  [arg-type]</code>
+<code>Found 1 error in 1 file (checked 1 source file)</code></p>
+<p><strong>Type hints</strong> are best practice to help decrease the probability of bugs, and one reason other languages are preferred for Python. (<em>Note to self: think <strong>TypeScript</strong></em>)</p>
+<h3 id="docstrings">Docstrings</h3>
+<p>Standard practice is to document within the function, not above it, and to use <code>&quot;&quot;&quot;</code></p>
+<p>{% highlight python linenos %}
+def meow(n):
+&quot;&rdquo;&rdquo;
+Meow n times.</p>
+<pre><code>:param n: Number of times to meow
+:type n: int
+:raise TypeError: If n is not an int
+:return: A string of n meows, one per line
+:rtype: str
+&quot;&quot;&quot;
+return &quot;meow\n&quot; * n
+</code></pre>
+<p>number = int(input(&ldquo;Number: &ldquo;))
+meows = meow(number)
+print(meows, end=&rdquo;&rdquo;)
+{% endhighlight %}</p>
+<ul>
+<li><em>Established tools, such as <a href="https://www.sphinx-doc.org/en/master/index.html">Sphinx</a>, can be used to parse docstrings and automatically create documentation for us in the form of web pages and PDF files such that you can publish and share with others.</em></li>
+<li><em>You can learn more in Python’s documentation of <a href="https://peps.python.org/pep-0257/">docstrings</a>.</em></li>
+</ul>
+<h3 id="command-line-argument-program">Command Line Argument Program</h3>
+<p>{% highlight python linenos %}
+import sys</p>
+<p>if len(sys.argv) == 1:
+print(&ldquo;meow&rdquo;)
+elif len(sys.argv) == 3 and sys.argv[1] == &ldquo;-n&rdquo;:
+n = int(sys.argv[2])
+for _ in range(n):
+print(&ldquo;meow&rdquo;)
+else:
+print(&ldquo;usage: meows.py [-n NUMBER]&rdquo;)
+{% endhighlight %}</p>
+<p>This allows the user to specify at the command line how many times they wish to execute the program.</p>
+<p><code>python meows.py -n 3</code>
+would then print &ldquo;meow&rdquo; three times.</p>
+<h4 id="argparse">Argparse</h4>
+<p>This library will handle the command line arguments for you so that you can focus on writing the core functionality of the program.</p>
+<p>{% highlight python linenos %}
+import argparse</p>
+<p>parser = argparse.ArgumentParser(description=&ldquo;Meow like a cat&rdquo;)</p>
+<h1 id="set-default-to-precent-breaking-if-ran-alone-set-help-to-explain-the-argument-set-type-to-ensure-an-int-is-passed-through">set default to precent breaking if ran alone, set help to explain the argument, set type to ensure an int is passed through.</h1>
+<p>parser.add_argument(&quot;-n&quot;, default=1, help=&ldquo;number of times to meow&rdquo;, type=int)
+args = parser.parse_args()</p>
+<p>for _ in range(args.n):
+print(&ldquo;meow&rdquo;)
+{% endhighlight %}</p>
+<h3 id="unpacking">Unpacking</h3>
+<p>{% highlight python linenos %}
+def total(galleons, sickles, knuts):
+return (galleons * 17 + sickles) * 29 + knuts</p>
+<p>coins = [100, 50, 25]</p>
+<p>print(total(coins[0], coins[1], coins[2]), &ldquo;Knuts&rdquo;)</p>
+<h1 id="using-coins-below-handles-the-unpacking-for-us">using *coins below handles the unpacking for us.</h1>
+<p>def total(galleons, sickles, knuts):
+return (galleons * 17 + sickles) * 29 + knuts</p>
+<p>coins = [100, 50, 25]</p>
+<p>print(total(*coins), &ldquo;Knuts&rdquo;)</p>
+<h1 id="us--allows-to-unpack-the-dictiony-coins-twice-thus-passing-in-the-keyvalue-pair">us ** allows to unpack the dictiony coins twice, thus passing in the key:value pair.</h1>
+<p>def total(galleons, sickles, knuts):
+return (galleons * 17 + sickles) * 29 + knuts</p>
+<p>coins = {&ldquo;galleons&rdquo;: 100, &ldquo;sickles&rdquo;: 50, &ldquo;knuts&rdquo;: 25}</p>
+<p>print(total(**coins), &ldquo;Knuts&rdquo;)
+{% endhighlight %}</p>
+<h3 id="map">Map</h3>
+<p>{% highlight python linenos %}
+def main():
+yell(&ldquo;This&rdquo;, &ldquo;is&rdquo;, &ldquo;CS50&rdquo;)</p>
+<p>def yell(*words):
+uppercased = map(str.upper, words)
+print(*uppercased)</p>
+<p>if <strong>name</strong> == &ldquo;<strong>main</strong>&rdquo;:
+main()
+{% endhighlight %}</p>
+<h3 id="list-comprehensions">List Comprehensions</h3>
+<p>{% highlight python linenos %}
+def main():
+yell(&ldquo;This&rdquo;, &ldquo;is&rdquo;, &ldquo;CS50&rdquo;)</p>
+<p>def yell(*words):
+uppercased = [arg.upper() for arg in words]
+print(*uppercased)</p>
+<p>if <strong>name</strong> == &ldquo;<strong>main</strong>&rdquo;:
+main()</p>
+<p>{% endhighlight %}</p>
+<p>We can use the list comprehension to sort a previous list and build a new list based on a condition.
+{% highlight python linenos %}
+students = [
+{&ldquo;name&rdquo;: &ldquo;Hermione&rdquo;, &ldquo;house&rdquo;: &ldquo;Gryffindor&rdquo;},
+{&ldquo;name&rdquo;: &ldquo;Harry&rdquo;, &ldquo;house&rdquo;: &ldquo;Gryffindor&rdquo;},
+{&ldquo;name&rdquo;: &ldquo;Ron&rdquo;, &ldquo;house&rdquo;: &ldquo;Gryffindor&rdquo;},
+{&ldquo;name&rdquo;: &ldquo;Draco&rdquo;, &ldquo;house&rdquo;: &ldquo;Slytherin&rdquo;},
+]</p>
+<p>gryffindors = []
+for student in students:
+if student[&ldquo;house&rdquo;] == &ldquo;Gryffindor&rdquo;:
+gryffindors.append(student[&ldquo;name&rdquo;])</p>
+<p>for gryffindor in sorted(gryffindors):
+print(gryffindor)
+{% endhighlight %}</p>
+<h3 id="filter">Filter</h3>
+<p>You can also use filter to pass in a conditional argument and the list to be filtered.</p>
+<p>{% highlight python linenos %}
+students = [
+{&ldquo;name&rdquo;: &ldquo;Hermione&rdquo;, &ldquo;house&rdquo;: &ldquo;Gryffindor&rdquo;},
+{&ldquo;name&rdquo;: &ldquo;Harry&rdquo;, &ldquo;house&rdquo;: &ldquo;Gryffindor&rdquo;},
+{&ldquo;name&rdquo;: &ldquo;Ron&rdquo;, &ldquo;house&rdquo;: &ldquo;Gryffindor&rdquo;},
+{&ldquo;name&rdquo;: &ldquo;Draco&rdquo;, &ldquo;house&rdquo;: &ldquo;Slytherin&rdquo;},
+]</p>
+<p>def is_gryffindor(s):
+return s[&ldquo;house&rdquo;] == &ldquo;Gryffindor&rdquo;</p>
+<p>gryffindors = filter(is_gryffindor, students)</p>
+<p>#the lamda s allows us to sort on the &ldquo;name&rdquo; key
+for gryffindor in sorted(gryffindors, key=lambda s: s[&ldquo;name&rdquo;]):
+print(gryffindor[&ldquo;name&rdquo;])
+{% endhighlight %}</p>
+<h3 id="dictionary-comprehension">Dictionary Comprehension</h3>
+<p>Similar in spirit to list comprehension, but creates a dictionary object</p>
+<p>{% highlight python linenos %}
+students = [&ldquo;Hermione&rdquo;, &ldquo;Harry&rdquo;, &ldquo;Ron&rdquo;]</p>
+<p>gryffindors = {student: &ldquo;Gryffindor&rdquo; for student in students}</p>
+<p>print(gryffindors)
+{% endhighlight %}</p>
+<h3 id="enumerate">Enumerate</h3>
+<p>Returns the index and value</p>
+<p>{% highlight python linenos %}
+students = [&ldquo;Hermione&rdquo;, &ldquo;Harry&rdquo;, &ldquo;Ron&rdquo;]</p>
+<p>for i, student in enumerate(students):
+print(i + 1, student)
+{% endhighlight %}</p>
+<ul>
+<li><em>You can learn more in Python’s documentation of <a href="https://docs.python.org/3/library/functions.html#enumerate"><code>enumerate</code></a>.</em></li>
+</ul>
+<h3 id="generators">Generators</h3>
+<p>By using <code>yeild</code> instead of <code>return</code> I&rsquo;m able to crunch much larger sets of data without crashing the program.</p>
+<p>{% highlight python linenos %}
+def main():
+n = int(input(&ldquo;What&rsquo;s n? &ldquo;))
+for s in sheep(n):
+print(s)</p>
+<p>def sheep(n):
+for i in range(n):
+yield &ldquo;🐑&rdquo; * i</p>
+<p>if <strong>name</strong> == &ldquo;<strong>main</strong>&rdquo;:
+main()</p>
+<p>{% endhighlight %}</p>
+<p>This will allow the program to actually print out 1,000,000 sheep instead of bricking the computer.</p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

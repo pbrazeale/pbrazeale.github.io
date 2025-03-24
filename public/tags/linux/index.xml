@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on Philip Brazeale</title>
+    <link>http://localhost:1313/tags/linux/</link>
+    <description>Recent content in Linux on Philip Brazeale</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 23 Mar 2025 06:34:07 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Developer Week 036</title>
+      <link>http://localhost:1313/posts/dev-week-036/</link>
+      <pubDate>Sun, 23 Mar 2025 06:34:07 +0100</pubDate>
+      <guid>http://localhost:1313/posts/dev-week-036/</guid>
+      <description>&lt;h2 id=&#34;certification-progress&#34;&gt;Certification Progress&lt;/h2&gt;&#xA;&lt;h3 id=&#34;comptia-security-1914&#34;&gt;CompTIA Security+ (19.14%)&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.comptia.org/certifications/security&#34;&gt;CompTIA Security+ SY0-701&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;microsoft-certified-azure-fundamentals-1364&#34;&gt;Microsoft Certified: Azure Fundamentals (13.64%)&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://learn.microsoft.com/en-us/credentials/certifications/azure-fundamentals/?practice-assessment-type=certification&#34;&gt;AZ-900 Azure Fundamentals&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;&#xA;&lt;h3 id=&#34;100-days-of-code-the-complete-python-pro-bootcamp-38100&#34;&gt;100 Days of Code: The Complete Python Pro Bootcamp (38/100)&lt;/h3&gt;&#xA;&lt;p&gt;Used Git Branching and GitHub PR&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;git switch -c my_new_branch&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;gh pr create --title &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Update ...&amp;#34;&lt;/span&gt; --body &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;message&amp;#34;&lt;/span&gt; --label &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;enhancement&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Used GitHub web interface to review and approve PR. Will need to do further research to see if I can review and approve via the CLI, or if web is best/only option.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Developer Week 007</title>
+      <link>http://localhost:1313/posts/dev-week-007/</link>
+      <pubDate>Sun, 01 Sep 2024 16:34:07 +0100</pubDate>
+      <guid>http://localhost:1313/posts/dev-week-007/</guid>
+      <description>&lt;h2 id=&#34;linux&#34;&gt;Linux&lt;/h2&gt;&#xA;&lt;h3 id=&#34;omakub&#34;&gt;Omakub&lt;/h3&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;An Omakase Developer Setup for Ubuntu 24.04 by DHH&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;a href=&#34;https://omakub.org/&#34;&gt;https://omakub.org/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Took the plunge and setup Omakub on my T430. Took three attempts because of dependency glitches, but after a couple of restarts it installed without error and worked fine. Not sure I&amp;rsquo;m ready to jump into NeoVIM, but thus far I prefer the GUI compared to vanilla Ubuntu.&lt;/p&gt;&#xA;&lt;p&gt;Of course I stuck with the Tokyo Night theme, but there&amp;rsquo;s several prebuilt to chose from and the prebuilt &amp;ldquo;default&amp;rdquo; aspect is the point of Omakub.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Developer Week 006</title>
+      <link>http://localhost:1313/posts/dev-week-006/</link>
+      <pubDate>Sun, 25 Aug 2024 16:34:07 +0100</pubDate>
+      <guid>http://localhost:1313/posts/dev-week-006/</guid>
+      <description>&lt;h2 id=&#34;cs50x-progress-91&#34;&gt;CS50X (Progress 91%)&lt;/h2&gt;&#xA;&lt;h3 id=&#34;week-9-flask&#34;&gt;Week 9 Flask&lt;/h3&gt;&#xA;&lt;h4 id=&#34;birthdays&#34;&gt;Birthdays&lt;/h4&gt;&#xA;&lt;p&gt;This was easy enough, as the walkthrough included all the code required.&lt;/p&gt;&#xA;&lt;h4 id=&#34;finance&#34;&gt;Finance&lt;/h4&gt;&#xA;&lt;p&gt;The above was made up for by creating a larger scope for this project.&lt;/p&gt;&#xA;&lt;p&gt;This was definitely the largest assignment by scope from the course, but I don&amp;rsquo;t feel that it was overly difficult. Figuring out how to use display SQL databases on a website will be an evaluable tool moving forward.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Developer Week 005</title>
+      <link>http://localhost:1313/posts/dev-week-005/</link>
+      <pubDate>Sun, 11 Aug 2024 16:34:07 +0100</pubDate>
+      <guid>http://localhost:1313/posts/dev-week-005/</guid>
+      <description>&lt;h2 id=&#34;cs50x-progress-86&#34;&gt;CS50X (Progress 86%)&lt;/h2&gt;&#xA;&lt;h3 id=&#34;week-7-sql&#34;&gt;Week 7 SQL&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://pbrazeale.github.io/CS50X-Week-7-Lecture-Notes/&#34;&gt;CS50X Week 7 Lecture Notes&lt;/a&gt;&#xA;These are by far my most detailed notes I&amp;rsquo;ve taken in the course thus far. Instantly when I reached this lecture I felt &lt;strong&gt;jazzed up&lt;/strong&gt; and ready to go!&lt;/p&gt;&#xA;&lt;p&gt;I know data, and databases aren&amp;rsquo;t the flashiest part of programing and software development, but the moment David began to talk about IMDB I knew this was &lt;strong&gt;vital&lt;/strong&gt; information I needed. Extrapolating out, I think this week&amp;rsquo;s lecture and course work might have taught me enough to implement my own data management for the software I&amp;rsquo;m planning. &lt;a href=&#34;https://pbrazeale.github.io/dev-week-001/&#34;&gt;Developer Week 001&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

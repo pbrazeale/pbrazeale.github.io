@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title> // Philip Brazeale</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.145.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Philip Brazeale" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/css/main.min.7ad30054107c532dea0e1b008d736261f1d1e8635b780068c8bf058d7448e498.css" />
+    
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Philip Brazeale">
+  <meta name="twitter:description" content="OOP (Object-Oriented Programming) Step 1 of creating an OOP {% highlight python linenos %} def main(): name = get_name() house = get_house() print(f&#34;{name} from {house}&#34;)
+def get_name(): return input(“Name: “)
+def get_house(): return input(“House: “)
+if name == “main”: main() {% endhighlight %}
+Where the name and house variables are now defined by using separate functions, and those functions could be used again in the future.
+Tuple “A tuple is a sequences of values. Unlike a list, a tuple can’t be modified. In spirit, we are returning two values.”">
+
+    <meta property="og:url" content="http://localhost:1313/posts/2024-09-18-cs50p-week-8-lecture-notes/">
+  <meta property="og:site_name" content="Philip Brazeale">
+  <meta property="og:title" content="Philip Brazeale">
+  <meta property="og:description" content="OOP (Object-Oriented Programming) Step 1 of creating an OOP {% highlight python linenos %} def main(): name = get_name() house = get_house() print(f&#34;{name} from {house}&#34;)
+def get_name(): return input(“Name: “)
+def get_house(): return input(“House: “)
+if name == “main”: main() {% endhighlight %}
+Where the name and house variables are now defined by using separate functions, and those functions could be used again in the future.
+Tuple “A tuple is a sequences of values. Unlike a list, a tuple can’t be modified. In spirit, we are returning two values.”">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="/"><img class="app-header-avatar" src="/avatar.jpg" alt="Philip Brazeale" /></a>
+      <span class="app-header-title">Philip Brazeale</span>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/">✉️ Posts </a>
+              
+          
+          <a class="app-header-menu-item" href="/tags/">🏷️ Tags </a>
+              
+          
+          <a class="app-header-menu-item" href="/about/">🧙‍♂️ About</a>
+      </nav>
+      <p>Developer | Author | Publisher</p>
+      <div class="app-header-social">
+        
+          <a href="https://www.linkedin.com/in/pbrazeale/" target="_blank" rel="noreferrer noopener me">
+            <svg class="icon icon-brand-linkedin" viewBox="0 0 24 24" fill="currentColor"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+        
+          <a href="https://github.com/pbrazeale" target="_blank" rel="noreferrer noopener me">
+            <svg class="icon icon-brand-github" viewBox="0 0 24 24" fill="currentColor"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </a>
+        
+          <a href="https://twitter.com/pbrazeale" target="_blank" rel="noreferrer noopener me">
+            <svg class="icon icon-brand-x" viewBox="0 0 24 24" fill="currentColor"><title>X</title><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+          </a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title"></h1>
+      <div class="post-meta">
+        <div>
+          <svg class="icon icon-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>calendar</title><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          Jan 1, 0001
+        </div>
+        <div>
+          <svg class="icon icon-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>clock</title><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          7 min read
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <h2 id="oop-object-oriented-programming">OOP (Object-Oriented Programming)</h2>
+<h3 id="step-1-of-creating-an-oop">Step 1 of creating an OOP</h3>
+<p>{% highlight python linenos %}
+def main():
+name = get_name()
+house = get_house()
+print(f&quot;{name} from {house}&quot;)</p>
+<p>def get_name():
+return input(&ldquo;Name: &ldquo;)</p>
+<p>def get_house():
+return input(&ldquo;House: &ldquo;)</p>
+<p>if <strong>name</strong> == &ldquo;<strong>main</strong>&rdquo;:
+main()
+{% endhighlight %}</p>
+<p>Where the name and house variables are now defined by using separate functions, and those functions could be used again in the future.</p>
+<h3 id="tuple">Tuple</h3>
+<p><em>&ldquo;A tuple is a sequences of values. Unlike a list, a tuple can’t be modified. In spirit, we are returning two values.&rdquo;</em></p>
+<p>{% highlight python linenos %}
+def main():
+student = get_student()
+print(f&rdquo;{student[0]} from {student[1]}&rdquo;)</p>
+<p>def get_student():
+name = input(&ldquo;Name: &ldquo;)
+house = input(&ldquo;House: &ldquo;)
+return (name, house)</p>
+<p>if <strong>name</strong> == &ldquo;<strong>main</strong>&rdquo;:
+main()
+{% endhighlight %}</p>
+<h3 id="list">List</h3>
+<p>For when you want to allow yourself to change the values.</p>
+<p>{% highlight python linenos %}
+def main():
+student = get_student()
+if student[0] == &ldquo;Padma&rdquo;:
+student[1] = &ldquo;Ravenclaw&rdquo;
+print(f&rdquo;{student[0]} from {student[1]}&rdquo;)</p>
+<p>def get_student():
+name = input(&ldquo;Name: &ldquo;)
+house = input(&ldquo;House: &ldquo;)
+return [name, house]</p>
+<p>if <strong>name</strong> == &ldquo;<strong>main</strong>&rdquo;:
+main()
+{% endhighlight %}</p>
+<h3 id="dictionary">Dictionary</h3>
+<p>Has a key value pair.</p>
+<p>{% highlight python linenos %}
+def main():
+student = get_student()
+if student[&ldquo;name&rdquo;] == &ldquo;Padma&rdquo;:
+student[&ldquo;house&rdquo;] = &ldquo;Ravenclaw&rdquo;
+print(f&rdquo;{student[&rsquo;name&rsquo;]} from {student[&lsquo;house&rsquo;]}&rdquo;)</p>
+<p>def get_student():
+name = input(&ldquo;Name: &ldquo;)
+house = input(&ldquo;House: &ldquo;)
+return {&ldquo;name&rdquo;: name, &ldquo;house&rdquo;: house}</p>
+<p>if <strong>name</strong> == &ldquo;<strong>main</strong>&rdquo;:
+main()
+{% endhighlight %}</p>
+<h2 id="classes">Classes</h2>
+<p><em>&ldquo;Classes are a way by which, in object-oriented programming, we can create our own type of data and give them names.
+A class is like a mold for a type of data – where we can invent our own data type and give them a name.
+We can modify our code as follows to implement our own class called Student:&rdquo;</em></p>
+<p>{% highlight python linenos %}
+class Student:
+&hellip;</p>
+<p>def main():
+student = get_student()
+print(f&rdquo;{student.name} from {student.house}&rdquo;)</p>
+<p>def get_student():
+student = Student()
+student.name = input(&ldquo;Name: &ldquo;)
+student.house = input(&ldquo;House: &ldquo;)
+return student</p>
+<p>if <strong>name</strong> == &ldquo;<strong>main</strong>&rdquo;:
+main()
+{% endhighlight %}</p>
+<p>Convention is to make custom classes Uppercase.</p>
+<h3 id="object">Object</h3>
+<p>Classes create an Object.</p>
+<h3 id="better-way-to-use-the-student-class">Better way to use the Student class</h3>
+<p>{% highlight python linenos %}
+class Student:
+def <strong>init</strong>(self, name, house):
+self.name = name
+self.house = house</p>
+<p>def main():
+student = get_student()
+print(f&rdquo;{student.name} from {student.house}&rdquo;)</p>
+<p>def get_student():
+name = input(&ldquo;Name: &ldquo;)
+house = input(&ldquo;House: &ldquo;)
+student = Student(name, house)
+return student</p>
+<p>if <strong>name</strong> == &ldquo;<strong>main</strong>&rdquo;:
+main()
+{% endhighlight %}</p>
+<h3 id="raise">Raise</h3>
+<p><em>&ldquo;Object-oriented program encourages you to encapusulate all the functionality of a class within the class definition. What if something goes wrong? What if someone tries to type in something random? What if someone tries to create a student without a name? Modify your code as follows:&rdquo;</em></p>
+<p>{% highlight python linenos %}
+class Student:
+def <strong>init</strong>(self, name, house):
+if not name:
+raise ValueError(&ldquo;Missing name&rdquo;)
+if house not in [&ldquo;Gryffindor&rdquo;, &ldquo;Hufflepuff&rdquo;, &ldquo;Ravenclaw&rdquo;, &ldquo;Slytherin&rdquo;]:
+raise ValueError(&ldquo;Invalid house&rdquo;)
+self.name = name
+self.house = house</p>
+<p>def main():
+student = get_student()
+print(f&rdquo;{student.name} from {student.house}&rdquo;)</p>
+<p>def get_student():
+name = input(&ldquo;Name: &ldquo;)
+house = input(&ldquo;House: &ldquo;)
+return Student(name, house)</p>
+<p>if <strong>name</strong> == &ldquo;<strong>main</strong>&rdquo;:
+main()
+{% endhighlight %}</p>
+<h3 id="str">str</h3>
+<p><em>&quot;<code>__str__</code> is a built-in method that comes with Python classes. It just so happens that we can create our own methods for a class as well! Modify your code as follows:&rdquo;</em></p>
+<p>{% highlight python linenos %}
+class Student:
+def <strong>init</strong>(self, name, house, patronus=None):
+if not name:
+raise ValueError(&ldquo;Missing name&rdquo;)
+if house not in [&ldquo;Gryffindor&rdquo;, &ldquo;Hufflepuff&rdquo;, &ldquo;Ravenclaw&rdquo;, &ldquo;Slytherin&rdquo;]:
+raise ValueError(&ldquo;Invalid house&rdquo;)
+if patronus and patronus not in [&ldquo;Stag&rdquo;, &ldquo;Otter&rdquo;, &ldquo;Jack Russell terrier&rdquo;]:
+raise ValueError(&ldquo;Invalid patronus&rdquo;)
+self.name = name
+self.house = house
+self.patronus = patronus</p>
+<pre><code>def __str__(self):
+    return f&quot;{self.name} from {self.house}&quot;
+
+def charm(self):
+    match self.patronus:
+        case &quot;Stag&quot;:
+            return &quot;🐴&quot;
+        case &quot;Otter&quot;:
+            return &quot;🦦&quot;
+        case &quot;Jack Russell terrier&quot;:
+            return &quot;🐶&quot;
+        case _:
+            return &quot;🪄&quot;
+</code></pre>
+<p>def main():
+student = get_student()
+print(&ldquo;Expecto Patronum!&rdquo;)
+print(student.charm())</p>
+<p>def get_student():
+name = input(&ldquo;Name: &ldquo;)
+house = input(&ldquo;House: &ldquo;)
+patronus = input(&ldquo;Patronus: &ldquo;) or None
+return Student(name, house, patronus)</p>
+<p>if <strong>name</strong> == &ldquo;<strong>main</strong>&rdquo;:
+main()
+{% endhighlight %}</p>
+<h3 id="properties">Properties</h3>
+<p>@poperty</p>
+<h4 id="decorators">Decorators</h4>
+<p>{% highlight python linenos %}
+# Getter for house
+@property
+def house(self):
+return self._house</p>
+<pre><code># Setter for house
+@house.setter
+def house(self, house):
+    if house not in [&quot;Gryffindor&quot;, &quot;Hufflepuff&quot;, &quot;Ravenclaw&quot;, &quot;Slytherin&quot;]:
+        raise ValueError(&quot;Invalid house&quot;)
+    self._house = house
+</code></pre>
+<p>{% endhighlight %}</p>
+<p><em>&ldquo;Notice how we’ve written <code>@property</code> above a function called <code>house</code>. Doing so defines <code>house</code> as a property of our class. With <code>house</code> as a property, we gain the ability to define how some attribute of our class, <code>_house</code>, should be set and retrieved. Indeed, we can now define a function called a “setter”, via <code>@house.setter</code>, which will be called whenever the house property is set—for example, with <code>student.house = &quot;Gryffindor&quot;</code>. Here, we’ve made our setter validate values of <code>house</code> for us. Notice how we raise a <code>ValueError</code> if the value of <code>house</code> is not any of the Harry Potter houses, otherwise, we’ll use <code>house</code> to update the value of <code>_house</code>. Why <code>_house</code> and not <code>house</code>? <code>house</code> is a property of our class, with functions via which a user attempts to set our class attribute. <code>_house</code> is that class attribute itself. The leading underscore, <code>_</code>, indicates to users they need not (and indeed, shouldn’t!) modify this value directly. <code>_house</code> should <em>only</em> be set through the <code>house</code> setter. Notice how the <code>house</code> property simply returns that value of <code>_house</code>, our class attribute that has presumably been validated using our <code>house</code> setter. When a user calls <code>student.house</code>, they’re getting the value of <code>_house</code> through our <code>house</code> “getter”.&rdquo;</em></p>
+<p>Python has no private variables, which is why <code>_variable</code> is used by convention to express not to touch it, and <code>__variable</code> means for real, under no circumstance, should you touch/change the variable.</p>
+<h3 id="inheritance">Inheritance</h3>
+<ul>
+<li><em>Inheritance is, perhaps, the most powerful feature of object-oriented programming.</em></li>
+<li><em>&ldquo;t just so happens that you can create a class that “inherits” methods, variables, and attributes from another class.</em></li>
+<li><em>In the terminal, execute <code>code wizard.py</code>. Code as follows:</em></li>
+</ul>
+<p>{% highlight python linenos %}</p>
+<h1 id="by-creating-the-wizard-class-we-can-control-inheritance-being-passed-into-student-and-professor">by creating the wizard class, we can control inheritance being passed into Student and Professor.</h1>
+<p>class Wizard:
+def <strong>init</strong>(self, name):
+if not name:
+raise ValueError(&ldquo;Missing name&rdquo;)
+self.name = name</p>
+<pre><code>...
+</code></pre>
+<p>class Student(Wizard):
+def <strong>init</strong>(self, name, house):
+# this is what creates the inheritance.
+super().<strong>init</strong>(name)
+self.house = house</p>
+<pre><code>...
+</code></pre>
+<p>class Professor(Wizard):
+def <strong>init</strong>(self, name, subject):
+super().<strong>init</strong>(name)
+self.subject = subject</p>
+<pre><code>...
+</code></pre>
+<p>wizard = Wizard(&ldquo;Albus&rdquo;)
+student = Student(&ldquo;Harry&rdquo;, &ldquo;Gryffindor&rdquo;)
+professor = Professor(&ldquo;Severus&rdquo;, &ldquo;Defense Against the Dark Arts&rdquo;)
+&hellip;
+{% endhighlight %}</p>
+<p><em>&ldquo;Notice that there is a class above called <code>Wizard</code> and a class called <code>Student</code>. Further, notice that there is a class called <code>Professor</code>. Both students and professors have names. Also, both students and professors are wizards. Therefore, both <code>Student</code> and <code>Professor</code> inherit the characteristics of <code>Wizard</code>. Within the “child” class <code>Student</code>, <code>Student</code> can inherit from the “parent” or “super” class <code>Wizard</code> as the line <code>super().__init__(name)</code> runs the <code>init</code> method of <code>Wizard</code>. Finally, notice that the last lines of this code create a wizard called Albus, a student called Harry, and so on.&rdquo;</em></p>
+<h3 id="inheritance-and-exceptions">Inheritance and Exceptions</h3>
+<ul>
+<li><em>While we have just introduced inheritance, we have been using this all along during our use of exceptions.</em></li>
+<li><em>It just so happens that exceptions come in a heirarchy, where there are children, parent, and grandparent classes. These are illustrated below:</em></li>
+</ul>
+<p>{% highlight python %}
+BaseException
++&ndash; KeyboardInterrupt
++&ndash; Exception
++&ndash; ArithmeticError
+|    +&ndash; ZeroDivisionError
++&ndash; AssertionError
++&ndash; AttributeError
++&ndash; EOFError
++&ndash; ImportError
+|    +&ndash; ModuleNotFoundError
++&ndash; LookupError
+|    +&ndash; KeyError
++&ndash; NameError
++&ndash; SyntaxError
+|    +&ndash; IndentationError
++&ndash; ValueError
+&hellip;
+{% endhighlight %}</p>
+<ul>
+<li><em>You can learn more in Python’s documentation of <a href="https://docs.python.org/3/library/exceptions.html">exceptions</a>.</em></li>
+</ul>
+<h3 id="operator-overloading">Operator Overloading</h3>
+<p><em>Some operators such as + and - can be “overloaded” such that they can have more abilities beyond simple arithmetic.</em>
+{% highlight python linenos %}
+class Vault:
+def <strong>init</strong>(self, galleons=0, sickles=0, knuts=0):
+self.galleons = galleons
+self.sickles = sickles
+self.knuts = knuts</p>
+<pre><code>def __str__(self):
+    return f&quot;{self.galleons} Galleons, {self.sickles} Sickles, {self.knuts} Knuts&quot;
+
+# this is what overwrites the operand and allows overloading.
+def __add__(self, other):
+    galleons = self.galleons + other.galleons
+    sickles = self.sickles + other.sickles
+    knuts = self.knuts + other.knuts
+    return Vault(galleons, sickles, knuts)
+</code></pre>
+<p>potter = Vault(100, 50, 25)
+print(potter)</p>
+<p>weasley = Vault(25, 50, 100)
+print(weasley)</p>
+<p>total = potter + weasley
+print(total)
+{% endhighlight %}</p>
+<p><em>You can learn more in Python’s documentation of <a href="https://docs.python.org/3/reference/datamodel.html#special-method-names">operator overloading</a>.</em></p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

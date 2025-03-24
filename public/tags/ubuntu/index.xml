@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ubuntu on Philip Brazeale</title>
+    <link>http://localhost:1313/tags/ubuntu/</link>
+    <description>Recent content in Ubuntu on Philip Brazeale</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Sep 2024 16:34:07 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/ubuntu/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Developer Week 007</title>
+      <link>http://localhost:1313/posts/dev-week-007/</link>
+      <pubDate>Sun, 01 Sep 2024 16:34:07 +0100</pubDate>
+      <guid>http://localhost:1313/posts/dev-week-007/</guid>
+      <description>&lt;h2 id=&#34;linux&#34;&gt;Linux&lt;/h2&gt;&#xA;&lt;h3 id=&#34;omakub&#34;&gt;Omakub&lt;/h3&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;An Omakase Developer Setup for Ubuntu 24.04 by DHH&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;a href=&#34;https://omakub.org/&#34;&gt;https://omakub.org/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;Took the plunge and setup Omakub on my T430. Took three attempts because of dependency glitches, but after a couple of restarts it installed without error and worked fine. Not sure I&amp;rsquo;m ready to jump into NeoVIM, but thus far I prefer the GUI compared to vanilla Ubuntu.&lt;/p&gt;&#xA;&lt;p&gt;Of course I stuck with the Tokyo Night theme, but there&amp;rsquo;s several prebuilt to chose from and the prebuilt &amp;ldquo;default&amp;rdquo; aspect is the point of Omakub.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

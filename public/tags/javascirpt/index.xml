@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JavaScirpt on Philip Brazeale</title>
+    <link>http://localhost:1313/tags/javascirpt/</link>
+    <description>Recent content in JavaScirpt on Philip Brazeale</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 25 Aug 2024 16:34:07 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/javascirpt/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Developer Week 006</title>
+      <link>http://localhost:1313/posts/dev-week-006/</link>
+      <pubDate>Sun, 25 Aug 2024 16:34:07 +0100</pubDate>
+      <guid>http://localhost:1313/posts/dev-week-006/</guid>
+      <description>&lt;h2 id=&#34;cs50x-progress-91&#34;&gt;CS50X (Progress 91%)&lt;/h2&gt;&#xA;&lt;h3 id=&#34;week-9-flask&#34;&gt;Week 9 Flask&lt;/h3&gt;&#xA;&lt;h4 id=&#34;birthdays&#34;&gt;Birthdays&lt;/h4&gt;&#xA;&lt;p&gt;This was easy enough, as the walkthrough included all the code required.&lt;/p&gt;&#xA;&lt;h4 id=&#34;finance&#34;&gt;Finance&lt;/h4&gt;&#xA;&lt;p&gt;The above was made up for by creating a larger scope for this project.&lt;/p&gt;&#xA;&lt;p&gt;This was definitely the largest assignment by scope from the course, but I don&amp;rsquo;t feel that it was overly difficult. Figuring out how to use display SQL databases on a website will be an evaluable tool moving forward.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Developer Week 005</title>
+      <link>http://localhost:1313/posts/dev-week-005/</link>
+      <pubDate>Sun, 11 Aug 2024 16:34:07 +0100</pubDate>
+      <guid>http://localhost:1313/posts/dev-week-005/</guid>
+      <description>&lt;h2 id=&#34;cs50x-progress-86&#34;&gt;CS50X (Progress 86%)&lt;/h2&gt;&#xA;&lt;h3 id=&#34;week-7-sql&#34;&gt;Week 7 SQL&lt;/h3&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://pbrazeale.github.io/CS50X-Week-7-Lecture-Notes/&#34;&gt;CS50X Week 7 Lecture Notes&lt;/a&gt;&#xA;These are by far my most detailed notes I&amp;rsquo;ve taken in the course thus far. Instantly when I reached this lecture I felt &lt;strong&gt;jazzed up&lt;/strong&gt; and ready to go!&lt;/p&gt;&#xA;&lt;p&gt;I know data, and databases aren&amp;rsquo;t the flashiest part of programing and software development, but the moment David began to talk about IMDB I knew this was &lt;strong&gt;vital&lt;/strong&gt; information I needed. Extrapolating out, I think this week&amp;rsquo;s lecture and course work might have taught me enough to implement my own data management for the software I&amp;rsquo;m planning. &lt;a href=&#34;https://pbrazeale.github.io/dev-week-001/&#34;&gt;Developer Week 001&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,11 +1,11 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://pbrazeale.github.io/'
 languageCode = 'en-us'
 title = 'Philip Brazeale'
 theme = 'm10c'
 
 [caches]
-  [caches.images]
-    dir = ':cacheDir/images'
+[caches.images]
+dir = ':cacheDir/images'
 
 [pagination]
 pagerSize = 8
@@ -13,24 +13,24 @@ pagerSize = 8
 [menu]
 [[menu.main]]
 identifier = "home"
-name = "Posts"
+name = "✉️ Posts "
 url = "/"
 weight = 1
 [[menu.main]]
 identifier = "tags"
-name = "Tags"
+name = "🏷️ Tags "
 url = "/tags/"
 weight = 2
 [[menu.main]]
 identifier = "about"
-name = "About"
+name = "🧙‍♂️ About"
 url = "/about/"
 weight = 3
 
 [params]
 author = "Philip Brazeale"
 description = "Developer | Author | Publisher"
-menu_item_separator = " | "
+menu_item_separator = "  "
 [[params.social]]
 icon = "brand-linkedin"
 name = "LinkedIn"
