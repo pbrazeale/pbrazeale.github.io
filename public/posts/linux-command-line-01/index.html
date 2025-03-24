@@ -1,0 +1,536 @@
+<!doctype html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>Linux Command Line: Part 1 Learning the Shell // Philip Brazeale</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.145.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Philip Brazeale" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/css/main.min.7ad30054107c532dea0e1b008d736261f1d1e8635b780068c8bf058d7448e498.css" />
+    
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Linux Command Line: Part 1 Learning the Shell">
+  <meta name="twitter:description" content="01 What is the Shell Terminal Emulators
+When using a graphical user interface (GUI), we need another program called a terminal emulator to interact with the shell. If we look through our desktop menus, we will probably find one. KDE uses konsole and GNOME uses gnome-terminal, though it’s likely called simply “terminal” on our menu. A number of other terminal emulators are available for Linux, but they all basically do the same thing; give us access to the shell. You will probably develop a preference for one or another terminal emulator based on the number of bells and whistles it has.">
+
+    <meta property="og:url" content="http://localhost:1313/posts/linux-command-line-01/">
+  <meta property="og:site_name" content="Philip Brazeale">
+  <meta property="og:title" content="Linux Command Line: Part 1 Learning the Shell">
+  <meta property="og:description" content="01 What is the Shell Terminal Emulators
+When using a graphical user interface (GUI), we need another program called a terminal emulator to interact with the shell. If we look through our desktop menus, we will probably find one. KDE uses konsole and GNOME uses gnome-terminal, though it’s likely called simply “terminal” on our menu. A number of other terminal emulators are available for Linux, but they all basically do the same thing; give us access to the shell. You will probably develop a preference for one or another terminal emulator based on the number of bells and whistles it has.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-02-20T10:34:07+01:00">
+    <meta property="article:modified_time" content="2025-02-20T10:34:07+01:00">
+    <meta property="article:tag" content="Linux">
+    <meta property="article:tag" content="Bash">
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="/"><img class="app-header-avatar" src="/avatar.jpg" alt="Philip Brazeale" /></a>
+      <span class="app-header-title">Philip Brazeale</span>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/">✉️ Posts </a>
+              
+          
+          <a class="app-header-menu-item" href="/tags/">🏷️ Tags </a>
+              
+          
+          <a class="app-header-menu-item" href="/about/">🧙‍♂️ About</a>
+      </nav>
+      <p>Developer | Author | Publisher</p>
+      <div class="app-header-social">
+        
+          <a href="https://www.linkedin.com/in/pbrazeale/" target="_blank" rel="noreferrer noopener me">
+            <svg class="icon icon-brand-linkedin" viewBox="0 0 24 24" fill="currentColor"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+        
+          <a href="https://github.com/pbrazeale" target="_blank" rel="noreferrer noopener me">
+            <svg class="icon icon-brand-github" viewBox="0 0 24 24" fill="currentColor"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </a>
+        
+          <a href="https://twitter.com/pbrazeale" target="_blank" rel="noreferrer noopener me">
+            <svg class="icon icon-brand-x" viewBox="0 0 24 24" fill="currentColor"><title>X</title><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+          </a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Linux Command Line: Part 1 Learning the Shell</h1>
+      <div class="post-meta">
+        <div>
+          <svg class="icon icon-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>calendar</title><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          Feb 20, 2025
+        </div>
+        <div>
+          <svg class="icon icon-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>clock</title><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          24 min read
+        </div>
+        <div>
+          <svg class="icon icon-tag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>tag</title><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
+              <a class="tag" href="/tags/linux/">Linux</a>
+              <a class="tag" href="/tags/bash/">Bash</a>
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <h2 id="01-what-is-the-shell">01 What is the Shell</h2>
+<p>Terminal Emulators</p>
+<p>When using a graphical user interface (GUI), we need another program called a terminal emulator to interact with the shell. If we look through our desktop menus, we will probably find one. KDE uses konsole and GNOME uses gnome-terminal, though it&rsquo;s likely called simply “terminal” on our menu. A number of other terminal emulators are available for Linux, but they all basically do the same thing; give us access to the shell. You will probably develop a preference for one or another terminal emulator based on the number of bells and whistles it has.</p>
+<h2 id="02-navigation">02 Navigation</h2>
+<ul>
+<li>pwd – Print name of current working directory</li>
+<li>cd – Change directory</li>
+<li>ls – List directory contents</li>
+</ul>
+<h2 id="03-exploring-the-system">03 Exploring the System</h2>
+<ul>
+<li>ls – List directory contents</li>
+<li>file – Determine file type</li>
+<li>less – View file contents</li>
+</ul>
+<p>Options and Arguments</p>
+<p>This brings us to a very important point about how most commands work. Commands are often followed by one or more options that modify their behavior, and further, by one or more arguments, the items upon which the command acts. So most commands look kind of like this:
+<code>command -options arguments</code></p>
+<h2 id="04-manipulating-files-and-directories">04 Manipulating Files and Directories</h2>
+<ul>
+<li>cp – Copy files and directories</li>
+<li>mv – Move/rename files and directories</li>
+<li>mkdir – Create directories</li>
+<li>rm – Remove files and directories</li>
+<li>ln – Create hard and symbolic links</li>
+</ul>
+<h3 id="wildcards">Wildcards</h3>
+<p><code>cp -u *.html destination</code></p>
+<blockquote>
+<p>Before we begin using our commands, we need to talk about a shell feature that makes these commands so powerful. Since the shell uses filenames so much, it provides special characters to help us rapidly specify groups of filenames. These special characters are called wildcards. Using wildcards (which is also known as globbing) allows us to select filenames based on patterns of characters. Table 4-1 lists the wildcards and what they select.</p></blockquote>
+<ul>
+<li><code>*</code> Matches any characters</li>
+<li><code>?</code> Matches any single character</li>
+<li><code>[characters]</code> Matches any character that is a member of the set characters</li>
+<li><code>[!characters]</code> or <code>[^characters]</code> Matches any character that is not a member of the set characters</li>
+<li><code>[[:class:]]</code> Matches any character that is a member of the specified class</li>
+</ul>
+<h4 id="commonly-used-character-classes">Commonly Used Character Classes</h4>
+<ul>
+<li><code>[:alnum:]</code> Matches any alphanumeric character</li>
+<li><code>[:alpha:]</code> Matches any alphabetic character</li>
+<li><code>[:digit:]</code> Matches any numeral</li>
+<li><code>[:lower:]</code> Matches any lowercase letter</li>
+<li><code>[:upper:]</code> Matches any uppercase letter</li>
+</ul>
+<h4 id="wildcard-examples">Wildcard Examples</h4>
+<ul>
+<li><code>*</code> All files</li>
+<li><code>g*</code> Any file beginning with “g”</li>
+<li><code>b*.txt</code> Any file beginning with “b” followed by any characters and ending with “.txt”</li>
+<li><code>Data???</code> Any file beginning with “Data” followed by exactly three characters</li>
+<li><code>[abc]*</code> Any file beginning with either an “a”, a “b”, or a “c”</li>
+<li><code>BACKUP.[0-9][0-9][0-9]</code> Any file beginning with “BACKUP.” followed by exactly three numerals</li>
+<li><code>[[:upper:]]*</code> Any file beginning with an uppercase letter</li>
+<li><code>[![:digit:]]*</code> Any file not beginning with a numeral</li>
+<li><code>*[[:lower:]123]</code> Any file ending with a lowercase letter or the numerals “1”, “2”, or “3”</li>
+</ul>
+<h3 id="mv--move-and-rename-files">mv – Move and Rename Files</h3>
+<p>The mv command performs both file moving and file renaming, depending on how it is used. In either case, the original filename no longer exists after the operation. mv is used in much the same way as cp, as shown here:</p>
+<p><code>mv item1 item2</code></p>
+<h2 id="05-working-with-commands">05 Working with Commands</h2>
+<ul>
+<li>type – Indicate how a command name is interpreted</li>
+<li>which – Display which executable program will be executed</li>
+<li>help – Get help for shell builtins</li>
+<li>man – Display a command&rsquo;s manual page</li>
+<li>apropos – Display a list of appropriate commands</li>
+<li>info – Display a command&rsquo;s info entry</li>
+<li>whatis – Display one-line manual page descriptions</li>
+<li>alias – Create an alias for a command</li>
+</ul>
+<h3 id="what-exactly-are-commands">What Exactly Are Commands?</h3>
+<p>A command can be one of four different things:</p>
+<ol>
+<li>An executable program like all those files we saw in /usr/bin. Within this category, programs can be compiled binaries such as programs written in C and C++, or programs written in scripting languages such as the shell, Perl, Python, Ruby, and so on.</li>
+<li>A command built into the shell itself. bash supports a number of commands internally called shell builtins. The cd command, for example, is a shell builtin.</li>
+<li>A shell function. Shell functions are miniature shell scripts incorporated into the environment. We will cover configuring the environment and writing shell functions in later chapters, but for now, just be aware that they exist.</li>
+<li>An alias. Aliases are commands that we can define ourselves, built from other commands.</li>
+</ol>
+<h3 id="getting-a-commands-documentation">Getting a Command&rsquo;s Documentation</h3>
+<p><code>help</code> – Get Help for Shell Builtins
+bash has a built-in help facility available for each of the shell builtins. To use it, type “help” followed by the name of the shell builtin.</p>
+<p><code>man</code> – Display a Program&rsquo;s Manual Page
+Most executable programs intended for command line use provide a formal piece of documentation called a manual or man page. A special paging program called man is used to view them.</p>
+<p><code>whatis</code> – Display One-line Manual Page Descriptions
+The whatis program displays the name and a one-line description of a man page matching a specified keyword:</p>
+<p><code>info</code> – Display a Program&rsquo;s Info Entry
+The GNU Project provides an alternative to man pages for their programs, called “info.” Info manuals are displayed with a reader program named, appropriately enough, info. Info pages are hyperlinked much like web pages.</p>
+<p><code>README</code> and Other Program Documentation Files
+Many software packages installed on our system have documentation files residing in the /usr/share/doc directory. Most of these are stored in plain text format and can be viewed with less. Some of the files are in HTML format and can be viewed with a web browser. We may encounter some files ending with a “.gz” extension. This indicates that they have been compressed with the gzip compression program. The gzip package includes a special version of less called zless that will display the contents of gzip-compressed text files.</p>
+<h2 id="06-redirection">06 Redirection</h2>
+<p>In this lesson we are going to unleash what may be the coolest feature of the command line. It&rsquo;s called I/O redirection. The “I/O” stands for input/output and with this facility we can redirect the input and output of commands to and from files, as well as connect multiple commands together into powerful command pipelines. To show off this facility, we will introduce the following commands:</p>
+<ul>
+<li>cat – Concatenate files</li>
+<li>sort – Sort lines of text</li>
+<li>uniq – Report or omit repeated lines</li>
+<li>grep – Print lines matching a pattern</li>
+<li>wc – Print newline, word, and byte counts for each file</li>
+<li>head – Output the first part of a file</li>
+<li>tail – Output the last part of a file</li>
+<li>tee – Read from standard input and write to standard output and files</li>
+</ul>
+<h3 id="redirecting-standard-output">Redirecting Standard Output</h3>
+<p>I/O redirection allows us to redefine where standard output goes. To redirect standard output to another file instead of the screen, we use the &gt; redirection operator followed by the name of the file. Why would we want to do this? It&rsquo;s often useful to store the output of a command in a file. For example, we could tell the shell to send the output of the ls command to the file ls-output.txt instead of the screen:</p>
+<p><code>[me@linuxbox ~]$ ls -l /usr/bin &gt; ls-output.txt</code></p>
+<h3 id="group-commands">Group Commands</h3>
+<p>Let’s imagine a situation where we want to execute a series of commands and send the results to a log file. With we know already, we could do this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">[</span>me@linuxbox ~<span style="color:#f92672">]</span>$ command1 &gt; logfile.txt
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>me@linuxbox ~<span style="color:#f92672">]</span>$ command2 &gt;&gt; logfile.txt
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>me@linuxbox ~<span style="color:#f92672">]</span>$ command3 &gt;&gt; logfile.txt
+</span></span></code></pre></div><p>The first command in this sequence creates/truncates a file named logfile.txt and each subsequent command appends its output to that file. This technique will work but there is a lot of redundant typing. There must be a better way.
+As we saw in the previous chapter, we can put multiple commands on a single line like this:</p>
+<p><code>[me@linuxbox ~]$ command1; command2; command3</code></p>
+<p>So we could place all of our commands and redirections on a single line:</p>
+<p><code>[me@linuxbox ~]$ command1 &gt; logfile.txt; command2 &gt;&gt; logfile.txt; command3 &gt;&gt; logfile.txt</code></p>
+<p>But what if we could treat the sequence as a single entity with a single output stream? We can do this by creating a group command. To do this, we surround our sequence with brace characters:</p>
+<p><code>[me@linuxbox ~]$ { command1; command2; command3; } &gt; logfile.txt</code></p>
+<p>With our sequence surrounded by braces, the shell will consider it a single command in terms of redirection. Note that the shell requires whitespace around the braces and the final command in the sequence must be terminated with either a semicolon or a newline.</p>
+<h3 id="redirecting-standard-input">Redirecting Standard Input</h3>
+<p>cat – Concatenate Files
+The cat command reads one or more files and copies them to standard output like so:
+<code>cat [file...]</code></p>
+<h3 id="pipelines">Pipelines</h3>
+<p>The capability of commands to read data from standard input and send to standard output is utilized by a shell feature called pipelines. Using the pipe operator | (vertical bar), the standard output of one command can be piped into the standard input of another.</p>
+<p><code>command1 | command2</code></p>
+<h4 id="the-difference-between--and-">The Difference Between <code>&gt;</code> and <code>|</code></h4>
+<p>At first glance, it may be hard to understand the redirection performed by the pipeline operator | versus the redirection operator &gt;. Simply put, the redirection operator connects a command with a file, while the pipeline operator connects the output of one command with the input of a second command.
+<code>command1 &gt; file1</code>
+<code>command1 | command2</code></p>
+<p>A lot of people will try the following when they are learning about pipelines, “just to see what happens”:
+<code>command1 &gt; command2</code></p>
+<p>Answer: sometimes something really bad.</p>
+<p>Here is an actual example submitted by a reader who was administering a Linux-based server appliance. As the superuser, he did this:
+<code># cd /usr/bin</code>
+<code># ls &gt; less</code></p>
+<p>The first command put him in the directory where most programs are stored and the second command told the shell to overwrite the file less with the output of the ls command. Since the /usr/bin directory already contained a file named less (the less program), the second command overwrote the less program file with the text from ls, thus destroying the less program on his system.</p>
+<p>The lesson here is that the &gt; redirection operator silently creates or overwrites files, so you need to treat it with a lot of respect.</p>
+<h4 id="filters">Filters</h4>
+<p>Pipelines are often used to perform complex operations on data. It is possible to put several commands together into a pipeline. Frequently, the commands used this way are referred to as filters. Filters take input, change it somehow, and then output it. The first one we will try is sort. Imagine we wanted to make a combined list of all the executable programs in /bin and /usr/bin, put them in sorted order and view the resulting list:
+<code>[me@linuxbox ~]$ ls /bin /usr/bin | sort | less</code></p>
+<h3 id="wc--print-line-word-and-byte-counts">wc – Print Line, Word, and Byte Counts</h3>
+<p>The wc (word count) command is used to display the number of lines, words, and bytes contained in files.</p>
+<h3 id="grep--print-lines-matching-a-pattern">grep – Print Lines Matching a Pattern</h3>
+<p>grep is a powerful program used to find text patterns within files. It&rsquo;s used like this:
+<code>grep pattern [file...]</code></p>
+<p>When grep encounters a “pattern” in the file, it prints out the lines containing it. The patterns that grep can match can be very complex, but for now we will concentrate on simple text matches. We&rsquo;ll cover the advanced patterns, called regular expressions in Chapter 19.</p>
+<p>Here are a few handy options for grep:</p>
+<ul>
+<li>-i, causes grep to ignore case when performing the search (normally searches are case sensitive)</li>
+<li>-l, causes grep to only output the names of the files containing text that matches the pattern.</li>
+<li>-v, causes grep to print only those lines that do not match the pattern.</li>
+<li>-w, causes grep to only match whole words.</li>
+</ul>
+<h3 id="head--tail--print-first--last-part-of-files">head / tail – Print First / Last Part of Files</h3>
+<p>Sometimes we don&rsquo;t want all the output from a command. We may only want the first few lines or the last few lines. The head command prints the first ten lines of a file, and the tail command prints the last ten lines. While both commands print ten lines of text by default, this can be adjusted with the -n option.</p>
+<h3 id="tee--read-from-stdin-and-output-to-stdout-and-files">tee – Read from Stdin and Output to Stdout and Files</h3>
+<p>In keeping with our plumbing metaphor, Linux provides a command called tee which creates a “tee” fitting on our pipe. The tee program reads standard input and copies it to both standard output (allowing the data to continue down the pipeline) and to one or more files. This is useful for capturing a pipeline&rsquo;s contents at an intermediate stage of processing. Here we repeat one of our earlier examples, this time including tee to capture the entire directory listing to the file ls.txt before grep filters the pipeline&rsquo;s contents:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">[</span>me@linuxbox ~<span style="color:#f92672">]</span>$ ls /usr/bin | tee ls.txt | grep
+</span></span><span style="display:flex;"><span>bunzip2
+</span></span><span style="display:flex;"><span>bzip2
+</span></span><span style="display:flex;"><span>gunzip
+</span></span><span style="display:flex;"><span>gzip
+</span></span><span style="display:flex;"><span>unzip
+</span></span><span style="display:flex;"><span>zip
+</span></span><span style="display:flex;"><span>zipcloak
+</span></span><span style="display:flex;"><span>zipgrep
+</span></span><span style="display:flex;"><span>zipinfo
+</span></span><span style="display:flex;"><span>zipnote
+</span></span><span style="display:flex;"><span>zipsplit
+</span></span></code></pre></div><h2 id="07-seeing-the-world-as-the-shell-sees-it">07 Seeing the World as the Shell Sees It</h2>
+<h3 id="expansion">Expansion</h3>
+<p>Each time we type a command and press the Enter key, bash performs several substitutions upon the text before it carries out our command.</p>
+<h4 id="tilde-expansion">Tilde Expansion</h4>
+<p>As we may recall from our introduction to the cd command, the tilde character (~) has a special meaning. When used at the beginning of a word, it expands into the name of the home directory of the named user or, if no user is named, the home directory of the current user.</p>
+<h4 id="parameter-expansion">Parameter Expansion</h4>
+<p>We&rsquo;re going to touch only briefly on parameter expansion in this chapter, but we&rsquo;ll be covering it extensively later. It&rsquo;s a feature that is more useful in shell scripts than directly on the command line. Many of its capabilities have to do with the system&rsquo;s ability to store small chunks of data and to give each chunk a name. Many such chunks, more properly called variables, are available for our examination. For example, the variable named USER contains our username.</p>
+<h2 id="08-advanced-keyboard-tricks">08 Advanced Keyboard Tricks</h2>
+<p>I often kiddingly describe Unix as “the operating system for people who like to type.”</p>
+<p>clear – Clear the screen</p>
+<p>history – Display the contents of the history list</p>
+<h4 id="command-line-editing">Command Line Editing</h4>
+<p>[[bash]] uses a library (a shared collection of routines that different programs can use) called Readline to implement command line editing.</p>
+<h4 id="cursor-movement">Cursor Movement</h4>
+<p>The following table lists the keys used to move the cursor:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Ctrl-a
+</span></span><span style="display:flex;"><span>Move cursor to the beginning of the line.
+</span></span><span style="display:flex;"><span>Ctrl-e
+</span></span><span style="display:flex;"><span>Move cursor to the end of the line.
+</span></span><span style="display:flex;"><span>Ctrl-f
+</span></span><span style="display:flex;"><span>Move cursor forward one character; same as the right arrow key.
+</span></span><span style="display:flex;"><span>Ctrl-b
+</span></span><span style="display:flex;"><span>Move cursor backward one character; same as the left arrow key.
+</span></span><span style="display:flex;"><span>Alt-f
+</span></span><span style="display:flex;"><span>Move cursor forward one word.
+</span></span><span style="display:flex;"><span>Alt-b
+</span></span><span style="display:flex;"><span>Move cursor backward one word.
+</span></span><span style="display:flex;"><span>Ctrl-l
+</span></span><span style="display:flex;"><span>Clear the screen and move the cursor to the top-left corner. The clear command does the same thing.
+</span></span></code></pre></div><h4 id="modifying-text">Modifying Text</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Ctrl-d
+</span></span><span style="display:flex;"><span>Delete the character at the cursor location.
+</span></span><span style="display:flex;"><span>Ctrl-t
+</span></span><span style="display:flex;"><span>Transpose <span style="color:#f92672">(</span>exchange<span style="color:#f92672">)</span> the character at the cursor location with the one preceding it.
+</span></span><span style="display:flex;"><span>Alt-t
+</span></span><span style="display:flex;"><span>Transpose the word at the cursor location with the one preceding it.
+</span></span><span style="display:flex;"><span>Alt-l
+</span></span><span style="display:flex;"><span>Convert the characters from the cursor location to the end of the word to lowercase.
+</span></span><span style="display:flex;"><span>Alt-u
+</span></span><span style="display:flex;"><span>Convert the characters from the cursor location to the end of the word to uppercase.
+</span></span></code></pre></div><h4 id="cutting-and-pasting-killing-and-yanking-text">Cutting and Pasting (Killing and Yanking) Text</h4>
+<p>The Readline documentation uses the terms killing and yanking to refer to what we would commonly call cutting and pasting. Items that are cut are stored in a buffer (a temporary storage area in memory) called the kill-ring.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Ctrl-k
+</span></span><span style="display:flex;"><span>Kill text from the cursor location to the end of line.
+</span></span><span style="display:flex;"><span>Ctrl-u
+</span></span><span style="display:flex;"><span>Kill text from the cursor location to the beginning of the line.
+</span></span><span style="display:flex;"><span>Alt-d
+</span></span><span style="display:flex;"><span>Kill text from the cursor location to the end of the current word.
+</span></span><span style="display:flex;"><span>Alt-Backspace
+</span></span><span style="display:flex;"><span>Kill text from the cursor location to the beginning of the current word. If the cursor is at the beginning of a word, kill the previous word.
+</span></span><span style="display:flex;"><span>Ctrl-y
+</span></span><span style="display:flex;"><span>Yank text from the kill-ring and insert it at the cursor location.
+</span></span></code></pre></div><h4 id="the-meta-key">The Meta Key</h4>
+<p>If you venture into the Readline documentation, which can be found in the “READLINE” section of the bash man page, you will encounter the term meta key. On modern keyboards this maps to the Alt key but it wasn&rsquo;t always so.</p>
+<h3 id="completion">Completion</h3>
+<p>Another way that the shell can help us is through a mechanism called completion. Completion occurs when we press the tab key while typing a command.</p>
+<h4 id="programmable-completion">Programmable Completion</h4>
+<p>Recent versions of bash have a facility called programmable completion. Programmable completion allows you (or more likely, your distribution provider) to add additional completion rules. Usually this is done to add support for specific applications. For example, it is possible to add completions for the option list of a command or match particular file types that an application supports. Ubuntu has a fairly large set defined by default. Programmable completion is implemented by shell functions, a kind of mini shell script that we will cover in later chapters. If you are curious, try the following:
+<code>set | less</code>
+and see if you can find them. Not all distributions include them by default.</p>
+<h3 id="using-history">Using History</h3>
+<p>This list of commands is kept in our home directory in a file called <code>.bash_history</code>. The history facility is a useful resource for reducing the amount of typing we have to do, especially when combined with command line editing.</p>
+<h4 id="history-commands">History Commands</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Ctrl-p
+</span></span><span style="display:flex;"><span>Move to the previous history entry. This is the same action as the up arrow.
+</span></span><span style="display:flex;"><span>Ctrl-n
+</span></span><span style="display:flex;"><span>Move to the next history entry. This is the same action as the down arrow.
+</span></span><span style="display:flex;"><span>Alt-&lt;
+</span></span><span style="display:flex;"><span>Move to the beginning <span style="color:#f92672">(</span>top<span style="color:#f92672">)</span> of the history list.
+</span></span><span style="display:flex;"><span>Alt-&gt;
+</span></span><span style="display:flex;"><span>Move to the end <span style="color:#f92672">(</span>bottom<span style="color:#f92672">)</span> of the history list, i.e., the current command line.
+</span></span><span style="display:flex;"><span>Ctrl-r
+</span></span><span style="display:flex;"><span>Reverse incremental search. This searches incrementally from the current command line up the history list.
+</span></span><span style="display:flex;"><span>Alt-p
+</span></span><span style="display:flex;"><span>Reverse search, nonincremental. With this key, type in the search string and press enter before the search is performed.
+</span></span><span style="display:flex;"><span>Alt-n
+</span></span><span style="display:flex;"><span>Forward search, nonincremental.
+</span></span><span style="display:flex;"><span>Ctrl-o
+</span></span><span style="display:flex;"><span>Execute the current item in the history list and advance to the next
+</span></span></code></pre></div><h4 id="history-expansion-commands">History Expansion Commands</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>!!
+</span></span><span style="display:flex;"><span>Repeat the last command. It is probably easier to press up arrow and enter.
+</span></span><span style="display:flex;"><span>!number
+</span></span><span style="display:flex;"><span>Repeat history list item number.
+</span></span><span style="display:flex;"><span>!string
+</span></span><span style="display:flex;"><span>Repeat last history list item starting with string.
+</span></span><span style="display:flex;"><span>!?string
+</span></span><span style="display:flex;"><span>Repeat last history list item containing string.
+</span></span></code></pre></div><h4 id="script">script</h4>
+<p>In addition to the command history feature in bash, most Linux distributions include a program called script that can be used to record an entire shell session and store it in a file. The basic syntax of the command is as follows:
+<code>script [file]</code>
+where file is the name of the file used for storing the recording. If no file is specified, the file typescript is used. See the script man page for a complete list of the program’s options and features.</p>
+<h2 id="09-permissions">09 Permissions</h2>
+<p>Operating systems in the Unix tradition differ from those in the MS-DOS tradition in that they are not only multitasking systems, but also multi-user systems.</p>
+<h3 id="users-group-members-and-everybody-else">Users, Group Members, and Everybody Else</h3>
+<p>In the Unix security model, a user may own files and directories. When a user owns a file or directory, the user has control over its access.</p>
+<p>When user accounts are created, users are assigned a number called a user ID (uid) which is then, for the sake of the humans, mapped to a username. The user is assigned a primary group ID (gid) and may belong to additional groups.</p>
+<p>User accounts are defined in the /etc/passwd file and groups are defined in the /etc/group file. When user accounts and groups are created, these files are modified along with /etc/shadow which holds information about the user&rsquo;s password. For each user account, the /etc/passwd file defines the user (login) name, uid, gid, user’s real name, home directory, and login shell. If we examine the contents of /etc/passwd and /etc/group, we notice that besides the regular user accounts, there are accounts for the superuser (always uid 0) and various other system users.</p>
+<h3 id="reading-writing-and-executing">Reading, Writing, and Executing</h3>
+<h4 id="file-types">File Types</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>-
+</span></span><span style="display:flex;"><span>A regular file.
+</span></span><span style="display:flex;"><span>d
+</span></span><span style="display:flex;"><span>A directory.
+</span></span><span style="display:flex;"><span>l
+</span></span><span style="display:flex;"><span>A symbolic link. Notice that with symbolic links, the remaining file attributes are always “rwxrwxrwx” and are dummy values. The real file attributes are those of the file the symbolic link points to.
+</span></span><span style="display:flex;"><span>c
+</span></span><span style="display:flex;"><span>A character special file. This file type refers to a device that handles data as a stream of bytes, such as a terminal or /dev/null.
+</span></span><span style="display:flex;"><span>b
+</span></span><span style="display:flex;"><span>A block special file. This file type refers to a device that handles data in blocks, such as a hard disk or DVD drive.
+</span></span></code></pre></div><h4 id="permission-attributes">Permission Attributes</h4>
+<pre tabindex="0"><code>r
+Allows a file to be opened and read.
+Allows a directory&#39;s contents to be listed, but no file information is available unless the execute attribute is also set.
+w
+Allows a file to be written to or truncated, however this attribute does not allow files to be renamed or deleted. The ability to delete or rename files is determined by directory attributes.
+Allows files within a directory to be created, deleted, and renamed if the execute attribute is also set.
+x
+Allows a file to be treated as a program and executed. Program files written in scripting languages must also be set as readable to be executed.
+Allows a directory to be entered (i.e., cd directory) and directory metadata (i.e, ls -l directory) to be accessed. File operations such cp, rm, and mv require this access to the directory.
+</code></pre><h5 id="permission-attribute-examples">Permission Attribute Examples</h5>
+<pre tabindex="0"><code>-rwx------
+A regular file that is readable, writable, and executable by the file&#39;s owner. No one else has any access.
+-rw-------
+A regular file that is readable and writable by the file&#39;s owner. No one else has any access.
+-rw-r--r--
+A regular file that is readable and writable by the file&#39;s owner. Members of the file&#39;s owner group may read the file. The file is readable by others.
+-rwxr-xr-x
+A regular file that is readable, writable, and executable by the file&#39;s owner. The file may be read and executed by everybody else.
+-rw-rw----
+A regular file that is readable and writable by the file&#39;s owner and members of the file&#39;s group owner only.
+lrwxrwxrwx
+A symbolic link. All symbolic links have “dummy” permissions. The real permissions are kept with the actual file pointed to by the symbolic link.
+drwxrwx---
+A directory. The owner and the members of the owner group may enter the directory and create, rename and remove files within the directory.
+drwxr-x---
+A directory. The owner may enter the directory and create, rename, and delete files within the directory. Members of the owner group may enter the directory but cannot create, delete, or rename files.
+</code></pre><h4 id="chmod--change-file-mode">chmod – Change File Mode</h4>
+<pre tabindex="0"><code>0
+000
+---
+
+1
+001
+--x
+
+2
+010
+-w-
+
+3
+011
+-wx
+
+4
+100
+r--
+
+5
+101
+r-x
+
+6
+110
+rw-
+
+7
+111
+rwx
+</code></pre><h4 id="chmod-symbolic-notation">chmod Symbolic Notation</h4>
+<pre tabindex="0"><code>u
+Short for “user” i.e. the file or directory’s owner.
+g
+Group owner.
+o
+Short for others.
+a
+Short for “all.” This is the combination of “u”, “g”, and “o”.
+</code></pre><h5 id="chmod-symbolic-notation-examples">chmod Symbolic Notation Examples</h5>
+<pre tabindex="0"><code>u+x
+Add execute permission for the owner.
+u-x
+Remove execute permission from the owner.
++x
+Add execute permission for the user, group, and others. This is equivalent to a+x.
+o-rw
+Remove the read and write permissions from anyone besides the user and group owner.
+go=rw
+Set the group owner and anyone besides the user to have read and write permission. If either the group owner or others previously had execute permission, it is removed.
+u+x,go=rx
+Add execute permission for the user and set the permissions for the group and others to read and execute. Multiple specifications may be separated by commas.
+</code></pre><h4 id="umask--set-default-permissions">umask – Set Default Permissions</h4>
+<p>The umask command controls the default permissions given to a file when it is created. It uses octal notation to express a mask of bits to be removed from a file&rsquo;s mode attributes.</p>
+<h3 id="changing-identities">Changing Identities</h3>
+<p>Sometimes we may find it necessary to take on the identity of another user. Often we want to gain superuser privileges to carry out some administrative task, but it is also possible to “become” another regular user for such things as testing an account. There are three ways to take on an alternate identity.</p>
+<ol>
+<li>Log out and log back in as the alternate user.</li>
+<li>Use the su command.</li>
+<li>Use the sudo command.</li>
+</ol>
+<h4 id="su--run-a-shell-with-substitute-user-and-group-ids">su – Run a Shell with Substitute User and Group IDs</h4>
+<p>The su command is used to start a shell as another user.</p>
+<h4 id="sudo--execute-a-command-as-another-user">sudo – Execute a Command as Another User</h4>
+<p>The sudo command is like su in many ways but has some important additional capabilities. The administrator can configure sudo to allow an ordinary user to execute commands as a different user (usually the superuser) in a controlled way.</p>
+<h4 id="modern-linux-distributions-and-sudo">Modern Linux Distributions and sudo</h4>
+<p>When Ubuntu was introduced, its creators took a different tack. By default, Ubuntu disables logins to the root account (by failing to set a password for the account) and instead uses sudo to grant superuser privileges. The initial user account is granted full access to superuser privileges via sudo and may grant similar powers to subsequent user accounts. This method of granting privileges is now the accepted standard is most modern distributions.</p>
+<h4 id="chown--change-file-owner-and-group">chown – Change File Owner and Group</h4>
+<p>The chown command is used to change the owner and group owner of a file or directory. Superuser privileges are required to use this command.</p>
+<h4 id="chgrp--change-group-ownership">chgrp – Change Group Ownership</h4>
+<p>In older versions of Unix, the chown command only changed file ownership, not group ownership. For that purpose, a separate command, chgrp was used. It works much the same way as chown, except for being more limited.</p>
+<h3 id="changing-your-password">Changing Your Password</h3>
+<p>To set or change a password, the passwd command is used.
+<code>passwd [user]</code></p>
+<p>The passwd, addgroup, and usermod commands are part of a suite of commands in the shadow-utils package</p>
+<h4 id="shadow-utils-commands">shadow-utils Commands</h4>
+<pre tabindex="0"><code>lastlog
+Reports the most recent login of all users or of a given user.
+useradd
+Create a new user or update default new user information.
+userdel
+Delete a user account and related files.
+usermod
+Modify a user account.
+groupadd
+Create a new group.
+groupdel
+Delete a group.
+groupmod
+.Modify a group definition on the system.
+</code></pre><h2 id="10-processes">10 Processes</h2>
+<p>Modern operating systems are usually multitasking, meaning they create the illusion of doing more than one thing at once by rapidly switching from one executing program to another. The Linux kernel manages this through the use of processes. Processes are how Linux organizes the different programs waiting for their turn at the CPU.</p>
+<ul>
+<li>ps – Report a snapshot of current processes</li>
+<li>top – Display tasks</li>
+<li>jobs – List active jobs</li>
+<li>bg – Place a job in the background</li>
+<li>fg – Place a job in the foreground</li>
+<li>kill – Send a signal to a process</li>
+<li>killall – Kill processes by name</li>
+<li>nice - Run a program with modified scheduling priority</li>
+<li>renice - Alter priority of running processes</li>
+<li>nohup - Run a command immune to hangups</li>
+<li>halt/poweroff/reboot - Halt, power-off, or reboot the system</li>
+<li>shutdown – Shutdown or reboot the system</li>
+</ul>
+<h3 id="how-a-process-works">How a Process Works</h3>
+<p>When a system starts up, the kernel initiates a few of its own activities as processes and launches a program called init. init, in turn, starts systemd which starts all the system services. In older Linux distributions init runs a series of shell scripts (located in <code>/etc</code>) called init scripts to perform a similar function. Many system services are implemented as daemon programs, programs that just sit in the background and do their thing without having any user interface. So, even if we are not logged in, the system is at least a little busy performing routine stuff.</p>
+<p>The fact that a program can launch other programs is expressed in the process scheme as a <strong>parent process</strong> producing a <strong>child process</strong>.</p>
+<h3 id="viewing-processes">Viewing Processes</h3>
+<p>The most commonly used tool to view processes (there are several) is the ps command.</p>
+<h4 id="process-states">Process States</h4>
+<pre tabindex="0"><code>R
+Running. This means that the process is running or ready to run.
+S
+Sleeping. The process is not running; rather, it is waiting for an event, such as a keystroke or network packet.
+D
+Uninterruptible sleep. The process is waiting for I/O such as a disk drive.
+T
+Stopped. The process has been instructed to stop. More on this later in the chapter.
+Z
+A defunct or “zombie” process. This is a child process that has terminated but has not been cleaned up by its parent.
+&lt;
+A high-priority process. It&#39;s possible to grant more importance to a process, giving it more time on the CPU. This property of a process is called niceness. A process with high priority is said to be less nice because it&#39;s taking more of the CPU&#39;s time, which leaves less for everybody else.
+N
+A low-priority process. A process with low priority (a “nice” process) will get processor time only after other processes with higher priority have been serviced.
+</code></pre><h4 id="viewing-processes-dynamically-with-top">Viewing Processes Dynamically with top</h4>
+<p>While the ps command can reveal a lot about what the machine is doing, it provides only a snapshot of the machine&rsquo;s state at the moment the ps command is executed. To see a more dynamic view of the machine&rsquo;s activity, we use the <code>top</code> command:</p>
+<p>The top program displays a continuously updating (by default, every three seconds) display of the system processes listed in order of process activity. The name top comes from the fact that the top program is used to see the “top” processes on the system. The top display consists of two parts: a system summary at the top of the display, followed by a table of processes sorted by CPU activity:</p>
+<p>The top program accepts a number of keyboard commands. The two most interesting are h, which displays the program&rsquo;s help screen, and q, which quits top.</p>
+<p>Both major desktop environments provide graphical applications that display information similar to top (in much the same way that Task Manager in Windows works), but top is better than the graphical versions because it is faster and it consumes far fewer system resources. After all, our system monitor program shouldn&rsquo;t be the source of the system slowdown that we are trying to track.</p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bash on Philip Brazeale</title>
+    <link>http://localhost:1313/tags/bash/</link>
+    <description>Recent content in Bash on Philip Brazeale</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 10 Mar 2025 10:34:07 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/bash/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux Command Line: Part 3 Common Tasks and Essential Tools</title>
+      <link>http://localhost:1313/posts/linux-command-line-03/</link>
+      <pubDate>Mon, 10 Mar 2025 10:34:07 +0100</pubDate>
+      <guid>http://localhost:1313/posts/linux-command-line-03/</guid>
+      <description>&lt;h2 id=&#34;14--package-management&#34;&gt;14 – Package Management&lt;/h2&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Today, most people can satisfy all of their software needs by installing packages from their Linux distributor. This contrasts with the early days of Linux, when one had to download and compile source code to install software. There isn’t anything wrong with compiling source code; in fact, having access to source code is the great wonder of Linux. It gives us (and everybody else) the ability to examine and improve the system.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Linux Command Line: Part 1 Learning the Shell</title>
+      <link>http://localhost:1313/posts/linux-command-line-01/</link>
+      <pubDate>Thu, 20 Feb 2025 10:34:07 +0100</pubDate>
+      <guid>http://localhost:1313/posts/linux-command-line-01/</guid>
+      <description>&lt;h2 id=&#34;01-what-is-the-shell&#34;&gt;01 What is the Shell&lt;/h2&gt;&#xA;&lt;p&gt;Terminal Emulators&lt;/p&gt;&#xA;&lt;p&gt;When using a graphical user interface (GUI), we need another program called a terminal emulator to interact with the shell. If we look through our desktop menus, we will probably find one. KDE uses konsole and GNOME uses gnome-terminal, though it&amp;rsquo;s likely called simply “terminal” on our menu. A number of other terminal emulators are available for Linux, but they all basically do the same thing; give us access to the shell. You will probably develop a preference for one or another terminal emulator based on the number of bells and whistles it has.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Linux Command Line: Part 1 Learning the Shell</title>
+      <link>http://localhost:1313/posts/linux-command-line-02/</link>
+      <pubDate>Thu, 20 Feb 2025 10:34:07 +0100</pubDate>
+      <guid>http://localhost:1313/posts/linux-command-line-02/</guid>
+      <description>&lt;h2 id=&#34;01-what-is-the-shell&#34;&gt;01 What is the Shell&lt;/h2&gt;&#xA;&lt;p&gt;Terminal Emulators&lt;/p&gt;&#xA;&lt;p&gt;When using a graphical user interface (GUI), we need another program called a terminal emulator to interact with the shell. If we look through our desktop menus, we will probably find one. KDE uses konsole and GNOME uses gnome-terminal, though it&amp;rsquo;s likely called simply “terminal” on our menu. A number of other terminal emulators are available for Linux, but they all basically do the same thing; give us access to the shell. You will probably develop a preference for one or another terminal emulator based on the number of bells and whistles it has.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

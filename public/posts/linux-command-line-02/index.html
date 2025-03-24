@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>Linux Command Line: Part 2 Configuration and the Environment // Philip Brazeale</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.145.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Philip Brazeale" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/css/main.min.7ad30054107c532dea0e1b008d736261f1d1e8635b780068c8bf058d7448e498.css" />
+    
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Linux Command Line: Part 2 Configuration and the Environment">
+  <meta name="twitter:description" content="11 - The Environment This shows an important rule regarding child processes: a child process cannot alter the environment of its parent.
+Launching a Program with a Temporary Environment Another handy trick the shell provides is the ability to execute a command and give it a temporary environment variable. Sometimes we want to run a program and give it a special environment value. A good example is the man command which looks for an environment variable named MANWIDTH that tells man how wide to format its output.">
+
+    <meta property="og:url" content="http://localhost:1313/posts/linux-command-line-02/">
+  <meta property="og:site_name" content="Philip Brazeale">
+  <meta property="og:title" content="Linux Command Line: Part 2 Configuration and the Environment">
+  <meta property="og:description" content="11 - The Environment This shows an important rule regarding child processes: a child process cannot alter the environment of its parent.
+Launching a Program with a Temporary Environment Another handy trick the shell provides is the ability to execute a command and give it a temporary environment variable. Sometimes we want to run a program and give it a special environment value. A good example is the man command which looks for an environment variable named MANWIDTH that tells man how wide to format its output.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-03-10T10:34:07+01:00">
+    <meta property="article:modified_time" content="2025-03-10T10:34:07+01:00">
+    <meta property="article:tag" content="Linux">
+    <meta property="article:tag" content="Bash">
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="/"><img class="app-header-avatar" src="/avatar.jpg" alt="Philip Brazeale" /></a>
+      <span class="app-header-title">Philip Brazeale</span>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/">✉️ Posts </a>
+              
+          
+          <a class="app-header-menu-item" href="/tags/">🏷️ Tags </a>
+              
+          
+          <a class="app-header-menu-item" href="/about/">🧙‍♂️ About</a>
+      </nav>
+      <p>Developer | Author | Publisher</p>
+      <div class="app-header-social">
+        
+          <a href="https://www.linkedin.com/in/pbrazeale/" target="_blank" rel="noreferrer noopener me">
+            <svg class="icon icon-brand-linkedin" viewBox="0 0 24 24" fill="currentColor"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+        
+          <a href="https://github.com/pbrazeale" target="_blank" rel="noreferrer noopener me">
+            <svg class="icon icon-brand-github" viewBox="0 0 24 24" fill="currentColor"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </a>
+        
+          <a href="https://twitter.com/pbrazeale" target="_blank" rel="noreferrer noopener me">
+            <svg class="icon icon-brand-x" viewBox="0 0 24 24" fill="currentColor"><title>X</title><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+          </a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Linux Command Line: Part 2 Configuration and the Environment</h1>
+      <div class="post-meta">
+        <div>
+          <svg class="icon icon-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>calendar</title><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          Mar 10, 2025
+        </div>
+        <div>
+          <svg class="icon icon-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>clock</title><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          3 min read
+        </div>
+        <div>
+          <svg class="icon icon-tag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>tag</title><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
+              <a class="tag" href="/tags/linux/">Linux</a>
+              <a class="tag" href="/tags/bash/">Bash</a>
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <h2 id="11---the-environment">11 - The Environment</h2>
+<blockquote>
+<p>This shows an important rule regarding child processes: a child process cannot alter the environment of its parent.</p></blockquote>
+<h3 id="launching-a-program-with-a-temporary-environment">Launching a Program with a Temporary Environment</h3>
+<blockquote>
+<p>Another handy trick the shell provides is the ability to execute a command and give it a temporary environment variable. Sometimes we want to run a program and give it a special environment value. A good example is the man command which looks for an environment variable named MANWIDTH that tells man how wide to format its output.</p></blockquote>
+<h3 id="modifying-the-environment">Modifying the Environment</h3>
+<blockquote>
+<p>As a general rule, to add directories to your PATH or define additional environment variables, place those changes in .bash_profile (or the equivalent, according to your distribution; for example, Ubuntu uses .profile). For everything else, place the changes in .bashrc.</p></blockquote>
+<p><strong>Note:</strong> Unless you are the system administrator and need to change the defaults for all users of the system, restrict your modifications to the files in your home directory. It is certainly possible to change the files in /etc such as profile, and in many cases it would be sensible to do so, but for now, let&rsquo;s play it safe.</p>
+<p>Let&rsquo;s fire up nano and edit the .bashrc file. But before we do that, let&rsquo;s practice some “safe computing.” Whenever we edit an important configuration file, it is always a good idea to create a backup copy of the file first. This protects us in case we mess up the file while editing. To create a backup of the .bashrc file, do this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ cp .bashrc .bashrc.bak
+</span></span></code></pre></div><blockquote>
+<p>The extensions “.bak”, “.sav”, “.old”, and “.orig” are all popular ways of indicating a backup file. Oh, and remember that cp will overwrite existing files silently.</p></blockquote>
+<blockquote>
+<p>Whenever you modify configuration files it&rsquo;s a good idea to add some comments to document your changes.
+Shell scripts and bash startup files use a “#” symbol to begin a comment.</p></blockquote>
+<h2 id="12--a-gentle-introduction-to-vim">12 – A Gentle Introduction to vi(m)</h2>
+<p><strong>Putting this off until I need it</strong></p>
+<h2 id="13--customizing-the-prompt">13 – Customizing the Prompt</h2>
+<h3 id="escape-codes-used-in-shell-prompts">Escape Codes Used in Shell Prompts</h3>
+<table>
+  <thead>
+      <tr>
+          <th>Sequence</th>
+          <th>Value Displayed</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>\a</td>
+          <td>ASCII bell. This makes the computer beep when it is encountered.</td>
+      </tr>
+      <tr>
+          <td>\d</td>
+          <td>Current date in day, month, date format. For example, “Mon May 26.”</td>
+      </tr>
+      <tr>
+          <td>\h</td>
+          <td>Hostname of the local machine minus the trailing domain name.</td>
+      </tr>
+      <tr>
+          <td>\H</td>
+          <td>Full hostname.</td>
+      </tr>
+      <tr>
+          <td>\j</td>
+          <td>Number of jobs running in the current shell session.</td>
+      </tr>
+      <tr>
+          <td>\l</td>
+          <td>Name of the current terminal device.</td>
+      </tr>
+      <tr>
+          <td>\n</td>
+          <td>A newline character.</td>
+      </tr>
+      <tr>
+          <td>\r</td>
+          <td>A carriage return.</td>
+      </tr>
+      <tr>
+          <td>\s</td>
+          <td>Name of the shell program.</td>
+      </tr>
+      <tr>
+          <td>\t</td>
+          <td>Current time in 24-hour hours:minutes:seconds format.</td>
+      </tr>
+      <tr>
+          <td>\T</td>
+          <td>Current time in 12-hour format.</td>
+      </tr>
+      <tr>
+          <td>@</td>
+          <td>Current time in 12-hour AM/PM format.</td>
+      </tr>
+      <tr>
+          <td>\A</td>
+          <td>Current time in 24-hour hours:minutes format.</td>
+      </tr>
+      <tr>
+          <td>\u</td>
+          <td>Username of the current user.</td>
+      </tr>
+      <tr>
+          <td>\v</td>
+          <td>Version number of the shell.</td>
+      </tr>
+      <tr>
+          <td>\V</td>
+          <td>Version and release numbers of the shell.</td>
+      </tr>
+      <tr>
+          <td>\w</td>
+          <td>Name of the current working directory.</td>
+      </tr>
+      <tr>
+          <td>\W</td>
+          <td>Last part of the current working directory name.</td>
+      </tr>
+      <tr>
+          <td>!</td>
+          <td>History number of the current command.</td>
+      </tr>
+      <tr>
+          <td>#</td>
+          <td>Number of commands entered during this shell session.</td>
+      </tr>
+      <tr>
+          <td>$</td>
+          <td>This displays a “$” character unless we have superuser privileges. In that case, it displays a “#” instead.</td>
+      </tr>
+      <tr>
+          <td>[</td>
+          <td>Signals the start of a series of one or more non-printing characters. This is used to embed non-printing control characters that manipulate the terminal emulator in some way, such as moving the cursor or changing text colors.</td>
+      </tr>
+  </tbody>
+</table>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

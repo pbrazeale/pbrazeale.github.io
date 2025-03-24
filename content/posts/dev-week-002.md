@@ -1,6 +1,6 @@
 +++
 tags = ['CS50', 'Programing', 'Developer Log']
-title = 'Developer Week 001'
+title = 'Developer Week 002'
 date = 2024-07-21T16:34:07+01:00
 +++
 

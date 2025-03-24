@@ -58,10 +58,31 @@
       <description></description>
     </item>
     <item>
+      <title>Bash</title>
+      <link>http://localhost:1313/tags/bash/</link>
+      <pubDate>Mon, 10 Mar 2025 10:34:07 +0100</pubDate>
+      <guid>http://localhost:1313/tags/bash/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>CS50</title>
       <link>http://localhost:1313/tags/cs50/</link>
-      <pubDate>Sun, 01 Sep 2024 16:34:07 +0100</pubDate>
+      <pubDate>Thu, 26 Sep 2024 10:34:07 +0100</pubDate>
       <guid>http://localhost:1313/tags/cs50/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>PyQt</title>
+      <link>http://localhost:1313/tags/pyqt/</link>
+      <pubDate>Wed, 25 Sep 2024 10:34:07 +0100</pubDate>
+      <guid>http://localhost:1313/tags/pyqt/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>SQL</title>
+      <link>http://localhost:1313/tags/sql/</link>
+      <pubDate>Wed, 25 Sep 2024 10:34:07 +0100</pubDate>
+      <guid>http://localhost:1313/tags/sql/</guid>
       <description></description>
     </item>
     <item>
@@ -104,13 +125,6 @@
       <link>http://localhost:1313/tags/javascirpt/</link>
       <pubDate>Sun, 25 Aug 2024 16:34:07 +0100</pubDate>
       <guid>http://localhost:1313/tags/javascirpt/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>SQL</title>
-      <link>http://localhost:1313/tags/sql/</link>
-      <pubDate>Sun, 25 Aug 2024 16:34:07 +0100</pubDate>
-      <guid>http://localhost:1313/tags/sql/</guid>
       <description></description>
     </item>
     <item>

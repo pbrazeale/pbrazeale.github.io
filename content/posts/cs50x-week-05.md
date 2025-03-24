@@ -1,6 +1,6 @@
 +++
 tags = ['CS50', 'Data Structures', 'C']
-title = 'CS50X Week 5 Lecture Notes'
+title = 'CS50X Week 05 Lecture Notes'
 date = 2025-08-03T01:34:07+01:00
 +++
 

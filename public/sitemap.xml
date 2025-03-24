@@ -35,8 +35,44 @@
     <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-03-23T06:34:07+01:00</lastmod>
   </url><url>
+    <loc>http://localhost:1313/tags/bash/</loc>
+    <lastmod>2025-03-10T10:34:07+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/linux-command-line-03/</loc>
+    <lastmod>2025-03-10T10:34:07+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/linux-command-line-01/</loc>
+    <lastmod>2025-02-20T10:34:07+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/linux-command-line-02/</loc>
+    <lastmod>2025-02-20T10:34:07+01:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/cs50/</loc>
-    <lastmod>2024-09-01T16:34:07+01:00</lastmod>
+    <lastmod>2024-09-26T10:34:07+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/cs50p-certificate/</loc>
+    <lastmod>2024-09-26T10:34:07+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/cs50p-final-project/</loc>
+    <lastmod>2024-09-25T10:34:07+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/pyqt/</loc>
+    <lastmod>2024-09-25T10:34:07+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/sql/</loc>
+    <lastmod>2024-09-25T10:34:07+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/cs50p-week-09/</loc>
+    <lastmod>2024-09-20T10:34:07+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/cs50p-week-08/</loc>
+    <lastmod>2024-09-17T10:34:07+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/cs50p-week-07/</loc>
+    <lastmod>2024-09-12T10:34:07+01:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/cs50p-week-06/</loc>
+    <lastmod>2024-09-10T10:34:07+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/dev-week-007/</loc>
     <lastmod>2024-09-01T16:34:07+01:00</lastmod>
@@ -62,8 +98,8 @@
     <loc>http://localhost:1313/tags/javascirpt/</loc>
     <lastmod>2024-08-25T16:34:07+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/sql/</loc>
-    <lastmod>2024-08-25T16:34:07+01:00</lastmod>
+    <loc>http://localhost:1313/posts/dev-week-005/</loc>
+    <lastmod>2024-08-18T16:34:07+01:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/go/</loc>
     <lastmod>2024-08-16T16:34:07+01:00</lastmod>
@@ -77,9 +113,6 @@
     <loc>http://localhost:1313/posts/dev-week-004/</loc>
     <lastmod>2024-08-11T16:34:07+01:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/dev-week-005/</loc>
-    <lastmod>2024-08-11T16:34:07+01:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/dev-week-003/</loc>
     <lastmod>2024-07-28T16:34:07+01:00</lastmod>
   </url><url>
@@ -88,78 +121,6 @@
   </url><url>
     <loc>http://localhost:1313/posts/dev-week-002/</loc>
     <lastmod>2024-07-21T16:34:07+01:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/2024-09-10-cs50p-week-6-lecture-notes/</loc>
-  </url><url>
-    <loc>http://localhost:1313/posts/2024-09-12-cs50p-week-7-lecture-notes/</loc>
-  </url><url>
-    <loc>http://localhost:1313/posts/2024-09-15-developer-week-009/</loc>
-  </url><url>
-    <loc>http://localhost:1313/posts/2024-09-18-cs50p-week-8-lecture-notes/</loc>
-  </url><url>
-    <loc>http://localhost:1313/posts/2024-09-20-cs50p-week-9-lecture-notes/</loc>
-  </url><url>
-    <loc>http://localhost:1313/posts/2024-09-22-developer-week-010/</loc>
-  </url><url>
-    <loc>http://localhost:1313/posts/2024-09-26-cs50p-certificate/</loc>
-  </url><url>
-    <loc>http://localhost:1313/posts/2024-09-26-cs50p-final-project/</loc>
-  </url><url>
-    <loc>http://localhost:1313/posts/2024-09-29-developer-week-011/</loc>
-  </url><url>
-    <loc>http://localhost:1313/posts/2024-10-06-developer-week-012/</loc>
-  </url><url>
-    <loc>http://localhost:1313/posts/2024-10-13-developer-week-013/</loc>
-  </url><url>
-    <loc>http://localhost:1313/posts/2025-01-26-developer-week-28/</loc>
-  </url><url>
-    <loc>http://localhost:1313/posts/2025-02-02-developer-week-029/</loc>
-  </url><url>
-    <loc>http://localhost:1313/posts/2025-02-09-developer-week-030/</loc>
-  </url><url>
-    <loc>http://localhost:1313/posts/2025-02-16-developer-week-031/</loc>
-  </url><url>
-    <loc>http://localhost:1313/posts/2025-02-18-chatgpt-technical-tutor/</loc>
-  </url><url>
-    <loc>http://localhost:1313/posts/2025-02-20-the-value-of-learning-and-skill-acquisition/</loc>
-  </url><url>
-    <loc>http://localhost:1313/posts/2025-02-23-developer-week-032/</loc>
-  </url><url>
-    <loc>http://localhost:1313/posts/2025-03-02-developer-week-033/</loc>
-  </url><url>
-    <loc>http://localhost:1313/posts/2025-03-05-security&#43;-6.0-acronym-list/</loc>
-  </url><url>
-    <loc>http://localhost:1313/posts/2025-03-08-security&#43;-1.0-general-security-concepts/</loc>
-  </url><url>
-    <loc>http://localhost:1313/posts/2025-03-09-developer-week-034/</loc>
-  </url><url>
-    <loc>http://localhost:1313/posts/2025-03-10-linux-command-line-part-01/</loc>
-  </url><url>
-    <loc>http://localhost:1313/posts/2025-03-10-linux-command-line-part-02/</loc>
-  </url><url>
-    <loc>http://localhost:1313/posts/2025-03-11-boot.dev-learn-linux-04-programs/</loc>
-  </url><url>
-    <loc>http://localhost:1313/posts/2025-03-12-boot.dev-learn-linux-5-input-output/</loc>
-  </url><url>
-    <loc>http://localhost:1313/posts/2025-03-13-boot.dev-learn-linux-6-packages/</loc>
-  </url><url>
-    <loc>http://localhost:1313/posts/2025-03-14-lpic-1-study-guide-introduction/</loc>
-  </url><url>
-    <loc>http://localhost:1313/posts/2025-03-14-security&#43;-study-guide-01-todays-security-professional/</loc>
-  </url><url>
-    <loc>http://localhost:1313/posts/2025-03-14-security&#43;-study-guide-introduction/</loc>
-  </url><url>
-    <loc>http://localhost:1313/posts/2025-03-15-security&#43;-study-guide-02-cybersecurity-threat-landscape/</loc>
-  </url><url>
-    <loc>http://localhost:1313/posts/2025-03-16-developer-week-035/</loc>
-  </url><url>
-    <loc>http://localhost:1313/posts/2025-03-17-security&#43;-study-guide-03-malicious-code/</loc>
-  </url><url>
-    <loc>http://localhost:1313/posts/2025-03-17-security&#43;-study-guide-04-social-engineering-and-password-attacks/</loc>
-  </url><url>
-    <loc>http://localhost:1313/posts/2025-03-18-security&#43;-study-guide-05-security-assessment-and-testing/</loc>
-  </url><url>
-    <loc>http://localhost:1313/posts/2025-03-23-linux-command-line-part-03/</loc>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>

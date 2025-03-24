@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <title>Linux Command Line: Part 3 Common Tasks and Essential Tools // Philip Brazeale</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.145.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Philip Brazeale" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/css/main.min.7ad30054107c532dea0e1b008d736261f1d1e8635b780068c8bf058d7448e498.css" />
+    
+
+    
+    
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Linux Command Line: Part 3 Common Tasks and Essential Tools">
+  <meta name="twitter:description" content="14 – Package Management Today, most people can satisfy all of their software needs by installing packages from their Linux distributor. This contrasts with the early days of Linux, when one had to download and compile source code to install software. There isn’t anything wrong with compiling source code; in fact, having access to source code is the great wonder of Linux. It gives us (and everybody else) the ability to examine and improve the system.">
+
+    <meta property="og:url" content="http://localhost:1313/posts/linux-command-line-03/">
+  <meta property="og:site_name" content="Philip Brazeale">
+  <meta property="og:title" content="Linux Command Line: Part 3 Common Tasks and Essential Tools">
+  <meta property="og:description" content="14 – Package Management Today, most people can satisfy all of their software needs by installing packages from their Linux distributor. This contrasts with the early days of Linux, when one had to download and compile source code to install software. There isn’t anything wrong with compiling source code; in fact, having access to source code is the great wonder of Linux. It gives us (and everybody else) the ability to examine and improve the system.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-03-10T18:34:07+01:00">
+    <meta property="article:modified_time" content="2025-03-10T18:34:07+01:00">
+    <meta property="article:tag" content="Linux">
+    <meta property="article:tag" content="Bash">
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="/"><img class="app-header-avatar" src="/avatar.jpg" alt="Philip Brazeale" /></a>
+      <span class="app-header-title">Philip Brazeale</span>
+      <nav class="app-header-menu">
+          <a class="app-header-menu-item" href="/">✉️ Posts </a>
+              
+          
+          <a class="app-header-menu-item" href="/tags/">🏷️ Tags </a>
+              
+          
+          <a class="app-header-menu-item" href="/about/">🧙‍♂️ About</a>
+      </nav>
+      <p>Developer | Author | Publisher</p>
+      <div class="app-header-social">
+        
+          <a href="https://www.linkedin.com/in/pbrazeale/" target="_blank" rel="noreferrer noopener me">
+            <svg class="icon icon-brand-linkedin" viewBox="0 0 24 24" fill="currentColor"><title>LinkedIn</title><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+        
+          <a href="https://github.com/pbrazeale" target="_blank" rel="noreferrer noopener me">
+            <svg class="icon icon-brand-github" viewBox="0 0 24 24" fill="currentColor"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+          </a>
+        
+          <a href="https://twitter.com/pbrazeale" target="_blank" rel="noreferrer noopener me">
+            <svg class="icon icon-brand-x" viewBox="0 0 24 24" fill="currentColor"><title>X</title><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+          </a>
+        
+      </div>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Linux Command Line: Part 3 Common Tasks and Essential Tools</h1>
+      <div class="post-meta">
+        <div>
+          <svg class="icon icon-calendar" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>calendar</title><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+          Mar 10, 2025
+        </div>
+        <div>
+          <svg class="icon icon-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>clock</title><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          31 min read
+        </div>
+        <div>
+          <svg class="icon icon-tag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>tag</title><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>
+              <a class="tag" href="/tags/linux/">Linux</a>
+              <a class="tag" href="/tags/bash/">Bash</a>
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <h2 id="14--package-management">14 – Package Management</h2>
+<blockquote>
+<p>Today, most people can satisfy all of their software needs by installing packages from their Linux distributor. This contrasts with the early days of Linux, when one had to download and compile source code to install software. There isn’t anything wrong with compiling source code; in fact, having access to source code is the great wonder of Linux. It gives us (and everybody else) the ability to examine and improve the system.</p></blockquote>
+<h3 id="packaging-systems">Packaging Systems</h3>
+<p>Most distributions fall into one of two camps of packaging technologies: the <strong>Debian .deb</strong> camp and the <strong>Red Hat .rpm</strong> camp. There are some important exceptions such as Gentoo, Slackware, and <strong>Arch</strong> &hellip;</p>
+<h4 id="package-files">Package Files</h4>
+<p>The basic unit of software in a packaging system is the package file. A package file is a compressed collection of files that comprise the software package. &hellip; In addition to the files to be installed, the package file also includes metadata about the package &hellip; many packages contain pre- and post-installation scripts that perform configuration tasks before and after the package installation.</p>
+<p><strong>shared libraries</strong>, which provide essential services to more than one program. If a package requires a shared resource such as a shared library, it is said to have a <strong>dependency</strong>. Modern package management systems all provide some method of dependency resolution to ensure that when a package is installed, all of its dependencies are installed, too.</p>
+<h3 id="distribution-independent-package-formats">Distribution-Independent Package Formats</h3>
+<p>Over the last several years distribution vendors have come out with universal package formats that are not tied to a particular Linux distribution. These include <strong>Snaps</strong> (developed and promoted by Canonical), <strong>Flatpaks</strong> (pioneered by Red Hat, but now widely available) and <strong>AppImages</strong>. Though they each work a little differently, their goal is to have an application and all of its dependencies bundled together and installed in a single piece. This is not an entirely new idea. In the early days of Linux (think the late 1990s) the was a technique called static linking which combined an application and its required libraries into a single large binary.</p>
+<blockquote>
+<p>Users were not crying out for these packaging formats and they do little to enhance the open source community, thus until such time the various performance issues are resolved use of these formats is not recommended.</p></blockquote>
+<h3 id="the-linux-software-installation-myth">The Linux Software Installation Myth</h3>
+<p>The Linux software ecosystem is based on the idea of open source code. If a program developer releases source code for a program, it is likely that a person associated with a distribution will package the program and include it in their repository. This method ensures that the program is well integrated into the distribution, and the user is given the convenience of “one-stop shopping” for software, rather than having to search for each program&rsquo;s website. Recently, major proprietary platform vendors have begun building application stores that mimic this idea.</p>
+<h4 id="a-lack-of-driver-support-is-usually-caused-by-one-of-three-things">A lack of driver support is usually caused by one of three things:</h4>
+<ol>
+<li><strong>The device is too new</strong>.  &hellip; it falls upon a member of the Linux community to write the kernel driver code. This takes time.</li>
+<li><strong>The device is too exotic.</strong>  Not all distributions include every possible device driver &hellip;</li>
+<li><strong>The hardware vendor is hiding something.</strong>  It has neither released source code for a Linux driver, nor has it released the technical documentation for some-body to create one for them &hellip;</li>
+</ol>
+<h2 id="15--storage-media">15 – Storage Media</h2>
+<p><strong>mount</strong> – Mount a file system
+<strong>umount</strong> – Unmount a file system
+<strong>parted</strong> – Partition manipulation program
+<strong>mkfs</strong> – Create a file system
+<strong>fsck</strong> – Check and repair a file system
+<strong>dd</strong> – Convert and copy a file
+<strong>genisoimage</strong> – Create an ISO 9660 image file
+<strong>wodim</strong> – Write data to optical storage media
+<strong>sha256sum</strong> – Compute and check SHA256 checksums</p>
+<h3 id="mounting-and-unmounting-storage-devices">Mounting and Unmounting Storage Devices</h3>
+<p>The first step in managing a storage device is attaching the device to the file system tree. This process, called mounting, allows the device to interact with the operating system.</p>
+<h3 id="why-unmounting-is-important">Why Unmounting Is Important</h3>
+<p>If you look at the output of the free command, which displays statistics about memory usage, you will see a statistic called buffers. Computer systems are designed to go as fast as possible. One of the impediments to system speed is slow devices. Printers are a good example &hellip;</p>
+<p><strong>Unmounting</strong> a device entails writing all the remaining data to the device so that it can be safely removed. If the device is removed without unmounting it first, the possibility exists that not all the data destined for the device has been transferred.</p>
+<h3 id="creating-new-file-systems">Creating New File Systems</h3>
+<p><strong>parted</strong> is one of a host of programs (both command line and graphical) that allow us to interact directly with disk-like devices (such as hard disk drives and flash drives) at a very low level &hellip;</p>
+<h4 id="creating-a-new-file-system-with-mkfs">Creating a New File System with mkfs</h4>
+<p>With our partition editing done, it’s time to create (i.e., format) the new file systems on our drive. To do this, we will use <strong>mkfs</strong> (short for “make file system”), which can create file systems in a variety of formats. To create the ext4 file system on the drive, we use the <code>-t</code> option to specify the ext4 file system type, followed by a descriptive volume label, and the name of the device containing the partition we want to format.</p>
+<h3 id="testing-and-repairing-file-systems">Testing and Repairing File Systems</h3>
+<p>In addition to checking the integrity of file systems, <strong>fsck</strong> can also repair corrupt file systems with varying degrees of success, depending on the amount of damage.</p>
+<h4 id="what-the-fsck">What the fsck?</h4>
+<blockquote>
+<p>In Unix culture, the word fsck is often used in place of a popular word with which it shares three letters. This is especially appropriate, given that you will probably be uttering the aforementioned word if you find yourself in a situation where you are forced to run fsck.</p></blockquote>
+<h3 id="verifying-data">Verifying Data</h3>
+<p>&hellip; tool we can use for this is sha256sum, a modern replacement for an earlier program called md5sum.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ sha256sum -b linuxmint-22-cinnamon-64bit.iso
+</span></span><span style="display:flex;"><span>7a04b54830004e945c1eda6ed6ec8c57ff4b249de4b331bd021a849694f29b8f *lin uxmint-22-cinnamon-64bit.iso
+</span></span></code></pre></div><p>The <code>-b</code> option tells sha256sum that we are looking at a binary file rather than text. As we can see, the checksum matches the one we saw in sha256sum.txt. However looking at the checksum this way is a little tedious. Another way we can check the file is to have sha256sum process the sha256sum.txt file to compare its checksums against ones it generates from the files on the list. We can do this by running the sha256sum program this way:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ sha256sum -c --ignore-missing sha256sum.txt
+</span></span><span style="display:flex;"><span>linuxmint-22-cinnamon-64bit.iso: OK
+</span></span></code></pre></div><h2 id="16--networking">16 – Networking</h2>
+<ul>
+<li><code>ping</code> – Send an ICMP ECHO_REQUEST to network hosts</li>
+<li><code>traceroute</code> – Print the route packets trace to a network host</li>
+<li><code>ip</code> – Show / manipulate routing, devices, policy routing and tunnels</li>
+<li><code>netstat</code> – Print network connections, routing tables, interface statistics, mas-querade connections, and multicast memberships</li>
+<li><code>ftp</code> – Internet file transfer program</li>
+<li><code>curl</code> - Transfer a URL</li>
+<li><code>wget</code> – Non-interactive network downloader</li>
+<li><code>ssh</code> – OpenSSH SSH client (remote login program)</li>
+</ul>
+<p>We’re going to assume a little background in networking. In this, the Internet age, everyone using a computer needs a basic understanding of networking concepts. To make full use of this chapter we should be familiar with the following terms:</p>
+<ul>
+<li>Internet protocol (IP) address</li>
+<li>Host and domain name</li>
+<li>Uniform resource identifier (URI)</li>
+</ul>
+<h3 id="examining-and-monitoring-a-network">Examining and Monitoring a Network</h3>
+<p>The <strong>ping</strong> command sends a special network packet called an ICMP ECHO_REQUEST to a specified host.</p>
+<p>The <strong>traceroute</strong> program (some systems use the similar <strong>tracepath</strong> program instead) lists all the “hops” network traffic takes to get from the local system to a specified host</p>
+<p>The <strong>ip</strong> program is a multi-purpose network configuration tool that makes use of the full range of networking features available in modern Linux kernels. It replaces the earlier and now deprecated ifconfig program.</p>
+<p>192.168.1.0 network is our LAN, but what is 169.254.0.0? Well, that’s a piece of network trickery called Automatic Private IP Addressing (APIPA).</p>
+<h3 id="transporting-files-over-a-network">Transporting Files Over a Network</h3>
+<p>One of the true “classic” programs, <strong>ftp</strong> gets its name from the protocol it uses, the File Transfer Protocol. FTP was once the most widely used method of downloading files over the Internet. Some web browsers still support it, and we may see URIs starting with the protocol ftp://.</p>
+<p>Another command-line program for file downloading is wget. It is useful for downloading content from both web and FTP sites. Single files, multiple files, and even entire sites can be downloaded. To download the first page of linuxcommand.org we could do this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#f92672">[</span>me@linuxbox ~<span style="color:#f92672">]</span>$ wget http://linuxcommand.org/index.php
+</span></span></code></pre></div><h3 id="secure-communication-with-remote-hosts">Secure Communication with Remote Hosts</h3>
+<p>In the early days, before the general adoption of the Internet, there were a couple of popular programs used to log in to remote hosts. These were the <em>rlogin and telnet</em> programs. These programs, however, suffer from the same fatal flaw that the ftp program does; they transmit all their communications (including login names and passwords) in cleartext.</p>
+<p>To address this problem, a new protocol called Secure Shell (SSH) was developed. <strong>SSH</strong> solves the two basic problems of secure communication with a remote host.</p>
+<ol>
+<li>It authenticates that the remote host is who it says it is (thus preventing so-called man-in-the-middle attacks).</li>
+<li>It encrypts all of the communications between the local and remote hosts.</li>
+</ol>
+<p><em>by default, on port 22</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#f92672">[</span>me@linuxbox ~<span style="color:#f92672">]</span>$ ssh remote-sys <span style="color:#e6db74">&#39;ls *&#39;</span> &gt; dirlist.txt
+</span></span><span style="display:flex;"><span>me@twin4<span style="color:#960050;background-color:#1e0010">&#39;</span>s password:
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>me@linuxbox ~<span style="color:#f92672">]</span>$
+</span></span></code></pre></div><p>Notice the use of the single quotes in the command above. This is done because we do not want the pathname expansion performed on the local machine; rather, we want it to be performed on the remote system. Likewise, if we had wanted the output redirected to a file on the remote machine, we could have placed the redirection operator and the filename within the single quotes.</p>
+<h4 id="tunneling-with-ssh">Tunneling with SSH</h4>
+<p>Part of what happens when you establish a connection with a remote host via <strong>SSH</strong> is that an encrypted tunnel is created between the local and remote systems. Normally, this tunnel is used to allow commands typed at the local system to be transmitted safely to the remote system and for the results to be transmitted safely back. In addition to this basic function, <em>the SSH protocol allows most types of network traffic to be sent through the encrypted tunnel, creating a sort of virtual private network (VPN)</em> between the local and remote systems.</p>
+<h4 id="scp-and-sftp">scp and sftp</h4>
+<p>The OpenSSH package also includes two programs that can make use of an SSH-encrypted tunnel to copy files across the network. The first, <strong>scp</strong> (secure copy) is used much like the familiar cp program to copy files. The most notable difference is that the source or destination pathnames may be preceded with the name of a remote host, followed by a colon character. For example, if we wanted to copy a document named document.txt from our home directory on the remote system, remote-sys, to the current working directory on our local system, we could do this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#f92672">[</span>me@linuxbox ~<span style="color:#f92672">]</span>$ scp remote-sys:document.txt .
+</span></span><span style="display:flex;"><span>me@remote-sys<span style="color:#960050;background-color:#1e0010">&#39;</span>s password:
+</span></span><span style="display:flex;"><span>document.txt 100% <span style="color:#ae81ff">5581</span> 5.5KB/s 00:00
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>me@linuxbox ~<span style="color:#f92672">]</span>$
+</span></span></code></pre></div><p>The second SSH file-copying program is <strong>sftp</strong> which, as its name implies, is a secure replacement for the ftp program. sftp works much like the original ftp program that we used earlier; however, instead of transmitting everything in cleartext, it uses an SSH encrypted tunnel.</p>
+<p><strong>Tip:</strong> The SFTP protocol is supported by many of the graphical file managers found in Linux distributions. Using either GNOME or KDE, we can enter a URI beginning with sftp:// into the location bar and operate on files stored on a remote system running an SSH server.</p>
+<h4 id="an-ssh-client-for-windows">An SSH Client for Windows?</h4>
+<p>The most popular one is probably PuTTY by Simon Tatham and his team.</p>
+<h2 id="17--searching-for-files">17 – Searching for Files</h2>
+<ul>
+<li><code>locate</code> – Find files by name</li>
+<li><code>find</code> – Search for files in a directory hierarchy</li>
+</ul>
+<p>We will also look at a command that is often used with file-search commands to process the resulting list of files.</p>
+<ul>
+<li><code>xargs</code> – Build and execute command lines from standard input</li>
+</ul>
+<p>In addition, we will introduce a couple of commands to assist us in our explorations.</p>
+<ul>
+<li><code>touch</code> – Change file times</li>
+<li><code>stat</code> – Display file or file system status</li>
+</ul>
+<h3 id="locate--find-files-the-easy-way">locate – Find Files the Easy Way</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#f92672">[</span>me@linuxbox ~<span style="color:#f92672">]</span>$ locate bin/zip
+</span></span></code></pre></div><p>The <strong>locate</strong> program performs a rapid database search of pathnames, and then outputs every name that matches a given substring.</p>
+<p>The two most common ones found in modern Linux distributions are <strong>plocate</strong> and <strong>mlocate</strong>, though they are usually accessed by a symbolic link named locate.</p>
+<h4 id="where-does-the-locate-database-come-from">Where Does the locate Database Come From?</h4>
+<p>The locate database is created by another program named <strong>updatedb</strong>. Usually, it is run periodically as a <strong>cron job</strong>, that is, a task performed at regular intervals by the cron daemon. Most systems equipped with locate run updatedb once a day &hellip; it’s possible to run the updatedb program manually by becoming the superuser and running updatedb at the prompt.</p>
+<h3 id="find--find-files-the-hard-way">find – Find Files the Hard Way</h3>
+<p>While the <strong>locate</strong> program can <strong>find</strong> a file based solely on its name, the find program searches a given directory (and its subdirectories) for files based on a variety of attributes.</p>
+<p>Since the list is sent to standard output, we can pipe the list into other programs. Let’s use wc to count the number of files.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#f92672">[</span>me@linuxbox ~<span style="color:#f92672">]</span>$ find ~ | wc -l
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">47068</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#f92672">[</span>me@linuxbox ~<span style="color:#f92672">]</span>$ find ~ -type d | wc -l
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">1695</span>
+</span></span></code></pre></div><ul>
+<li>Adding the test -type d limited the search to directories.</li>
+</ul>
+<h4 id="find-file-types">find File Types</h4>
+<table>
+  <thead>
+      <tr>
+          <th>File Type</th>
+          <th>Description</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>b</td>
+          <td>Block special device file</td>
+      </tr>
+      <tr>
+          <td>c</td>
+          <td>Character special device file</td>
+      </tr>
+      <tr>
+          <td>d</td>
+          <td>Directory</td>
+      </tr>
+      <tr>
+          <td>f</td>
+          <td>Regular file</td>
+      </tr>
+      <tr>
+          <td>l</td>
+          <td>Symbolic link</td>
+      </tr>
+  </tbody>
+</table>
+<p>We can also search by file size and filename by adding some additional tests. Let’s look for all the regular files that match the wildcard pattern <code>*.JPG</code> and are larger than one megabyte.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#f92672">[</span>me@linuxbox ~<span style="color:#f92672">]</span>$ find ~ -type f -name <span style="color:#e6db74">&#34;*.JPG&#34;</span> -size +1M | wc -l <span style="color:#ae81ff">840</span>
+</span></span></code></pre></div><h4 id="find-size-units">find Size Units</h4>
+<table>
+  <thead>
+      <tr>
+          <th>Character</th>
+          <th>Unit</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>b</td>
+          <td>512-byte blocks. This is the default if no unit is specified.</td>
+      </tr>
+      <tr>
+          <td>c</td>
+          <td>Bytes.</td>
+      </tr>
+      <tr>
+          <td>w</td>
+          <td>2-byte words.</td>
+      </tr>
+      <tr>
+          <td>k</td>
+          <td>Kilobytes (units of 1024 bytes).</td>
+      </tr>
+      <tr>
+          <td>M</td>
+          <td>Megabytes (units of 1048576 bytes).</td>
+      </tr>
+      <tr>
+          <td>G</td>
+          <td>Gigabytes (units of 1073741824 bytes).</td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="dealing-with-funny-filenames">Dealing with Funny Filenames</h4>
+<p>Unix-like systems allow embedded spaces (and even newlines!) in filenames. This causes problems for programs like xargs that construct argument lists for other programs. An embedded space will be treated as a delimiter, and the resulting command will interpret each space-separated word as a separate argument. To overcome this, find and xargs allow the optional use of a null character as an argument separator. A null character is defined in ASCII as the character represented by the number zero (as opposed to, for example, the space character, which is defined in ASCII as the character represented by the number 32). The find command provides the action -print0, which produces null-separated output, and the <strong>xargs</strong> command has the <code>--null (or -0)</code> option, which accepts null separated input. Here’s an example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>find ~ -iname <span style="color:#e6db74">`</span><span style="color:#e6db74">&#39;*.jpg&#39;</span><span style="color:#e6db74">`</span> -print0 | xargs --null ls -l
+</span></span></code></pre></div><p>Using this technique, we can ensure that all files, even those containing embedded spaces in their names, are handled correctly.</p>
+<h2 id="18--archiving-and-backup">18 – Archiving and Backup</h2>
+<p>One of the system administrator primary tasks is <em>keeping the system’s data secure</em>. One way this is done is by performing timely backups of the system’s files.</p>
+<ul>
+<li><code>gzip</code> – Compress or expand files</li>
+<li><code>bzip2</code> – A block sorting file compressor</li>
+</ul>
+<p>These are the archiving programs:</p>
+<ul>
+<li><code>tar</code> – Tape archiving utility</li>
+<li><code>zip</code> – Package and compress files</li>
+</ul>
+<p>This is the file synchronization program:</p>
+<ul>
+<li><code>rsync</code> – Remote file and directory synchronization</li>
+</ul>
+<h3 id="compressing-files">Compressing Files</h3>
+<p><strong>Data compression</strong> is the process of removing <em>redundancy</em> from data.</p>
+<p><em>Compression algorithms</em> (the mathematical techniques used to carry out the compression) fall into two general categories.</p>
+<ol>
+<li><strong>Lossless</strong>: Lossless compression preserves all the data contained in the original.</li>
+<li><strong>Lossy</strong>: Lossy compression, on the other hand, removes data as the compression is performed to allow more compression to be applied. When a lossy file is restored, it does not match the original version; rather, it is a close approximation.</li>
+</ol>
+<h4 id="gzip">gzip</h4>
+<p>The <strong>gzip</strong> program is used to compress one or more files. When executed, it replaces the original file with a compressed version of the original. The corresponding <strong>gunzip</strong> program is used to restore compressed files to their original, uncompressed form.</p>
+<h4 id="bzip2">bzip2</h4>
+<p>The <strong>bzip2</strong> program, by Julian Seward, is similar to gzip but uses a different compression algorithm that achieves higher levels of compression at the cost of compression speed.</p>
+<h3 id="archiving-files">Archiving Files</h3>
+<p>A common file-management task often used in conjunction with compression is archiving. Archiving is the process of gathering up many files and bundling them together into a single large file. Archiving is often done as part of system backups. It is also used when old data is moved from a system to some type of long-term storage.</p>
+<h4 id="tar">tar</h4>
+<p>We often see filenames that end with the extension .tar or .tgz, which indicate a “plain” tar archive and a gzipped archive, respectively. A <strong>tar</strong> archive can consist of a group of separate files, one or more directory hierarchies, or a mixture of both.</p>
+<p>When specifying pathnames, wildcards are not normally supported; however, the GNU version of tar (which is the version most often found in Linux distributions) supports them with the <code>--wildcards</code> option. Here is an example using our previous playground.tar file:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#f92672">[</span>me@linuxbox ~<span style="color:#f92672">]</span>$ cd foo
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>me@linuxbox foo<span style="color:#f92672">]</span>$ tar xf ../playground2.tar --wildcards <span style="color:#e6db74">&#39;home/me/playground/dir-*/file-A&#39;</span>
+</span></span></code></pre></div><h4 id="find--tar">find + tar</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#f92672">[</span>me@linuxbox ~<span style="color:#f92672">]</span>$ find playground -name <span style="color:#e6db74">&#39;file-A&#39;</span> -exec tar rf playground.tar <span style="color:#e6db74">&#39;{}&#39;</span> <span style="color:#e6db74">&#39;+&#39;</span>
+</span></span></code></pre></div><p>Here we use <strong>find</strong> to match all the files in playground named file-A and then, using the <code>-exec</code> action, we invoke <strong>tar</strong> in the append mode (r) to add the matching files to the archive playground.tar.</p>
+<p>Using tar with find is a <em>good way of creating incremental backups</em> of a directory tree or an entire system. By using find to match files newer than a timestamp file, we could create an archive that contains only those files newer than the last archive, assuming that the timestamp file is updated right after each archive is created.</p>
+<h4 id="zip">zip</h4>
+<p>The <strong>zip</strong> program is both a compression tool and an archiver. The file format used by the program is familiar to Windows users, as it reads and writes .zip files. In Linux, however, gzip is the predominant compression program, with bzip2 being a close second.</p>
+<p>One thing to note about zip (as opposed to tar) is that if an existing archive is specified, it is updated rather than replaced. <em>This means the existing archive is preserved, but new files are added and matching files are replaced.</em></p>
+<h3 id="synchronizing-files-and-directories">Synchronizing Files and Directories</h3>
+<p>In the Unix-like world, the preferred tool for this task is rsync. This program can synchronize both local and remote directories by using the rsync remote-update protocol, which allows rsync to quickly detect the differences between two directories and perform the minimum amount of copying required to bring them into sync. This makes rsync very fast and economical to use, compared to other kinds of copy programs.</p>
+<p><strong>rsync</strong> <em>options source destination</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#f92672">[</span>me@linuxbox ~<span style="color:#f92672">]</span>$ rsync -av playground foo
+</span></span></code></pre></div><h4 id="using-rsync-over-a-network">Using rsync Over a Network</h4>
+<p>the r in rsync stands for “remote.”</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#f92672">[</span>me@linuxbox ~<span style="color:#f92672">]</span>$ sudo rsync -av --delete --rsh<span style="color:#f92672">=</span>ssh /etc /home /usr/local remote-sys:/backup
+</span></span></code></pre></div><p>We made two changes to our command to facilitate the network copy.</p>
+<ol>
+<li>we added the &ndash;rsh=ssh option, which instructs rsync to use the ssh program as its remote shell. In this way, we were able to use an ssh-encrypted tunnel to securely transfer the data from the local system to the remote host.</li>
+<li>we specified the remote host by prefixing its name (in this case the remote host is named remote-sys) to the destination pathname.</li>
+</ol>
+<h2 id="19--regular-expressions">19 – Regular Expressions</h2>
+<p>For our discussion, we will limit ourselves to regular expressions as described in the POSIX standard (which will cover most of the command line tools), as opposed to many programming languages (most notably Perl), which use slightly larger and richer sets of notations.</p>
+<h3 id="grep">grep</h3>
+<p>characters b, z, i, and p are found in that order, with no other characters in between. The characters in the string bzip are all literal characters, in that they match themselves. In addition to literals, regular expressions may also include metacharacters that are used to specify more complex matches. Regular expression metacharacters consist of the following:
+<code>^ $ . [ ] { } - ? * + ( ) | \</code></p>
+<p><strong>Note</strong>: As we can see, many of the regular expression metacharacters are also characters that have meaning to the shell when expansion is performed. When we pass <em>regular expressions containing metacharacters on the command line, it is vital that they be enclosed in quotes</em> to prevent the shell from attempting to expand them.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#f92672">[</span>me@linuxbox ~<span style="color:#f92672">]</span>$ grep -h <span style="color:#e6db74">&#39;.zip&#39;</span> dirlist*.txt
+</span></span></code></pre></div><p>We searched for any line in our files that matches the regular expression “.zip”. There are a couple of interesting things to note about the results. Notice that the zip program was not found. This is because the inclusion of the dot metacharacter in our regular expression increased the length of the required match to four characters, one of which must precede the “z”. Also, if any files in our lists had contained the file extension .zip, they would have been matched as well, because the period character in the file extension would be matched by the “any character,” too.</p>
+<h3 id="anchors">Anchors</h3>
+<p>The caret <code>^</code> and dollar sign <code>$</code> characters are treated as anchors in regular expressions. This means they cause the match to occur only if the regular expression is found at the <em>beginning of the line</em> <code>^</code> or at the <em>end of the line</em> <code>$</code>.</p>
+<p>In addition to matching any character at a given position in our regular expression, we can also match a single character from a specified set of characters by using <strong>bracket expressions</strong>. With bracket expressions, we can specify a set of characters (including characters that would otherwise be interpreted as metacharacters) to be matched. In this example, using a two-character set, we match any line that contains the string bzip or gzip:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#f92672">[</span>me@linuxbox ~<span style="color:#f92672">]</span>$ grep -h <span style="color:#e6db74">&#39;[bg]zip&#39;</span> dirlist*.txtbzip2
+</span></span></code></pre></div><h4 id="traditional-character-ranges">Traditional Character Ranges</h4>
+<p>It’s just a matter of putting all 26 uppercase letters in a bracket expression. But the idea of all that typing is deeply troubling, so there is another way.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#f92672">[</span>me@linuxbox ~<span style="color:#f92672">]</span>$ grep -h <span style="color:#e6db74">&#39;^[A-Z]&#39;</span> dirlist*.txt
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#f92672">[</span>me@linuxbox ~<span style="color:#f92672">]</span>$ grep -h <span style="color:#e6db74">&#39;^[A-Za-z0-9]&#39;</span> dirlist*.txt
+</span></span></code></pre></div><h4 id="posix-character-classes">POSIX Character Classes</h4>
+<p>The ASCII table was expanded to use a full eight bits, adding characters 128-255, which accommodated many more languages. To support this ability, the POSIX standards introduced a concept called a locale, which could be adjusted to select the character set needed for a particular location.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#f92672">[</span>me@linuxbox ~<span style="color:#f92672">]</span>$ echo $LANG
+</span></span><span style="display:flex;"><span>en_US.UTF-8
+</span></span></code></pre></div><p>With this setting, POSIX-compliant applications will use a dictionary collation order rather than ASCII order. This explains the behavior of the previous commands. A character range of <code>[A-Z]</code> when interpreted in dictionary order includes all of the alphabetic characters except the lowercase a, hence our results.</p>
+<h4 id="reverting-to-traditional-collation-order">Reverting to Traditional Collation Order</h4>
+<p>You can opt to have your system use the traditional (ASCII) collation order by changing the value of the LANG environment variable. As we saw earlier, the LANG variable contains the name of the language and character set used in your locale. This value was originally determined when you selected an installation language as your Linux version was installed.</p>
+<p>To change the locale to use the traditional Unix behaviors, set the LANG variable to POSIX.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#f92672">[</span>me@linuxbox ~<span style="color:#f92672">]</span>$ export LANG<span style="color:#f92672">=</span>POSIX
+</span></span></code></pre></div><p>Note that this change converts the system to use U.S. English (more specifically, ASCII) for its character set, so be sure if this is really what you want.</p>
+<p>You can make this change permanent by adding this line to your <em>.bashrc</em> file.
+<code>export LANG=POSIX</code></p>
+<h4 id="posix-basic-vs-extended-regular-expressions">POSIX Basic vs. Extended Regular Expressions</h4>
+<p>POSIX also splits regular expression implementations into two kinds: basic regular expressions (BRE) and extended regular expressions (ERE). The features we have covered so far are supported by any application that is POSIX compliant and implements BRE. Our grep program is one such program.</p>
+<h5 id="posix-history">POSIX HISTORY</h5>
+<p>During the 1980’s, Unix became a very popular commercial operating system, but by 1988, the Unix world was in turmoil. Many computer manufacturers had licensed the Unix source code from its creators, AT&amp;T, and were supplying various versions of the operating system with their systems &hellip; As always with proprietary vendors, each was trying to play a winning game of “lock-in” with their customers. This dark time in the history of Unix is known today as “<em>the Balkanization</em>.”</p>
+<p>In the mid-1980s, the IEEE began developing a set of standards that would define how Unix (and Unix-like) systems would perform. These standards, formally known as IEEE 1003, define the application programming interfaces (APIs), shell and utilities that are to be found on a standard Unix-like system. The name POSIX, which stands for Portable Operating System Interface (with the X added to the end for extra snappiness), was suggested by Richard Stallman (yes, that Richard Stallman) and was adopted by the IEEE.</p>
+<ul>
+<li>See: <strong>Linux Pocket Guide</strong> pages 71-74</li>
+</ul>
+<h3 id="putting-regular-expressions-to-work">Putting Regular Expressions to Work</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#f92672">[</span>me@linuxbox ~<span style="color:#f92672">]</span>$ <span style="color:#66d9ef">for</span> i in <span style="color:#f92672">{</span>1..10<span style="color:#f92672">}</span>; <span style="color:#66d9ef">do</span> echo <span style="color:#e6db74">&#34;(</span><span style="color:#e6db74">${</span>RANDOM:0:3<span style="color:#e6db74">}</span><span style="color:#e6db74">) </span><span style="color:#e6db74">${</span>RANDOM:0:3<span style="color:#e6db74">}</span><span style="color:#e6db74">-</span><span style="color:#e6db74">${</span>RANDOM:0:4<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> &gt;&gt; phonelist.txt; <span style="color:#66d9ef">done</span>
+</span></span></code></pre></div><p>This command will produce a file named phonelist.txt containing ten phone numbers. Each time the command is repeated, another ten numbers are added to the list. We can also change the value 10 near the beginning of the command to produce more or fewer phone numbers.</p>
+<p>One useful method of validation would be to scan the file for invalid numbers and display the resulting list.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#f92672">[</span>me@linuxbox ~<span style="color:#f92672">]</span>$ grep -Ev <span style="color:#e6db74">&#39;^\([0-9]{3}\) [0-9]{3}-[0-9]{4}$&#39;</span> phonelist.txt<span style="color:#f92672">(</span>292<span style="color:#f92672">)</span> 108-518 <span style="color:#f92672">(</span>129<span style="color:#f92672">)</span> 44-1379<span style="color:#f92672">[</span>me@linuxbox ~<span style="color:#f92672">]</span>$
+</span></span></code></pre></div><h4 id="finding-ugly-filenames-with-find">Finding Ugly Filenames with find</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#f92672">[</span>me@linuxbox ~<span style="color:#f92672">]</span>$ find . -regex <span style="color:#e6db74">&#39;.*[^-_./0-9a-zA-Z].*&#39;</span>
+</span></span></code></pre></div><p>Because of the requirement for an exact match of the entire pathname, we use .* at both ends of the expression to match zero or more instances of any character. In the middle of the expression, we use a negated bracket expression containing our set of acceptable pathname characters.</p>
+<h4 id="searching-for-files-with-locate">Searching for Files with locate</h4>
+<p>The locate program supports both basic (the &ndash;regexp option) and extended (the &ndash;regex option) regular expressions. With it, we can perform many of the same operations that we performed earlier with our dirlist files.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#f92672">[</span>me@linuxbox ~<span style="color:#f92672">]</span>$ locate --regex <span style="color:#e6db74">&#39;bin/(bz|gz|zip)&#39;</span>
+</span></span></code></pre></div><h2 id="20--text-processing">20 – Text Processing</h2>
+<ul>
+<li><code>cat</code> – Concatenate files and print on the standard output</li>
+<li><code>sort</code> – Sort lines of text files</li>
+<li><code>uniq</code> – Report or omit repeated lines</li>
+<li><code>cut</code> – Remove sections from each line of files</li>
+<li><code>paste</code> – Merge lines of files</li>
+<li><code>join</code> – Join lines of two files on a common field</li>
+<li><code>tac</code> – Concatenate and print files in reverse</li>
+<li><code>rev</code> – Reverse lines characterwise</li>
+<li><code>comm</code> – Compare two sorted files line by line</li>
+<li><code>diff</code> – Compare files line by line</li>
+<li><code>patch</code> – Apply a diff file to an original</li>
+<li><code>tr</code> – Translate or delete characters</li>
+<li><code>sed</code> – Stream editor for filtering and transforming text</li>
+<li><code>aspell</code> – Interactive spell checker</li>
+</ul>
+<h3 id="applications-of-text">Applications of Text</h3>
+<h4 id="printer-output">Printer Output</h4>
+<p>On Unix-like systems, output destined for a printer is sent as plain text or, if the page contains graphics, is converted into a text format page description language known as <strong>PostScript</strong>, which is then sent to a program that generates the graphic dots to be printed.</p>
+<h3 id="revisiting-some-old-friends">Revisiting Some Old Friends</h3>
+<h4 id="ms-dos-text-vs-unix-text">MS-DOS Text vs. Unix Text</h4>
+<p>One of the reasons you may want to use cat to look for non-printing characters in text is to spot hidden carriage returns. Where do hidden carriage returns come from? DOS and Windows! Unix and DOS don’t define the end of a line the same way in text files. Unix ends a line with a linefeed character (ASCII 10) while MSDOS and its derivatives use the sequence carriage return (ASCII 13) and linefeed to terminate each line of text.</p>
+<p>There are a several ways to convert files from DOS to Unix format. On many Linux systems, there are programs called dos2unix and unix2dos, which can convert text files to and from DOS format. However, if you don’t have dos2unix on your system, don’t worry. The process of converting text from DOS to Unix format is simple; it involves the removal of the offending carriage returns.</p>
+<h4 id="sort">sort</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span>sort file1.txt file2.txt file3.txt &gt; final_sorted_list.txt
+</span></span></code></pre></div><ul>
+<li>See: <strong>Linux Pocket Guide</strong> pg. 77-79</li>
+</ul>
+<p>Many uses of sort involve the processing of <strong>tabular data</strong>, such as the results of the previous ls command. If we apply database terminology to the previous table, we would say that each row is a record and that each record consists of multiple fields, such as the file attributes, link count, filename, file size, and so on. sort is able to process individual fields. In database terms, we are able to specify one or more key fields to use as sort keys. In the previous example, we specify the n and r options to perform a reverse numerical sort and specify -k 5 to make sort use the fifth field as the key for sorting.</p>
+<p><em>When using number titling, attempt to use decimal place numbers <code>01-10</code> instead of <code>1-10</code></em></p>
+<h4 id="uniq">uniq</h4>
+<p>Compared to sort, the uniq program is lightweight. uniq performs a seemingly trivial task. When given a sorted file (or standard input), it removes any duplicate lines and sends the results to standard output. It is often used in conjunction with sort to clean the output of duplicates.</p>
+<p><strong>Tip</strong>: While uniq is a traditional Unix tool often used with sort, the GNU version of sort supports a -u option, which removes duplicates from the sorted output.</p>
+<h3 id="slicing-and-dicing">Slicing and Dicing</h3>
+<h4 id="cut">cut</h4>
+<p>The cut program is used to extract a section of text from a line and output the extracted section to standard output. It can accept multiple file arguments or input from standard input.</p>
+<h4 id="paste">paste</h4>
+<p>The paste command does the opposite of cut. Rather than extracting a column of text from a file, it adds one or more columns of text to a file. It does this by reading multiple files and combining the fields found in each file into a single stream on standard output</p>
+<h4 id="join">join</h4>
+<p>In some ways, join is like paste in that it adds columns to a file, but it uses a unique way to do it. A join is an operation usually associated with relational databases where data from multiple tables with a shared key field is combined to form a desired result.</p>
+<ul>
+<li><em>see my notes on [[SQL]]</em></li>
+</ul>
+<h3 id="comparing-text">Comparing Text</h3>
+<p>A system administrator may, for example, need to compare an existing configuration file to a previous version to diagnose a system problem. Likewise, a programmer frequently needs to see what changes have been made to programs over time.</p>
+<h4 id="comm">comm</h4>
+<p>The comm program compares two text files and displays the lines that are unique to each one and the lines they have in common.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#f92672">[</span>me@linuxbox ~<span style="color:#f92672">]</span>$ comm file1.txt file2.txt
+</span></span><span style="display:flex;"><span>a
+</span></span><span style="display:flex;"><span>		b
+</span></span><span style="display:flex;"><span>		c
+</span></span><span style="display:flex;"><span>		d
+</span></span><span style="display:flex;"><span>	e
+</span></span></code></pre></div><p>As we can see, comm produces three columns of output. The first column contains lines unique to the first file argument, the second column contains the lines unique to the second file argument, and the third column contains the lines shared by both files. comm supports options in the form -n, where n is either 1, 2, or 3. When used, these options specify which columns to suppress. For example, if we wanted to only output the lines shared by both files, we would suppress the output of the first and second columns.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span><span style="color:#f92672">[</span>me@linuxbox ~<span style="color:#f92672">]</span>$ comm -12 file1.txt file2.txt
+</span></span><span style="display:flex;"><span>b
+</span></span><span style="display:flex;"><span>c
+</span></span><span style="display:flex;"><span>d
+</span></span></code></pre></div><h4 id="diff">diff</h4>
+<p>Like the comm program, diff is used to detect the differences between files. However, diff is a much more complex tool, supporting many output formats and the ability to process large collections of text files at once.
+<em>Precursor to [[git]]?</em></p>
+<h4 id="patch">patch</h4>
+<p>The patch program is used to apply changes to text files. It accepts output from diff and is generally used to convert older version files into newer versions. Let’s consider a famous example. The Linux kernel is developed by a large, loosely organized team of contributors who submit a constant stream of small changes to the source code. The Linux kernel consists of several million lines of code, while the changes that are made by one contributor at one time are quite small. It makes no sense for a contributor to send each developer an entire kernel source tree each time a small change is made. Instead, a diff file is submitted. The diff file contains the change from the previous version of the kernel to the new version with the contributor&rsquo;s changes. The receiver then uses the patch program to apply the change to his own source tree. Using diff/patch offers two significant advantages.
+<em>This sounds like older version before git</em></p>
+<h4 id="aspell">aspell</h4>
+<p>The aspell program is the successor to an earlier program named ispell and can be used, for the most part, as a drop-in replacement. While the aspell program is mostly used by other programs that require spell-checking capability, it can also be used effectively as a standalone tool from the command line. It has the ability to intelligently check various types of text files, including HTML documents, C/C++ programs, email messages, and other kinds of specialized texts.</p>
+<h2 id="21--formatting-output">21 – Formatting Output</h2>
+<ul>
+<li>nl – Number lines</li>
+<li>fold – Wrap each line to a specified length</li>
+<li>fmt – A simple text formatter</li>
+<li>pr – Prepare text for printing</li>
+<li>printf – Format and print data</li>
+<li>groff – A document formatting system</li>
+</ul>
+<h3 id="fold">fold</h3>
+<p>Folding is the process of breaking lines of text at a specified width. Like our other commands, fold accepts either one or more text files or standard input. If we send fold a simple stream of text, we can see how it works.</p>
+<h3 id="fmt">fmt</h3>
+<p>The fmt program also folds text, plus a lot more. It accepts either files or standard input and performs paragraph formatting on the text stream. Basically, it fills and joins lines in text while preserving blank lines and indentation.</p>
+<h3 id="pr">pr</h3>
+<p>The pr program is used to paginate text. When printing text, it is often desirable to separate the pages of output with several lines of whitespace, to provide a top margin and a bottom margin for each page. Further, this whitespace can be used to insert a header and footer on each page.</p>
+<h3 id="printf--format-and-print-data">printf – Format and Print Data</h3>
+<p>Unlike the other commands in this chapter, the printf command is not used for pipelines (it does not accept standard input) nor does it find frequent application directly on the command line (it’s mostly used in scripts). So why is it important? Because it is so widely used.</p>
+<h3 id="document-formatting-systems">Document Formatting Systems</h3>
+<p>Two main families of document formatters dominate the field: those descended from the original roff program, including nroff and troff, and those based on Donald Knuth’s TEX (pronounced “tek”) typesetting system.</p>
+<ul>
+<li>The later troff program formats documents for output on typesetters, devices used to produce “camera-ready” type for commercial printing.</li>
+<li>The TEX system (in stable form) first appeared in 1989 and has, to some degree, dis-placed troff as the tool of choice for typesetter output.</li>
+</ul>
+<p>PostScript is a page description language that is used to describe the contents of a printed page to a typesetter-like device.</p>
+<h2 id="22---printing">22 - Printing</h2>
+<ul>
+<li>pr – Convert text files for printing</li>
+<li>lp / lpr – Print files</li>
+<li>a2ps – Format files for printing on a PostScript printer</li>
+<li>lpstat – Show printer status information</li>
+<li>lpq – Show printer queue status</li>
+<li>lprm – Cancel print jobs</li>
+</ul>
+<h4 id="graphical-printers">Graphical Printers</h4>
+<p>The development of GUIs led to major changes in printer technology. As computers moved to more picture-based displays, printing moved from character-based to graphical techniques. This was facilitated by the advent of the low-cost laser printer which, instead of printing fixed characters, could print tiny dots anywhere in the printable area of the page. This made printing proportional fonts (like those used by typesetters), and even photographs and high-quality diagrams, possible.</p>
+<p>The first major PDL was PostScript from Adobe Systems, which is still in wide use today. The PostScript language is a complete programming language tailored for typography and other kinds of graphics and imaging. It includes built-in support for 35 standard, high-quality fonts, plus the ability to accept additional font definitions at runtime.</p>
+<ul>
+<li>The generic name for this process of rendering something into a large bit pattern (called a bitmap) is raster image processor (RIP).</li>
+</ul>
+<h3 id="printing-with-linux">Printing with Linux</h3>
+<p>Modern Linux systems employ two software suites to perform and manage printing. The first, <em>Common Unix Printing System</em> (<strong>CUPS</strong>) provides print drivers and print-job management, and the second, <em>Ghostscript</em>, a PostScript interpreter, acts as a <strong>RIP</strong>.</p>
+<h3 id="preparing-files-for-printing">Preparing Files for Printing</h3>
+<ul>
+<li><code>pr</code> is used to adjust text to fit on a specific page size, with optional page headers and margins.</li>
+</ul>
+<h3 id="sending-a-print-job-to-a-printer">Sending a Print Job to a Printer</h3>
+<p>The CUPS printing suite supports two methods of printing historically used on Unix-like systems. One method, called Berkeley or <strong>LPD</strong> (used in the Berkeley Software Distribution version of Unix), uses the <code>lpr</code> program, while the other method, called <strong>SysV</strong> (from the System V version of Unix), uses the <code>lp</code> program. Both programs do roughly the same thing. Choosing one over the other is a matter of personal taste.</p>
+<h5 id="tip">TIP</h5>
+<p>Many Linux distributions allow you to specify a “printer” that outputs files in Portable Document Format (PDF), rather than printing on the physical printer. This is very handy for experimenting with printing commands. Check your printer configuration program to see whether it supports this configuration. On some distributions, you may need to install additional packages (such as cups-pdf) to enable this capability.</p>
+<h3 id="monitoring-and-controlling-print-jobs">Monitoring and Controlling Print Jobs</h3>
+<p>As Unix printing systems are designed to handle multiple print jobs from multiple users, CUPS is designed to do the same. Each printer is given a print queue, where jobs are parked until they can be spooled to the printer.</p>
+<h4 id="lpstat--display-print-system-status">lpstat – Display Print System Status</h4>
+<p>The lpstat program is useful for determining the names and availability of printers on the system.</p>
+<h4 id="lpq--display-printer-queue-status">lpq – Display Printer Queue Status</h4>
+<p>To see the status of a printer queue, the lpq program is used. This allows us to view the status of the queue and the print jobs it contains.</p>
+<h4 id="lprm--cancel--cancel-print-jobs">lprm / cancel – Cancel Print Jobs</h4>
+<p>CUPS supplies two programs used to terminate print jobs and remove them from the print queue. One is Berkeley style (lprm) and the other is System V (cancel). They differ slightly in the options they support, but do basically the same thing.</p>
+<h2 id="23--compiling-programs">23 – Compiling Programs</h2>
+<p>The entire ecosystem of Linux development relies on free exchange between developers. For many desktop users, compiling is a lost art.</p>
+<p>So why compile software? There are two reasons:</p>
+<ol>
+<li><strong>Availability</strong>. Despite the number of precompiled programs in distribution repositories, some distributions may not include all the desired applications. In this case, the only way to get the desired program is to compile it from source.</li>
+<li><strong>Timeliness</strong>. While some distributions specialize in cutting-edge versions of programs, many do not. This means that to have the latest version of a program, compiling is necessary.</li>
+</ol>
+<ul>
+<li>make – Utility to maintain programs</li>
+</ul>
+<h3 id="what-is-compiling">What is Compiling?</h3>
+<p>Simply put, compiling is the process of translating <em>source code</em> (the human-readable description of a program written by a programmer) into the native language of the computer’s processor.</p>
+<p><em>assembly language</em>, which replaced the numeric codes with (slightly) easier to use character <em>mnemonics</em> such as CPY (for copy) and MOV (for move). Programs written in assembly language are processed into machine language by a program called an <em>assembler</em>. Assembly language is still used today for certain specialized programming tasks, such as <strong>device drivers and embedded systems</strong>.</p>
+<p>executed directly. These are written in what are known as scripting or interpreted languages. These languages have grown in popularity in recent years and include Perl, Python, PHP, Ruby, and many others.</p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

@@ -1,7 +1,7 @@
 +++
 tags = ['Linux', 'Bash']
 title = 'Linux Command Line: Part 3 Common Tasks and Essential Tools'
-date = 2025-03-10T10:34:07+01:00
+date = 2025-03-10T18:34:07+01:00
 +++
 
 ## 14 – Package Management

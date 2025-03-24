@@ -6,7 +6,7 @@ date = 2024-09-26T10:34:07+01:00
 
 ## Harvard Online CS50 Python
 
-![CS50P Certificate](../images/20240926_CS50P_Certificate.png)
+![CS50P Certificate](https://pbrazeale.github.io/images/20240926_CS50P_Certificate.png)
 
 ## Takeaways
 
