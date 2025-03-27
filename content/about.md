@@ -15,4 +15,4 @@ I’m open to joining a team who’s mission is to solve Roko’s … and are al
 
 ### 📊 Stats
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=pbrazeale&show_icons=true&theme=tokyonight) ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=pbrazeale&theme=tokyonight)
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=pbrazeale&show_icons=true&theme=tokyonight)
