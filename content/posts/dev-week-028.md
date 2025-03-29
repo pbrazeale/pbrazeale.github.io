@@ -1,5 +1,5 @@
 +++
-tags = ['Developer Log', 'JavaScript', 'Data Strcutures', 'Alorithms']
+tags = ['Developer Log', 'JavaScript', 'Data Structures', 'Alorithms']
 title = 'Developer Week 028'
 date = 2025-01-26T06:34:07+01:00
 draft = false
