@@ -1,5 +1,5 @@
 +++
-tags = ['Developer Log', 'Articles']
+tags = ['Articles']
 title = '9 Months Obsidian Takeaways'
 date = 2025-03-29T10:34:07+01:00
 draft = false
