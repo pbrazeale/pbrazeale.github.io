@@ -9,7 +9,7 @@ My only regret is that I didn't stick with Obsidian the first time I downloaded 
 
 ## Mind Map
 
-![202050327_obsidan_mind_map.png](https://pbrazeale.github.io/iamges/202050327_obsidan_mind_map.png)
+![202050327_obsidan_mind_map.png](https://pbrazeale.github.io/images/202050327_obsidan_mind_map.png)
 
 I thought it would take much longer to get a node cluster this size. But an odd thing happened three months into using Obsidian as my sole note taking source: I found myself compelled to take **more** notes.
 
