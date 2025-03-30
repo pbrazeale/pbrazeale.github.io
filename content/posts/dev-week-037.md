@@ -110,6 +110,6 @@ Ultimate objective is to create a complete application for managing and tracking
 ## 9 Months Obsidian Takeaway
 I wrote a full [article](https://pbrazeale.github.io/posts/9-months-obsidian-takeaways/) detailing my entire process and thoughts on the advantages of Obsidian in my life.
 
-Literally the same day, Mischa referenced [JohnnyDecimal](https://johnnydecimal.com/) which I'd not heard of, but is clearly a more refined version of what I'm already doing with my 100 folder system. Now I'm in an awkward position where I feel I'm under utilizing my Obsidian vault, and I instantly loved the idea of mapping that file structure onto my actual file storage on my computers. 
+Literally the same day, [Mischa van den Burg](https://www.youtube.com/watch?v=ayY4lNcpfKk) referenced [JohnnyDecimal](https://johnnydecimal.com/) which I'd not heard of, but is clearly a more refined version of what I'm already doing with my 100 folder system. Now I'm in an awkward position where I feel I'm under utilizing my Obsidian vault, and I instantly loved the idea of mapping that file structure onto my actual file storage on my computers. 
 
 With the new Proxmox server, this would be an ideal time to implement a proper organization schema.
