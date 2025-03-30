@@ -38,7 +38,7 @@ Took the plunge and switched to *Hugo* from *Jekyll* after I ran into an issue u
 Updating the python project I made for CS50P.
 
 Working Logo/Icon:
-![[AuthorLedger logo.webp]]
+![AuthorLedger logo](https://pbrazeale.github.io/images/AuthorLedger_logo.jpg)
 
 Ultimate objective is to create a complete application for managing and tracking indie author performance for authors and/or small publishers. 
 #### Design: 
