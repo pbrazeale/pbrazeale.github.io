@@ -22,7 +22,8 @@ draft = false
 >4. Enter a tag `div` (or an abbreviation `.wrapper>p`)
 >5. Hit Enter
 Command can be assigned to a keybinding.
-[![enter image description here](https://i.sstatic.net/UQgrQ.gif)](https://i.sstatic.net/UQgrQ.gif)
+
+![enter image description here](https://i.sstatic.net/UQgrQ.gif)
 
 - This will save me some copy paste tediousness. 
 
