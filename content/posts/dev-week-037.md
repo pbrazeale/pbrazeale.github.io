@@ -23,7 +23,7 @@ draft = false
 >5. Hit Enter
 Command can be assigned to a keybinding.
 
-![enter image description here](https://i.sstatic.net/UQgrQ.gif)
+![Exmaple](https://i.sstatic.net/UQgrQ.gif)
 
 - This will save me some copy paste tediousness. 
 
