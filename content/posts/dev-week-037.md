@@ -32,7 +32,7 @@ Command can be assigned to a keybinding.
 ### pbrazeale.github.io
 - [Updated Hugo Blog](https://pbrazeale.github.io)
 
-Took the plunge and switched to *Hugo* from *Jekyll* after I ran into an issue uploading a markdown table into my post. Being able to just copy paste from my obsidian  
+Took the plunge and switched to *Hugo* from *Jekyll* after I ran into an issue uploading a markdown table into my post. Being able to just copy paste from my obsidian is a major advantage. In the long run this conversion should save me time. 
 
 
 ### AuthorLedger ~45%
