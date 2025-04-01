@@ -80,7 +80,7 @@ Ultimate objective is to create a complete application for managing and tracking
 	4. Google Play
 	5. Draft 2 Digital *most complex as it requires all the platforms they publish to*
 5. Additional Functionality Expansion
-	1. Create a Revenue and Expanse tracker
+	1. Create a Revenue and Expense tracker
 		1. Display and Export simple P&Ls
 	2. Ad ROI tracker
 		1. Convert my current excel formula template into an additional tab within the application
