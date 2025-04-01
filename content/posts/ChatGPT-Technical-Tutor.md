@@ -1,7 +1,7 @@
 +++
 tags = ['LLM', 'AI', 'Python', 'Articles']
 title = 'ChatGPT Technical Tutor'
-date = 2024-02-18T16:34:07+01:00
+date = 2025-02-18T16:34:07+01:00
 draft = false
 +++
 
