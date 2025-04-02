@@ -1,7 +1,7 @@
 +++
 tags = ['CompTIA', 'Security+', 'Cybersecurity']
 title = 'CompTIA Security+ Acronym List'
-date = 2024-03-05T16:34:07+01:00
+date = 2025-03-05T16:34:07+01:00
 draft = false
 +++
 
