@@ -1,7 +1,7 @@
 +++
 tags = ['Developer Log', 'Azure', 'Python', 'Linux']
 title = 'Developer Week 038'
-date = 2025-04-06T00:01:07+01:00
+date = 2025-04-06T08:01:07+01:00
 draft = false
 +++
 
