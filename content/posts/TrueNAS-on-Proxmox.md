@@ -1,5 +1,5 @@
 +++
-tags = ['Home Lab', 'Virtual Environment', 'Linux', 'Articles']
+tags = ['Home Lab', 'Virtual Environment', 'Linux', 'Articles', 'TrueNAS', 'Proxmox']
 title = 'TrueNas on Proxmox PVE'
 date = 2025-04-12T23:01:07+01:00
 draft = false
