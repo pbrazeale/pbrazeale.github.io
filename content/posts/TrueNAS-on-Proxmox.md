@@ -5,6 +5,8 @@ date = 2025-04-12T23:01:07+01:00
 draft = false
 +++
 
+![TrueNAS on Proxmox](https://pbrazeale.github.io/images/truenas_on_proxmox.jpg)
+
 ## TrueNAS Download
 
 1. First, visit the website: [https://www.TrueNAS.com/download-TrueNAS-scale/](https://www.TrueNAS.com/download-TrueNAS-scale/)
