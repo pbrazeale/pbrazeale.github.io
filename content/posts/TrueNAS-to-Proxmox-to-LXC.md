@@ -5,7 +5,7 @@ date = 2025-04-14T22:01:07+01:00
 draft = false
 +++
 
-![TrueNAS to Proxmox to LXC](https://pbrazeale.github.io/content/images/TrueNas_Proxmox_LXC.jpg)
+![TrueNAS to Proxmox to LXC](https://pbrazeale.github.io/images/TrueNas_Proxmox_LXC.jpg)
 
 ## Setting Up Jellyfin in an LXC on Proxmox
 
