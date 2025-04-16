@@ -5,6 +5,8 @@ date = 2025-04-14T07:50:07+01:00
 draft = false
 +++
 
+![Developer Week 039](https://pbrazeale.github.io/images/devweek039.jpg)
+
 ## Projects
 
 ### Home Lab
