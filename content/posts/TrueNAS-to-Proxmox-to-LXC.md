@@ -5,6 +5,8 @@ date = 2025-04-14T22:01:07+01:00
 draft = false
 +++
 
+![TrueNAS to Proxmox to LXC](https://pbrazeale.github.io/content/images/TrueNas_Proxmox_LXC.jpg)
+
 ## Setting Up Jellyfin in an LXC on Proxmox
 
 To save time, I highly recommend using this [community helper script](https://community-scripts.github.io/ProxmoxVE/scripts?id=jellyfin) to install Jellyfin. It shaved off 30 minutes compared to my first setup.
