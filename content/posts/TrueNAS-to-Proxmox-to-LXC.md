@@ -32,7 +32,7 @@ To save time, I highly recommend using this [community helper script](https://co
    ```
 
    - Replace `<yourUsername>`, `<TrueNAS_IP>`, and `<SharedFolderName>` accordingly.
-   - Example: `mount -t cifs -o user=john //<192.168.1.100>/media /mnt/media`
+   - Example: `mount -t cifs -o user=john //192.168.1.100/media /mnt/media`
 
 5. **Enter your password when prompted.**
 
