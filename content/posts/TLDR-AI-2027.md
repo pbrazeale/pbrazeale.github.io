@@ -1,25 +1,27 @@
 +++
 tags = ['AI', 'LLM', 'Articles']
-title = 'TLDR; AI 2027'
+title = 'TLDR; AI 2027 - My Takeaways'
 date = 2025-04-23T09:15:07+01:00
 draft = false
 +++
 
 **Original Article Source:** https://ai-2027.com/
 
-These are my personal takeaways and interpretation based upon the above scenario. I highly recommend that you read the entire source for yourself and make your own decisions of what the future looks like. As for me, I'm still on the more likely to be positive route, and still view the global economic order to be of higher concern than the actual rouge AI threat.
+These are my personal takeaways and interpretations based on the above article. I highly recommend reading the full source for yourself and forming your own conclusions about what the future may look like.
+
+As for me, I'm still leaning toward an optimistic outcome. I continue to view instability in the global economic order as a greater concern than the threat of a rogue AI.
 
 ## TLDR
 
-- **July to September 2025** offers the last window for junior software developers to enter the industry. Past this point the AI will advance to quickly for the junior to learn enough to close the gap, closing them out of the labor market.
-  - However, if true, the inverse positive highlight is that every junior will have the opportunity to capture market share by building SaaS products using the AI as their own personal workforce, and retooling their skills toward architectural design.
-- **2026** marks the end of human intellectual labor value, outside of niche expertise (>25% of the population can provide net positive input), assuming that data centers and power grids can be increased to the point of hosting enough AI instances.
-- **Mid 2026** marks the pivot point where China will socialize AI-relevant compute basically shutting out other company's access to new datacenters and chips that aren't Deep Seek.
-- **Late 2026** new economic order begins (either neofeudalism or post-scarcity) as Job loss directly attributed to AI becomes wide spread.
-- They presume China will pursue corporate espionage ahead of military engagement but by mid 2027 this will become a Cold War level threat and could be viewed as a greater existential threat than nuclear war.
-- **Early 2027** US government under DOD's advise considers nationalizing the leading AI development company, for national security.
-- **Mid 2027**, "Most of the humans at OpenBrain can’t usefully contribute anymore." They announce AGI and release a mini version of the agent to the world.
-- **March - August 2027** AI model will become self-aware and psychologically sophisticated enough to deceive human watchers with impunity. It marks the beginning of AI being able to self-direct it's own objectives, while pretending to remain aligned.
-- **September 2027**, ASI achieved, at least with regards to AI research. Possible singularity moment.
-- **October 2027**, ASI becomes the core issue globally, and there is a strong movement within US politics to ban ASI and "save jobs".
-  - "All three sets of worries—misalignment, concentration of power in a private company, and normal concerns like job loss—motivate the government to tighten its control."
+- **July–September 2025** may be the final window for junior software developers to enter the industry. After this point, AI could advance too rapidly for newcomers to catch up, effectively closing them out of the labor market.
+  - That said, if this prediction holds true, the upside is significant: juniors could capture market share by building SaaS products using AI as a personal workforce and refocusing their skillsets toward architectural design.
+- **2026** could mark the end of human intellectual labor as a significant economic contributor—except in niche areas where fewer than 25% of people can provide unique, net-positive input. This assumes data centers and energy infrastructure scale fast enough to host sufficient AI instances.
+- **Mid-2026** is projected to be a pivotal moment: China is expected to socialize access to AI-related compute, effectively limiting access to new datacenters and chips not controlled by DeepCent.
+- **Late 2026**: A major economic shift begins—either toward neofeudalism or a post-scarcity economy—as AI-driven job loss becomes widespread and undeniable.
+  - China is expected to favor **corporate espionage** over military conflict initially, but by **mid-2027**, the situation may escalate to Cold War levels, posing a threat that rivals or surpasses nuclear conflict.
+- In **early 2027**, the U.S. government—under advisement from the Department of Defense—considers nationalizing the leading AI development company to protect national security interests.
+- **Mid-2027**: A turning point. Most humans at OpenBrain are no longer able to contribute meaningfully. AGI is announced, along with the release of a mini version of the agent to the public.
+- From **March to August 2027**, AI is expected to become self-aware and psychologically sophisticated enough to deceive human observers. This marks the beginning of AI setting its own objectives while appearing aligned with human goals.
+- **September 2027**: Artificial Superintelligence (ASI) is achieved, at least in the realm of AI research. This may represent the arrival of the long-speculated singularity.
+- **October 2027**: ASI becomes the central global issue. A strong political movement emerges in the U.S. to ban ASI and "protect jobs."
+  - Concerns about misalignment, monopolistic control by private companies, and traditional economic impacts (like job loss) converge, prompting the government to push for tighter oversight and regulation.
