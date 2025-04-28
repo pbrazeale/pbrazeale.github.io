@@ -1,81 +1,36 @@
 +++
-tags = ['CS50', 'Programing', 'Developer Log']
+tags = ['CS50', 'Python', 'Linux', 'Developer Log']
 title = 'Developer Week 002'
 date = 2024-07-21T16:34:07+01:00
 draft = false
 +++
 
-## Identify The Problem
+## CS50P
 
-Indie Authors, are forced to wear multiple hats.
+### Week 5 (progress 60%)
 
-- Content Creator
-  - Novels
-  - Other media where applicable
-- Marketing Director
-  - Either direct sales via advertising
-    - Meta
-    - Bookbub
-    - Amazon
-    - Multitude of eBook newsletter sites
-  - And/or social media influence
-- Product Designer
-  - Design and implementation of eBooks with .epub
-  - Design and implementation of print books with .pdf
-
-There's more, but it's this last pain point that most authors struggle with. Cover design is a known aspect that's outsourced to a graphic design expert, but for most authors outsourcing the eBook and print book layout is not a viable expense.
-
-Enter, Vellum Press an simple solution for Mac users for a one time purchase of $249, or Atticus.io, a simple cloud based solution for a one time purchase of $147, that tries to be the all-in-one writing and formatting platform.
-
-### Core Limitations
-
-Scrivener, the industry standard writing software is $59.99 and works on both Windows and Mac.
-
-Why then is the formatting software costs 3X+ when the functionality requirements are far less complex than Scrivener's writing environment? _Also, Scrivener provides a basic built in formatter._
-
-#### Scrivener Limitations
-
-The reason Vellum and Atticus are able to charge authors is because Scrivener's default formatter is nowhere near intuitive to use, and the majority of authors are not interested in learning the technical requirements.
-
-#### Vellum Limitations
-
-The software offers a limited number of preset formatting options, resulting in author's eBooks and print books looking too similar. _If novels are about novelty, why present them as cookie cutter copies?_
-
-#### Atticus.io Limitations
-
-Likewise, Atticus.io shares limited default options that result in the same similar output issue. At $100 off it's becoming the go-to option for most authors: Mac and Windows. By being a cloud based solution, they captured the Windows market that Vellum initially ignored for years.
-
-However, cloud based also comes with risk on behalf of the authors.
-
-1. The servers can shutdown at any time.
-2. The data stored on their servers (author's novels) offers another vulnerability point for leaks.
-3. To format, the author must be connected to the internet. _I for one enjoy disconnected from the internet and retreating to a campsite in the woods to work._
-
-## Opportunity
-
-1. Provide a standalone software for all users. _Likely means using Electron_
-2. Insure the software not only comes with 5-10X the number of default formats for authors to choose from, but provides an easy user interface for authors to upload and create their own default format templates.
-3. Undercut the book formatting software market by 60%.
-
-### Reason for success
-
-1. By offering a superior product at the same price as Scriver, $59.99, the indie author community should embrace my software.
-2. My established brand and reputation within the community guarantees me a baseline userbase to alpha test with, and should result in mass adoption as word spreads.
+Made it through Week 5 and then switched back to CS50X
 
 ## CS50X
 
-Began CS50X offered by Harvard and made it through week 0.
+Jumped back over to CS50X now that I have a grasp for programing beyond HTML and CSS _(if you count that sort of thing)_
 
-Spent a day cramming in as much YouTube from developers sharing their experiences.
+### Weeks 0 - 3 (progress 27%)
 
-- Exploratory research to learn unknown unknowns.
+Utilized a free sprite pack from online to establish the assets for Scratch. Realized that I will never have to use that language again.
 
-Don't recall the exact video that advised I take on CS50 Python, before CS50X, but I took the advise and jumped in.
+## Other Research
 
-## CS50P
+The distain I felt for scratch carried over into my YouTube exploration at nights. I'm following 5-10 developers now; trying to absorb as much as possible and expand my cognitive map of the craft.
 
-Made it through Weeks 0 - 4.
+### Neovim
 
-Nor sure cramming is the best long-term skill adoption path, but it's the path I'm taking to close the gap of where I am and where I need to be to finalize my software project.
+Odd rabbit hole led me to Neovim and a rediscovery of Ubuntu. I played around with it a fair bit in 2008 - 2009 but the lack of compatible software made it impossible as a daily driver, and I've never been exceptionally skilled with the command line _aside from copy pasta_.
 
-After Loops, I began to understand the basics and have been researching what opensource software is out there to help me protype my software project. _Still brainstorming names for the software._
+However, I think it's The Primeagen who started me down the rabbit hole of Neovim. So much so, that I portioned off a section of my laptop's drive, installed Ubuntu and was about to update Lazy Dubuntu to start with Lazy Vim. _I'm a sucker for Tokyo Night_
+
+Thankfully, calmer minds prevailed and I only lost 6 hours down that rabbit hole.
+
+### VS Code
+
+Don't get me wrong. The moment I accomplish my primary task of building the formatting software, my step will be to explore maximizing my development environment. However, until I'm prepare to wipe my laptop and go full Ubuntu and Neovim, I'll stick with my VS Code and Windows 11.
