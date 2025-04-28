@@ -5,6 +5,8 @@ date = 2025-04-28T07:35:07+01:00
 draft = false
 +++
 
+![Developer Week 041](https://pbrazeale.github.io/images/devweek041.jpg)
+
 ## Courses
 
 ### Boot.Dev Back-end Developer Career Path (~25.56%) (📈 +7.78%)
