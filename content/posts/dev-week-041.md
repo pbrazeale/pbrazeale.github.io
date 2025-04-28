@@ -1,11 +1,9 @@
 +++
 tags = ['Developer Log', 'Python', 'Git']
-title = 'Developer Week 040'
-date = 2025-04-21T07:50:07+01:00
+title = 'Developer Week 041'
+date = 2025-04-28T07:35:07+01:00
 draft = false
 +++
-
-![Developer Week 040](https://pbrazeale.github.io/images/devweek040.jpg)
 
 ## Courses
 
