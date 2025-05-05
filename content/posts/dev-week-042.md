@@ -15,7 +15,7 @@ draft = false
 
 ##### 7.2.5 Learned how/why functional programming can be more resource efficient.
 
-By using map() to feed the newly split document into convert_line(), I can then "\n".join() the list of modified lines, and thus return an entirely new document.
+By using map() to feed the newly split document into convert_line(), I can then `"\n".join()` the list of modified lines, and thus return an entirely new document.
 
 ```python
 def change_bullet_style(document):
