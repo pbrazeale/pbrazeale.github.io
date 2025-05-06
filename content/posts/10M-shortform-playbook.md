@@ -9,41 +9,80 @@ draft = false
 
 **Original Source:**[https://www.starterstory.com/10m-playbook](https://www.starterstory.com/10m-playbook)
 
-## Personal Notes
+## Content Strategy as a Series of Strategic Bets
 
-Short form is content is a bunch of small bets without outsized returns for the success. Think startup bets, but for the content space.
+Short-form content is like making small startup bets—most won’t yield massive returns, but the few that succeed can drive real growth. Think of each piece of content as a micro-experiment. Your goal is to quickly test, measure, and iterate.
 
-Balance and multiplication of the 3 Pillars determines the company value. Think of the balance of book marketing: Genre (distribution potential), Presentation (Conversion rate based on cover and blurb), Retention (sell-through in a series)
+---
 
-Must hear back from users to increase conversion. (Beta Readers)
+## The 3 Pillars of Content Value
 
-- Create an ideal user profile. (Same as a reader profile)
+Just like book marketing, the value of your content company depends on the balance and multiplication of three key elements:
 
-When selecting an account to partner with, look for ones that can have a viral 1M+ views for a sponsored video.
+1. **Genre (Reach):** How wide is the potential distribution?
+2. **Presentation (Conversion):** Does your "cover and blurb" (visuals, hook, caption) drive clicks and views?
+3. **Retention (Sell-through):** Does your content make people stick around, subscribe, or engage again?
 
-Content generation stems from a similar process of selecting a genre and identifying the core tropes to use.
+A weakness in one can drag down the others—optimize for balance, not just one metric.
 
-Influences are normal people, and you should send emails and DMs.
+---
 
-- Follow up after 3-5 days after a lack of response.
-- Make sure you're able to demonstrate genuine interest in their content and why it would be a good match. Think pitch email to agents/editors for a novel.
-- Anything close to 50% response rate is considered good.
+## User Feedback is Crucial
 
-Structure your contracts with your influencers so that they're aligned with your metrics.
+You need real user input to improve conversion—think **beta readers**, but for content.
 
-- Structure your contacts across multiple videos vs a single video.
-- Focus on the quality of the conversion not the follower count.
+- Define your _ideal viewer_ the same way you would a _reader profile_ in publishing.
+- Track what resonates and what doesn’t. This isn’t optional—feedback loops are what turn average posts into viral ones.
 
-Negotiate by starting with the largest package possible, and then strip out what you don't need.
+---
 
-- When you find a final price based on needed features of the posts, then negotiate from that price on discounted rate ~30% for a bulk order.
+## Influencer & Account Selection
 
-Start with 30-60 short form posts to find metrics and trends to track.
+Choose influencer accounts like you'd choose a co-author or developmental editor:
 
-- Higher view count doesn't always lead to higher conversion. It's more important to hit the correct audience than splatter your content to the widest possible audience and hope for conversion.
-- Think about how a book is positioned in the market with a cover, and then the blurb converts the right readers by making tone and trope promises.
+- Look for proven viral potential (1M+ views).
+- Don’t just chase big followings—**focus on conversion quality**, not just exposure.
 
-When you find your viral video, turn it into a series; same as converting a successful trilogy into a long series. Raymond E. Feist.
+---
+
+## Outreach that Converts
+
+Think of influencer outreach like pitching a novel to an agent:
+
+- Send personalized DMs/emails.
+- Follow up after 3–5 days if there's no response.
+- Make it clear why your collaboration makes sense. Show that you know—and respect—their content.
+
+A 50% response rate is a strong signal you're doing this right.
+
+---
+
+## Smart Contracts & Negotiation
+
+Structure contracts to align with **your key metrics**, not just one-off posts:
+
+- Negotiate bundles—**multiple videos across time** convert better than a one-time post.
+- Start with the **largest package**, then remove features you don’t need.
+- Once you’ve defined the exact deliverables, negotiate ~30% off for a bulk rate.
+
+---
+
+## Content Testing & Scaling
+
+Begin with **30–60 short-form posts** to gather initial data:
+
+- Track which posts convert vs. just getting views.
+- Higher view count ≠ higher conversion. Focus on hitting the **right audience** over the widest one.
+- Think of positioning like a book cover: It gets attention. Then the blurb (tone + tropes) convinces the reader to buy.
+
+---
+
+## Turn Virality into a Series
+
+When something works—**double down**.  
+If you find a viral video, **turn it into a series**, just like a successful trilogy becomes a long-running saga. (Think Raymond E. Feist.)
+
+---
 
 ## Video's Notes
 
