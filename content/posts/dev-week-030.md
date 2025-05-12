@@ -1,5 +1,5 @@
 +++
-tags = ['Developer Log', 'Python', 'SQL', 'Data Structures', 'Alorithms']
+tags = ['Developer Log', 'Python', 'SQL', 'Data Structures', 'Algorithms']
 title = 'Developer Week 030'
 date = 2025-02-09T06:34:07+01:00
 draft = false
