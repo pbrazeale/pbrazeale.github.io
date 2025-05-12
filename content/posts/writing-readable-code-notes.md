@@ -1,5 +1,5 @@
 +++
-tags = ['Go', 'Programming', 'Developer Log']
+tags = ['Go', 'Education']
 title = 'The 3 Laws of Writing Readable Code: NOTES'
 date = 2024-08-16T16:34:07+01:00
 draft = false
