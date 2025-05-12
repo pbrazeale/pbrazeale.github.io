@@ -7,6 +7,22 @@ draft = false
 
 ![Developer Week 043](https://pbrazeale.github.io/images/devweek043.jpg)
 
+## Projects
+
+### Home Lab
+
+#### Proxmox -> LVM Networking Issue
+
+For the past few weeks I've experienced a network issue with my proxmox server where it would randomly lock up and I would not be able to reach it over the network unless I unplugged the ethernet and plugged it back in.
+
+I finally realized it all stemmed from my initial setup of the TrueNAS LVM. I had originally created the LVM using VirtIO as the model for the network device. Now that I've redeployed using Intel E1000 I'm no longer running into an issue. _fingers crossed_ that was the root cause and not a random coincidence.
+
+##### Main Takeaway
+
+When setting up my LVMs I'll pass through the exact hardware for the network devices moving forward.
+
+And likely I should buy a dedicated network card and create a virtualized router. But for now I'll revel in the server working as expected.
+
 ## Courses
 
 ### Boot.Dev Back-end Developer Career Path (~37.22%) (📈 +5.00%)
@@ -66,19 +82,3 @@ Data structures are just organizational tools that allow for more advanced algor
 - **Graphs**: A collection of nodes connected by edges.
 
 #### Deeper Learning: Learn Git 2 (2/11)
-
-## Projects
-
-### Home Lab
-
-#### Proxmox -> LVM Networking Issue
-
-For the past few weeks I've experienced a network issue with my proxmox server where it would randomly lock up and I would not be able to reach it over the network unless I unplugged the ethernet and plugged it back in.
-
-I finally realized it all stemmed from my initial setup of the TrueNAS LVM. I had originally created the LVM using VirtIO as the model for the network device. Now that I've redeployed using Intel E1000 I'm no longer running into an issue. _fingers crossed_ that was the root cause and not a random coincidence.
-
-##### Main Takeaway
-
-When setting up my LVMs I'll pass through the exact hardware for the network devices moving forward.
-
-And likely I should buy a dedicated network card and create a virtualized router. But for now I'll revel in the server working as expected.
