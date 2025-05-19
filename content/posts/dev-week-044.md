@@ -143,7 +143,7 @@ Learned the difference between `self.variable` and `self.__variable`
 
 I think I was supposed to know this already, but clearly forgot.
 
-#### 11. Learn Memory Management (25/101 modules)
+#### 11. Learn Memory Management (25/101)
 
 ##### NOTE:
 
