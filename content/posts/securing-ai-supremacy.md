@@ -5,6 +5,8 @@ date = 2025-05-25T16:05:07+01:00
 draft = false
 +++
 
+**Original Source:** [Senate Committee](https://www.youtube.com/live/pxGE41V04fs)
+
 ## Introduction:
 
 On May 8, 2025, the U.S. Senate Commerce Committee convened a pivotal panel featuring some of the most influential voices in the artificial intelligence (AI) and semiconductor space. This wasn’t just a discussion about data ethics—it was a strategic session aimed at securing America's long-term dominance in the global AI race.
