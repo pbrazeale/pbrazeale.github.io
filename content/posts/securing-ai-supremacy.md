@@ -7,7 +7,7 @@ draft = false
 
 **Original Source:** [Senate Committee](https://www.youtube.com/live/pxGE41V04fs)
 
-## Introduction:
+![Securing AI Supremacy](https://pbrazeale.github.io/images/securing-ai-supremacy.jpg)
 
 On May 8, 2025, the U.S. Senate Commerce Committee convened a pivotal panel featuring some of the most influential voices in the artificial intelligence (AI) and semiconductor space. This wasn’t just a discussion about data ethics—it was a strategic session aimed at securing America's long-term dominance in the global AI race.
 
