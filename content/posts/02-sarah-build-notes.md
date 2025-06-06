@@ -11,6 +11,8 @@ Based on the roadmap and [boot.dev](https://www.boot.dev/courses/build-personal-
 
 UI has never been my focus before now, but this might be the right project to start. _Might us AI to make the GUI after the fact. Not sure if I'd count that as cheating myself, as I'm not trying to learn/master front-end._
 
+---
+
 ## 🧱 Phase 1: Core Architecture
 
 1. **Frontend (PyQt6)**
@@ -28,8 +30,6 @@ UI has never been my focus before now, but this might be the right project to st
    - Receive and write edited file to disk
    - Return download path to PyQt UI
 
----
-
 ### 🧰 Required Libraries
 
 ##
@@ -45,8 +45,6 @@ UI has never been my focus before now, but this might be the right project to st
 - `python-docx` (for `.docx` reading/writing)
 - `mammoth` (optional, for converting `.doc` to HTML/text)
 - `markdown` (optional, if you want to clean up `.md` formatting)
-
----
 
 ### 🔧 Design Decisions
 

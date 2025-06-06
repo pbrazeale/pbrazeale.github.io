@@ -9,6 +9,8 @@ I used GPT to assist in analyzing the cost benefits for building an AI editor wi
 
 Based upon the quick analysis, I've decided to move forward with a PyQt6 MVP an rely on OpenAI API. Given my past experience this should likewise make the build process smoother and allow me to focus my hours on making a viable MVP, rather than bashing my head on coding bugs, and learning new frameworks.
 
+---
+
 ## GPT Prompt
 
 ```GPT
@@ -25,6 +27,8 @@ Please explain the complexity issues of using word in that way vs upload and dow
 
 Also, what are the requirements to create a locally hosted AI embedded into the software, versus using an AI subscription.  Give me a time complexity for designing an embedded AI system.
 ```
+
+---
 
 ## ⚖️ Option Comparison: PyQt6 Editor vs Word Inline Edits
 
