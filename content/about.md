@@ -5,15 +5,7 @@ draft = false
 
 ## Digital Craftsman (Developer/Author/Publisher)
 
-I am a talented and strategic engineer skilled at increasing efficiencies through developing, delivering, and supporting new processes to reduce business expenses while increasing market share. Determined to lead my team through the AI transformation and ensuring we thrive in a highly competitive environment. Proven history of successfully adapting our diverse technological needs as they arose. Strong proficiency in communication and documentation, which I utilize to streamline and strengthen our decision making.
-
-CORE COMPETENCIES AND ACHIEVEMENTS
-- **Leadership** and **Management**. Provide strategic counsel to leadership team based on measurable metrics. Regularly sought after for strategic input by business partners.
-- **Communication**. B2B experience; organizing and supporting projects requiring upwards of 30 simultaneous partners.
-- Project Management. Exceptional ability to plan, execute, and deliver complete scope of work under intense deadlines. 
-- **Creativity** and **Innovation**. Forward thinking, one of first adopters of OpenAI’s playground when they offered trial credits.
-- **Technologies**: Python, LLMs, Linux, Azure, AWS, SQL, Obsidian.
----
+I am an adaptable engineer with a strong foundation in Python development, internal tooling, and LLM integration. Adept at supporting cross-functional teams through AI-driven workflows, automated reporting systems, and scalable IT infrastructure. Proven success in improving efficiency, reducing costs, and supporting internal users with prompt technical solutions. Passionate about documentation, user education, and continuous improvement.
 
 ### 📊 Stats
 
