@@ -13,20 +13,18 @@ Based upon the quick analysis, I've decided to move forward with a PyQt6 MVP an 
 
 ## GPT Prompt
 
-```GPT
-I want to build
-Sarah: Your AI Line Editor
-
-I'm familiar with Python, so I'd like to stick with it where possible.
-
-I'd like to explore the difference between creating a PyQt6 interface that accepts a file upload (.md, .docx, .doc, .txt) and returns an edited file based on multiple selection options and quick description written by the user. (This will tie into prompts I write on the backend.)
-
-The other option would be built around uploading a .docx file and the AI does inline edits using Word's track line changes.
-
-Please explain the complexity issues of using word in that way vs upload and download a file?
-
-Also, what are the requirements to create a locally hosted AI embedded into the software, versus using an AI subscription.  Give me a time complexity for designing an embedded AI system.
-```
+> I want to build
+> Sarah: Your AI Line Editor
+>
+> I'm familiar with Python, so I'd like to stick with it where possible.
+>
+> I'd like to explore the difference between creating a PyQt6 interface that accepts a file upload (.md, .docx, .doc, .txt) and returns an edited file based on multiple selection options and quick description written by the user. (This will tie into prompts I write on the backend.)
+>
+> The other option would be built around uploading a .docx file and the AI does inline edits using Word's track line changes.
+>
+> Please explain the complexity issues of using word in that way vs upload and download a file?
+>
+> Also, what are the requirements to create a locally hosted AI embedded into the software, versus using an AI subscription. Give me a time complexity for designing an embedded AI system.
 
 ---
 
