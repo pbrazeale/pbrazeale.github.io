@@ -5,7 +5,7 @@ date = 2025-06-08T14:05:07+01:00
 draft = false
 +++
 
-![Developer Week 044](https://pbrazeale.github.io/images/devweek047.jpg)
+![Developer Week 047](https://pbrazeale.github.io/images/devweek047.jpg)
 
 ## Courses
 
