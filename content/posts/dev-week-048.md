@@ -19,9 +19,7 @@ The course added a new Module 8, to build an AI Agent, replacing the Maze Solver
 
 Ran into the following error when trying to use my API key:
 
-```bash
-ValueError: Missing key inputs argument! To use the Google AI API, provide (`api_key`) arguments. To use the Google Cloud API, provide (`vertexai`, `project` & `location`) arguments.
-```
+> ValueError: Missing key inputs argument! To use the Google AI API, provide (`api_key`) arguments. To use the Google Cloud API, provide (`vertexai`, `project` & `location`) arguments.
 
 [https://googleapis.github.io/python-genai/#create-a-client](https://googleapis.github.io/python-genai/#create-a-client)
 
