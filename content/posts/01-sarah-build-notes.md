@@ -1,5 +1,5 @@
 +++
-tags = ['Sarah AI Line Editor', 'AI', 'Build Notes', 'Python', 'PyQt']
+tags = ['SARAH: Story Analysis & Revision AI Helper', 'AI', 'Build Notes', 'Python', 'PyQt']
 title = '01 Build Notes Sarah - AI Line Editor'
 date = 2025-06-06T10:40:07+01:00
 draft = false

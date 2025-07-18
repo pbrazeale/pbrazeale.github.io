@@ -1,5 +1,5 @@
 +++
-tags = ['Developer Log', 'AI', 'Go', 'Sarah AI Line Editor']
+tags = ['Developer Log', 'AI', 'Go', 'SARAH: Story Analysis & Revision AI Helper']
 title = 'Developer Week 051'
 date = 2025-07-07T06:05:07+01:00
 draft = false
