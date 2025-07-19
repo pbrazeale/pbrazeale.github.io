@@ -1,5 +1,5 @@
 +++
-tags = ['CS50', 'HTML', 'Developer Log', 'CSS', 'JavaScirpt', 'SQL', 'Git', 'Linux']
+tags = ['CS50', 'HTML', 'Developer Log', 'CSS', 'JavaScript', 'SQL', 'Git', 'Linux']
 title = 'Developer Week 005'
 date = 2024-08-18T16:34:07+01:00
 draft = false
