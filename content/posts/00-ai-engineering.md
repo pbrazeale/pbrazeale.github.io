@@ -26,6 +26,8 @@ draft = false
 2. "The context the model can use to respond to the query"
 3. "The model itself"
 
+![Three key model response levers](https://pbrazeale.github.io/images/three_key_model_response_levers.jpg)
+
 ## Terms
 
 - large language models (LLMs)
