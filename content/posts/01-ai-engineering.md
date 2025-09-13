@@ -1,7 +1,7 @@
 +++
 tags = ['AI', 'AI Engineering by Chip Huyen', 'LLM', 'Learning']
 title = 'NOTES: AI Engineering by Chip Huyen: Chapter 1'
-date = 2025-08-02T09:05:07+01:00
+date = 2025-09-13T14:05:07+01:00
 draft = false
 +++
 
