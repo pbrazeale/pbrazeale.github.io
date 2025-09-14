@@ -1,8 +1,8 @@
 +++
 tags = ['AI', 'AI Engineering by Chip Huyen', 'LLM', 'Learning']
 title = 'NOTES: AI Engineering by Chip Huyen: Chapter 2'
-date = 2025-09-13T14:05:07+01:00
-draft = true
+date = 2025-09-13T20:05:07+01:00
+draft = false
 +++
 
 [AI Engineering by Chip Huyen](https://www.oreilly.com/library/view/ai-engineering/9781098166298/)
