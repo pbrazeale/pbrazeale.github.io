@@ -5,7 +5,9 @@ draft = false
 
 ## Digital Craftsman (Developer/Author/Publisher)
 
-I am an adaptable engineer with a strong foundation in Python development, internal tooling, and LLM integration. Adept at supporting cross-functional teams through AI-driven workflows, automated reporting systems, and scalable IT infrastructure. Proven success in improving efficiency, reducing costs, and supporting internal users with prompt technical solutions. Passionate about documentation, user education, and continuous improvement.
+I’m an AI Engineer who ships production-grade agentic systems that cut workload and cost. I work where LLM foundation models meet operations: structured pipelines, deterministic fallbacks, tight evals, and guardrails. Teams I work alongside get outcomes, not demos.
+
+I've built and scaled customer support agents for order status, returns, SKU availability, complaints triage, and VIN checks. integrated with Replyco, Discord, OpenAI, and internal APIs. Presently resolving ~40% of all requests end-to-end, with zero human input. I've also shipped a Python + OpenAI content system: ~80,000 Schema.org-compliant descriptions in under 10 hours
 
 ### 📊 Stats
 
