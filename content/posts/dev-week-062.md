@@ -2,7 +2,7 @@
 tags = ['Developer Log', 'AI', 'Python', 'Learning']
 title = 'Developer Week 062'
 date = 2025-09-19T20:45:07+01:00
-draft = false
+draft = true
 +++
 
 ## Projects
