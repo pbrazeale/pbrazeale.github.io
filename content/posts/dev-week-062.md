@@ -14,6 +14,19 @@ draft = true
 
 Wrote a full article ([SARAH UI Redesign](https://pbrazeale.github.io/posts/04-sarah-build-notes/)) about the process and objective for the SaaS launch in mid October.
 
+### Home Lab
+
+[Syncthing LXC on Proxmox](https://pbrazeale.github.io/posts/syncthing-on-proxmox/)
+
+Just got Syncthing up and running inside a Proxmox LXC. Total game changer!  
+Big thanks to the community for their incredible helper scripts and TUIs that make setup and tweaks ridiculously smooth.
+
+**Why?**
+
+I use Obsidian daily to write and reference technical notes. It’s a key part of my dev stack. Without access to those notes across devices, I’m flying half-blind. Not anymore!
+
+Funny how long I put this off... no more KVM switching or emailing myself notes like it’s 2009.
+
 ## Books
 
 [AI Engineering by Chip Huyen](https://www.oreilly.com/library/view/ai-engineering/9781098166298/) (113/521) **~22%**
