@@ -2,182 +2,43 @@
 tags = ['Home Lab', 'Virtual Environment', 'Linux', 'Articles', 'Proxmox', 'Obsidian']
 title = 'Syncthing LXC on Proxmox'
 date = 2025-09-20T09:01:07+01:00
-draft = true
+draft = false
 +++
 
-![Syncthing on Proxmox](https://pbrazeale.github.io/images/syncthing_on_proxmox.jpg)
+## ![Syncthing on Proxmox](https://pbrazeale.github.io/images/syncthing_on_proxmox.jpg)
 
-## TrueNAS Download
+## Syncthing LXC Script
 
-1. First, visit the website: [https://www.TrueNAS.com/download-TrueNAS-scale/](https://www.TrueNAS.com/download-TrueNAS-scale/)
-2. Signup, or click "No Thank you, I have already signed up".
+[Proxmox VE Helper-Scripts](https://community-scripts.github.io/ProxmoxVE/scripts?id=syncthing)
 
-   ![TrueNAS Signup](https://pbrazeale.github.io/images/TrueNas_01.png)
+This is a huge timesaver! The community is amazing for building out these helper scripts and their TUIs (terminal user interfaces) are fantastic for quickly altering the setup settings.
 
-3. Copy the link for the stable version:
-   - (This is the stable version as of writing [24.10.2.1](https://download.sys.TrueNAS.net/TrueNAS-SCALE-ElectricEel/24.10.2.1/TrueNAS-SCALE-24.10.2.1.iso), but check for the latest stable version on the site.)
-4. Inside Proxmox VE, select your local storage, then go to the ISO Images tab and click Download from URL.
-5. Paste URL and Query URL, and then Download
+My core need was to sync files between my work laptop and personal desktop without allowing the laptop access to my server directly. [Syncthing](https://syncthing.net/) solves this problem perfectly, as it's encrypted at rest, password protected at each access point, and isolates the directory access to only the exact files I want. Brilliant!
 
-   ![TrueNAS on Proxmox](https://pbrazeale.github.io/images/TrueNas_03.png)
+If you've never looked into Syncthing you should.
 
-6. Grab a drink and wait for download to complete
+### Settings
 
-## TrueNAS VM Setup
+I chose to go with 2 cpu cores, 2 GB RAM, and 1 GB HD space. Proxmox makes it easy to boost LXCs if I under allocate resources, but based on the initial sync, I think if anything I over allocated LOL.
 
-1. Still inside proxmox, select Create VM
+Bridging the data from TrueNAS to the Syncthing LXC was easy. I just refollowed my own guide: [TrueNAS to Proxmox to LXC](https://pbrazeale.github.io/posts/truenas-to-proxmox-to-lxc/)
 
-   1. Node: default
-   2. VM ID: use your numbering convention
-   3. Name: TrueNAS-SCALE
-   4. Enable Advanced Settings
-      1. Start at boot: check
-   5. Click Next
+### Obsidian
 
-![TrueNAS on Proxmox](https://pbrazeale.github.io/images/TrueNas_04.png)
+If you're not writing your own guides and technical notes, check out my [9 Months Obsidian Takeaways](https://pbrazeale.github.io/posts/9-months-obsidian-takeaways/). I literally list Obsidian as one of my core technologies in my development stack, because without the quick access to my notes, I'd be half the software engineer.
 
-2. OS section
-   1. ISO image: select TrueNAS
-      - _If the ISO isn’t listed, verify it finished downloading._
-   2. click Next
-3. System section
-   1. leave as default
-   2. select Next
-4. Disks 1. Make sure Advanced settings are enabled 1. SSD emulation: check
+This is precisely why I had to get Syncthing setup. I've been meaning to figure out a solution since I started my new job, but one thing after another happened and I kept putting it off. However, now it's setup and I can stop using my KVM switch to flip between my laptop and desktop when I need access to notes. Or worse, emailing myself the notes for quick reference. (_Bad tech professional LOL_)
 
-![TrueNAS on Proxmox](https://pbrazeale.github.io/images/TrueNas_05.png)
+### Issues
 
-5. CPU
-   1. Sockets: 1
-   2. Cores: 4
-   3. Type: host
-   4. select Next
+Thus far the only thing I ran into is that the server threw up an error about not being able to sync. I went to Synthing folder listing on the server IP:
 
-##### NOTE: I'm running an Intel E5-2680V3 with 12 cores, 24 threads. You may want to allocate less cores. Proxmox will allow for over allocation, but I would advise against allocating more than 200%.
+- Edit
+- Advanced
+- selected "Ignore Permissions"
 
-![TrueNAS on Proxmox](https://pbrazeale.github.io/images/TrueNas_06.png)
+That seems to have fixed the issue, but obviously I'll keep a very close eye on my notes.
 
-6. Memory - Memory (MiB): 16384 - select Next
+### Closing Thoughts
 
-##### NOTE: I'm running 62.71GiB, [TrueNAS recommends](https://www.TrueNAS.com/docs/scale/22.12/gettingstarted/scalehardwareguide/#minimum-hardware-requirements) 8GB. But again Proxmox allows for over allocation.
-
-> "At its most basic level, one GB is defined as 1000³ (1,000,000,000) bytes and one GiB as 1024³ (1,073,741,824) bytes. That means one GB equals 0.93 GiB."- [Source](https://massive.io/file-transfer/gb-vs-gib-whats-the-difference/#gb-vs-gib-so-what-is-the-difference)
-
-7. Network
-
-   - Default is fine
-   - select Next
-
-8. Confirm
-   - check Start after created
-   - select Finish
-
-## TrueNAS Install
-
-1. Select the VM "200 (TrueNAS-SCALE)" _(top right tab in Proxmox UI)_
-   - Console
-2. Installation GUI
-   1. Install/Upgrade, select OK
-   2. Should see 32GiB disk
-      1. spacebar to select it
-      2. select OK
-   3. Warning, select Yes
-   4. Web UI Authentication Method
-      1. Down arrow "Configure using Web UI"
-      2. select OK
-   5. Legacy Boot
-      1. Allow EFI, select Yes
-         - older systems may require legacy boot.
-   6. wait for install
-   7. Installation Succeeded
-      1. select OK
-      2. down arrow to Reboot System
-         1. select OK
-         2. grab a drink and wait for reboot
-3. When finished you'll see an IP address
-
-![TrueNAS on Proxmox](https://pbrazeale.github.io/images/TrueNas_07.png)
-
-## TrueNAS Web Interface
-
-1. “In your web browser, go to the IP address displayed in the console (e.g., `http://192.168.1.161`)
-
-![TrueNAS on Proxmox](https://pbrazeale.github.io/images/TrueNas_08.png)
-
-2. Set a strong admin password
-3. Return to Proxmox
-
-   1. select Proxmox instance
-      1. select Disks
-      2. Identify your disk(s) model and serial number
-         ![TrueNAS on Proxmox](https://pbrazeale.github.io/images/TrueNas_09.png)
-   2. open Proxmox shell
-      1. type: `ls /dev/disk/by-id`
-      2. Copy disk IDs (they match model\_**serial number**)
-         1. ata-ST8000NC0002-1XX112\_**ZA19WJ59**
-         2. ata-ST8000NC0002-1XX112\_**ZA1AMANT**
-   3. Select TrueNAS VM
-      1. select Hardware
-         1. select CD/DVD
-            1. select remove
-            2. confirm
-            3. verify Hard Disk (scsi0)
-   4. open ProxMox shell
-      1. You're going to mount the disk(s) to TrueNAS VM.
-      2. Use the following syntax to attach each disk:
-
-```bash
-qm set <VM_ID> -scsi<X> /dev/disk/by-id/<DISK_ID>
-```
-
-- Replace `<VM_ID>` with the ID of your TrueNAS VM (e.g., `200`)
-- Replace `<X>` with the SCSI slot (e.g., `1`, `2`, etc.)
-- Replace `<DISK_ID>` with the disk identifier you copied earlier
-
-##### Example:
-
-```bash
-qm set 200 -scsi1 /dev/disk/by-id/ata-ST8000NC0002-1XX112_ZA19WJ59
-qm set 200 -scsi2 /dev/disk/by-id/ata-ST8000NC0002-1XX112_ZA1AMANT
-```
-
-- After running these commands, go back to **Proxmox > TrueNAS VM > Hardware**. You should now see the new SCSI drives listed.
-
-![TrueNAS on Proxmox](https://pbrazeale.github.io/images/TrueNas_10.png)
-
-4.  Return to TrueNAS web portal
-
-    1. Select Storage
-       1. Disks
-       2. _and we should see the new hard drives_
-
-    ![TrueNAS on Proxmox](https://pbrazeale.github.io/images/TrueNas_10.png)
-
-    2. Select Storage again
-       1. select Create pool
-       2. General Info
-          1. Name: `HDD8000` (use whatever works for you. I'm using 8TB so 8000)
-          2. select Next
-       3. Data
-          1. Layout: `Mirror` (use whatever works for you. I'm using 2X 8TB HDDs. I'd have done RAIDZ1 but couldn't get a third HDD. You can hover your mouse over each option for more information.)
-          2. select "Save And Go To Review"
-       4. Review
-          1. Verify MIRROR
-          2. select Create Pool
-          3. check Confirm
-          4. select Continue
-    3. Will automatically be sent to "Storage Dashboard"
-
-    ![TrueNAS on Proxmox](https://pbrazeale.github.io/images/TrueNas_12.png)
-
-    4. Select Datasets (left panel)
-       1. Select Add Dataset
-          1. Name: `personal_backups`
-          2. select Save
-          3. graph will update to show new child dataset
-
-![TrueNAS on Proxmox](https://pbrazeale.github.io/images/TrueNas_13.png)
-
-- This will allow for permission controls for network shares.
-
-##### NOTE: "Add Zvol" is used for creating storage for VMs.
+If you've not started your home lap, there's never been a better time. Hardware has dropped to stupid low pricing; like tiny footprint, energy efficient, PCs for $200-$250 that can likely run anything you need to start. And with the helper scripts and ease of use of Proxmox, it's so easy now.
