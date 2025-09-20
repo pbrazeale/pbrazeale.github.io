@@ -1,5 +1,5 @@
 +++
-tags = ['Articles', 'Education', 'SaaS']
+tags = ['Articles', 'Learning', 'SaaS']
 title = 'TLDR; The $10M/Year Short Form Playbook'
 date = 2025-05-06T09:23:07+01:00
 draft = false

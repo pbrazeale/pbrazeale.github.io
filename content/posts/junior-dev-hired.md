@@ -1,5 +1,5 @@
 +++
-tags = ['Articles', 'Education']
+tags = ['Articles', 'Learning']
 title = 'TLDR; Are junior devs screwed?'
 date = 2025-06-04T16:01:07+01:00
 draft = false

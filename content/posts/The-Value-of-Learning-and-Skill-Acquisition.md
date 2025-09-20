@@ -1,5 +1,5 @@
 +++
-tags = ['Education', 'Python', 'Articles']
+tags = ['Learning', 'Python', 'Articles']
 title = 'The Value of Learning and Skill Acquisition'
 date = 2025-02-20T16:34:07+01:00
 draft = false
