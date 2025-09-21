@@ -1,8 +1,8 @@
 +++
 tags = ['Developer Log', 'AI', 'Python', 'Learning']
 title = 'Developer Week 062'
-date = 2025-09-19T20:45:07+01:00
-draft = true
+date = 2025-09-21T07:21:07+01:00
+draft = False
 +++
 
 ## Projects
