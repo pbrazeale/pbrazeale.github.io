@@ -1,5 +1,5 @@
 +++
-tags = ['Developer Log', 'Python', 'Linux', 'Networking', 'Home Lab', 'Virtual Environment', 'TrueNAS', 'Proxmox']
+tags = ['Developer Log', 'Python', 'Linux', 'Networking', 'Home Lab', 'Virtual Environment', 'TrueNAS']
 title = 'Developer Week 039'
 date = 2025-04-14T07:50:07+01:00
 draft = false
