@@ -1,10 +1,10 @@
 +++
 tags = ['Build Notes', 'Python', 'Open Source']
-title = 'Music Meta Tagger'
-date = 2025-09-21T19:30:07+01:00
+title = 'Time Tracker'
+date = 2025-09-27T19:30:07+01:00
 draft = true
 +++
 
 ## Logo
 
-![Sarah Hero](https://pbrazeale.github.io/images/music_meta_tagger_logo_300.jpg)
+![Time Tracker Logo](https://pbrazeale.github.io/images/time_tracker_logo_300.jpg)

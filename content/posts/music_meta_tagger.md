@@ -7,4 +7,4 @@ draft = true
 
 ## Logo
 
-![Sarah Hero](https://pbrazeale.github.io/images/music_meta_tagger_logo_300.jpg)
+![Music Meta Tagger Logo](https://pbrazeale.github.io/images/music_meta_tagger_logo_300.jpg)
