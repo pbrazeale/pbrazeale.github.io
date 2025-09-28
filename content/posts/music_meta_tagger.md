@@ -19,7 +19,7 @@ If you want to contribute the repo's README explains how.
 
 ## TL;DR
 
-Fix messy tags fast so Jellyfin stops guessing. **Music Meta Tagger** is a small Streamlit app for **bulk edits** across MP3/MP4/FLAC/WMA (Windows-friendly fields, including **0–5 star ratings**; works with local drives and UNC paths). You get a **200-row preview**, sane parsers/validators (only writes what you fill in), a progress bar, and per-file error reporting. Run it with Python 3.12 → `pip install -r requirements.txt` → `streamlit run app.py`. Want to help? PRs welcome—see the README.
+Fix messy tags fast so media players stops guessing. **Music Meta Tagger** is a small Streamlit app for **bulk edits** across MP3/MP4/FLAC/WMA (Windows-friendly fields, including **0–5 star ratings**; works with local drives and UNC paths). You get a **200-row preview**, sane parsers/validators (only writes what you fill in), a progress bar, and per-file error reporting. Run it with Python 3.12 → `pip install -r requirements.txt` → `streamlit run app.py`.
 
 ---
 
