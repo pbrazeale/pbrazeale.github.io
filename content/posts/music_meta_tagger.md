@@ -1,8 +1,8 @@
 +++
 tags = ['Build Notes', 'Python', 'Open Source']
 title = 'Music Meta Tagger'
-date = 2025-09-21T19:30:07+01:00
-draft = true
+date = 2025-09-28T08:30:07+01:00
+draft = false
 +++
 
 ## Simple Music Metadata Updater
