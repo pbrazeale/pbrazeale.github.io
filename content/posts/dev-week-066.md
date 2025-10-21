@@ -7,7 +7,7 @@ draft = false
 
 ## SARAH: Story Analysis & Revision AI Helper
 
-Hired a frontend developer to take what I managed to hack together and turn it into a proper site. First thing she did was throw out my JS and rebuild using a proper React Framework. We're not ready to show it off, but the progress has been amazing. We have light mode and dark mode, and it's been optimized for mobile.
+Hired a frontend developer [Kelsey Balajti](https://www.linkedin.com/in/kelsey-balajti-111684203/) to take what I managed to hack together and turn it into a proper site. First thing she did was throw out my JS and rebuild using a proper React Framework. We're not ready to show it off, but the progress has been amazing. We have light mode and dark mode, and it's been optimized for mobile.
 
 Though, we're at a pause point as I figure out the backend infrastructure.
 
