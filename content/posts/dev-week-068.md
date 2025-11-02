@@ -10,6 +10,7 @@ draft = false
 [AI Engineering by Chip Huyen](https://www.oreilly.com/library/view/ai-engineering/9781098166298/) **Done**
 
 [Courage is Calling by Ryan Holiday](https://www.goodreads.com/book/show/58145670-courage-is-calling) **DONE**
+
 [Book Review: Courage is Calling by Ryan Holiday](https://pbrazeale.github.io/posts/book-review-courage-is-calling/)
 
 [Prompt Engineering for LLMs by Berryman and Ziegler](https://www.goodreads.com/book/show/221244015-prompt-engineering-for-llms) (50/280) **~18%**
