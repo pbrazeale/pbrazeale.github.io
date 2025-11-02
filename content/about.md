@@ -3,11 +3,13 @@ title = '🧙‍♂️ Philip Brazeale'
 draft = false
 +++
 
-## Digital Craftsman (Developer/Author/Publisher)
+## AI Engineer & Publisher (Engineer/Author/Publisher)
 
-I’m an AI Engineer who ships production-grade agentic systems that cut workload and cost. I work where LLM foundation models meet operations: structured pipelines, deterministic fallbacks, tight evals, and guardrails. Teams I work alongside get outcomes, not demos.
+AI Engineer & Publisher who went from author → prompt engineer → AI engineer; I build LLM-powered, production-grade customer-service agents with measurable ROI. Creator of SARAH—editorial software for serious authors.
 
-I've built and scaled customer support agents for order status, returns, SKU availability, complaints triage, and VIN checks. integrated with Replyco, Discord, OpenAI, and internal APIs. Presently resolving ~40% of all requests end-to-end, with zero human input. I've also shipped a Python + OpenAI content system: ~80,000 Schema.org-compliant descriptions in under 10 hours
+My stack pairs Python + Litestar APIs with LLMs wired to Replyco, Dialpad, and Discord. Automated evals, deterministic fallbacks, and inference optimization to keep latency/cost in check. Currently deployed agents now resolve ~77% of requests end-to-end (order status, returns, counteroffers, product availability, VIN checks, complaints, warranty eval, etc...) All centralized and controlled by an orchestration agent.
+
+Ask me why Obsidian remains my most valuable developer tool (notes → prompts → shipped systems).
 
 ### 📊 Stats
 
