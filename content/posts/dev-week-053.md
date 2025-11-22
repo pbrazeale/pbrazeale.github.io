@@ -1,5 +1,5 @@
 +++
-tags = ['Developer Log', 'Docker', 'CI/CD', 'API', 'Litestar', 'SARAH: Story Analysis & Revision AI Helper']
+tags = ['Developer Log', 'Docker', 'CI/CD', 'API', 'Litestar', 'NovelFoundry']
 title = 'Developer Week 053'
 date = 2025-07-19T06:05:07+01:00
 draft = false

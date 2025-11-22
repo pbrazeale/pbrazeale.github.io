@@ -1,5 +1,5 @@
 +++
-tags = ['SARAH: Story Analysis & Revision AI Helper', 'AI', 'Build Notes', 'Python', 'SaaS', 'API', 'JavaScript', 'Litestar']
+tags = ['NovelFoundry', 'AI', 'Build Notes', 'Python', 'SaaS', 'API', 'JavaScript', 'Litestar']
 title = 'SARAH UI Redesign'
 date = 2025-09-19T20:30:07+01:00
 draft = false
