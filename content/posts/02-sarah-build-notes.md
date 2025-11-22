@@ -1,5 +1,5 @@
 +++
-tags = ['SARAH: Story Analysis & Revision AI Helper', 'AI', 'Build Notes', 'Python', 'PyQt']
+tags = ['NovelFoundry', 'AI', 'Build Notes', 'Python', 'PyQt']
 title = 'Sarah MVP Development Roadmap'
 date = 2025-06-06T10:50:07+01:00
 draft = false

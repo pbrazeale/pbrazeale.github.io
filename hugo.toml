@@ -43,6 +43,10 @@ url = "https://github.com/pbrazeale"
 icon = "brand-x"
 name = "X"
 url = "https://twitter.com/pbrazeale"
+[[params.social]]
+icon = "brand-discord"
+name = "Discord"
+url = "https://discord.gg/3nJjhMyBVk"
 
 # [tags]
 # [[tags.main]]
