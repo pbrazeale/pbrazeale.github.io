@@ -2,7 +2,7 @@
 tags = ['AI', 'NovelFoundry']
 title = 'NovelFoundry Database Structured For Day 0 and Day 1000'
 date = 2025-11-23T14:05:07+01:00
-draft = true
+draft = false
 +++
 
 On Day 0 my constraints are shipping fast and learn as I go. But come Day 1000 I don’t want to be held hostage by a design that assumes 50 users forever. So every choice below is simple enough for now, but compatible with sharding/partitioning later.
