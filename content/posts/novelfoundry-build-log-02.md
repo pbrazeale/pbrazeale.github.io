@@ -1,8 +1,8 @@
 +++
 tags = ['AI', 'NovelFoundry']
 title = 'NovelFoundry Backend: NGINX, Celery, Redis'
-date = 2025-11-28T13:00:00-06:00
-draft = true
+date = 2025-11-29T13:00:00-06:00
+draft = false
 +++
 
 This is a continuation of the build out documentation. My last entry was [NovelFoundry Database Structured For Day 0 and Day 1000](https://pbrazeale.github.io/posts/novelfoundry-build-log-01/) where I worked through the choices that led me to Supabase as my database host, instead of running Postgres myself on another Hostinger VPS.
