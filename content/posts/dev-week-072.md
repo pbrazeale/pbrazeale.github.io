@@ -2,7 +2,7 @@
 tags = ['Developer Log', 'AI', 'NovelFoundry']
 title = 'Developer Week 072'
 date = 2025-11-30T11:14:27+01:00
-draft = true
+draft = false
 +++
 
 ## NovelFoundry
