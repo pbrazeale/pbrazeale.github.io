@@ -3,14 +3,17 @@ title = '🧙‍♂️ Philip Brazeale'
 draft = false
 +++
 
-## AI Engineer & Publisher (Engineer/Author/Publisher)
+## AI Engineer & Publisher. From author → prompt engineer → AI engineer. Creator of [NovelFoundry](https://novelfoundry.com). Ask me about why **Obsidian** is my most valuable tool as a developer.
 
-AI Engineer & Publisher who went from author → prompt engineer → AI engineer; I build LLM-powered, production-grade customer-service agents with measurable ROI. Creator of SARAH—editorial software for serious authors.
+---
 
-My stack pairs Python + Litestar APIs with LLMs wired to Replyco, Dialpad, and Discord. Automated evals, deterministic fallbacks, and inference optimization to keep latency/cost in check. Currently deployed agents now resolve ~77% of requests end-to-end (order status, returns, counteroffers, product availability, VIN checks, complaints, warranty eval, etc...) All centralized and controlled by an orchestration agent.
+### 🛠️ Languages and Tools
 
-Ask me why Obsidian remains my most valuable developer tool (notes → prompts → shipped systems).
-
-### 📊 Stats
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=pbrazeale&show_icons=true&theme=tokyonight)
+<img align="left" alt="Python" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+<img align="left" alt="PostgreSQL" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
+<img align="left" alt="Linux" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" />
+<img align="left" alt="Git" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+<img align="left" alt="JS" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+<img align="left" alt="HTML" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" />
+<img align="left" alt="CSS" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" />
+<br />

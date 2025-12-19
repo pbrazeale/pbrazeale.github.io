@@ -22,16 +22,3 @@ A personal engineering log and learning notebook turned public. This blog blends
 
 - Live site: https://pbrazeale.github.io/
 - Posts (source): `content/posts`
-
-**About Philip**
-
-🧙‍♂️ Philip Brazeale
-Digital Craftsman (Developer/Author/Publisher)
-
-I’m an AI Engineer who ships production-grade agentic systems that cut workload and cost. I work where LLM foundation models meet operations: structured pipelines, deterministic fallbacks, tight evals, and guardrails. Teams I work alongside get outcomes, not demos.
-
-I've built and scaled customer support agents for order status, returns, SKU availability, complaints triage, and VIN checks. integrated with Replyco, Discord, OpenAI, and internal APIs. Presently resolving ~40% of all requests end-to-end, with zero human input. I've also shipped a Python + OpenAI content system: ~80,000 Schema.org-compliant descriptions in under 10 hours
-
-- LinkedIn: https://www.linkedin.com/in/pbrazeale/
-- GitHub: https://github.com/pbrazeale
-- X: https://x.com/pbrazeale
