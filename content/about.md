@@ -15,9 +15,9 @@ Ask me about why **Obsidian** is my most valuable tool as a developer.
 
 #### Backend
 
-Python <img alt="Python" width="30px" src="https://icon.icepanel.io/Technology/svg/Python.svg">
+Python <img src="https://icon.icepanel.io/Technology/svg/Python.svg" alt="Python" width="30px">
 
-PostgreSQL <img alt="PostgreSQL" width="30px" src="https://icon.icepanel.io/Technology/svg/PostgresSQL.svg">
+PostgreSQL <img src="https://icon.icepanel.io/Technology/svg/PostgresSQL.svg" alt="PostgreSQL" width="30px">
 
 Linux <img alt="Linux" width="30px" src="https://icon.icepanel.io/Technology/png-shadow-512/Linux.png">
 
