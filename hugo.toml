@@ -10,6 +10,9 @@ dir = ':cacheDir/images'
 [pagination]
 pagerSize = 8
 
+[markup.goldmark.renderer]
+unsafe = true
+
 [menu]
 [[menu.main]]
 identifier = "home"
