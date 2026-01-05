@@ -3,17 +3,52 @@ title = '🧙‍♂️ Philip Brazeale'
 draft = false
 +++
 
-## AI Engineer & Publisher. From author → prompt engineer → AI engineer. Creator of [NovelFoundry](https://novelfoundry.com). Ask me about why **Obsidian** is my most valuable tool as a developer.
+## AI Engineer & Publisher.
+
+From author → prompt engineer → AI engineer. Builder of customer service AI agents. Creator of [NovelFoundry](https://novelfoundry.com) (editorial software for authors).
+
+Ask me about why **Obsidian** is my most valuable tool as a developer.
 
 ---
 
 ### 🛠️ Languages and Tools
 
-<img align="left" alt="Python" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
-<img align="left" alt="PostgreSQL" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
-<img align="left" alt="Linux" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" />
-<img align="left" alt="Git" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
-<img align="left" alt="JS" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
-<img align="left" alt="HTML" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" />
-<img align="left" alt="CSS" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" />
-<br />
+#### Backend
+
+Python <img alt="Python" width="30px" src="https://icon.icepanel.io/Technology/svg/Python.svg">
+
+PostgreSQL <img alt="PostgreSQL" width="30px" src="https://icon.icepanel.io/Technology/svg/PostgresSQL.svg">
+
+Linux <img alt="Linux" width="30px" src="https://icon.icepanel.io/Technology/png-shadow-512/Linux.png">
+
+Dokploy <img alt="Dokploy" width="30px" src="https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/svg/dokploy-dark.svg">
+
+Docker <img alt="Docker" width="30px" src="https://icon.icepanel.io/Technology/svg/Docker.svg">
+
+Traefik <img alt="Traefik Proxy" width="30px" src="https://icon.icepanel.io/Technology/svg/Traefik-Proxy.svg">
+
+Flask <img alt="Flask" width="30px" src="https://icon.icepanel.io/Technology/png-shadow-512/Flask.png">
+
+GitHub Actions <img alt="Flask" width="30px" src="https://icon.icepanel.io/Technology/svg/GitHub-Actions.svg">
+
+#### Frontend
+
+TypeScript <img alt="TypeScript" width="30px" src="https://icon.icepanel.io/Technology/svg/TypeScript.svg">
+
+React <img alt="React" width="30px" src="https://icon.icepanel.io/Technology/svg/React.svg">
+
+Vite.js <img alt="React" width="30px" src="https://icon.icepanel.io/Technology/svg/Vite.js.svg">
+
+HTML <img alt="HTML" width="30px" src="https://icon.icepanel.io/Technology/svg/HTML5.svg">
+
+Tailwind CSS <img alt="CSS" width="30px" src="https://icon.icepanel.io/Technology/svg/Tailwind-CSS.svg">
+
+#### Personal Tools
+
+Debian 13 <img alt="Debian" width="30px" src="https://icon.icepanel.io/Technology/svg/Debian.svg">
+
+VS Code <img alt="VS Code" width="30px" src="https://icon.icepanel.io/Technology/svg/Visual-Studio-Code-%28VS-Code%29.svg">
+
+Obsidian <img alt="Obsidian" width="30px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/2023_Obsidian_logo.svg/2048px-2023_Obsidian_logo.svg.png">
+
+Git <img alt="Git" width="30px" src="https://icon.icepanel.io/Technology/svg/Git.svg">
