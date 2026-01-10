@@ -28,9 +28,9 @@ Ask me about why **Obsidian** is my most valuable tool as a developer.
 
 - TypeScript <img alt="TypeScript" width="30px" src="https://icon.icepanel.io/Technology/svg/TypeScript.svg">
 - React <img alt="React" width="30px" src="https://icon.icepanel.io/Technology/svg/React.svg">
+- Tailwind CSS <img alt="CSS" width="30px" src="https://icon.icepanel.io/Technology/svg/Tailwind-SS.svg">
 - Vite.js <img alt="React" width="30px" src="https://icon.icepanel.io/Technology/svg/Vite.js.svg">
 - HTML <img alt="HTML" width="30px" src="https://icon.icepanel.io/Technology/svg/HTML5.svg">
-- Tailwind CSS <img alt="CSS" width="30px" src="https://icon.icepanel.io/Technology/svg/Tailwind-CSS.svg">
 
 #### Personal Tools
 
