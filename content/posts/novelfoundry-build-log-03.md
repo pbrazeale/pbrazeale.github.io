@@ -7,7 +7,7 @@ draft = false
 
 ## How I Fixed NovelFoundry’s Mobile Lighthouse Score From 64 to 97 in One Day
 
-![Lighthouse Score](/content/images/site-performance.webp)
+![Lighthouse Score](../images/site-performance.webp)
 
 ## The Problem
 
