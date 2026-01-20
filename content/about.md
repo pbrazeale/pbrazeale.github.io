@@ -5,7 +5,7 @@ draft = false
 
 ## AI Engineer & Publisher.
 
-From author → prompt engineer → AI engineer. Builder of customer service AI agents. Creator of [NovelFoundry](https://novelfoundry.com) (editorial software for authors).
+From author → prompt engineer → AI engineer. Builder of customer service AI agents. Creator of [NovelFoundry](https://novelfoundry.com/?utm=blog) (editorial software for authors).
 
 Ask me about why **Obsidian** is my most valuable tool as a developer.
 
