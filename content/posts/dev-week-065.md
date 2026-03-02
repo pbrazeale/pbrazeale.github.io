@@ -22,3 +22,7 @@ draft = false
 Most of my week was spent setting up all of the SPOs for the marketing department, and training the marketer to be able to take over and hit his KPIs. Monday will be the process of me handing over the marketing director role to our Director of Administration, and training him on how to track the marketers KPI's and verify his work.
 
 I set the Customer Service Agent(s) v1 launch for Dec. 15th, so now there’s a hard deadline to help streamline the feature requests and focus what’s necessary vs would be nice to have, and then not needed are still being discarded. It’ll be a great experience to launch a finalized product and see what maintenance and feature expansion looks like. I’m assuming much of the same, only I’ll have to move slower as I can’t afford to break anything that’s working. I named the CS Manager as the primary stakeholder for the agents that way I can have a single point of contact to understand the staff experience. He’s also taking over tracking the bug reports and feature requests so I no longer have the entire team tagging and DMing me; which will drastically improve and streamline the patching process.
+
+---
+
+[**World Parts Direct**](https://www.worldpartsdirect.com/): guaranteed lowest prices OEM parts for GM and Mopar parts, with next day delivery options for over 100k items. Preowned parts for almost any make and model are also available, with identical warranties to new.

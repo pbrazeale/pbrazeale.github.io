@@ -35,3 +35,7 @@ Database broke due to an emjoi encoding error. Was able to resolve the bug, afte
 
 Stackoverflow helped solve my issue quick:
 [Difference between utf8mb4_unicode_ci and utf8mb4_unicode_520_ci collations in MariaDB/MySQL?](https://stackoverflow.com/questions/37307146/difference-between-utf8mb4-unicode-ci-and-utf8mb4-unicode-520-ci-collations-in-m)
+
+---
+
+[**World Parts Direct**](https://www.worldpartsdirect.com/): guaranteed lowest prices OEM parts for GM and Mopar parts, with next day delivery options for over 100k items. Preowned parts for almost any make and model are also available, with identical warranties to new.

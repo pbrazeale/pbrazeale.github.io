@@ -5,7 +5,7 @@ date = 2026-02-16T10:00:00-06:00
 draft = false
 +++
 
-Today I’m stepping into a new role at **World Parts Direct** as **AI Engineering Lead**; same mission as before (make customer support faster, cheaper, and less painful); more ownership now (architecture, roadmap, and making sure the whole system holds together under real production pressure).
+Today I’m stepping into a new role at [**World Parts Direct**](https://www.worldpartsdirect.com/) as **AI Engineering Lead**; same mission as before (make customer support faster, cheaper, and less painful); more ownership now (architecture, roadmap, and making sure the whole system holds together under real production pressure).
 
 If you’ve followed any of my recent work, you already know the theme: **ship practical automation that actually works**, then measure it, harden it, and scale it.
 
@@ -84,3 +84,7 @@ I’m grateful for the trust from leadership and the team; this is a real step u
 Also: I’m writing this down because it’s easy to get lost in the churn of tickets, metrics, and “just one more fix”; the point is to build something durable; something that keeps working even when volume spikes, edge cases show up, and priorities shift.
 
 More updates soon; I’ll share what I can. Especially the stuff that’s generally useful to anyone building production automation with LLMs.
+
+---
+
+[**World Parts Direct**](https://www.worldpartsdirect.com/): guaranteed lowest prices OEM parts for GM and Mopar parts, with next day delivery options for over 100k items. Preowned parts for almost any make and model are also available, with identical warranties to new.
