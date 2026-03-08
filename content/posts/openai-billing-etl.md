@@ -1,7 +1,7 @@
 +++
 tags = ['AI', 'LLM', 'Shell', 'SQL']
 title = 'Building a Production-Ready OpenAI Billing and Usage ETL Pipeline'
-date = 2026-03-08T10:00:00-06:00
+date = 2026-03-01T10:00:00-06:00
 draft = false
 +++
 
