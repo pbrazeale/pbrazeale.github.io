@@ -1,7 +1,7 @@
 +++
 tags = ['AI', 'LLM', 'Shell', 'SQL']
 title = 'Building a Production-Ready OpenAI Billing and Usage ETL Pipeline'
-date = 2026-02-25T10:00:00-06:00
+date = 2026-03-08T10:00:00-06:00
 draft = false
 +++
 
@@ -348,30 +348,22 @@ This matters because “always email on success” can become noise; but “neve
 
 ---
 
-# HERE
-
 ## Operations
 
 ### Daily Run Commands
 
-I like a small CLI surface area with obvious intent:
+I like a small CLI obvious intent:
 
 - Standard daily run  
   `python -m openai_billing_etl run`
-
 - One-day manual rerun  
   `python -m openai_billing_etl run --start 2026-02-18 --end 2026-02-19`
-
 - Backfill  
   `python -m openai_billing_etl backfill --days 90`
-
 - Dry-run (no writes)  
   `python -m openai_billing_etl run --dry-run`
-
 - Endpoint isolation  
   `python -m openai_billing_etl run --only usage/completions`
-
-_(These commands are intentionally “operator-shaped”; you don’t want someone editing code to rerun a day.)_
 
 ### Windows Scheduler Integration
 
@@ -412,6 +404,6 @@ Typical validations include:
 During transforms/upserts:
 
 - zero-row windows and integrity anomalies raise warnings
-- warning-only runs can optionally alert (configurable)
+  - warning-only runs can optionally alert (configurable)
 
-The goal is “detect surprises early.”
+**The goal is “detect surprises early.”**
