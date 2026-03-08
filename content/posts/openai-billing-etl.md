@@ -407,3 +407,7 @@ During transforms/upserts:
   - warning-only runs can optionally alert (configurable)
 
 **The goal is “detect surprises early.”**
+
+---
+
+[**World Parts Direct**](https://www.worldpartsdirect.com/): guaranteed lowest prices OEM parts for GM and Mopar parts, with next day delivery options for over 100k items. Preowned parts for almost any make and model are also available, with identical warranties to new.

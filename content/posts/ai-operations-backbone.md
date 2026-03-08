@@ -193,3 +193,7 @@ The architecture we built isn't exotic: n8n, Flask, and Postgres. All running on
 The value is in the discipline: standardized ingestion, strict validation, normalized observability, and a reporting layer that the whole organization can trust.
 
 If your AI operations are still held together by manual log reviews and pre-meeting spreadsheets, the problem isn't your models and prompts.
+
+---
+
+[**World Parts Direct**](https://www.worldpartsdirect.com/): guaranteed lowest prices OEM parts for GM and Mopar parts, with next day delivery options for over 100k items. Preowned parts for almost any make and model are also available, with identical warranties to new.
