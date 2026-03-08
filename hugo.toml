@@ -50,6 +50,10 @@ url = "https://twitter.com/pbrazeale"
 icon = "brand-discord"
 name = "Discord"
 url = "https://discord.gg/3nJjhMyBVk"
+[[params.social]]
+icon = "rss"
+name = "RSS"
+url = "/posts/index.xml"
 
 # [tags]
 # [[tags.main]]
