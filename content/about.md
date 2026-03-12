@@ -3,7 +3,7 @@ title = '🧙‍♂️ Philip Brazeale'
 draft = false
 +++
 
-## AI Engineer & Publisher.
+## AI Engineering Lead & Publisher.
 
 From author → prompt engineer → AI engineer. Builder of customer service AI agents. Creator of [NovelFoundry](https://novelfoundry.com/?utm=blog) (editorial software for authors).
 
