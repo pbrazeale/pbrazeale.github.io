@@ -1,7 +1,7 @@
 +++
 tags = ['AI', 'Vibe Coding by Kim and Yegge', 'Learning', 'Articles', 'OpenClaw', 'Book Reviews']
 title = 'Vibe Coding Changes the Economics of Building'
-date = 2025-03-28T09:05:07+01:00
+date = 2026-03-28T09:05:07+01:00
 draft = false
 +++
 
