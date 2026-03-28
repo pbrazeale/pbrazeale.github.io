@@ -51,6 +51,30 @@ But to get there will require thousands of developer years, and this book will h
 
 ## Introduction
 
+>  in 2024, Dr. Meijer gleefully made this striking and startling declaration: "The days of writing code by hand are coming to an end." [(Kim and Yegge xxiii)](https://www.goodreads.com/en/book/show/228438060-vibe-coding)
+
+How true. This prophetic declaration is nearly complete. As for my own work, I find myself writing 1-3% of shipped production code. And this is for full systems used for real business needs; not prototypes or demos.
+
+> At Adidas, seven hundred developers using AI coding tools reported a 50% increase in what they call “Happy Time”—hours spent on creative work they enjoy, rather than wrestling with brittle tests or debugging trivial errors. High-performing teams now spend 70% of their time directly coding, compared to 30% for teams using traditional methods. [(Kim and Yegge xxiii)](https://www.goodreads.com/en/book/show/228438060-vibe-coding)
+
+This is the core concept behind Kim and Yegge's coined term **FAAFO,** the ability to stay in the "Happy Time" turns programming into a more addictive feedback loop than any video game I've played (_unless we're counting chess.com; despite my abysmal ELO_).
+
+> _vibe coding_. It was coined by the legendary Dr. Andrej Karpathy [(Kim and Yegge xxiv)](https://www.goodreads.com/en/book/show/228438060-vibe-coding)
+
+It's one of those perfect terms, where the moment you hear it you wonder how any other term could be used. Not unlike Shakespeare creating eyeball. _What did our ancestors call it? Flesh orb of sight? LOL_
+
+Approaching it again from the video game view, it's a process by which we can enter pure flow, even when failing, and come out the other side with days of work condensed into a single session. _Though, Kim and Yegge will cover the dark-side of what happens when we stay in that addictive flow state too long, without the proper guardrails for ourselves and the agents._
+
+> In 2021, we saw AI-generated *code completions*, where the IDE (integrated developer environment) would auto-complete code based on what you had typed [(Kim and Yegge xxiv)](https://www.goodreads.com/en/book/show/228438060-vibe-coding)
+
+> *Agentic coding* (where AI autonomously generates, refines, and manages code) appeared in early 2025 [(Kim and Yegge xxv)](https://www.goodreads.com/en/book/show/228438060-vibe-coding)
+
+> We and many others have felt that, at times, you can be 10x more productive with vibe coding compared to manual coding. [(Kim and Yegge xxvi)](https://www.goodreads.com/en/book/show/228438060-vibe-coding)
+
+While I was not there for the 2021 days, I can attest that by Nov. 2025 I was using agentic coding at all times, and by Jan. 2026, I reached the 97%+ of code being written by agents. If, by some chance, you've note tried to embrace the exponentials and let an agent build you a module or even a full side project, stop reading this now and go try. _Or read the book, and then try with the right skill set to avoid the pitfalls._
+
+### FAAFO
+
 ## The Plan
 
 I intend to continue this series in a structured format following Kim and Yegge's 4 part layout; and then beyond as I formulate my personal experience and insights into actionable articles.
