@@ -116,6 +116,7 @@ curl -fsSL https://www.nvidia.com/nemoclaw.sh | bash
 ##### NOTE:
 
 > If you're planning to run this on a laptop as I have, and then access it via ssh & the web GUI; you may want to consider [tmux](https://github.com/tmux/tmux/wiki/Getting-Started) to manager your ssh shell sessions. DevOps Toolbox offers a great tutorial [Tmux From Scratch To BEAST MODE](<[https://www.youtube.com/watch?v=GH3kpsbbERo&t=491s](https://youtu.be/GH3kpsbbERo?si=U4x9N2pOzAgjSnDb&t=53)>)
+> [tmux Cheat Sheet](https://tmuxcheatsheet.com/)
 
 ## Congratulations
 
