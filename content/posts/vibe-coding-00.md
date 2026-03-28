@@ -34,3 +34,15 @@ No longer are engineers limited by the economics of potential failure. Experimen
 > Vibe coding is a whole new way of working: We should expect to see entirely new, economy-boosting advances in software and engineering as a result.[(Amodei XV)](https://www.goodreads.com/en/book/show/228438060-vibe-coding)
 
 > Take it from someone who employs many of the best coders in the world: The “vibe coding” way of working is here to stay. [(Amodei XV)](https://www.goodreads.com/en/book/show/228438060-vibe-coding)
+
+## The Plan
+
+I intend to continue this series in a structured format following Kim and Yegge's 4 part layout; and then beyond as I formulate my personal experience and insights into actionable articles.
+
+In no way, shape, or form, should these articles be taken as the end point. My hope is that by reading these, and getting my point of view on the matter, you'll be encouraged to buy a copy for yourself; read it, and write your own notes. [Vibe Coding: Building Production-Grade Software With GenAI, Chat, Agents, and Beyond](https://www.goodreads.com/en/book/show/228438060-vibe-coding)
+
+When writing my notes, I skipped over chunks of this book that I felt weren't relevant to my needs, or that didn't resonate. You'll experience the same.
+
+But as we'll all start using these practices for thousands of hours over the next few years, it seems an obvious trade off to buy the book and learn directly from brighter minds than me. **Gene Kim** and **Steve Yegge** have condensed hundreds of hours of research and experimentation into an easily digestible format.
+
+### Continued Articles
