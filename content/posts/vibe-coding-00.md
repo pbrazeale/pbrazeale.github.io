@@ -1,8 +1,8 @@
 +++
-tags = ['AI', 'Vibe Coding by Kim and Yegge', 'Learning', 'Articles', '']
+tags = ['AI', 'Vibe Coding by Kim and Yegge', 'Learning', 'Articles', 'OpenClaw', 'Book Reviews']
 title = 'Vibe Coding Changes the Economics of Building'
 date = 2025-03-28T09:05:07+01:00
-draft = true
+draft = false
 +++
 
 Main Source: [Vibe Coding: Building Production-Grade Software With GenAI, Chat, Agents, and Beyond](https://www.goodreads.com/en/book/show/228438060-vibe-coding)
