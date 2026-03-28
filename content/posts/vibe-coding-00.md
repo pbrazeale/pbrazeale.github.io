@@ -75,6 +75,30 @@ While I was not there for the 2021 days, I can attest that by Nov. 2025 I was us
 
 ### FAAFO
 
+> Vibe coding lets you build things *faster*, be more *ambitious* about what you can build, build things more *autonomously*, have more *fun*, and explore more *options*. This is what we’re calling FAAFO [(Kim and Yegge xxvii)](https://www.goodreads.com/en/book/show/228438060-vibe-coding)
+
+> FAAFO framework—fast, ambitious, autonomous, fun, and optionality—the five superpowers vibe coding bestows upon you. [(Kim and Yegge 2)](https://www.goodreads.com/en/book/show/228438060-vibe-coding)
+
+By embracing the agentic method of coding "vibe coding" you'll unlock more than increased enjoyment. You'll literally produce faster and better code; provided you follow a structured framework. At the end of the day, it's a technology for exponentially increasing the processes you run. _Be that technological or mental._ If you have bad habits, especially in your code base, agents will expand upon them. The good news is you, and your agents, can learn the best practices, and it has never been easier to adhere to them. No longer is testing, and documentation, a bureaucratic bottleneck to shipping. Instead it's morphed into the tools that help you reach 10X and beyond productivity.
+
+### Steve's Journey
+
+> I’ve been in the industry for over thirty years, including almost twenty years at Amazon and Google. ... At Google, I took productivity head-on by leading the creation of Kythe, a rich knowledge base for understanding source code. ... But by early 2024, I had started to worry that I could no longer make good decisions as a technology leader unless I deeply understood the radical technology change that was transpiring. [(Kim and Yegge xxi)](https://www.goodreads.com/en/book/show/228438060-vibe-coding)
+
+> He coded in Java without an IDE until 2011 and refused to learn Git until 2021. Steve is a bona fide late adopter.[(Kim and Yegge xl)](https://www.goodreads.com/en/book/show/228438060-vibe-coding)
+
+Steve's journey is beyond impressive, and him sharing his journey from skeptic to believer throughout this book, will I hope, put to rest doubts I still hear thrown around by industry veterans. And worse, by those no longer in the industry at all. The revolution is here! It's gaining speed as every engineer throws the proverbial coal into the furnace, and those who miss out now, will be left behind. There's no longer the option to wait and see. **Wait and watch the future of software development leave you behind.**
+
+### Gene's Journey
+
+> My journey with software began when I created a UNIX security tool during an independent study project at Purdue University in 1992, which was later commercialized as Tripwire. ... Throughout the development of this book, I vibe coded tools to help in the writing process. [(Kim and Yegge xxxiii-xxiv)](https://www.goodreads.com/en/book/show/228438060-vibe-coding)
+
+Throughout this book there are pertinent points about the new revolution, and how it will reshape the meaning of work as the workplace itself is forced to adapt. I kept finding myself nodding along, or think "_I've literally argued that point!_" Pure brilliance permeates this text.
+
+It wasn't until nearly the end of the book that I found out Gene co-authored [Wiring the Winning Organization](https://www.goodreads.com/book/show/125164532-wiring-the-winning-organization) and I suspect this was a huge influence and reason behind "Vibe Coding" making such poignant insights on how the workplace will change. How I will make the time, I don't know, but I will to read his other book.
+
+### Everyone's Journey
+
 ## The Plan
 
 I intend to continue this series in a structured format following Kim and Yegge's 4 part layout; and then beyond as I formulate my personal experience and insights into actionable articles.
