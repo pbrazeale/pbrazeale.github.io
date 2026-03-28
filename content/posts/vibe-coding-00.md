@@ -35,6 +35,22 @@ No longer are engineers limited by the economics of potential failure. Experimen
 
 > Take it from someone who employs many of the best coders in the world: The “vibe coding” way of working is here to stay. [(Amodei XV)](https://www.goodreads.com/en/book/show/228438060-vibe-coding)
 
+## Preface
+
+> In short, we believe vibe coding may be the best thing that happened to developers since…well, ever.
+>
+> It reminds us of what happened in the 1990s. Early adopters who recognized the importance of the internet became unstoppable and turned into companies like the legendary FAANGs (Facebook, Amazon, Apple, Netflix, Google), while skeptics dismissed the transformation as hype. [(Kim and Yegge xix)](https://www.goodreads.com/en/book/show/228438060-vibe-coding)
+
+I've been arguing that this new opportunity is the same moment as the '94 internet revolution moment; and now with NemoClaw's drop I'm using Jensen Huang explination that it's a new operating system moment. [NVIDIA GTC Keynote 2026](https://www.youtube.com/live/jw_o0xr8MWU?si=9XeOgol1D7IFY4a7)
+
+The way I see it, we're all moving from the days of command line OS to the Windows 3.1 moment. Likewise, our interface with the agents is evolving from chat, and CLI, to full fledged OS interfacing. The future is here. We will soon speak to "Computer" like Star Trek and watch as drudgery is handled for us.
+
+But to get there will require thousands of developer years, and this book will help us all get there faster.
+
+> While some of the finer details may be outdated by the time you read this—that’s the price of exponential change—the core principles we share have remained consistent even as we’ve evolved from chat-based coding to autonomous agents to coordinating groups of agents. [(Kim and Yegge xxi)](https://www.goodreads.com/en/book/show/228438060-vibe-coding)
+
+## Introduction
+
 ## The Plan
 
 I intend to continue this series in a structured format following Kim and Yegge's 4 part layout; and then beyond as I formulate my personal experience and insights into actionable articles.
