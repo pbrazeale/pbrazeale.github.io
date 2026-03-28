@@ -1,10 +1,3 @@
-+++
-tags = ['AI', 'Vibe Coding by Kim and Yegge', 'Learning', 'Articles', '']
-title = 'Vibe Coding Changes the Economics of Building'
-date = 2025-03-28T09:05:07+01:00
-draft = true
-+++
-
 Main Source: [Vibe Coding: Building Production-Grade Software With GenAI, Chat, Agents, and Beyond](https://www.goodreads.com/en/book/show/228438060-vibe-coding)
 
 **Vibe coding** is more than “using AI to write code faster.” It's a shift in the economics, responsibilities, and creative scope of software work.
@@ -98,6 +91,28 @@ Throughout this book there are pertinent points about the new revolution, and ho
 It wasn't until nearly the end of the book that I found out Gene co-authored [Wiring the Winning Organization](https://www.goodreads.com/book/show/125164532-wiring-the-winning-organization) and I suspect this was a huge influence and reason behind "Vibe Coding" making such poignant insights on how the workplace will change. How I will make the time, I don't know, but I will to read his other book.
 
 ### Everyone's Journey
+
+> The coding revolution is still in its early days.[(Kim and Yegge xxxv)](https://www.goodreads.com/en/book/show/228438060-vibe-coding)
+
+The book was published October 21, 2025; assuming the standard six month editing window, that would place the writing of this statement at the beginning of 2025. In that year, the revolution happened, built steam, and unified into a cohesive vision _now known as OpenClaw_.
+
+If you read this book and walk away thinking you've got time, we're in complete disagreement. Those who've let the vibe coding moment slip past them, are playing catch up as we transition into full fledged agentification.
+
+> The dirty secret of programming has always been that implementation details and busywork consume most of our time, leaving precious little for creation and problem-solving. [(Kim and Yegge xxxv)](https://www.goodreads.com/en/book/show/228438060-vibe-coding)
+
+#### Hype Train
+
+> Steve is not someone who yields readily to hype. Most of his favorite tech is from the mid-to-late 1990s. ... New technologies often have a lot of bugs, and Steve, who has seen many frameworks come and go, prefers to spend his time solving user problems rather than debugging new tech. ... The skills that made developers valuable yesterday are not the same ones that will matter tomorrow. And we both believe one thing with absolute certainty: If you don’t adapt to this shift, you may become irrelevant. [(Kim and Yegge xl)](https://www.goodreads.com/en/book/show/228438060-vibe-coding)
+
+I hope I've made my biases known. I'm fully onboard with the vision of the future that we can achieve Star Trek, at least where the laws of physics aren't broken without some as of yet, unknown technology. So maybe not teleporters, but we will get computers that handle all the drudgery and unlock rapidly increasing economic growth because of it, leading to rapid distribution of abundance.
+
+The future is change. And that change is ypon you, whether you embrace it or not.
+
+> "May you live in interesting times" [source](https://en.wikipedia.org/wiki/May_you_live_in_interesting_times)
+
+Is in fact not a curse. But rather an opportunity to embrace the transition and flourish.
+
+To see that the hype and fear cycle is cyclical, and the underlining needs haven't changed, you can read this Forbes article from May 31, 1999 [Dig more coal -- the PCs are coming](https://www.forbes.com/forbes/1999/0531/6311070a.html)
 
 ## The Plan
 
