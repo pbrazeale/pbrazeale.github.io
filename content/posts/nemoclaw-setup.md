@@ -10,7 +10,7 @@ draft = false
 ### Hardware
 
 - Pick your device.
-  - I with with a T14s, running Debian 13 "Trixie"
+  - I went with a T14s, running Debian 13 "Trixie"
 
 ### Accounts
 
