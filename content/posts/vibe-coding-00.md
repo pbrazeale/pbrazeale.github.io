@@ -132,3 +132,5 @@ When writing my notes, I skipped over chunks of this book that I felt weren't re
 As we'll all start using these practices for thousands of hours over the next few years, it seems an obvious tradeoff to buy the book and learn directly from brighter minds than me. **Gene Kim** and **Steve Yegge** have condensed hundreds of hours of research and experimentation into an easily digestible format.
 
 ### Continued Articles
+
+[Vibe Coding Changes the Economics of Building](https://pbrazeale.github.io/posts/vibe-coding-00/)
