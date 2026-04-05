@@ -21,7 +21,7 @@ It also proved something more important than "it boots." It proved this stack wa
 
 The docs confirm one of the key pain points I hit in that first round, because it turns out it wasn't a personal failure at all. It was a product limitation:
 
-> Sandbox browser is not supported on the OpenShell backend. [Source][2]
+> Sandbox browser is not supported on the OpenShell backend. [Source][https://docs.openclaw.ai/gateway/openshell]
 
 That one line matters more than it may seem. It reframes the laptop experiment as proof-of-life, not failed architecture. The point was never to squeeze a permanent lab out of one Debian machine. The point was to learn enough to know what the next layer of infrastructure needed to be.
 
