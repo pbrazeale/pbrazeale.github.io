@@ -249,20 +249,3 @@ So, for my part, this is the path forward:
 The ThinkPad phase was not a mistake. It was the proof.
 
 **This is the build that comes after proof.**
-
-## Sources
-
-[1]: https://pbrazeale.github.io/posts/nemoclaw-setup/
-[2]: https://docs.openclaw.ai/gateway/openshell
-[3]: https://docs.openclaw.ai/gateway/security
-[4]: https://pbrazeale.github.io/posts/vibe-coding-01/
-[5]: https://www.proxmox.com/en/products/proxmox-virtual-environment/overview
-[6]: https://pve.proxmox.com/wiki/Live_Snapshots
-[7]: https://docs.docker.com/engine/install/debian/
-[8]: https://docs.portainer.io/start/install-ce/server/docker/linux
-
-## Tags
-
-[[50 IT]] [[59.07 Proxmox + OpenClaw Issue 2026-04-04]]
-
-[[openclaw]] [[linux]] [[Proxmox]] [[docker]] [[nemoclaw]] [[openshell]]
