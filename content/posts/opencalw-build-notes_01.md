@@ -1,4 +1,11 @@
-My first [NemoClaw setup on a ThinkPad T14s running Debian 13.4](https://pbrazeale.github.io/posts/nemoclaw-setup/) was a success.
++++
+tags = ['OpenClaw', 'Docker', 'Portainer' 'OpenShell', 'AI', 'Linux', 'Build Notes', 'Security+',  'Open Source']
+title = 'From Debian Laptop Notes to a Real AI Lab Stack'
+date = 2026-04-05T14:14:07+01:00
+draft = true
++++
+
+My first article [NemoClaw Setup: Thinkpad T14s, Debian 13.4](https://pbrazeale.github.io/posts/nemoclaw-setup/) was a success.
 
 Not a polished success; not an enterprise success; not even a “you should definitely deploy this the same way I did” success.
 
@@ -161,3 +168,101 @@ A more sane design starts to appear almost immediately:
 - one VM for dangerous, disposable chaos
 
 That is not complexity for its own sake. That is modularity buying back your ability to move fast without treating every test like a potential host outage. [Creating Modularity](https://pbrazeale.github.io/posts/vibe-coding-02/#creating-modularity)
+
+## Docker
+
+This is the part that needs to be said clearly, because otherwise people read “I’m moving to Proxmox” and hear “I’m abandoning containers.”
+
+**I am not.**
+
+Docker still matters; **a lot**. So much so that I'm working my way through [Docker Deep Dive by Nigel Poulton](https://www.amazon.com/dp/1916585256), to give it the time and dedication it deserves within my tech stack.
+
+[Docker Engine](https://docs.docker.com/engine/install/debian/), and containers remain the easiest way to package, ship, rebuild, and reason about services. [Portainer](https://docs.portainer.io/start/install-ce/server/docker/linux) still matters too; its own docs are very explicit that Portainer Server and Agent run as lightweight Docker containers on a Docker engine.
+
+So the architecture is not Docker _or_ Proxmox.
+
+it's Docker _inside_ a Proxmox lab.
+
+**Proxmox is the lab floor. Docker is how the machines in that lab actually work.**
+
+That distinction matters because these tools solve different problems.
+
+- **Proxmox** solves host-level isolation and recovery.
+- **Docker** solves service packaging and runtime consistency.
+- **Portainer** solves operational ergonomics for managing those containers.
+
+They stack cleanly because they operate at different layers.
+
+## OpenShell
+
+The same clarification applies to OpenShell.
+
+Per the docs, [OpenShell](https://docs.openclaw.ai/gateway/openshell) is a managed sandbox backend for OpenClaw. That is a very specific role. It governs sandbox lifecycle, remote execution, and workspace behavior for agent turns.
+
+It's not your hypervisor, nor your datacenter layer, nor a substitute for host-level segmentation. It's the sandbox for the agent runtimes.
+
+That is a powerful role; but it's still one layer in a larger stack.
+
+And in practice, the OpenShell docs make this even clearer because they distinguish between `mirror` and `remote` workspace models, each with different tradeoffs for local-vs-remote canonical state; runtime design.
+
+**So no, I am not moving away from OpenShell.**
+
+I am giving OpenShell a better home.
+
+## Full Design
+
+![openclaw on proxmox](https://pbrazeale.github.io/images/openclaw-on-proxmox_20260405.webp)
+So the stack now becomes much easier to describe:
+
+- **Proxmox** hosts the lab
+- **VMs** separate concerns
+- **Docker** and **Portainer** run the services
+- **OpenShell** remains the controlled execution boundary
+- **OpenClaw** is the agent runtime layer
+- **Browser** and **MCPs** get their own isolated spaces
+
+## Agent Swarms
+
+This matters even more once the goal shifts from “my assistant works” to “my agent ecosystem is growing.”
+
+A swarm is not just more prompts.
+
+It's more trust boundaries, more tool permissions, more workspace rules, more failure modes, more paths for accidental access, and more opportunities for one experiment to poison another **if you have not separated the environments properly**.
+
+Swarm design **is** infrastructure design.
+
+That is the real lesson I’ve taken from the last couple of weeks. The exciting part is still the agents, yes. **But the leverage increasingly comes from the operating model around them.**
+
+That is the same story showing up all over software right now: when one person can attempt more, the systems around that person matter more too.
+
+## Building Now
+
+So, for my part, this is the path forward:
+
+- Stand up **Proxmox** as the durable lab host on the new **HP Z8**
+- Keep stable services separate from dangerous experiments
+- Use **Docker** as the packaging layer for replaceable deployment
+  - Use **Portainer** as my management plane; same as I use the proxmox web portal. Or how I built NovelFoundry on Dokploy. [NovelFoundry Dokploy](https://pbrazeale.github.io/posts/dev-week-073/#backend)
+- Keep **OpenShell** in the stack, but let it do the job it's actually designed to do, and drop **NemoClaw**.
+- And start treating browser tooling, MCP workflows, and swarm experiments like real infrastructure concerns instead of clever laptop tricks.
+
+The ThinkPad phase was not a mistake. It was the proof.
+
+**This is the build that comes after proof.**
+
+## Sources
+
+[1]: https://pbrazeale.github.io/posts/nemoclaw-setup/
+[2]: https://docs.openclaw.ai/gateway/openshell
+[3]: https://docs.openclaw.ai/gateway/security
+[4]: https://pbrazeale.github.io/posts/vibe-coding-01/
+[5]: https://www.proxmox.com/en/products/proxmox-virtual-environment/overview
+[6]: https://pve.proxmox.com/wiki/Live_Snapshots
+[7]: https://docs.docker.com/engine/install/debian/
+[8]: https://docs.portainer.io/start/install-ce/server/docker/linux
+
+## Tags
+
+[[50 IT]] [[59.07 Proxmox + OpenClaw Issue 2026-04-04]]
+
+[[openclaw]] [[linux]] [[Proxmox]] [[docker]] [[nemoclaw]] [[openshell]]
