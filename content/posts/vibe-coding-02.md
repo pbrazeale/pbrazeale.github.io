@@ -2,7 +2,7 @@
 tags = ['AI', 'Vibe Coding by Kim and Yegge', 'Learning', 'Articles', 'OpenClaw', 'Book Reviews']
 title = 'Vibe Coding: Tempering the Hype with Operational Reality'
 date = 2026-04-05T09:05:07+01:00
-draft = true
+draft = false
 +++
 
 Main Source: [Vibe Coding: Building Production-Grade Software With GenAI, Chat, Agents, and Beyond](https://www.goodreads.com/en/book/show/228438060-vibe-coding)
@@ -23,7 +23,7 @@ Human institutions are the slowest technology to adapt.
 
 > The good news is that the same core principles and practices that allow us to deliver software sooner, safer, and happier as we went from one software deployment per year (which was typical in the 2000s) to 136,000 deployments per day (which Amazon achieved in 2015) can be scaled up as we go from generating a hundred lines of code a day to thousands and beyond. [(Kim and Yegge 40)](https://www.goodreads.com/en/book/show/228438060-vibe-coding)
 
-For my part, I see this chart, the above stat as an interlocked issue. The velocity that agentic coding unlocks, means that organization must reshape themselves. No longer will top down decisions work; where each departments is focused on their own feature with reckless disregard. Spheres of operation, and cross departmental cooperation is the new game. In the short term, this means that small start ups will gain an advantage as they can share one mind faster. See [The Mythical Man-Month](https://en.wikipedia.org/wiki/The_Mythical_Man-Month)
+For my part, I see this chart and the above stat as an interlocked issue. The velocity that agentic coding unlocks means organizations must reshape themselves. No longer will top-down decisions work, where each department is focused on its own feature with reckless disregard for the whole. Spheres of operation and cross-departmental cooperation are the new game. In the short term, this means that small startups will gain an advantage, as they can share one mind faster. See [The Mythical Man-Month](https://en.wikipedia.org/wiki/The_Mythical_Man-Month).
 
 > Rather than being discouraged by current limitations, successful practitioners adapt their approach to maximize AI’s present capabilities while preparing for its rapid evolution:
 >
@@ -34,27 +34,27 @@ For my part, I see this chart, the above stat as an interlocked issue. The veloc
 > 5. Create persistent references
 >    [(Kim and Yegge 40)](https://www.goodreads.com/en/book/show/228438060-vibe-coding)
 
-If you're nodding along as you read this last quote, **buy the book**! I can't come close to capturing all the wisdom and insights contained within; nor would I want to steal Kim & Yegge's duly earned credit for contributing to the knowledge base of the industry in a remarkable way.
+If you're nodding along as you read this last quote, **buy the book**! I can't come close to capturing all the wisdom and insights contained within, nor would I want to steal Kim and Yegge’s duly earned credit for contributing to the industry’s knowledge base in such a remarkable way.
 
 ## AI is Changing all Knowledge Work
 
 > AI is a force reshaping how work gets done, and who is doing that work. It’s reconfiguring the jobs themselves, as well as the skills that matter. [(Kim and Yegge 43)](https://www.goodreads.com/en/book/show/228438060-vibe-coding)
 
-> A **decentralized autonomous organization** (**DAO**), sometimes called a **decentralized autonomous corporation** (**DAC**) [Source](https://en.wikipedia.org/wiki/Decentralized_autonomous_organization)
+> A **decentralized autonomous organization** (**DAO**), sometimes called a **decentralized autonomous corporation** (**DAC**) [Source](https://en.wikipedia.org/wiki/Decentralized_autonomous_organization)
 
-The entire workforce will be changed due to the AI revolution. This is not just an update to the way businesses organize their data; there will be a complete reshaping of the types of roles that are needed from the front line to the board.
+The entire workforce will be changed by the AI revolution. This is not just an update to the way businesses organize their data; there will be a complete reshaping of the types of roles needed from the front line to the board.
 
 > A groundbreaking 2023 study by Dr. Daniel Rock and his colleagues, colloquially called the “OpenAI Jobs Report,” delivered some shocking news: Researchers estimated that 80% of US workers could see AI impact at least 10% of their tasks, potentially more. [(Kim and Yegge 44)](https://www.goodreads.com/en/book/show/228438060-vibe-coding)
 
-This study was groundbreaking for 2023, but 80% of the workforce seeing 10% of their tasks taken over by AI systems, is an underestimate given the current technological capabilities. The major bottleneck now, is not the technical capabilities, but the organizational structure and the time requirements for the human engineers partnering with their AI workforce to build out the future of automated tasks.
+This study was groundbreaking in 2023, but the idea that 80% of the workforce may see 10% of their tasks taken over by AI systems now feels like an underestimate, given current technological capabilities. The major bottleneck now is not technical capability, but organizational structure and the time requirements for the human engineers partnering with their AI workforce to build out the future of automated tasks.
 
-> Dr. Andrew Ng, one of the founders of Google Brain and now at Stanford University, said, “AI won’t replace people, but maybe people \[who\] use AI will replace people \[who\] don’t.” [(Kim and Yegge 44)](https://www.goodreads.com/en/book/show/228438060-vibe-coding)
+> Dr. Andrew Ng, one of the founders of Google Brain and now at Stanford University, said, “AI won’t replace people, but maybe people [who] use AI will replace people [who] don’t.” [(Kim and Yegge 44)](https://www.goodreads.com/en/book/show/228438060-vibe-coding)
 
 ### Beyond the Junior Developer Debate
 
 > For decades, we’ve organized software engineering teams in the same way: Senior principal engineers design project architecture, mid-level engineers build complex features, and junior developers learn by handling small, contained tasks. [(Kim and Yegge 45)](https://www.goodreads.com/en/book/show/228438060-vibe-coding)
 
-I can't speak to the full picture of this process, but for my part. I went from junior, to full engineer, to now lead in under 12 months. It took 70+ hour weeks since February of 2025, but it's doable with the right mindset and mastering the techniques described in detail in this book.
+I can't speak to the full picture of this process, but for my part, I went from junior to full engineer to lead in under 12 months. It took 70+ hour weeks since February 2025, but it’s doable with the right mindset and by mastering the techniques described in detail in this book.
 
 > Every single time we’ve had a significant leap in programming technology, people predict the programmer apocalypse:
 >
@@ -71,9 +71,9 @@ I can't speak to the full picture of this process, but for my part. I went from 
 >
 > Let’s put this into perspective: Before the Industrial Revolution, economic growth barely existed. We had roughly 0.01% annual growth for thousands of years. Then the Industrial Revolution arrived, and growth jumped to 1–2%. That 100–200x increase completely transformed human existence. [(Kim and Yegge 49)](https://www.goodreads.com/en/book/show/228438060-vibe-coding)
 
-> AI elevates *your* ideas, *your* ambitions. It becomes an amplifier for *your* creativity. [(Kim and Yegge 51)](https://www.goodreads.com/en/book/show/228438060-vibe-coding)
+> AI elevates _your_ ideas, _your_ ambitions. It becomes an amplifier for _your_ creativity. [(Kim and Yegge 51)](https://www.goodreads.com/en/book/show/228438060-vibe-coding)
 
-When put into perspective as a 100X increase in productivity makes the idea of 100% GDP growth seem conservative. For the same reason that big tech has compounded the GDP growth within the industries they target, so too will the new AI revolution compound growth in all industries; assuming robotics keep expanding, the caveat of "expect where moving atoms" will shift from moot to moot.
+When put into perspective as a 100x increase in productivity, the idea of 100% GDP growth seems conservative. For the same reason that big tech has compounded GDP growth within the industries it targets, so too will the new AI revolution compound growth across all industries; assuming robotics keeps expanding, the caveat of “except where moving atoms” will shift from relevant to moot.
 
 ## What Skills to Learn
 
@@ -88,29 +88,29 @@ In short:
 
 > an attitude of openness, eagerness, and lack of preconceptions when studying, even at an advanced level, just as a beginner would. [Source](https://en.wikipedia.org/wiki/Shoshin)
 
-We are all learning in public, and must continue to do so if we want to continue accelerating the adoption rate. This revolution will happen in public, and be documented in detail via open source repositories and peer reviewed papers. See the new **engram** breakthrough [source](https://arxiv.org/abs/2601.07372v1) by DeepSeek built upon **mHC** [source2](https://arxiv.org/pdf/2512.24880).
+We are all learning in public, and must continue to do so if we want to keep accelerating the adoption rate. This revolution will happen in public and be documented in detail via open source repositories and peer-reviewed papers. See the new **engram** breakthrough [source](https://arxiv.org/abs/2601.07372v1) by DeepSeek, built upon **mHC** [source2](https://arxiv.org/pdf/2512.24880).
 
 > To achieve FAAFO, you must have the skills and processes to build trust in what your AI collaborator creates. Trust us first: Going fast without feedback is dangerous. [(Kim and Yegge 63)](https://www.goodreads.com/en/book/show/228438060-vibe-coding)
 
 ### Creating Modularity
 
-> Dr. Dan Sturtevant and his colleagues did research that showed how developers working in tangled, non-modular systems are 9x more likely to quit or be fired. And again, *The State of DevOps Report* showed that a modular architecture was also a top predictor of performance. [(Kim and Yegge 63)](https://www.goodreads.com/en/book/show/228438060-vibe-coding)
+> Dr. Dan Sturtevant and his colleagues did research that showed how developers working in tangled, non-modular systems are 9x more likely to quit or be fired. And again, _The State of DevOps Report_ showed that a modular architecture was also a top predictor of performance. [(Kim and Yegge 63)](https://www.goodreads.com/en/book/show/228438060-vibe-coding)
 
-To me this makes sense, as it's allowing for the maximum velocity in development, though it comes at the trade off where each team shipping has deep master in their domain, but it makes it harder for someone higher up to maintain the full picture of the entire system. But given the speed at which entire systems are modifying or being rebuilt under the AI revolution, maybe that's no longer a trade off to consider?
+To me, this makes sense, as it allows for maximum velocity in development, though it comes with a tradeoff: each shipping team develops deep mastery in its domain, but it becomes harder for someone higher up to maintain the full picture of the entire system. But given the speed at which entire systems are being modified or rebuilt under the AI revolution, maybe that’s no longer a tradeoff worth worrying about.
 
-> Alexander Embiricos from the ChatGPT Codex team described how an engineer using AI tools achieved excellent “commit velocity” building a new system from scratch. But when they ported it “into the monolith that is the overall ChatGPT code base that has seen ridiculous hypergrowth” (that is, a system with architectural problems) the results changed dramatically. Despite having the “same engineers, same tooling,” their “commit rate just plummets.” This real-world example shows that even at OpenAI, architectural constraints affect developers using AI too. [(Kim and Yegge 63)](https://www.goodreads.com/en/book/show/228438060-vibe-coding)
+> Alexander Embiricos from the ChatGPT Codex team described how an engineer using AI tools achieved excellent “commit velocity” building a new system from scratch. But when they ported it “into the monolith that is the overall ChatGPT code base that has seen ridiculous hypergrowth” (that is, a system with architectural problems) the results changed dramatically. Despite having the “same engineers, same tooling,” their “commit rate just plummets.” This real-world example shows that even at OpenAI, architectural constraints affect developers using AI too. [(Kim and Yegge 63)](https://www.goodreads.com/en/book/show/228438060-vibe-coding)
 
 ### Embrace Learning
 
 > Learning means doing. It means tackling problems that seem insurmountable. It means taking risks, patiently wading through your mistakes, pushing until you get the outcomes you want, and troubleshooting creatively when things go wrong. [(Kim and Yegge 63)](https://www.goodreads.com/en/book/show/228438060-vibe-coding)
 
-The goal is not avoid being wrong, or prevent failure. The goal is to ship real systems and learn from feedback from reality.
+The goal is not to avoid being wrong or to prevent failure. The goal is to ship real systems and learn from feedback from reality.
 
 > On May 2, 2014, Zuckerberg announced that the company would be changing its internal motto from "Move fast and break things" to "Move fast with stable infrastructure". [source](https://en.wikipedia.org/wiki/Meta_Platforms#History)
 
-There is a balance to be struck here, but any organization that refuses to move for fear of breaking things, better be a true societal need, like banking still running on cobal systems.
+There is a balance to be struck here, but any organization that refuses to move for fear of breaking things had better be serving a true societal need, like banking still running on COBOL systems.
 
-> On the other hand, the skills crisis is not only about the ability to program in COBOL but also, and more importantly, about the knowledge of legacy applications originally developed decades ago to which layers of changes have been added and whose documentation has been lost.[Source](https://www.castsoftware.com/pulse/why-cobol-still-dominates-banking-and-how-to-modernize)
+> On the other hand, the skills crisis is not only about the ability to program in COBOL but also, and more importantly, about the knowledge of legacy applications originally developed decades ago to which layers of changes have been added and whose documentation has been lost. [Source](https://www.castsoftware.com/pulse/why-cobol-still-dominates-banking-and-how-to-modernize)
 
 ### Learning Mindset Shift
 
@@ -118,18 +118,18 @@ There is a balance to be struck here, but any organization that refuses to move 
 
 #### Expert coaching
 
-The revolution is moving at such velocity that no one person can keep up. And while it is true that being able to self learn is a required skill to thrive in software engineering, now is not the time lean on that skill. Find those who are ahead of you, and engage them. If for no other reason than they will be able to vet the right learning materials and save you hours or days of wrong rabbit holes.
+The revolution is moving at such velocity that no one person can keep up. And while it is true that being able to self-learn is a required skill to thrive in software engineering, now is not the time to lean on that skill alone. Find those who are ahead of you, and engage them. If for no other reason, they will be able to vet the right learning materials and save you hours or days of wandering down the wrong rabbit holes.
 
 #### Fast feedback
 
-Take that feed back from your expert, and put it into practice. Start small. The goal is to find the shortest feedback cycles possible. I'm talking 30 minutes or less. And then build up it. Each time you do a task, you should be able to find away to improve by a substantial amount. The time you save by leveraging AI should be feed back into learning; either how to get better using the tools, or moving up the tech stack and reflecting on how you can solve larger problems.
+Take that feedback from your expert and put it into practice. Start small. The goal is to find the shortest feedback cycles possible. I’m talking 30 minutes or less. Then build from there. Each time you do a task, you should be able to find a way to improve by a substantial amount. The time you save by leveraging AI should be fed back into learning, either by getting better at using the tools or by moving up the tech stack and reflecting on how you can solve larger problems.
 
 #### Intentional practice
 
-You must build! You must find personal projects and ship. That doesn't mean you have to build a SaaS or create a open source project you'll maintain for others. But you must build and ship at least a tool you'll use. Else you fail to achieve the above feedback loop.
+You must build. You must find personal projects and ship them. That doesn't mean you have to build a SaaS product or create an open source project you’ll maintain for others. But you must build and ship at least one tool you’ll use. Otherwise, you fail to achieve the feedback loop described above.
 
 #### Challenging tasks
 
-Once you can use the tools, you must start building, **with the point to ship**, projects that are beyond you. Even that seem impossible. If you know all the entire tech stack and systems you want to build for the project, pick a more ambitious one.
+Once you can use the tools, you must start building projects that are beyond you, **with the goal of shipping**. Even projects that seem impossible. If you already know the entire tech stack and systems you want to build for a project, pick a more ambitious one.
 
-> In short, achieving FAAFO becomes an exercise in “being a great learner.”
+> In short, achieving FAAFO becomes an exercise in “being a great learner.” [(Kim and Yegge 67)](https://www.goodreads.com/en/book/show/228438060-vibe-coding)
