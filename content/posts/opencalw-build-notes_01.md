@@ -1,5 +1,5 @@
 +++
-tags = ['OpenClaw', 'Docker', 'Portainer' 'OpenShell', 'AI', 'Linux', 'Build Notes', 'Security+',  'Open Source']
+tags = ['OpenClaw', 'Docker', 'Portainer', 'OpenShell', 'AI', 'Linux', 'Build Notes', 'Security+',  'Open Source']
 title = 'From Debian Laptop Notes to a Real AI Lab Stack'
 date = 2026-04-05T14:14:07+01:00
 draft = false
