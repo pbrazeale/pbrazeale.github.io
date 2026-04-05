@@ -2,7 +2,7 @@
 tags = ['OpenClaw', 'Docker', 'Portainer' 'OpenShell', 'AI', 'Linux', 'Build Notes', 'Security+',  'Open Source']
 title = 'From Debian Laptop Notes to a Real AI Lab Stack'
 date = 2026-04-05T14:14:07+01:00
-draft = true
+draft = false
 +++
 
 My experiment last week — [NemoClaw Setup: Thinkpad T14s, Debian 13.4](https://pbrazeale.github.io/posts/nemoclaw-setup/) — was a success. Not a polished success, not an enterprise success, but a success nonetheless.
