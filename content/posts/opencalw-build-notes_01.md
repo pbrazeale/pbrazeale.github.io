@@ -1,10 +1,3 @@
-+++
-tags = ['OpenClaw', 'OpenShell', 'AI', 'Proxmox', 'Linux', 'Build Notes', 'Security+', 'Docker', 'Open Source']
-title = 'OpenClaw Build Notes: From Debian Laptop Notes to a Real AI Lab Stack'
-date = 2026-04-05T14:14:07+01:00
-draft = true
-+++
-
 My first [NemoClaw setup on a ThinkPad T14s running Debian 13.4](https://pbrazeale.github.io/posts/nemoclaw-setup/) was a success.
 
 Not a polished success; not an enterprise success; not even a “you should definitely deploy this the same way I did” success.
@@ -45,7 +38,7 @@ It was cheap. It was immediate. It was close to the metal. It let me validate Do
 
 That is a meaningful threshold.
 
-Once you cross it, though, the machine stops being “a laptop running some tools” and starts becoming “the place where I’m trying to host an emerging AI lab.” That distinction sounds semantic; it isn’t. It is the difference between experimentation and operations.
+Once you cross it, though, the machine stops being “a laptop running some tools” and starts becoming “the place where I’m trying to host an emerging AI lab.” That distinction sounds semantic; it'sn’t. it's the difference between experimentation and operations.
 
 And operations demand boundaries.
 
@@ -57,7 +50,7 @@ When AI increases the amount one person can attempt, the bottleneck shifts. The 
 
 In other words: higher velocity demands more guardrails, not fewer.
 
-That is true for software teams. It is also true for solo builders trying to stand up agent systems.
+That is true for software teams. it's also true for solo builders trying to stand up agent systems.
 
 The more autonomy you unlock, the more your environment design starts to matter.
 
@@ -71,7 +64,7 @@ A laptop is excellent for proof-of-life. It's not a great long-term substrate fo
 
 When you are running gateway processes, shells, browser-linked tooling, Docker services, and experiments over SSH, you eventually discover the difference between _I can keep this alive_ and _I can trust this to stay alive_.
 
-Tmux helps (and I still love tmux), but tmux is not infrastructure. It is a coping mechanism for a machine that is doing too many jobs at once, and doesn't offer an intuitive interface. _Or else, I'm just not terminal native, and it's really a skill issue LOL_
+Tmux helps (and I still love tmux), but tmux is not infrastructure. it's a coping mechanism for a machine that is doing too many jobs at once, and doesn't offer an intuitive interface. _Or else, I'm just not terminal native, and it's really a skill issue LOL_
 
 ### Resource contention
 
@@ -101,4 +94,70 @@ I run my homelab on a HP Z440; a brilliant little machine that's gotten me this 
 
 #### New Server HP Z8 G4 or G5
 
-This will cost more than my bike did brand new, but I ought to recoup this with my first project.
+_This will cost more than my bike did brand new, but I ought to recoup this with my first project._
+
+The main advantage to the upgrade is I'll isolate my home services on the Z440 and the new Z8 will then become the backbone of all my AI agents and their supporting infrastructure.
+
+## Proxmox Advantage
+
+### Core issue this weekend
+
+What started as an OpenClaw/OpenShell-adjacent access issue turned into a host-level networking incident. Then it happened again. The investigation path ended up including bridge checks, direct-NIC testing, neighbor-table inspection, and eventually the most humbling root cause possible: a frayed ethernet cable masquerading as a software problem.
+
+That is exactly the sort of thing a growing lab must be designed to absorb.
+
+Not prevent all failure; that fantasy is dead.
+
+- But contain failure.
+- Isolate it.
+- Recover cleanly.
+- Learn faster.
+
+A useful lab is not one where nothing ever breaks. It's one where breakage has boundaries.
+
+### Why Proxmox Enters the Picture
+
+This is where [Proxmox VE](https://www.proxmox.com/en/products/proxmox-virtual-environment/overview) starts to make sense; not as a trendy homelab flex, and not as a replacement for Docker or OpenShell, but as the infrastructure layer that gives both of them room to breathe.
+
+> Proxmox Virtual Environment is a complete, open-source server management platform for enterprise virtualization. It tightly integrates the KVM hypervisor and Linux Containers (LXC), software-defined storage and networking functionality, on a single platform. With the integrated web-based user interface you can manage VMs and containers, high availability for clusters, or the integrated disaster recovery tools with ease.
+
+Most importantly, it gives me the thing my laptop cannot: **clean separation**.
+
+### Separation of concerns
+
+I do not want my daily driver to also be the blast radius for browser automation, agent sandboxes, networking experiments, and setup scripts that may or may not decide to go _interesting_ halfway through.
+
+**With Proxmox, that separation becomes first-class.**
+
+#### Browser Problem (Chrome or Playwright MCP)
+
+The [OpenClaw security guidance](https://docs.openclaw.ai/gateway/security) is blunt about browser control: a model driving a real browser is powerful enough to reach whatever that browser profile can reach, and host browser control should be treated carefully; especially if you are pointing it at your daily-driver state.
+
+That is not a reason to avoid browser workflows.
+
+It's a reason to isolate them like an adult: [Vibe Coding for Grown-Ups](https://pbrazeale.github.io/posts/vibe-coding-01/#vibe-coding-for-grown-ups).
+![4 tech jobs](https://pbrazeale.github.io/images/4-last-jobs-in-tech.webp)
+
+Once you combine that security guidance with the fact that OpenShell currently does not support sandbox browser on that backend,[source](https://docs.openclaw.ai/gateway/openshell) the architectural answer becomes pretty obvious. Browser-heavy experimentation belongs in a dedicated environment, not smeared across the same machine that is also your primary development workstation and/or your stable lab runtime.
+
+### Snapshots change your psychology
+
+This is the real payoff:
+
+- Weird setup script? Snapshot first.
+- Risky Docker rework? Snapshot first.
+- New browser/MCP experiment? Snapshot first.
+- Fresh OpenClaw test environment? Snapshot first.
+
+That sounds almost too obvious to say, but it matters. [Proxmox snapshots preserve VM state](https://pve.proxmox.com/wiki/Live_Snapshots); which means experimentation transform from gambling to engineering. **Rollback beats archaeology**.
+
+### Multiple environments
+
+A more sane design starts to appear almost immediately:
+
+- one VM for Portainer and operational services
+- one VM for a more stable OpenClaw/OpenShell/NemoClaw environment
+- one VM for browser-heavy experiments and MCP tooling
+- one VM for dangerous, disposable chaos
+
+That is not complexity for its own sake. That is modularity buying back your ability to move fast without treating every test like a potential host outage. [Creating Modularity](https://pbrazeale.github.io/posts/vibe-coding-02/#creating-modularity)
