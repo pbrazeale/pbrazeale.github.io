@@ -1,8 +1,8 @@
 +++
 tags = ['AI', 'Vibe Coding by Kim and Yegge', 'Learning', 'Articles', 'OpenClaw', 'Book Reviews']
 title = 'Vibe Coding: Reward Function Trap'
-date = 2026-04-14T09:05:07+01:00
-draft = true
+date = 2026-04-14T17:35:07+01:00
+draft = false
 +++
 
 Main Source: [_Vibe Coding: Building Production-Grade Software With GenAI, Chat, Agents, and Beyond_](https://www.goodreads.com/en/book/show/228438060-vibe-coding)
