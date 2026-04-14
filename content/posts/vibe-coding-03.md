@@ -1,6 +1,6 @@
 +++
 tags = ['AI', 'Vibe Coding by Kim and Yegge', 'Learning', 'Articles', 'OpenClaw', 'Book Reviews']
-title = 'Vibe Coding: '
+title = 'Vibe Coding: The Human Loop Still Matters'
 date = 2026-04-14T09:05:07+01:00
 draft = true
 +++
@@ -27,11 +27,17 @@ Main Source: [_Vibe Coding: Building Production-Grade Software With GenAI, Chat,
 
 > What might be a 50–100% speedup with chat-based vibe coding can become a 5–10x speedup with agentic coding. [(Kim and Yegge 96)](https://www.goodreads.com/en/book/show/228438060-vibe-coding)
 
+> The OODA loop (observe, orient, decide, act loop) is a decision-making model developed by United States Air Force Colonel John Boyd in the early 1970s. [Source](https://en.wikipedia.org/wiki/OODA_loop)
+
 ### MCP
 
 > Almost every tool will eventually have an MCP (Model Context Protocol) server sitting in front of it, to enable AI to manipulate it like a human user. [(Kim and Yegge 96)](https://www.goodreads.com/en/book/show/228438060-vibe-coding)
 
 For almost all of this book, I found myself nodding along, mostly agreeing with aspects of my own workflow that I was already doing, and have now refined to align more with their setup. However, on this point, I think it’s wrong. Not just because I’ve avoided MCP this whole time, but because it’s the wrong approach for the model’s use case. (_Now, this could change with time as MCP evolves, but as of April 2026, no._)
+
+**Leaky Abstractions**
+
+> This is what I call a leaky abstraction. TCP attempts to provide a complete abstraction of an underlying unreliable network, but sometimes, the network leaks through the abstraction and you feel the things that the abstraction can’t quite protect you from. [Source](https://www.joelonsoftware.com/2002/11/11/the-law-of-leaky-abstractions/)
 
 Don’t take my word for it; here’s Onur Solmaz from OpenClaw talking about it too:
 
@@ -60,6 +66,10 @@ The tooling built around ChatGPT and other such platforms has meant that, aside 
 
 Kim and Yegge’s predictions have manifested in [OpenClaw](https://openclaw.ai/), with the integration of OpenShell. Keep your eye out; I’ll soon release the book _OpenClaw on Proxmox_, which will explain, step-by-step, how to leverage the framework to create an agent swarm suitable for enterprise use.
 
+**Conway's law**
+
+> Organizations which design systems (in the broad sense used here) are constrained to produce designs which are copies of the communication structures of these organizations. [Source](https://en.wikipedia.org/wiki/Conway%27s_law)
+
 ### Key Vibe Coding Principles
 
 > In contrast, prompt engineering is more like emailing a lawyer who is suing you—everything in that email is fraught with consequence, requiring precision and care. [(Kim and Yegge 102)](https://www.goodreads.com/en/book/show/228438060-vibe-coding)
@@ -70,7 +80,15 @@ Kim and Yegge’s predictions have manifested in [OpenClaw](https://openclaw.ai/
   - _Absolutely true, if you’re maintaining human-in-the-loop control._
 - Embrace the messy, productive joy of having problem-solving conversations.
 
+> Human-in-the-loop allows the user to change the outcome of an event or process. The immersion effectively contributes to a positive transfer of acquired skills into the real world. This can be demonstrated by trainees utilizing flight simulators in preparation to become pilots. [Source](https://en.wikipedia.org/wiki/Human-in-the-loop)
+
 #### Letting Errors Speak for Themselves
+
+**Rubber Duck**
+
+> Rubber duck debugging (or rubberducking) is a debugging technique in software engineering, wherein a programmer explains their code, step by step, in natural language—either aloud or in writing—to reveal mistakes and misunderstandings. [Source](https://en.wikipedia.org/wiki/Rubber_duck_debugging)
+
+I learned this when taking Harvard's [CS50X](https://pll.harvard.edu/course/cs50-introduction-computer-science) and CS50P [Clip](https://www.youtube.com/shorts/r6hY_MMxhy8) _Thank you again to David J. Malan, Ph.D. and the team behind the program.Especially Carter's supplementary videos!_
 
 > These act as the feedback your AI partner needs to course-correct.
 
