@@ -19,15 +19,14 @@ Main Source: [_Vibe Coding: Building Production-Grade Software With GenAI, Chat,
 6. Refine and iterate
 7. Automate your own workflow
 
+![Vibe Coding Loop](https://itrevolution.com/wp-content/uploads/2025/08/Screenshot-2025-08-12-at-12.10.08-PM-1024x472.png.webp)
 [(Kim and Yegge 87)](https://www.goodreads.com/en/book/show/228438060-vibe-coding)
 
-![Vibe Coding Loop](https://itrevolution.com/wp-content/uploads/2025/08/Screenshot-2025-08-12-at-12.10.08-PM-1024x472.png.webp)
+> The OODA loop (observe, orient, decide, act loop) is a decision-making model developed by United States Air Force Colonel John Boyd in the early 1970s. [Source](https://en.wikipedia.org/wiki/OODA_loop)
 
 > By breaking down a complex task, collaborating with AI through conversation, and iteratively building a solution, Gene accomplished in under an hour what might never have happened otherwise. [(Kim and Yegge 94)](https://www.goodreads.com/en/book/show/228438060-vibe-coding)
 
 > What might be a 50–100% speedup with chat-based vibe coding can become a 5–10x speedup with agentic coding. [(Kim and Yegge 96)](https://www.goodreads.com/en/book/show/228438060-vibe-coding)
-
-> The OODA loop (observe, orient, decide, act loop) is a decision-making model developed by United States Air Force Colonel John Boyd in the early 1970s. [Source](https://en.wikipedia.org/wiki/OODA_loop)
 
 ### MCP
 
@@ -35,7 +34,7 @@ Main Source: [_Vibe Coding: Building Production-Grade Software With GenAI, Chat,
 
 For almost all of this book, I found myself nodding along, mostly agreeing with aspects of my own workflow that I was already doing, and have now refined to align more with their setup. However, on this point, I think it’s wrong. Not just because I’ve avoided MCP this whole time, but because it’s the wrong approach for the model’s use case. (_Now, this could change with time as MCP evolves, but as of April 2026, no._)
 
-**Leaky Abstractions**
+##### Leaky Abstractions
 
 > This is what I call a leaky abstraction. TCP attempts to provide a complete abstraction of an underlying unreliable network, but sometimes, the network leaks through the abstraction and you feel the things that the abstraction can’t quite protect you from. [Source](https://www.joelonsoftware.com/2002/11/11/the-law-of-leaky-abstractions/)
 
@@ -66,7 +65,7 @@ The tooling built around ChatGPT and other such platforms has meant that, aside 
 
 Kim and Yegge’s predictions have manifested in [OpenClaw](https://openclaw.ai/), with the integration of OpenShell. Keep your eye out; I’ll soon release the book _OpenClaw on Proxmox_, which will explain, step-by-step, how to leverage the framework to create an agent swarm suitable for enterprise use.
 
-**Conway's law**
+##### Conway's law
 
 > Organizations which design systems (in the broad sense used here) are constrained to produce designs which are copies of the communication structures of these organizations. [Source](https://en.wikipedia.org/wiki/Conway%27s_law)
 
@@ -84,7 +83,7 @@ Kim and Yegge’s predictions have manifested in [OpenClaw](https://openclaw.ai/
 
 #### Letting Errors Speak for Themselves
 
-**Rubber Duck**
+##### Rubber Duck
 
 > Rubber duck debugging (or rubberducking) is a debugging technique in software engineering, wherein a programmer explains their code, step by step, in natural language—either aloud or in writing—to reveal mistakes and misunderstandings. [Source](https://en.wikipedia.org/wiki/Rubber_duck_debugging)
 
