@@ -1,8 +1,8 @@
 +++
 tags = ['Python', 'Learning', 'Articles', 'Build Notes', 'API', 'CI/CD']
 title = 'Silent System-Boundary Failure in a Multi-Service Message Pipeline'
-date = 2026-04-15T11:35:07+01:00
-draft = true
+date = 2026-04-15T17:15:07+01:00
+draft = false
 +++
 
 # Silent System-Boundary Failure in a Multi-Service Message Pipeline
