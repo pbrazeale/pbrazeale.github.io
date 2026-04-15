@@ -1,5 +1,5 @@
 +++
-tags = ['AI', 'Vibe Coding by Kim and Yegge', 'Learning', 'Articles', 'OpenClaw', 'Book Reviews']
+tags = ['Python', 'Learning', 'Articles', 'Build Notes', 'API', 'CI/CD']
 title = 'Silent System-Boundary Failure in a Multi-Service Message Pipeline'
 date = 2026-04-15T09:35:07+01:00
 draft = true
