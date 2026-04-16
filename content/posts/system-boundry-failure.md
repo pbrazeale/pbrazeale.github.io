@@ -5,8 +5,6 @@ date = 2026-04-15T17:15:07+01:00
 draft = false
 +++
 
-# Silent System-Boundary Failure in a Multi-Service Message Pipeline
-
 It took me the better part of 10 days, but I solved a multi-system bug, where the interplay between several systems exposed a critical failure that was happening silently, as none of the dashboards indicated a drop in performance. Charts kept growing, so the assumption was that all systems were working.
 
 This was a lie.
